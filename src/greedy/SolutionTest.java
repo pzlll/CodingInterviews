@@ -1,0 +1,20 @@
+package greedy;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class SolutionTest {
+
+    @Test
+    public void eraseOverlapIntervals() {
+        int[][] array = {{0,1},{3,4},{1,2}};
+        assertEquals(0, new Solution().eraseOverlapIntervals(array));
+    }
+
+    @Test
+    public void canPlaceFlowers() {
+        int[] a = {1,0,0,0,1};
+        assertEquals(true, new Solution().canPlaceFlowers(a, 1));
+    }
+}
