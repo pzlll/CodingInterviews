@@ -69,5 +69,33 @@ public class Solution {
 
     }
 
+    /**
+     *解题思路：观察数组发现，最小值左边元素比最右元素大，最小值右边元素比最右元素小
+     * 使用二分查找，若中间值大于最右元素，则查找右子区间（不包含中间值）
+     * 若中间值小于最右元素，则查找左子区间（包含中间值）
+     * 直到区间长度为一，则找到最小值
+     *
+     * @param nums
+     * @return
+     */
+    public int findMin(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        while(left < right) {
+            int mid = (right - left) / 2 + left;
+            if(nums[mid] >= nums[left]) {
+                if(nums[left] < nums[right]) {
+                    right = mid - 1;
+                }else {
+                    left = mid + 1;
+                }
+            }else {
+                right = mid;
+            }
+        }
+
+        return nums[left];
+    }
+
 
 }
