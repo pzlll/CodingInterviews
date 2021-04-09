@@ -97,5 +97,29 @@ public class Solution {
         return nums[left];
     }
 
+    /**
+     * 解题思路：若左，中和右指针的元素相同，则无法判定最小值在哪边，所以左指针向后移，右指针向前移
+     * 若中间元素小于等于最右元素，则最小值在左边（包括中间元素）
+     * 若中间元素大于最右元素，则最小值在右边（不包括中间元素）
+     * @param nums
+     * @return
+     */
+    public int findMin2(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        while(left < right) {
+            int mid = (right - left) / 2 + left;
+            if(nums[mid] == nums[right] && nums[left] == nums[right]) {
+                left++;
+                right--;
+            }else if(nums[mid] <= nums[right]){
+                right = mid;
+            }else{
+                left = mid + 1;
+            }
+        }
+        return nums[left];
+    }
+
 
 }

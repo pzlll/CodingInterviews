@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+            <state relative-caret-position="472">
+              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -268,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -407,6 +406,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -734,7 +734,8 @@
       <workItem from="1617154446538" duration="3345000" />
       <workItem from="1617587566279" duration="2595000" />
       <workItem from="1617766441650" duration="874000" />
-      <workItem from="1617844629254" duration="2365000" />
+      <workItem from="1617844629254" duration="2810000" />
+      <workItem from="1617953631898" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="add project.">
       <created>1617591861111</created>
@@ -743,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617591861111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add method findMin.">
+      <created>1617847168732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617847168732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -779,7 +787,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429339000" />
+    <option name="totallyTimeSpent" value="431042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,7 +802,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.13579631" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.13729405" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -812,7 +820,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32955715" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32646757" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3257732" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -825,8 +833,8 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.80103093" visible="true" weight="0.17523715" />
-      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.19896907" side_tool="true" visible="true" weight="0.17523715" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.8" visible="true" weight="0.17523715" />
+      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.2" side_tool="true" visible="true" weight="0.17523715" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -834,7 +842,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add project." />
-    <option name="LAST_COMMIT_MESSAGE" value="add project." />
+    <MESSAGE value="add method findMin." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method findMin." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1454,8 +1463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+        <state relative-caret-position="472">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
         </state>
       </provider>
     </entry>
