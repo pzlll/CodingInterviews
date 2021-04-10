@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +56,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            <state relative-caret-position="-228">
+              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="173" column="52" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#myAtoi#0;class#Solution#0" />
+                <element signature="method#checkStraightLine#0;class#Solution#0" />
+                <element signature="method#rotate#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1372">
-              <caret line="284" column="26" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="26" />
+            <state relative-caret-position="-4">
+              <caret line="198" column="7" lean-forward="true" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
@@ -199,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/searchandsort/SortA.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Untitled.java" />
         <option value="$PROJECT_DIR$/src/math/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/array/SolutionTest.java" />
@@ -232,6 +246,7 @@
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
+        <option value="$PROJECT_DIR$/src/math/Solution.java" />
       </list>
     </option>
   </component>
@@ -269,6 +284,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -406,7 +422,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -735,7 +750,8 @@
       <workItem from="1617587566279" duration="2595000" />
       <workItem from="1617766441650" duration="874000" />
       <workItem from="1617844629254" duration="2810000" />
-      <workItem from="1617953631898" duration="1258000" />
+      <workItem from="1617953631898" duration="2156000" />
+      <workItem from="1618022821218" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="add project.">
       <created>1617591861111</created>
@@ -751,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617847168732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add method findMin2.">
+      <created>1617954955878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617954955878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -787,7 +810,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431042000" />
+    <option name="totallyTimeSpent" value="433105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -802,7 +825,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.13729405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.13879181" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -833,8 +856,8 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.8" visible="true" weight="0.17523715" />
-      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.2" side_tool="true" visible="true" weight="0.17523715" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7989691" visible="true" weight="0.17523715" />
+      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20103092" side_tool="true" visible="true" weight="0.17523715" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -843,7 +866,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add project." />
     <MESSAGE value="add method findMin." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method findMin." />
+    <MESSAGE value="add method findMin2." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method findMin2." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,19 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="169" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#myAtoi#0;class#Solution#0" />
-            <element signature="method#checkStraightLine#0;class#Solution#0" />
-            <element signature="method#rotate#0;class#Solution#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1382,24 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1372">
-          <caret line="284" column="26" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
-            <element signature="method#findKthLargest#0;class#Solution#0" />
-            <element signature="method#quickSort#0;class#Solution#0" />
-            <element signature="method#topKFrequent#0;class#Solution#0" />
-            <element signature="method#frequencySort#0;class#Solution#0" />
-            <element signature="method#wiggleSort#0;class#Solution#0" />
-            <element signature="method#reverse#0;class#Solution#0" />
-            <element signature="method#quickSort#2;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -1461,10 +1454,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="198" column="7" lean-forward="true" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
+            <element signature="method#findKthLargest#0;class#Solution#0" />
+            <element signature="method#quickSort#0;class#Solution#0" />
+            <element signature="method#topKFrequent#0;class#Solution#0" />
+            <element signature="method#frequencySort#0;class#Solution#0" />
+            <element signature="method#wiggleSort#0;class#Solution#0" />
+            <element signature="method#reverse#0;class#Solution#0" />
+            <element signature="method#quickSort#2;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state relative-caret-position="-228">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="173" column="52" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#myAtoi#0;class#Solution#0" />
+            <element signature="method#checkStraightLine#0;class#Solution#0" />
+            <element signature="method#rotate#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>

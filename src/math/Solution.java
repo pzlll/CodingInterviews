@@ -169,4 +169,24 @@ public class Solution {
 
         return num;
     }
+
+    /**
+     * 解题思路：判断数是否只包含质数（2，3，5），则把数中的质数（2，3，5）剔除，看剩下的数是否为1
+     * @param n
+     * @return
+     */
+    public boolean isUgly(int n) {
+        if(n <= 0) {
+            return false;
+        }
+        int[] factors = {2,3,5};
+        for (int factor :
+                factors) {
+            while(n % factor ==0) {
+                n /= factor;
+            }
+        }
+        return n == 1;
+    }
+
 }
