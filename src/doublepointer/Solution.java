@@ -127,6 +127,7 @@ public class Solution {
 
     /**
      * 解题思路：利用双指针，从后往前填充数组A，比较两个数组，元素值大的进行填充
+     *
      * @param nums1
      * @param m
      * @param nums2
@@ -136,17 +137,17 @@ public class Solution {
         int k = n + m - 1;
         int i = m - 1;
         int j = n - 1;
-        while(i >= 0 && j >= 0) {
-            if(nums1[i] > nums2[j]) {
+        while (i >= 0 && j >= 0) {
+            if (nums1[i] > nums2[j]) {
                 nums1[k] = nums1[i];
                 i--;
-            }else{
+            } else {
                 nums1[k] = nums2[j];
                 j--;
             }
             k--;
         }
-        while(j >= 0) {
+        while (j >= 0) {
             nums1[k] = nums2[j];
             j--;
             k--;
@@ -338,6 +339,7 @@ public class Solution {
 
     /**
      * 解题思路：把差值用数组存储，用双指针遍历，如果小于总和则j++，如果大于则i++直到小于总和并重新比较，更新最大长度
+     *
      * @param s
      * @param t
      * @param maxCost
@@ -357,15 +359,15 @@ public class Solution {
         for (int i = 0, j = 0; j < cost.length && i < cost.length; j++) {
             if ((sum + cost[j]) > maxCost) {
 
-                while (i < cost.length && (sum + cost[j]) > maxCost ) {
+                while (i < cost.length && (sum + cost[j]) > maxCost) {
                     sum -= cost[i];
                     i++;
                 }
                 j--;
             } else {
                 sum += cost[j];
-                if ((j - i+1) > length) {
-                    length = j - i+1;
+                if ((j - i + 1) > length) {
+                    length = j - i + 1;
                 }
             }
         }
@@ -375,6 +377,7 @@ public class Solution {
 
     /**
      * 解题思路：使用滑动窗口找n-k区间中最小的总和，用数组总和减去，则是首尾k区间的最大值
+     *
      * @param cardPoints
      * @param k
      * @return
@@ -392,7 +395,7 @@ public class Solution {
             min = Math.min(sum, min);
         }
 
-        return Arrays.stream(cardPoints).sum()-min;
+        return Arrays.stream(cardPoints).sum() - min;
 //        int[] sum = new int[k+1];
 //        int result = Integer.MIN_VALUE;
 //        sum[0] = 0;
@@ -410,6 +413,29 @@ public class Solution {
 //            temp += cardPoints[length-1-i];
 //        }
 //        return result;
+    }
+
+    /**
+     * 解题思路：使用双指针，快指针指向当前元素，慢指针指向待存入的元素
+     * 若快指针所指元素不等于慢指针的前第二个元素，则进行插入
+     * @param nums
+     * @return
+     */
+    public int removeDuplicates(int[] nums) {
+        int n = nums.length;
+        if(n <= 2) {
+            return n;
+        }
+        int slow = 2;
+        int fast = 2;
+        while(fast < n) {
+            if(nums[slow - 2] != nums[fast]) {
+                nums[slow] = nums[fast];
+                slow++;
+            }
+            fast++;
+        }
+        return slow;
     }
 
 }
