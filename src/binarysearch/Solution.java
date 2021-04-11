@@ -69,6 +69,58 @@ public class Solution {
 
     }
 
+    /**
+     *解题思路：观察数组发现，最小值左边元素比最右元素大，最小值右边元素比最右元素小
+     * 使用二分查找，若中间值大于最右元素，则查找右子区间（不包含中间值）
+     * 若中间值小于最右元素，则查找左子区间（包含中间值）
+     * 直到区间长度为一，则找到最小值
+     *
+     * @param nums
+     * @return
+     */
+    public int findMin(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        while(left < right) {
+            int mid = (right - left) / 2 + left;
+            if(nums[mid] >= nums[left]) {
+                if(nums[left] < nums[right]) {
+                    right = mid - 1;
+                }else {
+                    left = mid + 1;
+                }
+            }else {
+                right = mid;
+            }
+        }
+
+        return nums[left];
+    }
+
+    /**
+     * 解题思路：若左，中和右指针的元素相同，则无法判定最小值在哪边，所以左指针向后移，右指针向前移
+     * 若中间元素小于等于最右元素，则最小值在左边（包括中间元素）
+     * 若中间元素大于最右元素，则最小值在右边（不包括中间元素）
+     * @param nums
+     * @return
+     */
+    public int findMin2(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        while(left < right) {
+            int mid = (right - left) / 2 + left;
+            if(nums[mid] == nums[right] && nums[left] == nums[right]) {
+                left++;
+                right--;
+            }else if(nums[mid] <= nums[right]){
+                right = mid;
+            }else{
+                left = mid + 1;
+            }
+        }
+        return nums[left];
+    }
+
     public boolean search(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
