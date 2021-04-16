@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/SolutionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="1400">
               <caret line="137" column="27" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,11 +51,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/Trie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="311" column="25" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
+              <folding>
+                <element signature="method#trap#0;class#Solution#0" />
+                <element signature="method#rob#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/NumMatrix.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/MyQueue.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/MyHashSetTest.java" />
@@ -166,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Trie.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
       </list>
     </option>
   </component>
@@ -202,6 +206,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,8 +345,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -672,7 +676,8 @@
       <workItem from="1617953631898" duration="2156000" />
       <workItem from="1618022821218" duration="1165000" />
       <workItem from="1618297526911" duration="4866000" />
-      <workItem from="1618367606460" duration="2360000" />
+      <workItem from="1618367606460" duration="2998000" />
+      <workItem from="1618554993044" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary="add project.">
       <created>1617591861111</created>
@@ -702,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618302206450</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update object Trie.">
+      <created>1618370015855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618370015856</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -738,7 +750,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440331000" />
+    <option name="totallyTimeSpent" value="443942000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -753,7 +765,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.16525212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.16674988" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -784,8 +796,8 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7942779" visible="true" weight="0.115826264" />
-      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20572206" side_tool="true" visible="true" weight="0.115826264" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7929155" visible="true" weight="0.115826264" />
+      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20708446" side_tool="true" visible="true" weight="0.115826264" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -796,7 +808,8 @@
     <MESSAGE value="add method findMin." />
     <MESSAGE value="add method findMin2." />
     <MESSAGE value="add method minDiffInBST." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method minDiffInBST." />
+    <MESSAGE value="update object Trie." />
+    <option name="LAST_COMMIT_MESSAGE" value="update object Trie." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,18 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5404">
-          <caret line="257" column="60" selection-start-line="257" selection-start-column="60" selection-end-line="257" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#trap#0;class#Solution#0" />
-            <element signature="method#rob#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1384,7 +1385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1400">
           <caret line="137" column="27" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1417,7 +1418,18 @@
     <entry file="file://$PROJECT_DIR$/src/tree/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="311" column="25" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
+          <folding>
+            <element signature="method#trap#0;class#Solution#0" />
+            <element signature="method#rob#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>

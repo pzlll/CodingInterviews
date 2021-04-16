@@ -1,9 +1,6 @@
 package dynamicprogramming;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
     public int trap(int[] height) {
@@ -302,7 +299,81 @@ public class Solution {
         return res[n-1];
     }
 
+    private int memo[][][];
+    String s1, s2;
 
+    /**
+     * 解题思路：若s1和s2相等，则互为扰乱字符串
+     * 若长度不等，或者长度相等但其中某一字符个数不等，则s1和s2不为扰乱字符串
+     * 若以上情况都不是，则对s1和s2进行切割
+     * 从长度1到长度n-1进行判断
+     * 1.s1和s2长度为i互为扰乱字符串且s1和s2长度为n-i互为扰乱字符串，则s1和s2互为扰乱字符串
+     * 2.交换s1的两个子串，1和s2长度为i互为扰乱字符串且s1和s2长度为n-i互为扰乱字符串，则s1和s2互为扰乱字符串
+     * 若都不是，则s1和s2不为扰乱字符串
+    * @param s1
+     * @param s2
+     * @return
+     */
+    public boolean isScramble(String s1, String s2) {
+        if(s1.equals(s2)) {
+            return true;
+        }
+        if(s1.length() != s2.length()) {
+            return false;
+        }
+        int length = s1.length();
+        memo = new int[length][length][length+1];
+        this.s1 = s1;
+        this.s2 = s2;
+        return dfs(0, 0, length);
+    }
+
+    private boolean dfs(int i, int j, int length) {
+        if(memo[i][j][length] != 0) {
+            return memo[i][j][length] == 1;
+        }
+        if(s1.substring(i, i + length).equals(s2.substring(j, j + length))) {
+            memo[i][j][length] = 1;
+            return true;
+        }
+        if(!isSimilar(i, j , length)) {
+            memo[i][j][length] = -1;
+            return false;
+        }
+
+        for (int k = 1; k < length; k++) {
+            if(dfs(i, j, k) && dfs((i+k), (j+k), (length - k))) {
+                return true;
+            }
+            if(dfs(i, (j+length- k), k) && dfs((i + k),j, (length - k))) {
+                return true;
+            }
+        }
+        memo[i][j][length] = -1;
+        return false;
+    }
+
+    private boolean isSimilar(int i, int j, int length) {
+        Map<Character, Integer> freq = new HashMap<>();
+        for (int k = 0; k < length; k++) {
+            char c = s1.charAt(i + k);
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+        for (int k = 0; k < length; k++) {
+            char c = s1.charAt(i + k);
+            freq.put(c, freq.getOrDefault(c, 0) - 1);
+        }
+        for (Map.Entry<Character, Integer> entry :
+                freq.entrySet()) {
+            int value = entry.getValue();
+            if(value != 0) {
+                return false;
+
+            }
+        }
+
+        return true;
+    }
 
 
 }
