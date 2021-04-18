@@ -5,19 +5,21 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Solution {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
 
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
+    TreeNode() {
     }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+}
+
+public class Solution {
+
 
     public int kthSmallest(TreeNode root, int k) {
         TreeNode t = root;
@@ -87,6 +89,7 @@ public class Solution {
      * 如何确定层数？
      * 方法一：维护该层的节点数目和下一层的节点数目
      * 方法二：直接获取每一层队列总数，对其进行遍历操作
+     *
      * @param root
      * @return
      */
@@ -96,23 +99,23 @@ public class Solution {
         Queue<TreeNode> queue = new LinkedList<>();
 
         List<List<Integer>> nums = new ArrayList<>();
-        if(root == null) {
+        if (root == null) {
             return nums;
         }
         queue.add(root);
         List<Integer> num = new ArrayList<>();
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             TreeNode top = queue.poll();
-            if(top.left != null) {
+            if (top.left != null) {
                 queue.add(top.left);
                 nextCount++;
             }
-            if(top.right != null) {
+            if (top.right != null) {
                 queue.add(top.right);
                 nextCount++;
             }
             num.add(top.val);
-            if((--thisCount) == 0) {
+            if ((--thisCount) == 0) {
                 thisCount = nextCount;
                 nextCount = 0;
                 nums.add(num);
@@ -123,5 +126,41 @@ public class Solution {
         return nums;
     }
 
+    private int res = 500000;
+    private TreeNode pre = null;
+
+    /**
+     * 解题思路：1. 二叉搜索树中序遍历为递增序列
+     * 2.递增序列的最小值为相邻元素的最小值
+     * @param root
+     * @return
+     */
+    public int minDiffInBST(TreeNode root) {
+        if (root == null || (root.left == null && root.right == null)) {
+            return -1;
+        }
+
+        DFS(root);
+
+        return res;
+
+    }
+
+    private void DFS(TreeNode t) {
+        if (t == null) {
+            return;
+        }
+
+        DFS(t.left);
+
+        if (pre != null) {
+            res = Math.min((Math.abs(pre.val - t.val)), res);
+        }
+        pre = t;
+
+        DFS(t.right);
+
+
+    }
 
 }
