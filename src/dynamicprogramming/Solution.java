@@ -385,33 +385,21 @@ public class Solution {
      * @return
      */
     public int numDecodings(String s) {
-        HashSet<String> set = new HashSet<>();
-        for (int i = 1; i < 27; i++) {
-            set.add(String.valueOf(i));
-        }
-
-        int[] count = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            int sum = 0;
-            if(set.contains(s.substring(i, i+1))) {
-                if(i > 0) {
-                    sum += count[i-1];
-                }else{
-                    sum += 1;
-                }
+        int a = 1;
+        int b = 1;
+        int c = 0;
+        for (int i = 1; i < (s.length() + 1); i++) {
+            c = 0;
+            if(s.charAt(i-1) != '0') {
+                c += b;
             }
-            if(i > 0) {
-                if(set.contains(s.substring(i-1, i+1))) {
-                    if(i > 1) {
-                        sum += count[i-2];
-                    }else{
-                        sum += 1;
-                    }
-                }
+            if((i > 1) && (s.charAt(i-2) != '0') && (((s.charAt(i-2) - '0') * 10 + (s.charAt(i-1) - '0') <= 26))) {
+                c += a;
             }
-            count[i] = sum;
+            a = b;
+            b = c;
         }
-        return count[s.length() - 1];
+        return c;
     }
 
 }
