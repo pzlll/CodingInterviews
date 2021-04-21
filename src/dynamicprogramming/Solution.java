@@ -375,5 +375,43 @@ public class Solution {
         return true;
     }
 
+    /**
+     * 解题思路：使用动态规划进行状态转移，若元素i是数字1-9，则结果加上元素i-1的数量
+     * 若元素i-1非零且元素（i-1，i）小于等于26，则结果加上元素i-2的数量
+     * 优化：1. 使用元素0作为前元素判断，其值为空
+     *      2. 使用三个元素代替元素i-2，i-1，i节省辅助数组空间
+     * 注意：s 只包含数字，并且可能包含前导零
+     * @param s
+     * @return
+     */
+    public int numDecodings(String s) {
+        HashSet<String> set = new HashSet<>();
+        for (int i = 1; i < 27; i++) {
+            set.add(String.valueOf(i));
+        }
+
+        int[] count = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            int sum = 0;
+            if(set.contains(s.substring(i, i+1))) {
+                if(i > 0) {
+                    sum += count[i-1];
+                }else{
+                    sum += 1;
+                }
+            }
+            if(i > 0) {
+                if(set.contains(s.substring(i-1, i+1))) {
+                    if(i > 1) {
+                        sum += count[i-2];
+                    }else{
+                        sum += 1;
+                    }
+                }
+            }
+            count[i] = sum;
+        }
+        return count[s.length() - 1];
+    }
 
 }
