@@ -1,5 +1,6 @@
 package dynamicprogramming;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -302,7 +303,56 @@ public class Solution {
         return res[n-1];
     }
 
+    /**
+     * 解题思路：若a是整除区间的最小值的约数或整除区间的最小值的倍数，则a可加入该区间
+     * 1. 对数组进行排序
+     * 2. 两层循环，找出以元素i为最大整数的区间大小
+     * 3. 找到最大区间值
+     * 4. 逆序寻找该区间的每个元素
+     * @param nums
+     * @return
+     */
+    public List<Integer> largestDivisibleSubset(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        int[] dp = new int[n];
+        Arrays.fill(dp, 1);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if(nums[i] % nums[j] == 0) {
+                    dp[i] = Math.max(dp[i], (dp[j] + 1));
+                }
+            }
+        }
 
+        List<Integer> ret = new ArrayList<>();
+        int maxSize = 0;
+        int maxIndex = 0;
+        for (int i = 0; i < n; i++) {
+            if(maxSize < dp[i]) {
+                maxSize = dp[i];
+                maxIndex = i;
+            }
+        }
+        if(maxSize == 0) {
+            return ret;
+        }
+        int i = maxIndex;
+        while(maxSize > 0) {
+            ret.add(nums[i]);
+            maxSize--;
+            if(maxSize == 0) {
+                break;
+            }
+            int j = i - 1;
+            while(((nums[i] % nums[j]) != 0) || (dp[j]!=maxSize)) {
+                j--;
+            }
+            i = j;
+        }
+
+        return ret;
+    }
 
 
 }
