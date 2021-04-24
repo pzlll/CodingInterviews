@@ -200,6 +200,7 @@ public class Solution {
      * 回溯法：从下标i开始搜索，长度j依次递增
      * 搜索时，若该子串为回文串，则添加该子串到当前集，并从下标j+1开始搜索，即当前集继续搜索是否能构成结果集，搜索完毕后，将该子串从当前集删除
      * 每次搜索到字符串长度时，将结果添加进结果集
+     *
      * @param s
      * @return
      */
@@ -215,7 +216,7 @@ public class Solution {
                 if (j >= n) {
                     break;
                 }
-                if(j == i) {
+                if (j == i) {
                     f[i][j] = true;
                     continue;
                 }
@@ -253,6 +254,7 @@ public class Solution {
      * 接着，使用一维数组存储下标0到i的子串分割的最少次数
      * 对于下标0到i的子串，先判断其是否为回文串，若是，则分割次数为0，若不是，则使用状态转移方程，找到子串分割最小值
      * 状态转移方程：res[i] = min(res[j] + 1) (if f[j+1][i] is true)
+     *
      * @param s
      * @return
      */
@@ -265,17 +267,17 @@ public class Solution {
         for (int l = 0; l < n; l++) {
             for (int i = 0; i < n; i++) {
                 int j = i + l;
-                if(j >= n) {
+                if (j >= n) {
                     continue;
                 }
-                if(l == 0) {
+                if (l == 0) {
                     f[i][j] = true;
                     continue;
                 }
                 boolean flag = s.charAt(i) == s.charAt(j);
-                if(flag && f[i+1][j-1]) {
+                if (flag && f[i + 1][j - 1]) {
                     f[i][j] = true;
-                }else {
+                } else {
                     f[i][j] = false;
                 }
             }
@@ -283,20 +285,20 @@ public class Solution {
 
         int[] res = new int[n];
         for (int i = 1; i < n; i++) {
-            if(f[0][i] == true) {
+            if (f[0][i] == true) {
                 res[i] = 0;
                 continue;
             }
             int min = Integer.MAX_VALUE;
             for (int j = 0; j < i; j++) {
-                if(f[j+1][i] == true) {
+                if (f[j + 1][i] == true) {
                     min = Math.min(min, res[j] + 1);
                 }
             }
             res[i] = min;
         }
 
-        return res[n-1];
+        return res[n - 1];
     }
 
     private int memo[][][];
@@ -310,42 +312,43 @@ public class Solution {
      * 1.s1和s2长度为i互为扰乱字符串且s1和s2长度为n-i互为扰乱字符串，则s1和s2互为扰乱字符串
      * 2.交换s1的两个子串，1和s2长度为i互为扰乱字符串且s1和s2长度为n-i互为扰乱字符串，则s1和s2互为扰乱字符串
      * 若都不是，则s1和s2不为扰乱字符串
-    * @param s1
+     *
+     * @param s1
      * @param s2
      * @return
      */
     public boolean isScramble(String s1, String s2) {
-        if(s1.equals(s2)) {
+        if (s1.equals(s2)) {
             return true;
         }
-        if(s1.length() != s2.length()) {
+        if (s1.length() != s2.length()) {
             return false;
         }
         int length = s1.length();
-        memo = new int[length][length][length+1];
+        memo = new int[length][length][length + 1];
         this.s1 = s1;
         this.s2 = s2;
         return dfs(0, 0, length);
     }
 
     private boolean dfs(int i, int j, int length) {
-        if(memo[i][j][length] != 0) {
+        if (memo[i][j][length] != 0) {
             return memo[i][j][length] == 1;
         }
-        if(s1.substring(i, i + length).equals(s2.substring(j, j + length))) {
+        if (s1.substring(i, i + length).equals(s2.substring(j, j + length))) {
             memo[i][j][length] = 1;
             return true;
         }
-        if(!isSimilar(i, j , length)) {
+        if (!isSimilar(i, j, length)) {
             memo[i][j][length] = -1;
             return false;
         }
 
         for (int k = 1; k < length; k++) {
-            if(dfs(i, j, k) && dfs((i+k), (j+k), (length - k))) {
+            if (dfs(i, j, k) && dfs((i + k), (j + k), (length - k))) {
                 return true;
             }
-            if(dfs(i, (j+length- k), k) && dfs((i + k),j, (length - k))) {
+            if (dfs(i, (j + length - k), k) && dfs((i + k), j, (length - k))) {
                 return true;
             }
         }
@@ -366,7 +369,7 @@ public class Solution {
         for (Map.Entry<Character, Integer> entry :
                 freq.entrySet()) {
             int value = entry.getValue();
-            if(value != 0) {
+            if (value != 0) {
                 return false;
 
             }
@@ -379,8 +382,9 @@ public class Solution {
      * 解题思路：使用动态规划进行状态转移，若元素i是数字1-9，则结果加上元素i-1的数量
      * 若元素i-1非零且元素（i-1，i）小于等于26，则结果加上元素i-2的数量
      * 优化：1. 使用元素0作为前元素判断，其值为空
-     *      2. 使用三个元素代替元素i-2，i-1，i节省辅助数组空间
+     * 2. 使用三个元素代替元素i-2，i-1，i节省辅助数组空间
      * 注意：s 只包含数字，并且可能包含前导零
+     *
      * @param s
      * @return
      */
@@ -390,10 +394,10 @@ public class Solution {
         int c = 0;
         for (int i = 1; i < (s.length() + 1); i++) {
             c = 0;
-            if(s.charAt(i-1) != '0') {
+            if (s.charAt(i - 1) != '0') {
                 c += b;
             }
-            if((i > 1) && (s.charAt(i-2) != '0') && (((s.charAt(i-2) - '0') * 10 + (s.charAt(i-1) - '0') <= 26))) {
+            if ((i > 1) && (s.charAt(i - 2) != '0') && (((s.charAt(i - 2) - '0') * 10 + (s.charAt(i - 1) - '0') <= 26))) {
                 c += a;
             }
             a = b;
@@ -402,4 +406,18 @@ public class Solution {
         return c;
     }
 
+    public int combinationSum4(int[] nums, int target) {
+        int n = nums.length;
+        int[] dp = new int[target + 1];
+        dp[0] = 1;
+        for (int i = 1; i <= target; i++) {
+            for (int j = 0; j < n; j++) {
+                if (nums[j] <= i) {
+                    dp[i] += dp[i - nums[j]];
+                }
+            }
+        }
+
+        return dp[target];
+    }
 }
