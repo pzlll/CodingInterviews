@@ -36,4 +36,9 @@ public class SolutionTest {
 
         System.out.println(Arrays.toString(a[0]) + Arrays.toString(a[1]));
     }
+
+    @Test
+    public void nthUglyNumber() {
+        new Solution().nthUglyNumber(10);
+    }
 }

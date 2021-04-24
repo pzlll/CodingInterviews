@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,53 +34,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9268">
-              <caret line="395" column="107" selection-start-line="395" selection-start-column="107" selection-end-line="395" selection-end-column="107" />
-              <folding>
-                <element signature="method#trap#0;class#Solution#0" />
-                <element signature="method#rob#0;class#Solution#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2884">
-              <caret line="338" column="5" selection-start-line="338" selection-start-column="5" selection-end-line="338" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
-                <element signature="method#findKthLargest#0;class#Solution#0" />
-                <element signature="method#quickSort#0;class#Solution#0" />
-                <element signature="method#topKFrequent#0;class#Solution#0" />
-                <element signature="method#frequencySort#0;class#Solution#0" />
-                <element signature="method#wiggleSort#0;class#Solution#0" />
-                <element signature="method#reverse#0;class#Solution#0" />
-                <element signature="method#quickSort#2;class#Solution#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="134" column="30" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52808">
-              <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="18" />
+            <state relative-caret-position="395">
+              <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+              <folding>
+                <element signature="method#findMin2#0;class#Solution#0" />
+                <element signature="method#search#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,19 +83,25 @@
         <option value="$PROJECT_DIR$/src/recursionandcirculation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/recursionandcirculation/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/TrieTest.java" />
+        <option value="$PROJECT_DIR$/src/tree/Trie.java" />
+        <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/math/Trie.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/SortA.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Untitled.java" />
         <option value="$PROJECT_DIR$/src/math/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/array/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/divideandconquer/Solution.java" />
+        <option value="$PROJECT_DIR$/src/doublepointer/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
+        <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
         <option value="$PROJECT_DIR$/src/heap/MedianFinder.java" />
         <option value="$PROJECT_DIR$/src/slidingwindow/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/heap/KthLargest.java" />
@@ -144,21 +113,15 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/NumMatrix.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/MyQueue.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/MyHashSetTest.java" />
         <option value="$PROJECT_DIR$/src/hash/MyHashSet.java" />
-        <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/Solution.java" />
-        <option value="$PROJECT_DIR$/src/math/Solution.java" />
-        <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
-        <option value="$PROJECT_DIR$/src/tree/Trie.java" />
-        <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
-        <option value="$PROJECT_DIR$/src/doublepointer/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
+        <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
       </list>
     </option>
@@ -177,18 +140,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1730" />
-    <option name="height" value="930" />
+    <option name="x" value="654" />
+    <option name="y" value="113" />
+    <option name="width" value="1720" />
+    <option name="height" value="1202" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,24 +174,12 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="binarysearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="divideandconquer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="doublepointer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,86 +188,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="doublepointer" type="462c0819:PsiDirectoryNode" />
               <item name="Solution.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamicprogramming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hash" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
-              <item name="Solution.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="searchandsort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="searchandsort" type="462c0819:PsiDirectoryNode" />
-              <item name="Untitled.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="slidingwindow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stackandqueue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
@@ -333,8 +197,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,6 +209,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618735410545" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -362,15 +227,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="doublepointer" />
-      <recent name="tree" />
       <recent name="binarysearch" />
       <recent name="hash" />
       <recent name="stackandqueue" />
+      <recent name="dynamicprogramming" />
+      <recent name="graph" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -388,7 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.strStr">
+  <component name="RunManager" selected="JUnit.SolutionTest.search">
     <configuration name="MyHashSetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -421,17 +286,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.minDiffInBST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.characterReplacement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="doublepointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.SolutionTest" />
-      <option name="METHOD_NAME" value="minDiffInBST" />
+      <option name="PACKAGE_NAME" value="doublepointer" />
+      <option name="MAIN_CLASS_NAME" value="doublepointer.SolutionTest" />
+      <option name="METHOD_NAME" value="characterReplacement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="binarysearch" />
+      <option name="MAIN_CLASS_NAME" value="binarysearch.SolutionTest" />
+      <option name="METHOD_NAME" value="search" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -448,22 +329,6 @@
       <option name="PACKAGE_NAME" value="binarysearch" />
       <option name="MAIN_CLASS_NAME" value="binarysearch.SolutionTest" />
       <option name="METHOD_NAME" value="searchMatrix" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.strStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="doublepointer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="doublepointer" />
-      <option name="MAIN_CLASS_NAME" value="doublepointer.SolutionTest" />
-      <option name="METHOD_NAME" value="strStr" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -533,8 +398,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SolutionTest.strStr" />
-        <item itemvalue="JUnit.SolutionTest.minDiffInBST" />
+        <item itemvalue="JUnit.SolutionTest.search" />
+        <item itemvalue="JUnit.SolutionTest.characterReplacement" />
         <item itemvalue="JUnit.SolutionTest.searchMatrix" />
         <item itemvalue="JUnit.MyHashSetTest.test" />
         <item itemvalue="JUnit.SolutionTest.calculate2" />
@@ -660,127 +525,57 @@
       <workItem from="1615599465292" duration="2553000" />
       <workItem from="1617072519141" duration="2472000" />
       <workItem from="1617154446538" duration="3345000" />
-      <workItem from="1617587566279" duration="2595000" />
-      <workItem from="1617766441650" duration="874000" />
-      <workItem from="1617844629254" duration="2810000" />
-      <workItem from="1617953631898" duration="2156000" />
-      <workItem from="1618022821218" duration="1165000" />
-      <workItem from="1618297526911" duration="4866000" />
-      <workItem from="1618367606460" duration="2998000" />
-      <workItem from="1618554993044" duration="2973000" />
-      <workItem from="1618641360052" duration="1381000" />
-      <workItem from="1618881929542" duration="5428000" />
-      <workItem from="1618973985062" duration="3128000" />
-      <workItem from="1619071727151" duration="1547000" />
-      <workItem from="1619244684799" duration="594000" />
+      <workItem from="1617587566279" duration="2338000" />
+      <workItem from="1617672284641" duration="2951000" />
+      <workItem from="1617775275060" duration="2526000" />
+      <workItem from="1618130752885" duration="789000" />
+      <workItem from="1618733460632" duration="1156000" />
+      <workItem from="1619158039419" duration="584000" />
     </task>
-    <task id="LOCAL-00001" summary="add project.">
-      <created>1617591861111</created>
+    <task id="LOCAL-00001" summary="add method search.">
+      <created>1618130803013</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1617591861111</updated>
+      <updated>1618130803013</updated>
     </task>
-    <task id="LOCAL-00002" summary="add method findMin.">
-      <created>1617847168732</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1617847168732</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add method findMin2.">
-      <created>1617954955878</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1617954955878</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add method minDiffInBST.">
-      <created>1618302206450</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1618302206450</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update object Trie.">
-      <created>1618370015855</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1618370015856</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add method containsNearbyAlmostDuplicate.">
-      <created>1618882543882</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1618882543882</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add method strStr&#10;.">
-      <created>1618890247702</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1618890247702</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add method numDecodings.">
-      <created>1618987103102</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1618987103102</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add method numDecodings.">
-      <created>1618987889604</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1618987889604</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add method maxSumSubmatrix.">
-      <created>1619100675380</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1619100675380</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 09m 55s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_calculate2 - 2021.03.12 at 12h 00m 24s.xml">
+      <configuration name="SolutionTest.calculate2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 12m 58s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="MyHashSetTest_test - 2021.03.13 at 10h 03m 37s.xml">
+      <configuration name="MyHashSetTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 27m 20s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="MyHashSetTest_test - 2021.03.13 at 10h 05m 44s.xml">
+      <configuration name="MyHashSetTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 27m 28s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="MyHashSetTest_test - 2021.03.13 at 10h 10m 47s.xml">
+      <configuration name="MyHashSetTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 28m 08s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_searchMatrix - 2021.03.30 at 11h 49m 50s.xml">
+      <configuration name="SolutionTest.searchMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 29m 38s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_searchMatrix - 2021.03.30 at 11h 51m 51s.xml">
+      <configuration name="SolutionTest.searchMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 29m 45s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_searchMatrix - 2021.03.30 at 11h 52m 20s.xml">
+      <configuration name="SolutionTest.searchMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 31m 33s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_characterReplacement - 2021.04.06 at 10h 04m 54s.xml">
+      <configuration name="SolutionTest.characterReplacement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 32m 03s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_search - 2021.04.07 at 14h 17m 32s.xml">
+      <configuration name="SolutionTest.search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_strStr - 2021.04.20 at 11h 44m 36s.xml">
-      <configuration name="SolutionTest.strStr" configurationId="JUnit" />
+    <history-entry file="SolutionTest_search - 2021.04.07 at 14h 20m 34s.xml">
+      <configuration name="SolutionTest.search" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="456020000" />
+    <option name="totallyTimeSpent" value="433849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,10 +587,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.17423864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.19037078" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -805,18 +599,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3270869" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925113" weight="0.25463918" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39092872" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012481" side_tool="true" visible="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3257732" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32955715" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32646757" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49875188" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -826,24 +620,56 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7846154" visible="true" weight="0.115826264" />
-      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.21538462" side_tool="true" visible="true" weight="0.115826264" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.8030928" visible="true" weight="0.23685667" />
+      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.19690722" side_tool="true" visible="true" weight="0.17523715" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add project." />
-    <MESSAGE value="add method findMin." />
-    <MESSAGE value="add method findMin2." />
-    <MESSAGE value="add method minDiffInBST." />
-    <MESSAGE value="update object Trie." />
-    <MESSAGE value="add method containsNearbyAlmostDuplicate." />
-    <MESSAGE value="add method strStr&#10;." />
-    <MESSAGE value="add method numDecodings." />
-    <MESSAGE value="add method maxSumSubmatrix." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method maxSumSubmatrix." />
+    <MESSAGE value="add method search." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method search." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -898,15 +724,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/binarysearch/Solution.java</url>
-          <line>33</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/doublepointer/Solution.java</url>
-          <line>440</line>
+          <url>file://$PROJECT_DIR$/src/binarysearch/Solution.java</url>
+          <line>73</line>
           <properties />
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -916,13 +742,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java">
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/String.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/ComparableTimSort.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/runners/model/FrameworkMethod.class" />
+    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113428">
-          <caret line="4138" column="22" selection-start-line="4138" selection-start-column="22" selection-end-line="4138" selection-end-column="22" />
+        <state relative-caret-position="2016">
+          <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="169" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#myAtoi#0;class#Solution#0" />
+            <element signature="method#checkStraightLine#0;class#Solution#0" />
+            <element signature="method#rotate#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backtracking/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Objects.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java" />
     <entry file="file://$PROJECT_DIR$/src/array/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3024">
@@ -937,6 +788,21 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#User#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#kthSmallest#0;class#Solution#0" />
+            <element signature="method#midTraverse#0;class#Solution#0" />
+            <element signature="class#Node#0;class#Solution#0" />
+            <element signature="method#connect#0;class#Solution#0" />
+            <element signature="method#levelOrder#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
@@ -965,35 +831,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62160">
-          <caret line="2435" column="8" selection-start-line="2435" selection-start-column="8" selection-end-line="2437" selection-end-column="9" />
-          <folding>
-            <element signature="e#86062#86063#0" expanded="true" />
-            <element signature="e#86109#86110#0" expanded="true" />
-            <element signature="e#97058#97059#0" expanded="true" />
-            <element signature="e#97129#97130#0" expanded="true" />
-            <element signature="e#119978#119979#0" expanded="true" />
-            <element signature="e#120033#120034#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Collections.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/ThreadLocal.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
     <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2464">
@@ -1022,6 +862,24 @@
             <element signature="method#romanToInt#0;class#SolutionTest#0" />
             <element signature="e#1708#1709#0" expanded="true" />
             <element signature="e#1750#1751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1372">
+          <caret line="284" column="26" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
+            <element signature="method#findKthLargest#0;class#Solution#0" />
+            <element signature="method#quickSort#0;class#Solution#0" />
+            <element signature="method#topKFrequent#0;class#Solution#0" />
+            <element signature="method#frequencySort#0;class#Solution#0" />
+            <element signature="method#wiggleSort#0;class#Solution#0" />
+            <element signature="method#reverse#0;class#Solution#0" />
+            <element signature="method#quickSort#2;class#Solution#0" />
           </folding>
         </state>
       </provider>
@@ -1075,6 +933,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/TreeMap.java" />
     <entry file="file://$PROJECT_DIR$/src/slidingwindow/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -1095,13 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/runners/ParentRunner.class" />
     <entry file="file://$PROJECT_DIR$/src/graph/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2520">
@@ -1109,28 +962,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[3]无重复字符的最长子串.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23240">
-          <caret line="1042" column="4" selection-start-line="1042" selection-start-column="4" selection-end-line="1047" selection-end-column="5" />
-          <folding>
-            <element signature="method#duplicate#0;class#Solution#0" />
-            <element signature="method#multiply#0;class#Solution#0" />
-            <element signature="method#twoSum#0;class#Solution#0" />
-            <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
-            <element signature="method#getKElement#0;class#Solution#0" />
-            <element signature="method#fib#0;class#Solution#0" />
-            <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
-            <element signature="method#isInside#0;class#Solution#0" />
-            <element signature="method#getRow#0;class#Solution#0" />
-            <element signature="method#flipAndInvertImage#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../LeetcodePractice/leetcode/editor/cn/[3]无重复字符的最长子串.java" />
     <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5432">
@@ -1199,6 +1031,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5404">
+          <caret line="257" column="60" selection-start-line="257" selection-start-column="60" selection-end-line="257" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#trap#0;class#Solution#0" />
+            <element signature="method#rob#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1237,30 +1081,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="354" column="19" selection-start-line="354" selection-start-column="19" selection-end-line="354" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="600" lean-forward="true" selection-start-line="600" selection-end-line="600" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/LinkedList.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/List.java" />
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
+        <state relative-caret-position="772">
           <caret line="61" column="25" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1271,14 +1098,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hash/MyHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
+        <state relative-caret-position="532">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="855">
           <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1288,63 +1115,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12460">
-          <caret line="483" column="5" selection-start-line="483" selection-start-column="5" selection-end-line="483" selection-end-column="5" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-            <element signature="e#15586#15587#0" expanded="true" />
-            <element signature="e#15631#15632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="173" column="52" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#myAtoi#0;class#Solution#0" />
-            <element signature="method#checkStraightLine#0;class#Solution#0" />
-            <element signature="method#rotate#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hash/MyHashSetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="266">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1352,62 +1125,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/NavigableMap.java">
+    <entry file="file://$PROJECT_DIR$/src/doublepointer/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="180" column="6" selection-start-line="180" selection-start-column="6" selection-end-line="180" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="390" column="66" lean-forward="true" selection-start-line="390" selection-start-column="66" selection-end-line="390" selection-end-column="66" />
-          <folding>
-            <element signature="e#5767#5768#0" expanded="true" />
-            <element signature="e#5800#5801#0" expanded="true" />
-            <element signature="e#11471#11472#0" expanded="true" />
-            <element signature="e#11513#11514#0" expanded="true" />
-            <element signature="e#26395#26396#0" expanded="true" />
-            <element signature="e#26449#26450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-          <folding>
-            <element signature="e#4697#4698#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#10673#10674#0" expanded="true" />
-            <element signature="e#10716#10717#0" expanded="true" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16265#16266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="137" column="27" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="27" />
+        <state relative-caret-position="152">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#kthSmallest#0;class#Solution#0" />
-            <element signature="method#midTraverse#0;class#Solution#0" />
-            <element signature="class#Node#0;class#Solution#0" />
-            <element signature="method#connect#0;class#Solution#0" />
-            <element signature="method#levelOrder#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="1042" column="4" selection-start-line="1042" selection-start-column="4" selection-end-line="1047" selection-end-column="5" />
+          <folding>
+            <element signature="method#duplicate#0;class#Solution#0" />
+            <element signature="method#multiply#0;class#Solution#0" />
+            <element signature="method#twoSum#0;class#Solution#0" />
+            <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
+            <element signature="method#getKElement#0;class#Solution#0" />
+            <element signature="method#fib#0;class#Solution#0" />
+            <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
+            <element signature="method#isInside#0;class#Solution#0" />
+            <element signature="method#getRow#0;class#Solution#0" />
+            <element signature="method#flipAndInvertImage#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="421" column="21" selection-start-line="421" selection-start-column="15" selection-end-line="421" selection-end-column="21" />
+        <state relative-caret-position="4370">
+          <caret line="419" column="34" selection-start-line="419" selection-start-column="34" selection-end-line="419" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#twoSum#0;class#Solution#0" />
@@ -1419,62 +1169,25 @@
             <element signature="method#isMatcc#0;class#Solution#0" />
             <element signature="method#moveZeroes#0;class#Solution#0" />
             <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
-            <element signature="method#maxScore#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/doublepointer/SolutionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9268">
-          <caret line="395" column="107" selection-start-line="395" selection-start-column="107" selection-end-line="395" selection-end-column="107" />
-          <folding>
-            <element signature="method#trap#0;class#Solution#0" />
-            <element signature="method#rob#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2884">
-          <caret line="338" column="5" selection-start-line="338" selection-start-column="5" selection-end-line="338" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
-            <element signature="method#findKthLargest#0;class#Solution#0" />
-            <element signature="method#quickSort#0;class#Solution#0" />
-            <element signature="method#topKFrequent#0;class#Solution#0" />
-            <element signature="method#frequencySort#0;class#Solution#0" />
-            <element signature="method#wiggleSort#0;class#Solution#0" />
-            <element signature="method#reverse#0;class#Solution#0" />
-            <element signature="method#quickSort#2;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52808">
-          <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="134" column="30" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="30" />
+        <state relative-caret-position="395">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding>
+            <element signature="method#findMin2#0;class#Solution#0" />
+            <element signature="method#search#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1484,10 +1197,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>CodingInterviews:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1495,6 +1210,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
