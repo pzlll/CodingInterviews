@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="9268">
               <caret line="395" column="107" selection-start-line="395" selection-start-column="107" selection-end-line="395" selection-end-column="107" />
               <folding>
                 <element signature="method#trap#0;class#Solution#0" />
@@ -50,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
+            <state relative-caret-position="2884">
               <caret line="338" column="5" selection-start-line="338" selection-start-column="5" selection-end-line="338" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+            <state relative-caret-position="488">
+              <caret line="134" column="30" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -334,8 +333,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -672,7 +671,8 @@
       <workItem from="1618641360052" duration="1381000" />
       <workItem from="1618881929542" duration="5428000" />
       <workItem from="1618973985062" duration="3128000" />
-      <workItem from="1619071727151" duration="1527000" />
+      <workItem from="1619071727151" duration="1547000" />
+      <workItem from="1619244684799" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="add project.">
       <created>1617591861111</created>
@@ -737,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618987889604</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add method maxSumSubmatrix.">
+      <created>1619100675380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619100675380</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -773,7 +780,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455406000" />
+    <option name="totallyTimeSpent" value="456020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,7 +795,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.17274089" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.17423864" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -805,11 +812,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007489" side_tool="true" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012481" side_tool="true" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3257732" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49925113" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49875188" visible="true" weight="0.3298969" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -819,8 +826,8 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.78615385" visible="true" weight="0.115826264" />
-      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.21384615" side_tool="true" visible="true" weight="0.115826264" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7846154" visible="true" weight="0.115826264" />
+      <window_info anchor="right" id="leetcode" order="10" sideWeight="0.21538462" side_tool="true" visible="true" weight="0.115826264" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -835,7 +842,8 @@
     <MESSAGE value="add method containsNearbyAlmostDuplicate." />
     <MESSAGE value="add method strStr&#10;." />
     <MESSAGE value="add method numDecodings." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method numDecodings." />
+    <MESSAGE value="add method maxSumSubmatrix." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maxSumSubmatrix." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1429,7 +1437,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="9268">
           <caret line="395" column="107" selection-start-line="395" selection-start-column="107" selection-end-line="395" selection-end-column="107" />
           <folding>
             <element signature="method#trap#0;class#Solution#0" />
@@ -1438,16 +1446,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52808">
-          <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="2884">
           <caret line="338" column="5" selection-start-line="338" selection-start-column="5" selection-end-line="338" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1463,10 +1464,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52808">
+          <caret line="1957" column="18" selection-start-line="1957" selection-start-column="18" selection-end-line="1957" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="125" column="7" lean-forward="true" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+        <state relative-caret-position="488">
+          <caret line="134" column="30" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="30" />
         </state>
       </provider>
     </entry>
