@@ -1,6 +1,7 @@
 package math;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Solution {
     /**
@@ -186,38 +187,6 @@ public class Solution {
             }
         }
         return n == 1;
-    }
-
-    /**
-     * 解题思路：找到第n个数，则使用最小堆，每次拿出堆顶元素，并存入其2、3、5倍（用集合去重）
-     * 可保证第n次拿的数是第n小的数
-     * 使用动态规划优化，降低时间复杂度
-     * 使用三个指针和dp数组（第i个元素存放第i个丑数），每次选择最小值，并将对应指针加一
-     * 转移方程dp[i] = min{dp[p1]*2, dp[p2]*3, dp[p3]*5}
-     * @param n
-     * @return
-     */
-    public int nthUglyNumber(int n) {
-        if(n <= 0) {
-            return 0;
-        }
-        Set<Integer> set = new HashSet<>();
-        PriorityQueue<Integer> queue = new PriorityQueue<>();
-        int i = 1;
-        queue.offer(1);
-        int[] factor = {2,3,5};
-        while(i < n) {
-            Integer min = queue.poll();
-            for (int j = 0; j < factor.length; j++) {
-                int val = factor[j] * i;
-                if(set.add(val)) {
-                    queue.offer(val);
-                }
-            }
-            i++;
-        }
-
-        return queue.poll();
     }
 
 }
