@@ -283,6 +283,7 @@ public class Solution {
 
     /**
      * 解题关键：自定义排序，先转化为字符串，用ab和ba的字符串大小来判断a和b的大小
+     *
      * @param nums
      * @return
      */
@@ -301,7 +302,7 @@ public class Solution {
             }
         });
 
-        if(list.get(0).equals("0")) {
+        if (list.get(0).equals("0")) {
             return "0";
         }
 
@@ -311,5 +312,29 @@ public class Solution {
             str.append(s);
         }
         return str.toString();
+    }
+
+    /**
+     * 解题思路：查找元素i前面k个元素，看是否有在区间（x-t, x+t）之间，若有，则返回成功
+     * 使用二叉树存储前k个元素，并进行查找
+     * @param nums
+     * @param k
+     * @param t
+     * @return
+     */
+    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+        TreeSet<Long> treeSet = new TreeSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            Long ceiling = treeSet.ceiling((long) nums[i] - (long) t);
+            if (ceiling != null && ceiling <=  ((long)nums[i] + (long)t)) {
+                return true;
+            }
+            treeSet.add((long) nums[i]);
+            if (treeSet.size() > k) {
+                treeSet.remove((long) nums[i - k]);
+            }
+        }
+
+        return false;
     }
 }

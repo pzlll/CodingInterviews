@@ -438,4 +438,59 @@ public class Solution {
         return slow;
     }
 
+    /**
+     * 解题思路：使用kmp算法对模式串查找最长前缀并存储
+     * 用双指针进行匹配
+     * @param haystack
+     * @param needle
+     * @return
+     */
+    public int strStr(String haystack, String needle) {
+        if(needle == null || needle.length() == 0) {
+            return 0;
+        }
+        int[] ret = new int[needle.length()];
+        calKMP(needle,ret);
+
+        int i = 0, j = 0;
+        while(i < haystack.length() && j < needle.length()) {
+            if(j == -1) {
+                i++;
+                j = 0;
+            }else if(haystack.charAt(i) == needle.charAt(j)) {
+                i++;
+                j++;
+            }else{
+                j = ret[j];
+            }
+        }
+        if(j == needle.length()) {
+            return (i - j);
+        }else {
+            return -1;
+        }
+    }
+
+    private void calKMP(String needle, int[] ret) {
+        int i = 0;
+        int j = -1;
+        ret[0] = -1;
+        while((i+1) < needle.length()) {
+            if(j == -1) {
+                ret[++i] = 0;
+                j = 0;
+
+            }else if(needle.charAt(i) == needle.charAt(j)) {
+                i++;
+                j++;
+                ret[i] = j;
+
+
+            }else {
+                j = ret[j];
+            }
+        }
+
+    }
+
 }

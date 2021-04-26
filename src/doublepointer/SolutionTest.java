@@ -32,4 +32,9 @@ public class SolutionTest {
         int k = 3;
         new Solution().maxScore(a, k);
     }
+
+    @Test
+    public void strStr() {
+        new Solution().strStr("needle","ee");
+    }
 }
