@@ -35,4 +35,33 @@ public class SolutionTest {
         r4.right = null;
         new Solution().minDiffInBST(root);
     }
+
+    @Test
+    public void isValidBST() {
+        TreeNode root = new TreeNode();
+        root.val = 5;
+
+        TreeNode r1 = new TreeNode();
+        r1.val = 4;
+        root.left = r1;
+        r1.left = null;
+        r1.right = null;
+
+        TreeNode r2 = new TreeNode();
+        r2.val = 6;
+        root.right = r2;
+
+        TreeNode r3 = new TreeNode();
+        r3.val = 3;
+        r3.right = null;
+        r3.left = null;
+        r2.left = r3;
+
+        TreeNode r4 = new TreeNode();
+        r4.val = 7;
+        r4.left = null;
+        r4.right = null;
+        r2.right = r4;
+        new Solution().isValidBST(root);
+    }
 }
