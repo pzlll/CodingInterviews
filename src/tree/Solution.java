@@ -2,10 +2,7 @@ package tree;
 
 import org.omg.CORBA.INTERNAL;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 class TreeNode {
     int val;
@@ -167,15 +164,31 @@ public class Solution {
     }
 
     /**
-     * 解题思路：设置左右边界
-     *
+     * 解题思路：方法一：设置左右边界
+     *          方法二：使用中序遍历
      * @param root
      * @return
      */
     public boolean isValidBST(TreeNode root) {
-        long min = Long.MIN_VALUE;
-        long max = Long.MAX_VALUE;
-        return isValidBST2(root, min, max);
+//        long min = Long.MIN_VALUE;
+//        long max = Long.MAX_VALUE;
+//        return isValidBST2(root, min, max);
+        Stack<TreeNode> stack = new Stack<>();
+        long preVal = Long.MIN_VALUE;
+        while(!stack.isEmpty() || root != null) {
+            while(root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if(root.val < preVal) {
+                return false;
+            }
+            preVal = root.val;
+            root = root.right;
+        }
+
+        return true;
     }
 
     private boolean isValidBST2(TreeNode root, long min, long max) {
