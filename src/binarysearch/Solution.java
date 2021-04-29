@@ -7,18 +7,19 @@ public class Solution {
      * 解题思路：通过元素与下一元素的大小关系可确定峰值元素位置
      * 若当前元素小于下一元素，则峰值在右侧
      * 若当前元素大于下一元素，则峰值在左侧（包含当前元素）
+     *
      * @param nums
      * @return
      */
     public int findPeakElement(int[] nums) {
         int start = 0;
-        int end = nums.length-1;
-        while(start < end) {
-            int mid = start + (end -start)/2;
-            if(nums[mid] < nums[mid+1]) {
+        int end = nums.length - 1;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] < nums[mid + 1]) {
                 end = mid;
-            }else {
-                start = mid+1;
+            } else {
+                start = mid + 1;
             }
         }
         return start;
@@ -26,6 +27,7 @@ public class Solution {
 
     /**
      * 解题思路：使用二分查找，先对列查找，找到起始元素小于目标值的行，然后对其行进行二分查找
+     *
      * @param matrix
      * @param target
      * @return
@@ -39,14 +41,14 @@ public class Solution {
 
     private boolean searchForTarget(int[] matrix, int target) {
         int start = 0;
-        int end = matrix.length-1;
-        while(start <= end) {
+        int end = matrix.length - 1;
+        while (start <= end) {
             int mid = (end + start) / 2;
-            if(matrix[mid] == target) {
+            if (matrix[mid] == target) {
                 return true;
-            }else if(matrix[mid] < target) {
+            } else if (matrix[mid] < target) {
                 start = mid + 1;
-            }else {
+            } else {
                 end = mid - 1;
             }
         }
@@ -56,13 +58,13 @@ public class Solution {
 
     private int searchForColumn(int[][] matrix, int target) {
         int start = 0;
-        int end  = matrix.length - 1;
-        while(start < end) {
+        int end = matrix.length - 1;
+        while (start < end) {
             //由于选值偏向小的一行，所以确保剩余两行时，中间值偏向大的一行
             int mid = (end + start + 1) / 2;
-            if(matrix[mid][0] <= target) {
+            if (matrix[mid][0] <= target) {
                 start = mid;
-            }else{
+            } else {
                 end = mid - 1;
             }
         }
@@ -72,7 +74,7 @@ public class Solution {
     }
 
     /**
-     *解题思路：观察数组发现，最小值左边元素比最右元素大，最小值右边元素比最右元素小
+     * 解题思路：观察数组发现，最小值左边元素比最右元素大，最小值右边元素比最右元素小
      * 使用二分查找，若中间值大于最右元素，则查找右子区间（不包含中间值）
      * 若中间值小于最右元素，则查找左子区间（包含中间值）
      * 直到区间长度为一，则找到最小值
@@ -83,15 +85,15 @@ public class Solution {
     public int findMin(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        while(left < right) {
+        while (left < right) {
             int mid = (right - left) / 2 + left;
-            if(nums[mid] >= nums[left]) {
-                if(nums[left] < nums[right]) {
+            if (nums[mid] >= nums[left]) {
+                if (nums[left] < nums[right]) {
                     right = mid - 1;
-                }else {
+                } else {
                     left = mid + 1;
                 }
-            }else {
+            } else {
                 right = mid;
             }
         }
@@ -103,20 +105,21 @@ public class Solution {
      * 解题思路：若左，中和右指针的元素相同，则无法判定最小值在哪边，所以左指针向后移，右指针向前移
      * 若中间元素小于等于最右元素，则最小值在左边（包括中间元素）
      * 若中间元素大于最右元素，则最小值在右边（不包括中间元素）
+     *
      * @param nums
      * @return
      */
     public int findMin2(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        while(left < right) {
+        while (left < right) {
             int mid = (right - left) / 2 + left;
-            if(nums[mid] == nums[right] && nums[left] == nums[right]) {
+            if (nums[mid] == nums[right] && nums[left] == nums[right]) {
                 left++;
                 right--;
-            }else if(nums[mid] <= nums[right]){
+            } else if (nums[mid] <= nums[right]) {
                 right = mid;
-            }else{
+            } else {
                 left = mid + 1;
             }
         }
@@ -125,9 +128,10 @@ public class Solution {
 
     /**
      * 解题思路：1.对行设置上下界限
-     *          2.用数组存储每列的前缀和
-     *          3.把区间Sr - Sl<=k的最大值转化为S1 >=Sr - k的最小值
-     *          4.用二叉树的ceiling作为第三步查找的工具
+     * 2.用数组存储每列的前缀和
+     * 3.把区间Sr - Sl<=k的最大值转化为S1 >=Sr - k的最小值
+     * 4.用二叉树的ceiling作为第三步查找的工具
+     *
      * @param matrix
      * @param k
      * @return
@@ -150,7 +154,7 @@ public class Solution {
                         sum) {
                     s += v;
                     Integer ceiling = set.ceiling(s - k);
-                    if(ceiling != null) {
+                    if (ceiling != null) {
                         max = Math.max(max, s - ceiling);
                     }
                     set.add(s);
@@ -160,27 +164,28 @@ public class Solution {
 
         return max;
     }
+
     public boolean search(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
-        while(start <= end) {
+        while (start <= end) {
             int mid = (end - start) / 2 + start;
-            if(nums[mid] == target) {
+            if (nums[mid] == target) {
                 return true;
             }
-            if(nums[start] == nums[end] && nums[start] == nums[mid]) {
+            if (nums[start] == nums[end] && nums[start] == nums[mid]) {
                 start = start + 1;
                 end = end - 1;
-            }else if(nums[start] <= nums[mid]) {
-                if(target >= nums[start] && target < nums[mid]) {
+            } else if (nums[start] <= nums[mid]) {
+                if (target >= nums[start] && target < nums[mid]) {
                     end = mid - 1;
-                }else{
+                } else {
                     start = mid + 1;
                 }
-            }else {
-                if(target > nums[mid] && target <= nums[end]) {
+            } else {
+                if (target > nums[mid] && target <= nums[end]) {
                     start = mid + 1;
-                }else {
+                } else {
                     end = mid - 1;
                 }
             }
@@ -192,8 +197,8 @@ public class Solution {
     public int removeDuplicates(int[] nums) {
         int i = 1;
         int j = 1;
-        while(j < nums.length) {
-            if(nums[j] != nums[j -
+        while (j < nums.length) {
+            if (nums[j] != nums[j -
                     1]) {
                 nums[i] = nums[j];
                 i++;
@@ -201,5 +206,47 @@ public class Solution {
             j++;
         }
         return i;
+    }
+
+    /**
+     * 解题思路：找出在D天内的最小值
+     * 1.使用二分查找
+     * 2.定左右边界
+     * 3.判定中间值，若所需天数小于等于D，则保留左半区间和中间值，若所需天数大于D，则保留右半区间
+     *
+     * @param weights
+     * @param D
+     * @return
+     */
+    public int shipWithinDays(int[] weights, int D) {
+        int left = 0;
+        int right = 0;
+        for (int i = 0; i < weights.length; i++) {
+            left = Math.max(left, weights[i]);
+            right += weights[i];
+        }
+
+        while (left < right) {
+            int mid = (right - left) / 2 + left;
+            int day = 1;
+            int sum = 0;
+            for (int i = 0; i < weights.length; i++) {
+                if ((sum + weights[i]) > mid) {
+                    day++;
+                    sum = 0;
+                } else {
+
+                }
+                sum += weights[i];
+            }
+
+            if (day > D) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        return left;
     }
 }

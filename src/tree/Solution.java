@@ -1,9 +1,8 @@
 package tree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import org.omg.CORBA.INTERNAL;
+
+import java.util.*;
 
 class TreeNode {
     int val;
@@ -132,6 +131,7 @@ public class Solution {
     /**
      * 解题思路：1. 二叉搜索树中序遍历为递增序列
      * 2.递增序列的最小值为相邻元素的最小值
+     *
      * @param root
      * @return
      */
@@ -160,6 +160,55 @@ public class Solution {
 
         DFS(t.right);
 
+
+    }
+
+    /**
+     * 解题思路：方法一：设置左右边界
+     *          方法二：使用中序遍历
+     * @param root
+     * @return
+     */
+    public boolean isValidBST(TreeNode root) {
+//        long min = Long.MIN_VALUE;
+//        long max = Long.MAX_VALUE;
+//        return isValidBST2(root, min, max);
+        Stack<TreeNode> stack = new Stack<>();
+        long preVal = Long.MIN_VALUE;
+        while(!stack.isEmpty() || root != null) {
+            while(root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if(root.val < preVal) {
+                return false;
+            }
+            preVal = root.val;
+            root = root.right;
+        }
+
+        return true;
+    }
+
+    private boolean isValidBST2(TreeNode root, long min, long max) {
+        if (root == null) {
+            return true;
+        }
+        if (root.left != null && (root.left.val <= min || root.left.val >= root.val)) {
+            return false;
+        }
+        if (!isValidBST2(root.left, min, root.val)) {
+            return false;
+        }
+        if (root.right != null && (root.right.val <= root.val || root.right.val >= max)) {
+            return false;
+        }
+        if (!isValidBST2(root.right, root.val, max)) {
+            return false;
+        }
+
+        return true;
 
     }
 
