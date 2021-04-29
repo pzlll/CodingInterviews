@@ -472,5 +472,35 @@ public class Solution {
 
         return dp[target];
     }
+    private Boolean[][] rec;
+
+    public boolean canCross(int[] stones) {
+
+        int n = stones.length;
+        rec = new Boolean[n][n];
+        return dfs2(stones, 0, 0);
+
+
+    }
+
+    private boolean dfs2(int[] stones, int i, int dist) {
+        if(i == stones.length - 1) {
+            return true;
+        }
+        if(rec[i][dist] != null) {
+            return rec[i][dist];
+        }
+
+        for(int j = (dist - 1); j <= (1 + dist); j++) {
+            if(j > 0) {
+                int k = Arrays.binarySearch(stones, i + 1, stones.length, j + stones[i]);
+                if(k >= 0 && dfs2(stones, k, j)) {
+                    return rec[i][dist] = true;
+                }
+            }
+        }
+
+        return rec[i][dist] = false;
+    }
 
 }

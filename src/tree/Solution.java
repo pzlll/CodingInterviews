@@ -1,6 +1,7 @@
 package tree;
 
 import org.omg.CORBA.INTERNAL;
+import sun.reflect.generics.tree.Tree;
 
 import java.util.*;
 
@@ -210,6 +211,72 @@ public class Solution {
 
         return true;
 
+    }
+
+    /**
+     * 解题思路：
+     * 方法一：使用数组存储中序遍历结果再建树
+     * 方法二：在中序遍历修改原二叉树
+     * @param root
+     * @return
+     */
+    public TreeNode increasingBST(TreeNode root) {
+//        List<Integer>  ret = new ArrayList<>();
+//        BST2(root, ret);
+//        TreeNode res = new TreeNode();
+//        for (Integer val :
+//             ret) {
+//            TreeNode t = new TreeNode(val);
+//            res.right = t;
+//            res = t;
+//        }
+//
+//        return res.right;
+        TreeNode pre = new TreeNode(-1);
+        TreeNode p = pre;
+        Stack<TreeNode> stack = new Stack<>();
+        while (!stack.isEmpty() || root != null) {
+            while(root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            root.left = null;
+            pre.right = root;
+            pre = root;
+            root = root.right;
+        }
+
+        return p.right;
+    }
+
+    private void BST2(TreeNode root, List<Integer> ret) {
+        if(root == null) {
+            return;
+        }
+        BST2(root.left, ret);
+        ret.add(root.val);
+        BST2(root.right, ret);
+    }
+
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        Stack<TreeNode> stack = new Stack<>();
+        int sum = 0;
+        while(!stack.isEmpty() || root != null) {
+            while(root!=null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if(root.val >= low && root.val <= high) {
+                sum += root.val;
+            }else if(root.val > high) {
+                return sum;
+            }
+            root = root.right;
+        }
+
+        return sum;
     }
 
 }
