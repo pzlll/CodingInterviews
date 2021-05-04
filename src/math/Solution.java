@@ -1,7 +1,6 @@
 package math;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Solution {
     /**
@@ -172,21 +171,46 @@ public class Solution {
 
     /**
      * 解题思路：判断数是否只包含质数（2，3，5），则把数中的质数（2，3，5）剔除，看剩下的数是否为1
+     *
      * @param n
      * @return
      */
     public boolean isUgly(int n) {
-        if(n <= 0) {
+        if (n <= 0) {
             return false;
         }
-        int[] factors = {2,3,5};
+        int[] factors = {2, 3, 5};
         for (int factor :
                 factors) {
-            while(n % factor ==0) {
+            while (n % factor == 0) {
                 n /= factor;
             }
         }
         return n == 1;
+    }
+
+    /**
+     * 解题思路：
+     * 方法一：使用哈希表存储键值对，遍历哈希表，找到值为1的键
+     * 方法二：使用位运算，对于32位（int）的每一位，将其加起来并和3取余得到该位的值，再将每一位合并可得结果
+     *
+     * @param nums
+     * @return
+     */
+    public int singleNumber(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        }
+
+        for (Map.Entry<Integer, Integer> entry :
+                map.entrySet()) {
+            if (entry.getValue() == 1) {
+                return entry.getKey();
+            }
+        }
+
+        return -1;
     }
 
 }
