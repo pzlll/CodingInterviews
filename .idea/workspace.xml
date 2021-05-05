@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="545" column="25" lean-forward="true" selection-start-line="545" selection-start-column="25" selection-end-line="545" selection-end-column="25" />
+            <state relative-caret-position="279">
+              <caret line="564" column="34" selection-start-line="564" selection-start-column="34" selection-end-line="564" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,6 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,8 +229,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -568,7 +568,8 @@
       <workItem from="1619763696520" duration="1120000" />
       <workItem from="1620089537238" duration="1270000" />
       <workItem from="1620108706294" duration="1818000" />
-      <workItem from="1620193695628" duration="361000" />
+      <workItem from="1620193695628" duration="2468000" />
+      <workItem from="1620198023281" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -626,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620089805403</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add method minCost.">
+      <created>1620194284775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620194284775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -662,7 +670,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452672000" />
+    <option name="totallyTimeSpent" value="455194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -677,7 +685,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20811099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.21024546" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -694,11 +702,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5048026" side_tool="true" visible="true" weight="0.32824427" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32646757" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5058698" side_tool="true" visible="true" weight="0.15921482" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49519745" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4941302" visible="true" weight="0.15921482" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -762,7 +770,8 @@
     <MESSAGE value="add method isValidBST." />
     <MESSAGE value="add method canCross." />
     <MESSAGE value="add method singleNumber." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method singleNumber." />
+    <MESSAGE value="add method minCost." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method minCost." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1277,8 +1286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="545" column="25" lean-forward="true" selection-start-line="545" selection-start-column="25" selection-end-line="545" selection-end-column="25" />
+        <state relative-caret-position="279">
+          <caret line="564" column="34" selection-start-line="564" selection-start-column="34" selection-end-line="564" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

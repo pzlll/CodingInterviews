@@ -556,4 +556,44 @@ public class Solution {
 
         return ans == max ? -1 : ans;
     }
+
+    /**
+     * 解题思路：
+     * 方法一：使用数组，数组下标为数字的值，其值为该数字的总和，对其进行选择，
+     * 方法：rob dp[i] = max(dp[i-2] + v[i], dp[i-1])
+     * 方法二：对数组进行排序，将数组分为多个连续子数组
+     * 对于每个连续子数组，使用方法rob选择该子数组的最大值
+     * @param nums
+     * @return
+     */
+    public int deleteAndEarn(int[] nums) {
+        if(nums.length == 0) {
+            return 0;
+        }
+        int max = 0;
+        int n = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            max = Math.max(max, nums[i]);
+            if(nums[i] < 0) {
+                return -1;
+            }
+        }
+        int[] sum = new int[max + 1];
+        for (int i = 0; i < n; i++) {
+            sum[nums[i]] += nums[i];
+        }
+
+//        int[] res = new int[max + 3];
+        int s = 0;
+        int m = 0;
+        int l = 0;
+        for (int i = 0; i < (max + 1); i++) {
+            l = Math.max(s + sum[i], m);
+            s = m;
+            m = l;
+        }
+
+
+        return l;
+    }
 }
