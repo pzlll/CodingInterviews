@@ -4,32 +4,32 @@ import java.util.*;
 
 public class Solution {
     /**
-     * 关键是判断溢出
+     * !关键是判断溢出
+     * 解题思路：若得到的结果除以10不等于原先的数，则溢出
      *
      * @param x
      * @return
      */
     public int reverse(int x) {
-        Queue<Integer> queue = new LinkedList<>();
-        int n = Math.abs(x);
-        while (n > 0) {
-            queue.add(n % 10);
-            n = n / 10;
-        }
+        boolean isPositive = x > 0 ? true : false;
+        x = Math.abs(x);
+        int res = 0;
+        while(x > 0) {
+            int i = x % 10;
+            int temp = res;
 
-        int sum = 0;
-        while (!queue.isEmpty()) {
-            int k = sum;
-            sum = sum * 10 + queue.poll();
-            if (sum / 10 != k) {
+            res = res * 10 + i;
+
+            if(isPositive && temp != (res / 10)) {
                 return 0;
             }
+            if(!isPositive && (-temp) < -(res /10)) {
+                return 0;
+            }
+            x = x / 10;
         }
 
-
-        if (x < 0)
-            sum = -sum;
-        return sum;
+        return isPositive ? res : -res;
     }
 
     /**
@@ -189,28 +189,6 @@ public class Solution {
         return n == 1;
     }
 
-    /**
-     * 解题思路：
-     * 方法一：使用哈希表存储键值对，遍历哈希表，找到值为1的键
-     * 方法二：使用位运算，对于32位（int）的每一位，将其加起来并和3取余得到该位的值，再将每一位合并可得结果
-     *
-     * @param nums
-     * @return
-     */
-    public int singleNumber(int[] nums) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
-        }
 
-        for (Map.Entry<Integer, Integer> entry :
-                map.entrySet()) {
-            if (entry.getValue() == 1) {
-                return entry.getKey();
-            }
-        }
-
-        return -1;
-    }
 
 }
