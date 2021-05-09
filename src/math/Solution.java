@@ -1,36 +1,35 @@
 package math;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Solution {
     /**
-     * 关键是判断溢出
+     * !关键是判断溢出
+     * 解题思路：若得到的结果除以10不等于原先的数，则溢出
      *
      * @param x
      * @return
      */
     public int reverse(int x) {
-        Queue<Integer> queue = new LinkedList<>();
-        int n = Math.abs(x);
-        while (n > 0) {
-            queue.add(n % 10);
-            n = n / 10;
-        }
+        boolean isPositive = x > 0 ? true : false;
+        x = Math.abs(x);
+        int res = 0;
+        while(x > 0) {
+            int i = x % 10;
+            int temp = res;
 
-        int sum = 0;
-        while (!queue.isEmpty()) {
-            int k = sum;
-            sum = sum * 10 + queue.poll();
-            if (sum / 10 != k) {
+            res = res * 10 + i;
+
+            if(isPositive && temp != (res / 10)) {
                 return 0;
             }
+            if(!isPositive && (-temp) < -(res /10)) {
+                return 0;
+            }
+            x = x / 10;
         }
 
-
-        if (x < 0)
-            sum = -sum;
-        return sum;
+        return isPositive ? res : -res;
     }
 
     /**
@@ -172,21 +171,24 @@ public class Solution {
 
     /**
      * 解题思路：判断数是否只包含质数（2，3，5），则把数中的质数（2，3，5）剔除，看剩下的数是否为1
+     *
      * @param n
      * @return
      */
     public boolean isUgly(int n) {
-        if(n <= 0) {
+        if (n <= 0) {
             return false;
         }
-        int[] factors = {2,3,5};
+        int[] factors = {2, 3, 5};
         for (int factor :
                 factors) {
-            while(n % factor ==0) {
+            while (n % factor == 0) {
                 n /= factor;
             }
         }
         return n == 1;
     }
+
+
 
 }

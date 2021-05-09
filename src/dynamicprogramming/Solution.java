@@ -37,7 +37,7 @@ public class Solution {
     public int rob(int[] nums) {
         boolean[] used = new boolean[nums.length];
 
-        if (nums == null || nums.length == 0) {
+        if (nums.length == 0) {
             return 0;
         }
 
@@ -91,9 +91,6 @@ public class Solution {
      * 解题思路：
      * 方法一：使用动态规划状态转移方程 count[i] = Max(count[0]..count[i-1]) 前提是前面元素小于该元素
      * 方法二：使用贪心算法+二分查找：维护最小值数组 若元素大于该数组的元素，则加入，否则替换里面的元素
-     *
-     * @param nums
-     * @return
      */
     public int lengthOfLIS(int[] nums) {
         int[] count = new int[nums.length];
@@ -217,7 +214,7 @@ public class Solution {
                 if (j >= n) {
                     break;
                 }
-                if(j == i) {
+                if (j == i) {
                     f[i][j] = true;
                     continue;
                 }
@@ -308,6 +305,7 @@ public class Solution {
      * 2. 两层循环，找出以元素i为最大整数的区间大小
      * 3. 找到最大区间值
      * 4. 逆序寻找该区间的每个元素
+     *
      * @param nums
      * @return
      */
@@ -318,7 +316,7 @@ public class Solution {
         Arrays.fill(dp, 1);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                if(nums[i] % nums[j] == 0) {
+                if (nums[i] % nums[j] == 0) {
                     dp[i] = Math.max(dp[i], (dp[j] + 1));
                 }
             }
@@ -328,23 +326,23 @@ public class Solution {
         int maxSize = 0;
         int maxIndex = 0;
         for (int i = 0; i < n; i++) {
-            if(maxSize < dp[i]) {
+            if (maxSize < dp[i]) {
                 maxSize = dp[i];
                 maxIndex = i;
             }
         }
-        if(maxSize == 0) {
+        if (maxSize == 0) {
             return ret;
         }
         int i = maxIndex;
-        while(maxSize > 0) {
+        while (maxSize > 0) {
             ret.add(nums[i]);
             maxSize--;
-            if(maxSize == 0) {
+            if (maxSize == 0) {
                 break;
             }
             int j = i - 1;
-            while(((nums[i] % nums[j]) != 0) || (dp[j]!=maxSize)) {
+            while (((nums[i] % nums[j]) != 0) || (dp[j] != maxSize)) {
                 j--;
             }
             i = j;
@@ -473,4 +471,129 @@ public class Solution {
         return dp[target];
     }
 
+    private Boolean[][] rec;
+
+    public boolean canCross(int[] stones) {
+
+        int n = stones.length;
+        rec = new Boolean[n][n];
+        return dfs2(stones, 0, 0);
+
+
+    }
+
+    private boolean dfs2(int[] stones, int i, int dist) {
+        if (i == stones.length - 1) {
+            return true;
+        }
+        if (rec[i][dist] != null) {
+            return rec[i][dist];
+        }
+
+        for (int j = (dist - 1); j <= (1 + dist); j++) {
+            if (j > 0) {
+                int k = Arrays.binarySearch(stones, i + 1, stones.length, j + stones[i]);
+                if (k >= 0 && dfs2(stones, k, j)) {
+                    return rec[i][dist] = true;
+                }
+            }
+        }
+
+        return rec[i][dist] = false;
+    }
+
+
+    public int minCost(int[] houses, int[][] cost, int m, int n, int target) {
+        for (int i = 0; i < m; i++) {
+            houses[i]--;
+        }
+
+        int[][][] dp = new int[m][n][target];
+
+        int max = Integer.MAX_VALUE;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                Arrays.fill(dp[i][j], max);
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (houses[i] != -1 && houses[i] != j) {
+                    continue;
+                }
+
+                for (int k = 0; k < target; k++) {
+                    for (int j0 = 0; j0 < n; j0++) {
+                        if (j0 == j) {
+                            if (i == 0) {
+                                if (k == 0) {
+                                    dp[i][j][k] = 0;
+
+                                }
+                            } else {
+                                dp[i][j][k] = Math.min(dp[i][j][k], dp[i - 1][j][k]);
+
+                            }
+                        } else {
+                            if (i != 0 && k != 0) {
+                                dp[i][j][k] = Math.min(dp[i][j][k], dp[i - 1][j0][k - 1]);
+
+                            }
+                        }
+                    }
+                    if (dp[i][j][k] != max && houses[i] == -1) {
+                        dp[i][j][k] += cost[i][j];
+                    }
+                }
+            }
+        }
+
+        int ans = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            ans = Math.min(ans, dp[m - 1][i][target - 1]);
+        }
+
+        return ans == max ? -1 : ans;
+    }
+
+    /**
+     * 解题思路：
+     * 方法一：使用数组，数组下标为数字的值，其值为该数字的总和，对其进行选择，
+     * 方法：rob dp[i] = max(dp[i-2] + v[i], dp[i-1])
+     * 方法二：对数组进行排序，将数组分为多个连续子数组
+     * 对于每个连续子数组，使用方法rob选择该子数组的最大值
+     * @param nums
+     * @return
+     */
+    public int deleteAndEarn(int[] nums) {
+        if(nums.length == 0) {
+            return 0;
+        }
+        int max = 0;
+        int n = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            max = Math.max(max, nums[i]);
+            if(nums[i] < 0) {
+                return -1;
+            }
+        }
+        int[] sum = new int[max + 1];
+        for (int i = 0; i < n; i++) {
+            sum[nums[i]] += nums[i];
+        }
+
+//        int[] res = new int[max + 3];
+        int s = 0;
+        int m = 0;
+        int l = 0;
+        for (int i = 0; i < (max + 1); i++) {
+            l = Math.max(s + sum[i], m);
+            s = m;
+            m = l;
+        }
+
+
+        return l;
+    }
 }
