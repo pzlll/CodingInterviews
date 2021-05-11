@@ -166,7 +166,8 @@ public class Solution {
 
     /**
      * 解题思路：方法一：设置左右边界
-     *          方法二：使用中序遍历
+     * 方法二：使用中序遍历
+     *
      * @param root
      * @return
      */
@@ -176,13 +177,13 @@ public class Solution {
 //        return isValidBST2(root, min, max);
         Stack<TreeNode> stack = new Stack<>();
         long preVal = Long.MIN_VALUE;
-        while(!stack.isEmpty() || root != null) {
-            while(root != null) {
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
                 stack.push(root);
                 root = root.left;
             }
             root = stack.pop();
-            if(root.val < preVal) {
+            if (root.val < preVal) {
                 return false;
             }
             preVal = root.val;
@@ -217,6 +218,7 @@ public class Solution {
      * 解题思路：
      * 方法一：使用数组存储中序遍历结果再建树
      * 方法二：在中序遍历修改原二叉树
+     *
      * @param root
      * @return
      */
@@ -236,7 +238,7 @@ public class Solution {
         TreeNode p = pre;
         Stack<TreeNode> stack = new Stack<>();
         while (!stack.isEmpty() || root != null) {
-            while(root != null) {
+            while (root != null) {
                 stack.push(root);
                 root = root.left;
             }
@@ -251,7 +253,7 @@ public class Solution {
     }
 
     private void BST2(TreeNode root, List<Integer> ret) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
         BST2(root.left, ret);
@@ -262,21 +264,62 @@ public class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         Stack<TreeNode> stack = new Stack<>();
         int sum = 0;
-        while(!stack.isEmpty() || root != null) {
-            while(root!=null) {
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
                 stack.push(root);
                 root = root.left;
             }
             root = stack.pop();
-            if(root.val >= low && root.val <= high) {
+            if (root.val >= low && root.val <= high) {
                 sum += root.val;
-            }else if(root.val > high) {
+            } else if (root.val > high) {
                 return sum;
             }
             root = root.right;
         }
 
         return sum;
+    }
+
+    /**
+     * 使用深度优先搜索，将结果进行比较
+     *
+     * @param root1
+     * @param root2
+     * @return
+     */
+    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+        List<Integer> q1 = new ArrayList<>();
+        List<Integer> q2 = new ArrayList<>();
+        findLeaf(root1, q1);
+        findLeaf(root2, q2);
+
+        if (q1.size() != q2.size()) {
+            return false;
+        }
+
+        for (int i = 0; i < q1.size(); i++) {
+            if (q1.get(i) != q2.get(i)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private void findLeaf(TreeNode root, List<Integer> q) {
+        if (root == null) {
+            return;
+        }
+
+        if (root.right == null && root.left == null) {
+            q.add(root.val);
+        } else {
+            findLeaf(root.left, q);
+            findLeaf(root.right, q);
+        }
+
+
     }
 
 }

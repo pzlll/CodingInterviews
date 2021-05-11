@@ -249,4 +249,60 @@ public class Solution {
 
         return left;
     }
+
+    /**
+     * 解题思路：若制作m束花的最小天数是d，则大于d也能制作m束花，小于d则不能制作m束花，考虑用二分查找
+     * 二分查找的下限天数是数组最小值，上限天数是数组最大值
+     * 对于特定天数，需编写函数判断该天数能否制作m束花
+     * 函数实现：由于制作一束花需要连续k多花，所以使用flower变量存储收集到的花
+     * 若这朵花所需天数小于等于特定天数，花朵数量加一，若收集到的花为k朵，则制作一束花
+     * 若这朵花所需天数大于特定天数，则之前收集到的花不能制作成一束花，花朵数量清零
+     * @param bloomDay
+     * @param m
+     * @param k
+     * @return
+     */
+    public int minDays(int[] bloomDay, int m, int k) {
+        int n = bloomDay.length;
+        if ((m * k) > n) {
+            return -1;
+        }
+
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            min = Math.min(min, bloomDay[i]);
+            max = Math.max(max, bloomDay[i]);
+        }
+
+        while (min < max) {
+            int mid = (max + min) / 2;
+            if (canMake(bloomDay, mid, m, k)) {
+                max = mid;
+            } else {
+                min = mid + 1;
+            }
+        }
+
+        return min;
+    }
+
+    private boolean canMake(int[] bloomDay, int day, int m, int k) {
+        int flowers = 0;
+        int butch = 0;
+        int length = bloomDay.length;
+        for (int i = 0; i < length && butch < m; i++) {
+            if (bloomDay[i] <= day) {
+                flowers++;
+                if (flowers == k) {
+                    flowers = 0;
+                    butch++;
+                }
+            } else {
+                flowers = 0;
+            }
+        }
+
+        return butch == m ? true : false;
+    }
 }
