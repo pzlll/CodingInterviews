@@ -93,4 +93,32 @@ public class Solution {
         }
         return 0;
     }
+
+    /**
+     * 解题思路：1.perm数组是前n个正整数的排列
+     *         2.encoded数组的奇数元素异或的结果是除了perm[0]以外的全部元素的异或运算结果
+     * @param encoded
+     * @return
+     */
+    public int[] decode(int[] encoded) {
+        int n = encoded.length + 1;
+        int x = 0;
+        for (int i = 0; i < n; i++) {
+            x ^= (i + 1);
+        }
+
+        int y = 0;
+        for (int i = 1; i < encoded.length; i += 2) {
+            y ^= encoded[i];
+        }
+
+        int first = x ^ y;
+        int[] ans = new int[n];
+        ans[0] = first;
+        for (int i = 1; i < n; i++) {
+            ans[i] = ans[i - 1] ^ encoded[i - 1];
+        }
+
+        return ans;
+    }
 }
