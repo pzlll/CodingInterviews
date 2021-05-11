@@ -155,4 +155,51 @@ public class Solution {
         dfs(true, cur + 1, nums);
         t.remove(t.size() - 1);
     }
+
+    public int minimumTimeRequired(int[] jobs, int k) {
+        int min = 0;
+        int max = 0;
+        int n = jobs.length;
+        for (int i = 0; i < n; i++) {
+            min = Math.max(min, jobs[i]);
+            max += jobs[i];
+        }
+
+
+        while(min < max) {
+            int[] workVol = new int[k];
+            int mid = (max + min) / 2;
+            if(backTracking(workVol, mid, 0, jobs)) {
+               max = mid;
+            }else {
+                min = mid + 1;
+            }
+        }
+        return min;
+
+
+    }
+
+    private boolean backTracking(int[] workVol, int limit, int i, int[] jobs) {
+        if(i == jobs.length) {
+            return true;
+        }
+        for (int j = 0; j < workVol.length; j++) {
+            if((workVol[j] + jobs[i]) <= limit) {
+                workVol[j] += jobs[i];
+                if(backTracking(workVol, limit, i+1, jobs)) {
+                    return true;
+                }else if(workVol[j] == limit) {
+                    workVol[j] -= jobs[i];
+                    return false;
+                }
+                workVol[j] -= jobs[i];
+            }
+            if(workVol[j] == 0) {
+                return false;
+            }
+        }
+
+        return false;
+    }
 }
