@@ -1,5 +1,7 @@
 package bitmanipulation;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -117,6 +119,33 @@ public class Solution {
         ans[0] = first;
         for (int i = 1; i < n; i++) {
             ans[i] = ans[i - 1] ^ encoded[i - 1];
+        }
+
+        return ans;
+    }
+
+    /**
+     * 解题思路：设arr长度为n，queries长度为m，则最坏时间复杂度为O（nm），可优化每次查询的时间
+     *          使用前缀和数组存储数据，优化查询时间
+     *          对于前缀和数组xors的每个元素i，其值为前i-1个数的异或之和
+     *          对于给定位置的（left,right）异或和，可由前缀和xors[left]^xors[right+1]得出
+     *          时间复杂度为O（m）
+     * @param arr
+     * @param queries
+     * @return
+     */
+    public int[] xorQueries(int[] arr, int[][] queries) {
+
+        int n = arr.length;
+        int[] xors = new int[n];
+        for (int i = 1; i <= n; i++) {
+            xors[i] = arr[i - 1] ^ xors[i - 1];
+        }
+
+        int m = queries.length;
+        int[] ans = new int[m];
+        for (int i = 0; i < m; i++) {
+            ans[i] = xors[queries[i][0]] ^ xors[queries[i][1]];
         }
 
         return ans;
