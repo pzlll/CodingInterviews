@@ -16,4 +16,9 @@ public class SolutionTest {
     public void minCut() {
         new Solution().minCut("aab");
     }
+
+    @Test
+    public void numWays() {
+        new Solution().numWays(6, 13);
+    }
 }

@@ -563,18 +563,19 @@ public class Solution {
      * 方法：rob dp[i] = max(dp[i-2] + v[i], dp[i-1])
      * 方法二：对数组进行排序，将数组分为多个连续子数组
      * 对于每个连续子数组，使用方法rob选择该子数组的最大值
+     *
      * @param nums
      * @return
      */
     public int deleteAndEarn(int[] nums) {
-        if(nums.length == 0) {
+        if (nums.length == 0) {
             return 0;
         }
         int max = 0;
         int n = nums.length;
         for (int i = 0; i < nums.length; i++) {
             max = Math.max(max, nums[i]);
-            if(nums[i] < 0) {
+            if (nums[i] < 0) {
                 return -1;
             }
         }
@@ -595,5 +596,35 @@ public class Solution {
 
 
         return l;
+    }
+
+    /**
+     * 解题思路：使用动态规划，第i步第j位置的方案数dp[i][j] = dp[i-1][j-1] + dp[i-1][j] + dp[i-1][j+1]
+     *          优化： 1.使用两个数组存储相邻步数
+     *                2.数组大小为min(step/2+1, arrlen)
+     * @param steps
+     * @param arrLen
+     * @return
+     */
+    public int numWays(int steps, int arrLen) {
+        int mould = 1000000007;
+        int n = Math.min(steps/2 + 1, arrLen);
+        int[] ans = new int[n];
+        ans[0] = 1;
+        int[] bns = new int[n];
+        for (int i = 0; i < steps; i++) {
+            for (int j = 0; j < n; j++) {
+                bns[j] = ans[j];
+                if (j > 0) {
+                    bns[j] = (bns[j] + ans[j - 1]) % mould;
+                }
+                if (j < (n - 1)) {
+                    bns[j] = (bns[j] + ans[j + 1]) % mould;
+                }
+            }
+            ans = Arrays.copyOf(bns, arrLen);
+        }
+
+        return ans[0];
     }
 }
