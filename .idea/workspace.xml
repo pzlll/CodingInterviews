@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,45 +35,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="603" column="50" selection-start-line="603" selection-start-column="50" selection-end-line="603" selection-end-column="50" />
+            <state relative-caret-position="105">
+              <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="3284" column="19" lean-forward="true" selection-start-line="3284" selection-start-column="19" selection-end-line="3284" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding>
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
+                <element signature="method#myAtoi#0;class#Solution#0" />
+                <element signature="method#checkStraightLine#0;class#Solution#0" />
+                <element signature="method#rotate#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -151,12 +119,12 @@
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
-        <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
+        <option value="$PROJECT_DIR$/src/math/Solution.java" />
       </list>
     </option>
   </component>
@@ -239,6 +207,12 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,7 +247,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620889973962" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620976413231" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -608,7 +582,8 @@
       <workItem from="1620654930278" duration="1218000" />
       <workItem from="1620717256562" duration="1127000" />
       <workItem from="1620800320977" duration="2645000" />
-      <workItem from="1620886015696" duration="3948000" />
+      <workItem from="1620886015696" duration="4006000" />
+      <workItem from="1620974206572" duration="2073000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -701,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620802936087</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add method numWays.">
+      <created>1620889991187</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620889991188</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -737,7 +719,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469644000" />
+    <option name="totallyTimeSpent" value="471775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,7 +734,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20490928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20704375" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -762,18 +744,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3270869" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" visible="true" weight="0.39040348" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.39040348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010672" side_tool="true" visible="true" weight="0.39040348" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5048026" side_tool="true" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49626467" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49519745" visible="true" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -841,7 +823,8 @@
     <MESSAGE value="add method minDays." />
     <MESSAGE value="add method decode." />
     <MESSAGE value="add method xorQueries." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method xorQueries." />
+    <MESSAGE value="add method numWays." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method numWays." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1290,18 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="method#myAtoi#0;class#Solution#0" />
-            <element signature="method#checkStraightLine#0;class#Solution#0" />
-            <element signature="method#rotate#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4503">
@@ -1348,19 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1370,10 +1328,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="603" column="50" selection-start-line="603" selection-start-column="50" selection-end-line="603" selection-end-column="50" />
+        <state relative-caret-position="361">
+          <caret line="617" column="28" lean-forward="true" selection-start-line="617" selection-start-column="28" selection-end-line="618" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
+          <folding>
+            <element signature="method#myAtoi#0;class#Solution#0" />
+            <element signature="method#checkStraightLine#0;class#Solution#0" />
+            <element signature="method#rotate#0;class#Solution#0" />
           </folding>
         </state>
       </provider>

@@ -189,6 +189,54 @@ public class Solution {
         return n == 1;
     }
 
+    /**
+     * 解题思路：对于给定的数字，选择尽可大的符号值，总共有13个符号
+     * @param num
+     * @return
+     */
+    public String intToRoman(int num) {
+//        String[] thousand = {"M", "MM", "MMM"};
+//        String[] hundred = {"C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+//        String[] ten = {"X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+//        String[] one = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+//        StringBuffer buffer = new StringBuffer();
+//        int a = num % 10;
+//        num /= 10;
+//        int b = num % 10;
+//        num /= 10;
+//        int c = num % 10;
+//        num /= 10;
+//        int d = num % 10;
+//        if(d > 0) {
+//            buffer.append(thousand[d - 1]);
+//        }
+//        if(c > 0) {
+//            buffer.append(hundred[c - 1]);
+//        }
+//        if(b > 0) {
+//            buffer.append(ten[b - 1]);
+//        }
+//        if(a > 0) {
+//            buffer.append(one[a - 1]);
+//        }
+        String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10 ,9, 5, 4, 1};
+
+        StringBuffer buffer = new StringBuffer();
+        int i = 0;
+        while(num > 0) {
+            while (num >= values[i]) {
+                buffer.append(symbols[i]);
+                num -= values[i];
+            }
+            if(num == 0) {
+                break;
+            }
+            i++;
+        }
+
+        return buffer.toString();
+    }
 
 
 }
