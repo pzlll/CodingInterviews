@@ -1,9 +1,7 @@
 package hash;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Solution {
     /**
@@ -64,5 +62,37 @@ public class Solution {
 
         return ret;
     }
+
+    /**
+     * 解题思路：求砖块的最小值转化为求边缘的最大值
+     * 遍历每一行，通过每一行的元素，将其对应的边缘数量加一
+     * 使用哈系表存储对应的边缘的数量
+     * @param wall
+     * @return
+     */
+    public int leastBricks(List<List<Integer>> wall) {
+        int n = wall.size();
+
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (List<Integer> list :
+                wall) {
+            int index = 0;
+            for (int i = 0; i < (list.size() - 1); i++) {
+                index += list.get(i);
+                map.put(index, map.getOrDefault(index, 0) + 1);
+            }
+            
+        }
+
+        int max = 0;
+        for (Integer v :
+                map.values()) {
+            max = Math.max(max, v);
+        }
+
+        return n - max;
+    }
+
 
 }
