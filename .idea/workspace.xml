@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,15 +34,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
+            <state relative-caret-position="76">
+              <caret line="196" column="28" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="28" />
               <folding>
                 <element signature="method#myAtoi#0;class#Solution#0" />
                 <element signature="method#checkStraightLine#0;class#Solution#0" />
                 <element signature="method#rotate#0;class#Solution#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+              <folding>
+                <element signature="method#longestPalindrome#0;class#Solution#0" />
+                <element signature="method#largeGroupPositions#0;class#Solution#0" />
+                <element signature="method#isMatch#0;class#Solution#0" />
+                <element signature="method#isMatch#1;class#Solution#0" />
+                <element signature="method#longestCommonPrefix#0;class#Solution#0" />
+                <element signature="method#evalRPN#0;class#Solution#0" />
+                <element signature="method#wordBreak#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -98,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/divideandconquer/Solution.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/string/Solution.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
         <option value="$PROJECT_DIR$/src/heap/MedianFinder.java" />
         <option value="$PROJECT_DIR$/src/slidingwindow/SolutionTest.java" />
@@ -125,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
+        <option value="$PROJECT_DIR$/src/string/Solution.java" />
       </list>
     </option>
   </component>
@@ -235,8 +253,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +265,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620976413231" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620976438277" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -583,7 +601,8 @@
       <workItem from="1620717256562" duration="1127000" />
       <workItem from="1620800320977" duration="2645000" />
       <workItem from="1620886015696" duration="4006000" />
-      <workItem from="1620974206572" duration="2073000" />
+      <workItem from="1620974206572" duration="2236000" />
+      <workItem from="1621061593515" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -683,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620889991188</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add method intToRoman.">
+      <created>1620976428550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620976428550</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -719,7 +745,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471775000" />
+    <option name="totallyTimeSpent" value="473188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,7 +760,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20704375" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20917822" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -751,11 +777,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5048026" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50533617" side_tool="true" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49519745" visible="true" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" sideWeight="0.49466383" visible="true" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -824,7 +850,8 @@
     <MESSAGE value="add method decode." />
     <MESSAGE value="add method xorQueries." />
     <MESSAGE value="add method numWays." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method numWays." />
+    <MESSAGE value="add method intToRoman." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method intToRoman." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -843,7 +870,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/Solution.java</url>
-          <line>194</line>
+          <line>179</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -951,23 +978,6 @@
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Collections.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/lang/ThreadLocal.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
-    <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="329" column="34" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
-          <folding>
-            <element signature="method#longestPalindrome#0;class#Solution#0" />
-            <element signature="method#largeGroupPositions#0;class#Solution#0" />
-            <element signature="method#isMatch#0;class#Solution#0" />
-            <element signature="method#isMatch#1;class#Solution#0" />
-            <element signature="method#romanToInt#0;class#Solution#0" />
-            <element signature="method#longestCommonPrefix#0;class#Solution#0" />
-            <element signature="method#evalRPN#0;class#Solution#0" />
-            <element signature="method#wordBreak#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/string/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1484">
@@ -1349,12 +1359,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="238" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="196" column="28" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="28" />
           <folding>
             <element signature="method#myAtoi#0;class#Solution#0" />
             <element signature="method#checkStraightLine#0;class#Solution#0" />
             <element signature="method#rotate#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+          <folding>
+            <element signature="method#longestPalindrome#0;class#Solution#0" />
+            <element signature="method#largeGroupPositions#0;class#Solution#0" />
+            <element signature="method#isMatch#0;class#Solution#0" />
+            <element signature="method#isMatch#1;class#Solution#0" />
+            <element signature="method#longestCommonPrefix#0;class#Solution#0" />
+            <element signature="method#evalRPN#0;class#Solution#0" />
+            <element signature="method#wordBreak#0;class#Solution#0" />
           </folding>
         </state>
       </provider>

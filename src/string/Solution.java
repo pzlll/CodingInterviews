@@ -110,45 +110,30 @@ public class Solution {
         return s.charAt(i - 1) == p.charAt(j - 1);
     }
 
+    /**
+     * 解题思路：对于罗马数字，若数值小的符号出现在数值大的符号前面，则表示减去该值；
+     * 若数值小的符号出现在数值大的符号后面，则表示加上该值
+     * 通过把数值存储进哈系表来优化代码
+     * @param s
+     * @return
+     */
     public int romanToInt(String s) {
         int sum = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+
         for (int i = 0; i < s.length(); i++) {
-            switch (s.charAt(i)) {
-                case 'I':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'V' || s.charAt(i + 1) == 'X')) {
-                        sum -= 1;
-                    } else {
-                        sum += 1;
-                    }
-                    break;
-                case 'V':
-                    sum += 5;
-                    break;
-                case 'X':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'L' || s.charAt(i + 1) == 'C')) {
-                        sum -= 10;
-                    } else {
-                        sum += 10;
-                    }
-                    break;
-                case 'L':
-                    sum += 50;
-                    break;
-                case 'C':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'D' || s.charAt(i + 1) == 'M')) {
-                        sum -= 100;
-                    } else {
-                        sum += 100;
-                    }
-                    break;
-                case 'D':
-                    sum += 500;
-                    break;
-                case 'M':
-                    sum += 1000;
-                    break;
-                default:
-                    break;
+            int value = map.get(s.charAt(i));
+            if ((i + 1) < s.length() && (value < map.get(s.charAt(i + 1)))) {
+                sum -= value;
+            } else {
+                sum += value;
             }
         }
         return sum;
@@ -282,6 +267,7 @@ public class Solution {
 
     /**
      * 使用双指针对字符串进行判断
+     *
      * @param s
      * @return
      */
@@ -301,10 +287,10 @@ public class Solution {
                 j--;
             }
 
-            if(i<j){
+            if (i < j) {
                 Character s1 = Character.toLowerCase(s.charAt(i));
                 Character s2 = Character.toLowerCase(s.charAt(j));
-                if(!s1.equals(s2)) {
+                if (!s1.equals(s2)) {
                     return false;
                 }
 
@@ -319,7 +305,7 @@ public class Solution {
     //可使用Character.isLetterOrDigit() 并且不需要函数调用
     private boolean isNumOrAlpha(char j) {
 
-        if(Character.isLetter(j) || Character.isDigit(j)){
+        if (Character.isLetter(j) || Character.isDigit(j)) {
             return true;
         }
 
@@ -328,25 +314,26 @@ public class Solution {
 
     /**
      * 解题思路：1.使用字符拼接   2.使用散列表存放映射
+     *
      * @param n
      * @return
      */
     public List<String> fizzBuzz(int n) {
         List<String> result = new ArrayList<>();
         Map<Integer, String> map = new TreeMap<>();
-        map.put(3,"Fizz");
-        map.put(5,"Buzz");
-        
+        map.put(3, "Fizz");
+        map.put(5, "Buzz");
+
         for (int i = 1; i <= n; i++) {
             StringBuilder str = new StringBuilder();
             for (Integer key :
                     map.keySet()) {
-                if(i % key == 0) {
+                if (i % key == 0) {
                     str.append(map.get(key));
                 }
             }
 
-            if(str.length() == 0) {
+            if (str.length() == 0) {
                 str.append(i);
             }
 
