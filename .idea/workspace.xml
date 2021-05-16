@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/SolutionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="2128">
               <caret line="196" column="28" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="28" />
               <folding>
                 <element signature="method#myAtoi#0;class#Solution#0" />
@@ -48,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+            <state relative-caret-position="513">
+              <caret line="119" column="25" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="25" />
               <folding>
                 <element signature="method#longestPalindrome#0;class#Solution#0" />
                 <element signature="method#largeGroupPositions#0;class#Solution#0" />
@@ -66,14 +69,67 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#isHappy#0;class#Solution#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="158" column="29" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+              <folding>
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -92,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SwordFingerOffer/src/cn/No10.java" />
-        <option value="$PROJECT_DIR$/SwordFingerOffer/src/cn/No11.java" />
-        <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
         <option value="$PROJECT_DIR$/src/greedy/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/heap/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/heap/Solution.java" />
@@ -132,17 +185,20 @@
         <option value="$PROJECT_DIR$/src/hash/MyHashSetTest.java" />
         <option value="$PROJECT_DIR$/src/hash/MyHashSet.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
-        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
-        <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
+        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
+        <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/game/Solution.java" />
+        <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
       </list>
     </option>
   </component>
@@ -225,6 +281,18 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="math" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,7 +333,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1620976438277" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621157775428" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -287,11 +355,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="bitmanipulation" />
       <recent name="binarysearch" />
       <recent name="hash" />
       <recent name="stackandqueue" />
       <recent name="dynamicprogramming" />
-      <recent name="graph" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="game" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -309,18 +380,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.numWays">
-    <configuration name="SolutionTest.characterReplacement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SolutionTest.findMaximumXOR">
+    <configuration name="SolutionTest.findMaximumXOR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="doublepointer.*" />
+          <option name="PATTERN" value="bitmanipulation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="doublepointer" />
-      <option name="MAIN_CLASS_NAME" value="doublepointer.SolutionTest" />
-      <option name="METHOD_NAME" value="characterReplacement" />
+      <option name="PACKAGE_NAME" value="bitmanipulation" />
+      <option name="MAIN_CLASS_NAME" value="bitmanipulation.SolutionTest" />
+      <option name="METHOD_NAME" value="findMaximumXOR" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -374,17 +445,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.searchMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.subsetXORSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="binarysearch.*" />
+          <option name="PATTERN" value="game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="binarysearch" />
-      <option name="MAIN_CLASS_NAME" value="binarysearch.SolutionTest" />
-      <option name="METHOD_NAME" value="searchMatrix" />
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
+      <option name="METHOD_NAME" value="subsetXORSum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -454,11 +525,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.findMaximumXOR" />
+        <item itemvalue="JUnit.SolutionTest.subsetXORSum" />
         <item itemvalue="JUnit.SolutionTest.numWays" />
         <item itemvalue="JUnit.SolutionTest.isValidBST" />
         <item itemvalue="JUnit.SolutionTest.search" />
-        <item itemvalue="JUnit.SolutionTest.characterReplacement" />
-        <item itemvalue="JUnit.SolutionTest.searchMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -602,7 +673,8 @@
       <workItem from="1620800320977" duration="2645000" />
       <workItem from="1620886015696" duration="4006000" />
       <workItem from="1620974206572" duration="2236000" />
-      <workItem from="1621061593515" duration="1250000" />
+      <workItem from="1621061593515" duration="3349000" />
+      <workItem from="1621132200276" duration="6940000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -709,43 +781,57 @@
       <option name="project" value="LOCAL" />
       <updated>1620976428550</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add method romanToInt.">
+      <created>1621062859751</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621062859751</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add method leastBricks.">
+      <created>1621065056435</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621065056435</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTest_search - 2021.04.07 at 14h 17m 32s.xml">
-      <configuration name="SolutionTest.search" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 08m 17s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_search - 2021.04.07 at 14h 20m 34s.xml">
-      <configuration name="SolutionTest.search" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 08m 39s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_isValidBST - 2021.04.27 at 14h 26m 25s.xml">
-      <configuration name="SolutionTest.isValidBST" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 09m 20s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 14h 34m 47s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 09m 58s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 14h 36m 37s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 16m 27s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 14h 37m 53s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 17m 27s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 14h 42m 38s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 11h 43m 14s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 14h 57m 04s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_subsetXORSum - 2021.05.16 at 16h 59m 39s.xml">
+      <configuration name="SolutionTest.subsetXORSum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 15h 02m 35s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_findMaximumXOR - 2021.05.16 at 17h 27m 05s.xml">
+      <configuration name="SolutionTest.findMaximumXOR" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SolutionTest_numWays - 2021.05.13 at 15h 04m 27s.xml">
-      <configuration name="SolutionTest.numWays" configurationId="JUnit" />
+    <history-entry file="SolutionTest_findMaximumXOR - 2021.05.16 at 17h 31m 10s.xml">
+      <configuration name="SolutionTest.findMaximumXOR" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473188000" />
+    <option name="totallyTimeSpent" value="482227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,7 +846,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20917822" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2113127" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -770,18 +856,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3270869" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893278" weight="0.39040348" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49839914" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50533617" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50160086" side_tool="true" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" sideWeight="0.49466383" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4941302" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -851,7 +937,9 @@
     <MESSAGE value="add method xorQueries." />
     <MESSAGE value="add method numWays." />
     <MESSAGE value="add method intToRoman." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method intToRoman." />
+    <MESSAGE value="add method romanToInt." />
+    <MESSAGE value="add method leastBricks." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method leastBricks." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -916,6 +1004,12 @@
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bitmanipulation/Solution.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -924,15 +1018,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/backtracking/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Objects.java" />
-    <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java" />
     <entry file="file://$PROJECT_DIR$/src/array/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3024">
@@ -1189,17 +1274,6 @@
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/LinkedList.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/List.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isHappy#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hash/MyHashSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -1305,16 +1379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="136" column="27" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
@@ -1359,7 +1423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="2128">
           <caret line="196" column="28" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="28" />
           <folding>
             <element signature="method#myAtoi#0;class#Solution#0" />
@@ -1371,8 +1435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+        <state relative-caret-position="513">
+          <caret line="119" column="25" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="25" />
           <folding>
             <element signature="method#longestPalindrome#0;class#Solution#0" />
             <element signature="method#largeGroupPositions#0;class#Solution#0" />
@@ -1382,6 +1446,49 @@
             <element signature="method#evalRPN#0;class#Solution#0" />
             <element signature="method#wordBreak#0;class#Solution#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isHappy#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding>
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="158" column="29" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -1,9 +1,6 @@
 package bitmanipulation;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Solution {
     /**
@@ -146,6 +143,46 @@ public class Solution {
         int[] ans = new int[m];
         for (int i = 0; i < m; i++) {
             ans[i] = xors[queries[i][0]] ^ xors[queries[i][1]];
+        }
+
+        return ans;
+    }
+
+    /**
+     * 解题思路：用二进制表示对应元素，判断每一位取1还是取0
+     * 从最高位到最低位判断（使用右移）
+     * 把数组中的元素的前k位存储到哈系表，用结果的前k位与数组元素前k位异或，在哈系表查找
+     * 若找到，则该位置为1,若找不到，则该位置为0
+     * @param nums
+     * @return
+     */
+    public int findMaximumXOR(int[] nums) {
+        int maxBit = 30;
+        int n = nums.length;
+
+        int ans = 0;
+
+        for (int i = maxBit; i >= 0; i--) {
+            Set<Integer> set = new HashSet<>();
+
+            for (int j = 0; j < n; j++) {
+                set.add(nums[j] >> i);
+            }
+
+            boolean found = false;
+            ans = (ans << 1) + 1;
+
+            for (int j = 0; j < n; j++) {
+                if(set.contains((ans ^ (nums[j] >> i)))) {
+                    found = true;
+                    break;
+                }
+            }
+            if(!found) {
+                ans -= 1;
+            }
+
+
         }
 
         return ans;
