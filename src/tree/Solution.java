@@ -322,4 +322,61 @@ public class Solution {
 
     }
 
+    /**
+     * 解题思路：使用层次遍历存储每个节点的深度，遍历时判断x和y是否属于同个父节点
+     * 优化：遍历每个节点时，判断其是否为x或y节点，若是，则存储其深度和父节点，并设置找到的标志
+     * @param root
+     * @param x
+     * @param y
+     * @return
+     */
+    public boolean isCousins(TreeNode root, int x, int y) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        if(root == null) {
+            return false;
+        }
+
+        int deep = 0;
+        int count = 1;
+        queue.offer(root);
+
+
+        while (!queue.isEmpty()) {
+            TreeNode top = queue.poll();
+            if(top.left != null) {
+                queue.offer(top.left);
+            }
+            if(top.right != null) {
+                queue.offer(top.right);
+            }
+
+            map.put(top.val, deep);
+
+            if(top.left != null && top.right != null) {
+                if(top.left.val == x && top.right.val == y) {
+                    return false;
+                }
+                if(top.left.val == y && top.right.val == x) {
+                    return false;
+                }
+            }
+            count--;
+            if(count == 0) {
+                count = queue.size();
+                deep++;
+            }
+        }
+
+        if(map.get(x) == map.get(y)) {
+            return true;
+        }
+
+
+        return false;
+
+    }
+
 }
