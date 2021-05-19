@@ -243,32 +243,40 @@ public class Solution {
     }
 
     /**
-     * 动态规划
+     * 解题思路：
+     * 1. 动态规划
+     * 第i天有两种状态：持有股票和无股票，分别计算这两种状态对应的最大利润
+     * 当天持有股票的最大利润等于 前一天持有股票 和 前一天无股票减去当天股价 的最大值
+     * 当天无股票的最大利润等于 前一天无股票 和 前一天持有股票加上当天股价 的最大值
+     * 使用两个临时变量优化空间复杂度
+     * 2. 贪心算法
+     * 若某段时间股票一直升，则它们之间的差值为利润的最大值
+     * 若股票一直跌，则不买入
+     * 优化：利润等于 两天的差值 和 零 的最大值
      *
      * @param prices
      * @return
      */
     public int maxProfit(int[] prices) {
-        if (prices == null || prices.length == 0) {
+        if(prices == null || prices.length < 2) {
             return 0;
         }
-        int[] buy1 = new int[prices.length];
-        int[] sell1 = new int[prices.length];
-        int[] buy2 = new int[prices.length];
-        int[] sell2 = new int[prices.length];
 
-        buy1[0] = -prices[0];
-        sell1[0] = 0;
-        buy2[0] = -prices[0];
-        sell2[0] = 0;
-        for (int i = 1; i < prices.length; i++) {
-            buy1[i] = Math.max(buy1[i - 1], -prices[i]);
-            sell1[i] = Math.max(sell1[i - 1], buy1[i] + prices[i]);
-            buy2[i] = Math.max(buy2[i - 1], sell1[i] - prices[i]);
-            sell2[i] = Math.max(sell2[i - 1], buy2[i] + prices[i]);
+        int n = prices.length;
+        int[][] dp = new int[n][2];
+        int a = 0;
+        int b = -prices[0];
+        int c= 0, d = 0;
+        dp[0][0] = 0;
+        dp[0][1] = -prices[0];
+        for (int i = 1; i < n; i++) {
+            c = Math.max(a, b + prices[i]);
+            d = Math.max(b, a - prices[i]);
+            a = c;
+            b = d;
         }
 
-        return sell2[prices.length - 1];
+        return c > 0 ? c:0;
 
     }
 

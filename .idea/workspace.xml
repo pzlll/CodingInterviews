@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitoperation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitoperation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,11 +68,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bitoperation/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="200">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="254" column="25" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
+              <folding>
+                <element signature="method#duplicate#0;class#Solution#0" />
+                <element signature="method#multiply#0;class#Solution#0" />
+                <element signature="method#twoSum#0;class#Solution#0" />
+                <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
+                <element signature="method#getKElement#0;class#Solution#0" />
+                <element signature="method#fib#0;class#Solution#0" />
+                <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
+                <element signature="method#isInside#0;class#Solution#0" />
+                <element signature="method#getRow#0;class#Solution#0" />
+                <element signature="method#flipAndInvertImage#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/heap/KthLargest.java" />
         <option value="$PROJECT_DIR$/src/graph/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
-        <option value="$PROJECT_DIR$/src/array/Solution.java" />
         <option value="$PROJECT_DIR$/src/slidingwindow/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/NumArray.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/NumMatrix.java" />
@@ -180,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
+        <option value="$PROJECT_DIR$/src/array/Solution.java" />
       </list>
     </option>
   </component>
@@ -320,7 +341,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621410399016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621412552626" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -664,7 +685,7 @@
       <workItem from="1621132200276" duration="6977000" />
       <workItem from="1621231781215" duration="2328000" />
       <workItem from="1621322020995" duration="2979000" />
-      <workItem from="1621408662586" duration="1729000" />
+      <workItem from="1621408662586" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -806,7 +827,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621325195189</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add method kthLargestValue.">
+      <created>1621410415924</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621410415925</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -842,7 +870,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489300000" />
+    <option name="totallyTimeSpent" value="490907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,7 +981,8 @@
     <MESSAGE value="add method findMaximumXOR." />
     <MESSAGE value="add method isCousins." />
     <MESSAGE value="add method countTriplets." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method countTriplets." />
+    <MESSAGE value="add method kthLargestValue." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method kthLargestValue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,13 +1007,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/Solution.java</url>
-          <line>270</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/Solution.java</url>
-          <line>356</line>
+          <line>364</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -996,13 +1019,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/Solution.java</url>
-          <line>388</line>
+          <line>396</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/Solution.java</url>
-          <line>499</line>
+          <line>507</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
@@ -1292,25 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="1042" column="4" selection-start-line="1042" selection-start-column="4" selection-end-line="1047" selection-end-column="5" />
-          <folding>
-            <element signature="method#duplicate#0;class#Solution#0" />
-            <element signature="method#multiply#0;class#Solution#0" />
-            <element signature="method#twoSum#0;class#Solution#0" />
-            <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
-            <element signature="method#getKElement#0;class#Solution#0" />
-            <element signature="method#fib#0;class#Solution#0" />
-            <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
-            <element signature="method#isInside#0;class#Solution#0" />
-            <element signature="method#getRow#0;class#Solution#0" />
-            <element signature="method#flipAndInvertImage#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/binarysearch/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1495,8 +1499,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bitoperation/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="200">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="254" column="25" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
+          <folding>
+            <element signature="method#duplicate#0;class#Solution#0" />
+            <element signature="method#multiply#0;class#Solution#0" />
+            <element signature="method#twoSum#0;class#Solution#0" />
+            <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
+            <element signature="method#getKElement#0;class#Solution#0" />
+            <element signature="method#fib#0;class#Solution#0" />
+            <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
+            <element signature="method#isInside#0;class#Solution#0" />
+            <element signature="method#getRow#0;class#Solution#0" />
+            <element signature="method#flipAndInvertImage#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>
