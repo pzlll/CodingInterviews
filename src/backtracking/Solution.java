@@ -202,4 +202,35 @@ public class Solution {
 
         return false;
     }
+
+    /**
+     * 解题思路：类似求解最长公共子序列问题
+     * 使用dp数组存储对应下标i，j的最长子序列个数
+     * dp[i][j]:数组nums1下标i之前的元素和数组nums2下标j之前的元素的最长公共序列
+     * 若nums1[i] == nums2[j]，dp[i][j] = dp[i-1][j-1] + 1
+     * 否则，从dp[i-1][j]和dp[i][j-1]中选出最大值
+     *
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int maxUncrossedLines(int[] nums1, int[] nums2) {
+        int n = nums1.length;
+        int m = nums2.length;
+
+        int[][] dp = new int[n+1][m+1];
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if(nums1[i-1] == nums2[j - 1]) {
+                    dp[i][j] = dp[i-1][j-1] + 1;
+                }else {
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+
+        }
+
+        return dp[n][m];
+    }
 }
