@@ -257,6 +257,7 @@ public class Solution {
      * 函数实现：由于制作一束花需要连续k多花，所以使用flower变量存储收集到的花
      * 若这朵花所需天数小于等于特定天数，花朵数量加一，若收集到的花为k朵，则制作一束花
      * 若这朵花所需天数大于特定天数，则之前收集到的花不能制作成一束花，花朵数量清零
+     *
      * @param bloomDay
      * @param m
      * @param k
@@ -307,7 +308,7 @@ public class Solution {
     }
 
     public boolean xorGame(int[] nums) {
-        if((nums.length % 2) == 0) {
+        if ((nums.length % 2) == 0) {
             return true;
         }
 
@@ -317,9 +318,9 @@ public class Solution {
             res ^= nums[i];
         }
 
-        if(res == 0) {
+        if (res == 0) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
