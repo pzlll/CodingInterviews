@@ -305,4 +305,22 @@ public class Solution {
 
         return butch == m ? true : false;
     }
+
+    public boolean xorGame(int[] nums) {
+        if((nums.length % 2) == 0) {
+            return true;
+        }
+
+        int res = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            res ^= nums[i];
+        }
+
+        if(res == 0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
