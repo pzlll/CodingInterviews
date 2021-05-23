@@ -1084,6 +1084,39 @@ public class Solution {
         }
     }
 
+    class Employee {
+        public int id;
+        public int importance;
+        public List<Integer> subordinates;
+    }
 
+    public int getImportance(List<Employee> employees, int id) {
+        Map<Integer, Employee> employeeMap = new HashMap<>();
+
+        int n = employees.size();
+
+        for (Employee e :
+                employees) {
+            employeeMap.put(e.id, e);
+        }
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(id);
+
+        int sum = 0;
+        while (!queue.isEmpty()) {
+            Integer pKey = queue.poll();
+            Employee present = employeeMap.get(pKey);
+            sum += present.importance;
+
+            for (Integer eKey :
+                    present.subordinates) {
+                queue.offer(eKey);
+            }
+        }
+
+        return sum;
+
+    }
 }
 
