@@ -53,14 +53,15 @@ public class Solution {
      * 1. x⊕x=0；
      * 2. 4i⊕(4i+1)⊕(4i+2)⊕(4i+3)=0
      * 方法：1.公式为start⊕(start+2i)⊕(start+4i)⊕⋯⊕(start+2(n−1))
-     *          处理最后一位（若start和n为奇数，则为1,否则为0）
-     *      2.将公式转化为(s⊕(s+1)⊕(s+2)⊕⋯⊕(s+n−1))×2+e
-     *      3.函数sumXor(x): 0⊕1⊕2⊕⋯⊕x
-     *                          x           x=4k
-     *                          1           x=4k+1
-     *                          x+1         x=4k+2
-     *                          0           x=4k+3
-     *      4.公式转化为(sumXor(s−1)⊕sumXor(s+n−1))*2+e
+     * 处理最后一位（若start和n为奇数，则为1,否则为0）
+     * 2.将公式转化为(s⊕(s+1)⊕(s+2)⊕⋯⊕(s+n−1))×2+e
+     * 3.函数sumXor(x): 0⊕1⊕2⊕⋯⊕x
+     * x           x=4k
+     * 1           x=4k+1
+     * x+1         x=4k+2
+     * 0           x=4k+3
+     * 4.公式转化为(sumXor(s−1)⊕sumXor(s+n−1))*2+e
+     *
      * @param n
      * @param start
      * @return
@@ -95,7 +96,8 @@ public class Solution {
 
     /**
      * 解题思路：1.perm数组是前n个正整数的排列
-     *         2.encoded数组的奇数元素异或的结果是除了perm[0]以外的全部元素的异或运算结果
+     * 2.encoded数组的奇数元素异或的结果是除了perm[0]以外的全部元素的异或运算结果
+     *
      * @param encoded
      * @return
      */
@@ -123,10 +125,11 @@ public class Solution {
 
     /**
      * 解题思路：设arr长度为n，queries长度为m，则最坏时间复杂度为O（nm），可优化每次查询的时间
-     *          使用前缀和数组存储数据，优化查询时间
-     *          对于前缀和数组xors的每个元素i，其值为前i-1个数的异或之和
-     *          对于给定位置的（left,right）异或和，可由前缀和xors[left]^xors[right+1]得出
-     *          时间复杂度为O（m）
+     * 使用前缀和数组存储数据，优化查询时间
+     * 对于前缀和数组xors的每个元素i，其值为前i-1个数的异或之和
+     * 对于给定位置的（left,right）异或和，可由前缀和xors[left]^xors[right+1]得出
+     * 时间复杂度为O（m）
+     *
      * @param arr
      * @param queries
      * @return
@@ -153,6 +156,7 @@ public class Solution {
      * 从最高位到最低位判断（使用右移）
      * 把数组中的元素的前k位存储到哈系表，用结果的前k位与数组元素前k位异或，在哈系表查找
      * 若找到，则该位置为1,若找不到，则该位置为0
+     *
      * @param nums
      * @return
      */
@@ -173,12 +177,12 @@ public class Solution {
             ans = (ans << 1) + 1;
 
             for (int j = 0; j < n; j++) {
-                if(set.contains((ans ^ (nums[j] >> i)))) {
+                if (set.contains((ans ^ (nums[j] >> i)))) {
                     found = true;
                     break;
                 }
             }
-            if(!found) {
+            if (!found) {
                 ans -= 1;
             }
 
@@ -186,5 +190,96 @@ public class Solution {
         }
 
         return ans;
+    }
+
+    public int[] maximizeXor(int[] nums, int[][] queries) {
+
+
+        int n = nums.length;
+        int m = queries.length;
+        int[] ans = new int[m];
+        Arrays.sort(nums);
+
+        Map<int[], Integer> map = new HashMap<>();
+        for (int i = 0; i < m; i++) {
+            map.put(queries[i], i);
+        }
+
+        Arrays.sort(queries, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
+            }
+        });
+
+        int idx = 0;
+
+        Trie trie = new Trie();
+
+        for (int i = 0; i < m; i++) {
+            if(queries[i][1] < nums[0]) {
+                ans[map.get(queries[i])] = -1;
+                continue;
+            }
+            while(idx < n && nums[idx] <= queries[i][1]) {
+                trie.buildTrie(nums[idx]);
+                idx++;
+            }
+            int val = trie.getXor(queries[i][0]) ^ queries[i][0];
+            ans[map.get(queries[i])] = val;
+        }
+
+        return ans;
+    }
+
+    class Trie{
+        public static final int L = 30;
+        Trie left;
+        Trie right;
+
+        public void buildTrie(int x) {
+            Trie node = this;
+            for (int i = (L-1); i >= 0; i--) {
+                int bit = (x >> i) & 1;
+                if(bit == 0) {
+                    if(node.left == null) {
+                        node.left = new Trie();
+                    }
+
+                    node = node.left;
+                }else if(bit == 1) {
+                    if(node.right == null) {
+                        node.right = new Trie();
+                    }
+                    node = node.right;
+                }
+            }
+        }
+
+        public int getXor(int x) {
+            int xor = 0;
+            Trie node = this;
+            for (int i = (L-1); i >= 0; i--) {
+                int bit = (x >> i) & 1;
+                if(bit == 0) {
+                    if(node.right != null) {
+                        xor += (1 << i);
+                        node = node.right;
+                    }else {
+                        node = node.left;
+                    }
+                }else if(bit == 1) {
+                    if(node.left != null) {
+                        node = node.left;
+                    }else {
+                        xor += (1 << i);
+                        node = node.right;
+                    }
+                }
+
+            }
+
+            return xor;
+        }
     }
 }
