@@ -11,4 +11,18 @@ public class SolutionTest {
     }
 
 
+    @Test
+    public void checkZeroOnes() {
+        new Solution().checkZeroOnes("1101");
+    }
+
+    @Test
+    public void minSpeedOnTime() {
+        new Solution().minSpeedOnTime(new int[]{1,1,100000}, 2.01);
+    }
+
+    @Test
+    public void canReach() {
+        new Solution().canReach("00111010", 3 , 5);
+    }
 }
