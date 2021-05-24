@@ -627,4 +627,39 @@ public class Solution {
 
         return ans[0];
     }
+
+    /**
+     * 解题思路：使用动态规划
+     * 转移方程： 若s[i] == s[j]，则区间（i,j）与区间（i,j-1）的填充次数相同（最早填充元素i）
+     *          若s[i] ！= s[j]，则区间（i，j）的填充次数等于区间内所有子区间（（i,k）,（k+1,j））次数的最小值
+     * 技巧：所求dp数组为正三角数组，为方便计算，可从i升序，j降序的顺序计算
+     * @param s
+     * @return
+     */
+    public int strangePrinter(String s) {
+        int n = s.length();
+        int[][] dp = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = 1;
+        }
+
+        for (int i = (n - 1); i >= 0; i--) {
+
+            for (int j = (i + 1); j < n; j++) {
+                if(s.charAt(i) == s.charAt(j)) {
+                    dp[i][j] = dp[i][j-1];
+                    continue;
+                }
+                int min = Integer.MAX_VALUE;
+                for (int k = i; k < j; k++) {
+                    min = Math.min(min, dp[i][k] + dp[k+1][j]);
+                }
+                dp[i][j] = min;
+            }
+
+        }
+
+        return dp[0][n-1];
+    }
 }

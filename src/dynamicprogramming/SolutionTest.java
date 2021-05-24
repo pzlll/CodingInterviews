@@ -21,4 +21,9 @@ public class SolutionTest {
     public void numWays() {
         new Solution().numWays(6, 13);
     }
+
+    @Test
+    public void strangePrinter() {
+        new Solution().strangePrinter("aaabbb");
+    }
 }
