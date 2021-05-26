@@ -211,6 +211,7 @@ public class Solution {
      * 解题思路：乘除先计算，加减存入栈
      * 遍历每个元素，若当前元素为符号或为最后一个数字，则根据前一运算符判断
      * 若为乘除，则将栈顶元素与当前元素前的数字进行计算，若为加减，则将前元素前的数字入栈
+     *
      * @param s
      * @return
      */
@@ -221,10 +222,10 @@ public class Solution {
         int num = 0;
         char pre = '+';
         for (int i = 0; i < n; i++) {
-            if(Character.isDigit(s.charAt(i))) {
+            if (Character.isDigit(s.charAt(i))) {
                 num = num * 10 + s.charAt(i) - '0';
             }
-            if((!Character.isDigit(s.charAt(i)) && s.charAt(i)!= ' ') || i == (n-1)) {
+            if ((!Character.isDigit(s.charAt(i)) && s.charAt(i) != ' ') || i == (n - 1)) {
                 switch (pre) {
                     case '+':
                         digit.push(num);
@@ -250,5 +251,54 @@ public class Solution {
         }
 
         return res;
+    }
+
+    /**
+     * 解题思路：使用字符串处理每层的翻转
+     * 分情况：1.遇到‘（’，则把字符串缓存的字符存入栈
+     * 2.遇到‘）’，则表示该层遍历结束，把字符串翻转，读取栈顶元素并存储到字符串首
+     * 3.遇到字母，则存入字符串
+     * <p>
+     * 方法二：
+     * 思路：每次遇到括号，说明遍历的方向改变，并且遍历位置变为对应括号的另一个括号的位置
+     * 存储每对括号相互的位置，遍历一遍数组即可得到对应字符串
+     *
+     * @param s
+     * @return
+     */
+    public String reverseParentheses(String s) {
+        int i = 0;
+        Stack<Integer> stack = new Stack<>();
+        int n = s.length();
+        StringBuffer sb = new StringBuffer();
+
+        int[] pair = new int[n];
+        for (int j = 0; j < n; j++) {
+            char c = s.charAt(j);
+            if (c == '(') {
+                stack.push(j);
+            } else if (c == ')') {
+                Integer pop = stack.pop();
+                pair[pop] = j;
+                pair[j] = pop;
+
+            }
+        }
+
+        int step = 1;
+
+        for (int j = 0; j < n; j += step) {
+            char c = s.charAt(j);
+            if (c == '(' || c == ')') {
+                step = -step;
+                j = pair[j];
+            } else {
+                sb.append(c);
+            }
+        }
+
+        return sb.toString();
+
+
     }
 }
