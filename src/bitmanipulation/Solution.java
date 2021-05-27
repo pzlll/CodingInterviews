@@ -282,4 +282,22 @@ public class Solution {
             return xor;
         }
     }
+
+    /**
+     * 解题思路：计算x^y的结果的1的个数
+     * 技巧：通过是s&(s-1)可将一个非零数最右侧的1变为0
+     * @param x
+     * @param y
+     * @return
+     */
+    public int hammingDistance(int x, int y) {
+        int res = x ^ y;
+        int count = 0;
+        while(res > 0) {
+            res &= (res - 1);
+            count++;
+        }
+
+        return count;
+    }
 }
