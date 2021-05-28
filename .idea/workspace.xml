@@ -37,8 +37,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="287" column="35" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+            <state relative-caret-position="390">
+              <caret line="354" column="17" selection-start-line="354" selection-start-column="17" selection-end-line="354" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="method#myAtoi#0;class#Solution#0" />
+                <element signature="method#checkStraightLine#0;class#Solution#0" />
+                <element signature="method#rotate#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,6 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,8 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +224,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622096439737" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622161684419" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -562,7 +576,8 @@
       <workItem from="1621847675943" duration="1027000" />
       <workItem from="1621923815963" duration="599000" />
       <workItem from="1622017672059" duration="4530000" />
-      <workItem from="1622095510112" duration="925000" />
+      <workItem from="1622095510112" duration="1554000" />
+      <workItem from="1622184348747" duration="3030000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -774,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622021335660</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add method hammingDistance.">
+      <created>1622096450614</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1622096450614</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -810,7 +832,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516410000" />
+    <option name="totallyTimeSpent" value="520069000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,7 +847,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.23906083" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.24172892" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -842,11 +864,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51280683" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51387405" side_tool="true" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.48719317" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.48612595" visible="true" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -904,7 +926,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method removeDuplicates." />
     <MESSAGE value="add method shipWithinDays." />
     <MESSAGE value="add method isValidBST." />
     <MESSAGE value="add method canCross." />
@@ -929,7 +950,8 @@
     <MESSAGE value="add method maximizeXor." />
     <MESSAGE value="add method strangePrinter." />
     <MESSAGE value="add method reverseParentheses." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method reverseParentheses." />
+    <MESSAGE value="add method hammingDistance." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method hammingDistance." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1195,18 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
-          <caret line="196" column="28" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="28" />
-          <folding>
-            <element signature="method#myAtoi#0;class#Solution#0" />
-            <element signature="method#checkStraightLine#0;class#Solution#0" />
-            <element signature="method#rotate#0;class#Solution#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1477,10 +1487,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="method#myAtoi#0;class#Solution#0" />
+            <element signature="method#checkStraightLine#0;class#Solution#0" />
+            <element signature="method#rotate#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="287" column="35" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+        <state relative-caret-position="390">
+          <caret line="354" column="17" selection-start-line="354" selection-start-column="17" selection-end-line="354" selection-end-column="17" />
         </state>
       </provider>
     </entry>

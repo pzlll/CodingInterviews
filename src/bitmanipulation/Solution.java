@@ -300,4 +300,39 @@ public class Solution {
 
         return count;
     }
+
+    public int totalHammingDistance(int[] nums) {
+        int n = nums.length;
+        int o = 0;
+        int z = 0;
+        int bit = 1;
+        int sum = 0;
+
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, nums[i]);
+        }
+
+        for (int i = 0; i < 31; i++) {
+            for (int j = 0; j < n; j++) {
+                if((nums[j] & bit) == 0) {
+                    z++;
+                }else {
+
+                    o++;
+                }
+            }
+            sum += z * o;
+            bit <<= 1;
+            z = 0;
+            o = 0;
+            if(bit > max) {
+                break;
+            }
+        }
+
+
+
+        return sum;
+    }
 }
