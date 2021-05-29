@@ -662,4 +662,45 @@ public class Solution {
 
         return dp[0][n-1];
     }
+
+    /**
+     * 解题思路：前缀和+哈希表优化
+     * 假设二维数组行为n，列为m
+     * 枚举所有行的上下界，对于给定的行（i,j），用数组sum存储对应列的和
+     * 数组sum中的元素k表示第k列从第i行到第j行之和
+     * 问题转化为求一维数组中和为target的连续子数组的个数
+     * 使用前缀和+哈希表优化可将其复杂度将为O（m）
+     * 将前缀和存储到哈希表中，若表中存在键为（pre[k] - target），则其值为以元素K为尾，值为target的子数组个数
+     * @param matrix
+     * @param target
+     * @return
+     */
+    public int numSubmatrixSumTarget(int[][] matrix, int target) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int count = 0;
+
+
+        for (int i = 0; i < n; i++) {
+            int[] sum = new int[m];
+            for (int j = i; j < n; j++) {
+                for (int k = 0; k < m; k++) {
+                    sum[k] += matrix[j][k];
+                }
+                Map<Integer, Integer> map = new HashMap<>();
+                int total = 0;
+                map.put(0, 1);
+                for (int k = 0; k < m; k++) {
+                    total += sum[k];
+                    if(map.get(total - target) != null) {
+                        count += map.get(total - target);
+                    }
+                    map.put(total, map.getOrDefault(total, 0) + 1);
+
+                }
+            }
+        }
+
+        return count;
+    }
 }
