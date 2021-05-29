@@ -671,6 +671,7 @@ public class Solution {
      * 问题转化为求一维数组中和为target的连续子数组的个数
      * 使用前缀和+哈希表优化可将其复杂度将为O（m）
      * 将前缀和存储到哈希表中，若表中存在键为（pre[k] - target），则其值为以元素K为尾，值为target的子数组个数
+     * 同时把pre[k]存入哈希表
      * @param matrix
      * @param target
      * @return
