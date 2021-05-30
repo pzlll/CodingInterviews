@@ -94,5 +94,33 @@ public class Solution {
         return n - max;
     }
 
+    /**
+     * 解题思路：
+     * 1. 判断两字符串长度是否相等
+     * 2. 用长度为26的数组（哈希表）统计字符串s中字符的个数
+     * 3. 遍历字符串t，每遇到一个字符则减去数组对应字符的个数，若个数小于0，则两字符串不匹配
+     * @param s
+     * @param t
+     * @return
+     */
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        int[] table = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            table[s.charAt(i) - 'a']++;
+        }
+        for (int i = 0; i < t.length(); i++) {
+            table[t.charAt(i) - 'a']--;
+            if (table[t.charAt(i) - 'a'] < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
 
 }

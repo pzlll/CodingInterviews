@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +34,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="343" selection-start-line="343" selection-end-line="343" />
+            <state relative-caret-position="314">
+              <caret line="346" column="31" selection-start-line="346" selection-start-column="19" selection-end-line="346" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#isHappy#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,6 +86,7 @@
     <findStrings>
       <find>indexOf</find>
       <find>`</find>
+      <find>isPowerOfTwo</find>
     </findStrings>
     <replaceStrings>
       <replace>charAt</replace>
@@ -119,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
-        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
@@ -136,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
+        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
       </list>
     </option>
   </component>
@@ -200,6 +213,12 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stackandqueue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,7 +245,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622337142982" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622337338254" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -581,7 +600,7 @@
       <workItem from="1622095510112" duration="1554000" />
       <workItem from="1622184348747" duration="3768000" />
       <workItem from="1622269073581" duration="2819000" />
-      <workItem from="1622334755199" duration="1802000" />
+      <workItem from="1622334755199" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -821,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622273302634</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add method isPowerOfTwo.">
+      <created>1622337154384</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1622337154384</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -857,7 +883,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525428000" />
+    <option name="totallyTimeSpent" value="525790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,8 +896,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2470651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2470651" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -902,7 +929,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17395945" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17395945" />
       <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20092024" side_tool="true" visible="true" weight="0.23664503" />
     </layout>
   </component>
@@ -950,7 +977,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method canCross." />
     <MESSAGE value="add method singleNumber." />
     <MESSAGE value="add method minCost." />
     <MESSAGE value="add method minDays." />
@@ -975,7 +1001,8 @@
     <MESSAGE value="add method hammingDistance." />
     <MESSAGE value="add method totalHammingDistance." />
     <MESSAGE value="add method numSubmatrixSumTarget." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method numSubmatrixSumTarget." />
+    <MESSAGE value="add method isPowerOfTwo." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method isPowerOfTwo." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1259,17 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isHappy#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6213">
@@ -1533,8 +1549,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bitmanipulation/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="343" selection-start-line="343" selection-end-line="343" />
+        <state relative-caret-position="314">
+          <caret line="346" column="31" selection-start-line="346" selection-start-column="19" selection-end-line="346" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isHappy#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>
