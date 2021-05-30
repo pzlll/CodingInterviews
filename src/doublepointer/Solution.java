@@ -125,6 +125,37 @@ public class Solution {
         return true;
     }
 
+    public boolean isPalindrome(String s) {
+        int i = 0;
+        int j = s.length() - 1;
+        while (i < j) {
+            while(i < j && !Character.isLetterOrDigit(s.charAt(i))) {
+                i++;
+            }
+            while(i < j && !Character.isLetterOrDigit(s.charAt(j))) {
+                j--;
+            }
+
+            if(i < j) {
+                if(Character.isDigit(s.charAt(i)) || Character.isDigit(s.charAt(j))) {
+                    if(s.charAt(i) != s.charAt(j)) {
+                        return false;
+                    }
+                }
+
+                char c1 = Character.toLowerCase(s.charAt(i));
+                char c2 = Character.toLowerCase(s.charAt(j));
+                if(c1 != c2) {
+                    return false;
+                }
+                i++;
+                j--;
+            }
+        }
+
+        return true;
+    }
+
     /**
      * 解题思路：利用双指针，从后往前填充数组A，比较两个数组，元素值大的进行填充
      *

@@ -25,4 +25,9 @@ public class SolutionTest {
     public void canReach() {
         new Solution().canReach("00111010", 3 , 5);
     }
+
+    @Test
+    public void assignTasks() {
+        new Solution().assignTasks(new int[]{3,3,2}, new int[]{1,2,3,2,1,2});
+    }
 }
