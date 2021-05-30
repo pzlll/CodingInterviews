@@ -17,4 +17,9 @@ public class SolutionTest {
         int[][] queries = {{12,4},{8,1},{6,3}};
         new Solution().maximizeXor(nums, queries);
     }
+
+    @Test
+    public void isPowerOfTwo() {
+        System.out.println(new Solution().isPowerOfTwo(0));
+    }
 }

@@ -335,4 +335,23 @@ public class Solution {
 
         return sum;
     }
+
+    /**
+     * 解题思路：三种思路
+     * 1. (n & (n-1)) == 0
+     * 2. (n & -n) == n
+     * 3. (2^30 % n) == 0
+     * @param n
+     * @return
+     */
+    public boolean isPowerOfTwo(int n) {
+        if(n <= 0) {
+            return false;
+        }
+
+
+
+
+        return (n & (n-1)) == 0 ? true : false;
+    }
 }
