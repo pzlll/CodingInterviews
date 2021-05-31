@@ -971,6 +971,7 @@ public class Solution {
     /**
      * 解题思路：获取最小生成树的值，判断每一条边，若减少这条边，权值和增加或连通分量增加，则为关键边
      * 若减少这条边，权值和不变，且这条边能与其他边构成最小生成树，则为伪关键边
+     *
      * @param n
      * @param edges
      * @return
@@ -1117,6 +1118,81 @@ public class Solution {
 
         return sum;
 
+    }
+
+    public int minCostConnectPoints(int[][] points) {
+        int n = points.length;
+        int[][] edges = new int[n * (n - 1) / 2][3];
+
+        int k = 0;
+        for (int i = 0; i < (n - 1); i++) {
+            for (int j = (i + 1); j < n; j++) {
+                int x = Math.abs(points[i][0] - points[j][0]) + Math.abs(points[i][1] - points[j][1]);
+                edges[k++] = new int[]{x, i, j};
+            }
+        }
+
+        Arrays.sort(edges, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+
+        int sum = 0;
+
+
+        Union7 union7 = new Union7(n);
+        for (int i = 0; i < (n * (n - 1) / 2); i++) {
+            int x = edges[i][1];
+            int y = edges[i][2];
+            if(union7.union(x, y)) {
+                sum += edges[i][0];
+            }
+            if(union7.getCount() == 1) {
+                break;
+            }
+        }
+
+        return sum;
+    }
+
+    class Union7 {
+        private int[] parent;
+        private int count;
+
+        public Union7(int n) {
+            parent = new int[n];
+            for (int i = 0; i < n; i++) {
+                parent[i] = i + 1;
+            }
+            count = n;
+        }
+
+        public int getParent(int x) {
+            if(parent[x] != x) {
+                return parent[x] = getParent(parent[x]);
+            }
+
+            return x;
+        }
+
+        public boolean union(int x, int y) {
+            int rootX = getParent(x);
+            int rootY = getParent(y);
+            if(rootX == rootY) {
+                return false;
+            }
+
+            parent[rootY] = rootX;
+            count--;
+
+            return true;
+        }
+
+        public int getCount() {
+            return count;
+        }
     }
 }
 
