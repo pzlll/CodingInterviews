@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="5282">
               <caret line="1122" column="35" selection-start-line="1122" selection-start-column="15" selection-end-line="1122" selection-end-column="35" />
               <folding>
                 <element signature="method#calcEquation#0;class#Solution#0" />
@@ -70,9 +70,20 @@
                 <element signature="method#getSum#0;class#Solution#0" />
                 <element signature="class#Union6#0;class#Solution#0" />
                 <element signature="e#29310#29311#0" expanded="true" />
-                <element signature="e#29358#29359#0" expanded="true" />
-                <element signature="e#30504#30505#0" expanded="true" />
-                <element signature="e#30540#30541#0" expanded="true" />
+                <element signature="e#29362#29363#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="240" column="27" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="27" />
+              <folding>
+                <element signature="method#myAtoi#0;class#Solution#0" />
+                <element signature="method#checkStraightLine#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -137,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/hash/MyHashSet.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
@@ -156,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
+        <option value="$PROJECT_DIR$/src/math/Solution.java" />
       </list>
     </option>
   </component>
@@ -185,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +243,12 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stackandqueue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,7 +264,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -258,7 +275,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622466334834" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622466426054" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -614,7 +631,9 @@
       <workItem from="1622184348747" duration="3768000" />
       <workItem from="1622269073581" duration="2819000" />
       <workItem from="1622334755199" duration="11157000" />
-      <workItem from="1622441949062" duration="1606000" />
+      <workItem from="1622441949062" duration="1757000" />
+      <workItem from="1622527490110" duration="2994000" />
+      <workItem from="1622615032869" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -868,7 +887,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622337344410</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add method minCostConnectPoints.">
+      <created>1622466346860</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1622466346860</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -904,7 +930,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536389000" />
+    <option name="totallyTimeSpent" value="540143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -919,7 +945,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.20597652" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.21024546" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -950,7 +976,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17395945" />
+      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17395945" />
       <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20092024" side_tool="true" visible="true" weight="0.23664503" />
     </layout>
   </component>
@@ -998,7 +1024,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method minCost." />
     <MESSAGE value="add method minDays." />
     <MESSAGE value="add method decode." />
     <MESSAGE value="add method xorQueries." />
@@ -1023,7 +1048,8 @@
     <MESSAGE value="add method numSubmatrixSumTarget." />
     <MESSAGE value="add method isPowerOfTwo." />
     <MESSAGE value="add method isAnagram." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method isAnagram." />
+    <MESSAGE value="add method minCostConnectPoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method minCostConnectPoints." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1433,18 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="method#myAtoi#0;class#Solution#0" />
-            <element signature="method#checkStraightLine#0;class#Solution#0" />
-            <element signature="method#rotate#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -1573,7 +1587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="5282">
           <caret line="1122" column="35" selection-start-line="1122" selection-start-column="15" selection-end-line="1122" selection-end-column="35" />
           <folding>
             <element signature="method#calcEquation#0;class#Solution#0" />
@@ -1606,9 +1620,18 @@
             <element signature="method#getSum#0;class#Solution#0" />
             <element signature="class#Union6#0;class#Solution#0" />
             <element signature="e#29310#29311#0" expanded="true" />
-            <element signature="e#29358#29359#0" expanded="true" />
-            <element signature="e#30504#30505#0" expanded="true" />
-            <element signature="e#30540#30541#0" expanded="true" />
+            <element signature="e#29362#29363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="240" column="27" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="27" />
+          <folding>
+            <element signature="method#myAtoi#0;class#Solution#0" />
+            <element signature="method#checkStraightLine#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
