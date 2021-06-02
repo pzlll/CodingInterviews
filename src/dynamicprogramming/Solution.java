@@ -704,4 +704,35 @@ public class Solution {
 
         return count;
     }
+
+    /**
+     * 解题思路：
+     *      如果两个整数m、n满足n-m能被k整除，那么n和m对k同余
+     *      将对应前缀和的存入哈希表中，边存边判断，若两个前缀和的余数相等并且间隔大于等于2，则找到答案
+     *      时间复杂度为o(n)，空间复杂度为o(k)
+     * @param nums
+     * @param k
+     * @return
+     */
+    public boolean checkSubarraySum(int[] nums, int k) {
+        int n = nums.length;
+        int total = 0;
+
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(total, 0);
+
+        for (int i = 1; i <= n; i++) {
+            total += nums[i-1];
+            total %= k;
+            if(map.containsKey(total)) {
+                if((i - map.get(total)) >= 2) {
+                    return true;
+                }
+            }else {
+                map.put(total, i);
+            }
+        }
+
+        return false;
+    }
 }
