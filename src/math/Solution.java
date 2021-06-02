@@ -39,45 +39,61 @@ public class Solution {
      * @return
      */
     public int myAtoi(String s) {
-        if (s == null)
-            return 0;
-        int i = 0;
-        while (i < s.length() && s.charAt(i) == ' ') {
-            i++;
+        int n = s.length();
+        Automation automation  = new Automation();
+        for (int i = 0; i < n; i++) {
+            automation.changeState(s.charAt(i));
         }
 
-        boolean flag = true;
+        return (int)automation.getAns();
 
-        if (i < s.length() && s.charAt(i) == '-') {
-            flag = false;
-            i++;
-        } else if (i < s.length() && s.charAt(i) == '+') {
-            flag = true;
-            i++;
+    }
+
+    class Automation{
+        private long ans;
+        private String state;
+        private int sign;
+        private Map<String, String[]> table;
+        public Automation() {
+            state = "start";
+            ans = 0;
+            sign = 1;
+            table = new HashMap<>();
+            table.put("start", new String[]{"start", "signed", "in_number", "end"});
+            table.put("signed", new String[]{"end", "end", "in_number", "end"});
+            table.put("in_number", new String[]{"end", "end", "in_number", "end"});
+            table.put("end", new String[]{"end", "end", "end", "end"});
         }
 
-        int sum = 0;
+        public long getAns() {
+            return sign == 1 ? ans : -ans;
+        }
 
-        int check = 0;
-
-        while (i < s.length() && (s.charAt(i) <= '9' && s.charAt(i) >= '0')) {
-            check = sum;
-            sum = sum * 10 + s.charAt(i) - '0';
-            if (sum < check) {
-                if (flag) {
-                    return Integer.MAX_VALUE;
-                } else {
-                    return Integer.MIN_VALUE;
-                }
+        public void changeState(char c) {
+            this.state = table.get(state)[get_col(c)];
+            if(state.equals("in_number")) {
+                ans = ans * 10 + c - '0';
+                ans = (sign == 1 ? Math.min(ans, Integer.MAX_VALUE):Math.min(ans, -(long)Integer.MIN_VALUE));
             }
-            i++;
+            if(state.equals("signed")) {
+                sign = (c == '+' ? 1 : 0);
+            }
         }
 
-        if (!flag) {
-            sum = -sum;
-        }
+        private int get_col(char c) {
+            if(c == ' ') {
+                return 0;
+            }
+            if(c == '-' || c == '+') {
+                return 1;
+            }
 
-        return sum;
+            if(Character.isDigit(c)) {
+                return 2;
+            }
+
+            return 3;
+        }
     }
 
     /**
