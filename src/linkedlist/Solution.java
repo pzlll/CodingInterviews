@@ -203,5 +203,54 @@ public class Solution {
         node.next = node.next.next;
     }
 
+    /**
+     * 解题思路：两种方法
+     *      1.使用哈希表存储链表A的元素，遍历链表B，若哈希表包含该元素，则说明找到相同元素的头节点
+     *      2.使用双指针，指针pa指向链表A的头节点，指针pb指向链表B的头节点，判断pa是否等于pb，
+     *      若不等，则pa、pb指向下个节点，pa为空时，下个节点指向链表B，pb为空时，下个节点指向链表A
+     *      ，若相等且非空，则找到对应头节点，若相等且空，则两个链表不相交
+     *
+     * @param headA
+     * @param headB
+     * @return
+     */
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        int la = 0;
+        int lb = 0;
+        ListNode pa = headA;
+        ListNode pb = headB;
+        while (pa != null) {
+            la++;
+            pa = pa.next;
+        }
+
+        while (pb != null) {
+            lb++;
+            pb = pb.next;
+        }
+
+        pa = headA;
+        pb = headB;
+        while(la != lb) {
+            if(la > lb) {
+                pa = pa.next;
+                la--;
+            }else {
+                pb = pb.next;
+                lb--;
+            }
+        }
+
+        while (pa != null && pb != null) {
+            if(pa == pb){
+                return pa;
+            }
+            pa = pa.next;
+            pb = pb.next;
+        }
+
+        return null;
+    }
+
 
 }
