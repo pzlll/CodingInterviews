@@ -342,4 +342,31 @@ public class Solution {
         return result;
     }
 
+    public String countAndSay(int n) {
+        int i = 1;
+        String s = "1";
+        StringBuffer str = new StringBuffer();
+        while (i < n) {
+            int j = 0;
+            int k = (j+1);
+            int m = s.length();
+            while(j < m) {
+                while(k < m && (s.charAt(k) == s.charAt(j))) {
+                    k++;
+                }
+                str.append((k - j));
+                str.append(s.charAt(j));
+                j = k;
+                k = (j + 1);
+            }
+            s = str.toString();
+            str.delete(0, str.length());
+            i++;
+        }
+
+
+
+        return s;
+    }
+
 }
