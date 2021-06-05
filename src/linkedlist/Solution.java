@@ -277,5 +277,36 @@ public class Solution {
         return p.next;
     }
 
+    /**
+     * 解题思路：
+     *      1.求链表长度，计算正数的位置再遍历进行删除
+     *      2.存入栈，倒数第n个则出栈n次，此时栈顶为前驱节点
+     *      3.使用快慢指针，指针first比second快n个节点（相隔n-1个节点），
+     *          若first走到尽头，则second所指为倒数第n个节点
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+
+
+        ListNode dump = new ListNode(0);
+        dump.next = head;
+        ListNode first, second;
+        first = head;
+        second = dump;
+        for (int i = 0; i < n; i++) {
+            first = first.next;
+        }
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+
+        second.next = second.next.next;
+
+        return dump.next;
+    }
+
 
 }

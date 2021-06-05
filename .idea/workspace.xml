@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,37 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="366" column="8" selection-start-line="366" selection-start-column="8" selection-end-line="366" selection-end-column="8" />
-              <folding>
-                <element signature="method#longestPalindrome#0;class#Solution#0" />
-                <element signature="method#largeGroupPositions#0;class#Solution#0" />
-                <element signature="method#isMatch#0;class#Solution#0" />
-                <element signature="method#isMatch#1;class#Solution#0" />
-                <element signature="method#longestCommonPrefix#0;class#Solution#0" />
-                <element signature="method#evalRPN#0;class#Solution#0" />
-                <element signature="method#wordBreak#0;class#Solution#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/lang/StringBuffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7619">
-              <caret line="440" column="19" selection-start-line="440" selection-start-column="19" selection-end-line="440" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/lang/AbstractStringBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14991">
-              <caret line="821" column="33" selection-start-line="821" selection-start-column="33" selection-end-line="821" selection-end-column="33" />
+            <state relative-caret-position="523">
+              <caret line="305" column="39" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -147,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
-        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
+        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
       </list>
     </option>
   </component>
@@ -637,7 +610,7 @@
       <workItem from="1622615032869" duration="4850000" />
       <workItem from="1622702458215" duration="2120000" />
       <workItem from="1622786755180" duration="3945000" />
-      <workItem from="1622864378669" duration="643000" />
+      <workItem from="1622864378669" duration="4454000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -926,7 +899,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622788261941</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add method countAndSay.">
+      <created>1622874865030</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1622874865030</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add method removeElements.">
+      <created>1622875868613</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1622875868613</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -962,7 +949,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="551092000" />
+    <option name="totallyTimeSpent" value="554903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1056,8 +1043,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method intToRoman." />
-    <MESSAGE value="add method romanToInt." />
     <MESSAGE value="add method leastBricks." />
     <MESSAGE value="add method findMaximumXOR." />
     <MESSAGE value="add method isCousins." />
@@ -1081,7 +1066,9 @@
     <MESSAGE value="add method checkSubarraySum." />
     <MESSAGE value="add method findMaxLength." />
     <MESSAGE value="add method getIntersectionNode." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method getIntersectionNode." />
+    <MESSAGE value="add method countAndSay." />
+    <MESSAGE value="add method removeElements." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method removeElements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1616,17 +1603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="213" column="19" lean-forward="true" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="366" column="8" selection-start-line="366" selection-start-column="8" selection-end-line="366" selection-end-column="8" />
+        <state relative-caret-position="637">
+          <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
           <folding>
             <element signature="method#longestPalindrome#0;class#Solution#0" />
             <element signature="method#largeGroupPositions#0;class#Solution#0" />
@@ -1650,6 +1630,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14991">
           <caret line="821" column="33" selection-start-line="821" selection-start-column="33" selection-end-line="821" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="305" column="39" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
         </state>
       </provider>
     </entry>
