@@ -252,5 +252,30 @@ public class Solution {
         return null;
     }
 
+    /**
+     * 解题思路：
+     *      方法二：使用递归求解
+     *      1.若当前节点为空，则返回空节点
+     *      2.当前节点的next域由本函数递归得到，参数是当前节点的next域
+     *      3.根据当前节点与参数值是否相同，返回当前节点或其next域
+     * @param head
+     * @param val
+     * @return
+     */
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode p = new ListNode(1);
+        p.next = head;
+        ListNode q = p;
+        while(q.next != null) {
+            if(q.next.val == val) {
+                q.next = q.next.next;
+            }else {
+                q = q.next;
+            }
+        }
+
+        return p.next;
+    }
+
 
 }
