@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedlist/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +36,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="305" column="39" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
+            <state relative-caret-position="186">
+              <caret line="764" column="61" selection-start-line="764" selection-start-column="61" selection-end-line="764" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+              <folding>
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/heap/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
@@ -119,9 +139,10 @@
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
       </list>
     </option>
   </component>
@@ -152,6 +173,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,7 +260,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,7 +270,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622795827776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622946427700" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -271,17 +292,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dynamicprogramming" />
       <recent name="game" />
       <recent name="bitmanipulation" />
-      <recent name="dynamicprogramming" />
       <recent name="bitoperation" />
       <recent name="binarysearch" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="game" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="game" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -296,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.assignTasks">
+  <component name="RunManager" selected="JUnit.SolutionTest.findMaxForm">
     <configuration name="SolutionTest.assignTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -329,6 +350,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionTest.findMaxForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dynamicprogramming" />
+      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
+      <option name="METHOD_NAME" value="findMaxForm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionTest.isPowerOfTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -340,22 +377,6 @@
       <option name="PACKAGE_NAME" value="bitmanipulation" />
       <option name="MAIN_CLASS_NAME" value="bitmanipulation.SolutionTest" />
       <option name="METHOD_NAME" value="isPowerOfTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.minSpeedOnTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game" />
-      <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
-      <option name="METHOD_NAME" value="minSpeedOnTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -441,11 +462,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.findMaxForm" />
         <item itemvalue="JUnit.SolutionTest.assignTasks" />
         <item itemvalue="JUnit.SolutionTest.isPowerOfTwo" />
         <item itemvalue="JUnit.SolutionTest.strangePrinter" />
         <item itemvalue="JUnit.SolutionTest.canReach" />
-        <item itemvalue="JUnit.SolutionTest.minSpeedOnTime" />
       </list>
     </recent_temporary>
   </component>
@@ -610,7 +631,8 @@
       <workItem from="1622615032869" duration="4850000" />
       <workItem from="1622702458215" duration="2120000" />
       <workItem from="1622786755180" duration="3945000" />
-      <workItem from="1622864378669" duration="4454000" />
+      <workItem from="1622864378669" duration="5111000" />
+      <workItem from="1622943250539" duration="2562000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -913,19 +935,17 @@
       <option name="project" value="LOCAL" />
       <updated>1622875868613</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add method removeNthFromEnd.">
+      <created>1622878965014</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1622878965014</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTest_isPowerOfTwo - 2021.05.30 at 08h 40m 04s.xml">
-      <configuration name="SolutionTest.isPowerOfTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 11h 21m 48s.xml">
-      <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 11h 23m 29s.xml">
-      <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 11h 24m 42s.xml">
       <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
     </history-entry>
@@ -947,9 +967,18 @@
     <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 15h 15m 52s.xml">
       <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SolutionTest_findMaxForm - 2021.06.06 at 10h 08m 17s.xml">
+      <configuration name="SolutionTest.findMaxForm" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest_findMaxForm - 2021.06.06 at 10h 10m 41s.xml">
+      <configuration name="SolutionTest.findMaxForm" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest_findMaxForm - 2021.06.06 at 10h 17m 45s.xml">
+      <configuration name="SolutionTest.findMaxForm" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554903000" />
+    <option name="totallyTimeSpent" value="558122000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -964,7 +993,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.21674058" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.21895787" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -974,18 +1003,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49466383" visible="true" weight="0.39040348" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49390244" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51773834" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50609756" side_tool="true" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.48226163" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4817073" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1043,7 +1072,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method leastBricks." />
     <MESSAGE value="add method findMaximumXOR." />
     <MESSAGE value="add method isCousins." />
     <MESSAGE value="add method countTriplets." />
@@ -1068,7 +1096,8 @@
     <MESSAGE value="add method getIntersectionNode." />
     <MESSAGE value="add method countAndSay." />
     <MESSAGE value="add method removeElements." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method removeElements." />
+    <MESSAGE value="add method removeNthFromEnd." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method removeNthFromEnd." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1138,6 +1167,12 @@
           <line>190</line>
           <properties />
           <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java</url>
+          <line>795</line>
+          <properties />
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1570,35 +1605,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/math/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
           <folding>
             <element signature="method#checkStraightLine#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="751" column="9" lean-forward="true" selection-start-line="751" selection-start-column="9" selection-end-line="751" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1635,8 +1647,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="305" column="39" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="289" column="36" selection-start-line="289" selection-start-column="20" selection-end-line="289" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="764" column="61" selection-start-line="764" selection-start-column="61" selection-end-line="764" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

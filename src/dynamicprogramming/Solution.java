@@ -754,5 +754,47 @@ public class Solution {
         return length;
     }
 
+    /**
+     * 解题思路：动态规划
+     *      使用数组的dp[i][j][k]存储前i个字符串在0的个数为j、1的个数为k的情况下可获得最大的子集
+     *     当i=0时，dp[i][j][k] = 0
+     *     当i>0时，记当前字符串0的个数为s，1的个数为t，则
+     *          若s > j || t > k，dp[i][j][k] = dp[i-1][j][k]
+     *          否则，dp[i][j][k] = dp[i-1][j][k]、dp[i-1][j-s][k-t]最大值
+     *     结果为dp[l][m][n]的值
+     *     优化：dp使用二维数组、从后往前查找，且当j < s || k < t时，无需查找，使用上一个字符串得到的结果
+     * @param strs
+     * @param m
+     * @param n
+     * @return
+     */
+    public int findMaxForm(String[] strs, int m, int n) {
+        int l = strs.length;
+        int[][] dp = new int[m+1][n+1];
+
+
+
+        for (int i = 1; i <= l; i++) {
+            int s = 0;
+            int t = 0;
+            for (int j = 0; j < strs[i-1].length(); j++) {
+                if(strs[i-1].charAt(j) == '0') {
+                    s++;
+                }else {
+                    t++;
+                }
+            }
+
+            for (int j = m; j >= s; j--) {
+                for (int k = n; k >= t; k--) {
+                    dp[j][k] = Math.max(dp[j][k], dp[j-s][k-t] + 1);
+
+                }
+            }
+        }
+
+        return dp[m][n];
+    }
+
 
 }

@@ -26,4 +26,9 @@ public class SolutionTest {
     public void strangePrinter() {
         new Solution().strangePrinter("aaabbb");
     }
+
+    @Test
+    public void findMaxForm() {
+        new Solution().findMaxForm(new String[]{"10", "0", "1"}, 1 ,1);
+    }
 }
