@@ -30,4 +30,14 @@ public class SolutionTest {
     public void assignTasks() {
         new Solution().assignTasks(new int[]{3,3,2}, new int[]{1,2,3,2,1,2});
     }
+
+    @Test
+    public void findRotation() {
+        new Solution().findRotation(new int[][]{{1,1},{0,1}}, new int[][]{{1,1}, {1, 0}});
+    }
+
+    @Test
+    public void minFlips() {
+        new Solution().minFlips("111000");
+    }
 }

@@ -224,4 +224,148 @@ public class Solution {
         return ans;
     }
 
+    public boolean findRotation(int[][] mat, int[][] target) {
+        int n = mat.length;
+
+        if(isEquals(mat, target)) {
+            return true;
+        }
+
+        change(mat);
+
+
+        
+        if(isEquals(mat, target)) {
+            return true;
+        }
+
+        change(mat);
+
+        if(isEquals(mat, target)) {
+            return true;
+        }
+
+        change(mat);
+
+        if(isEquals(mat, target)) {
+            return true;
+        }
+
+        return false;
+        
+    }
+
+    private void change(int[][] mat) {
+        int n = mat.length;
+        for (int i = 0; i < (n / 2); i++) {
+            for (int j = 0; j < n; j++) {
+                int temp = mat[i][j];
+                mat[i][j] = mat[n-1-i][j];
+                mat[n-1-i][j] = temp;
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = (i+1); j < n; j++) {
+                int temp = mat[i][j];
+                mat[i][j] = mat[j][i];
+                mat[j][i] = temp;
+            }
+        }
+    }
+
+    private boolean isEquals(int[][] mat, int[][] target) {
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat.length; j++) {
+                if(mat[i][j] != target[i][j]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public int reductionOperations(int[] nums) {
+        int n = nums.length;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            min = Math.min(min, nums[i]);
+        }
+
+        Set<Integer> set = new TreeSet<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        Map<Integer,Integer> map = new HashMap<>();
+
+        for (int i = 0; i < n; i++) {
+            set.add(nums[i]);
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        }
+
+        int count = 0;
+        int sum = 0;
+
+
+        for (Integer i :
+                set) {
+            if (i == min) {
+                break;
+            }
+
+            sum += map.get(i);
+
+            count += sum;
+        }
+
+
+        return count;
+    }
+
+
+    public int minFlips(String s) {
+        int min = Integer.MAX_VALUE;
+
+        min = Math.min(min, flip(s));
+
+
+        for (int i = 0; i < (s.length()-1); i++) {
+            if(s.charAt(i) != s.charAt(i+1)) {
+                s = s.substring(i, s.length()) + s.substring(0, i);
+                break;
+            }
+
+
+        }
+
+        min = Math.min(min, flip(s));
+
+        return min;
+
+    }
+
+    private int flip(String s) {
+        int count1 = 0;
+        int count2 = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if(i % 2 == 0) {
+                if(s.charAt(i) != '0') {
+                    count1++;
+                }else {
+                    count2++;
+                }
+            }else {
+                if(s.charAt(i) != '1') {
+                    count1++;
+                }else {
+                    count2++;
+                }
+            }
+        }
+
+        return Math.min(count1, count2);
+    }
 }
