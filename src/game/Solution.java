@@ -227,32 +227,31 @@ public class Solution {
     public boolean findRotation(int[][] mat, int[][] target) {
         int n = mat.length;
 
-        if(isEquals(mat, target)) {
+        if (isEquals(mat, target)) {
             return true;
         }
 
         change(mat);
 
 
-        
-        if(isEquals(mat, target)) {
+        if (isEquals(mat, target)) {
             return true;
         }
 
         change(mat);
 
-        if(isEquals(mat, target)) {
+        if (isEquals(mat, target)) {
             return true;
         }
 
         change(mat);
 
-        if(isEquals(mat, target)) {
+        if (isEquals(mat, target)) {
             return true;
         }
 
         return false;
-        
+
     }
 
     private void change(int[][] mat) {
@@ -260,13 +259,13 @@ public class Solution {
         for (int i = 0; i < (n / 2); i++) {
             for (int j = 0; j < n; j++) {
                 int temp = mat[i][j];
-                mat[i][j] = mat[n-1-i][j];
-                mat[n-1-i][j] = temp;
+                mat[i][j] = mat[n - 1 - i][j];
+                mat[n - 1 - i][j] = temp;
             }
         }
 
         for (int i = 0; i < n; i++) {
-            for (int j = (i+1); j < n; j++) {
+            for (int j = (i + 1); j < n; j++) {
                 int temp = mat[i][j];
                 mat[i][j] = mat[j][i];
                 mat[j][i] = temp;
@@ -277,7 +276,7 @@ public class Solution {
     private boolean isEquals(int[][] mat, int[][] target) {
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat.length; j++) {
-                if(mat[i][j] != target[i][j]) {
+                if (mat[i][j] != target[i][j]) {
                     return false;
                 }
             }
@@ -299,7 +298,7 @@ public class Solution {
                 return o2 - o1;
             }
         });
-        Map<Integer,Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < n; i++) {
             set.add(nums[i]);
@@ -326,46 +325,48 @@ public class Solution {
     }
 
 
+    /**
+     * 解题思路：双倍字符串+滑动窗口
+     * 方法：维护长度为n的窗口，计算该窗口内转变为两种类型字符串所需次数，取最小值
+     * 不断移动窗口，取转变操作的最小值
+     * 提示：1.若转变为0101...字符串需要k次，则转变为1010...字符串需要n-k次
+     *      2.以0101...字符串为基准，则每次比较可转化为对应下标的值与字符串“01”中i%2位置的值比较
+     *
+     * @param s
+     * @return
+     */
     public int minFlips(String s) {
-        int min = Integer.MAX_VALUE;
+        int n = s.length();
+        int min;
 
-        min = Math.min(min, flip(s));
 
-
-        for (int i = 0; i < (s.length()-1); i++) {
-            if(s.charAt(i) != s.charAt(i+1)) {
-                s = s.substring(i, s.length()) + s.substring(0, i);
-                break;
+        int count = 0;
+        String target = "01";
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) != target.charAt(i % 2)) {
+                count++;
             }
-
-
         }
 
-        min = Math.min(min, flip(s));
+        min = Math.min(count, n - count);
+
+        s = s + s;
+
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) != target.charAt(i % 2)) {
+                count--;
+            }
+            if (s.charAt(i + n) != target.charAt((i + n) % 2)) {
+                count++;
+            }
+            min = Math.min(min, count);
+            min = Math.min(min, n - count);
+        }
+
 
         return min;
 
     }
 
-    private int flip(String s) {
-        int count1 = 0;
-        int count2 = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if(i % 2 == 0) {
-                if(s.charAt(i) != '0') {
-                    count1++;
-                }else {
-                    count2++;
-                }
-            }else {
-                if(s.charAt(i) != '1') {
-                    count1++;
-                }else {
-                    count2++;
-                }
-            }
-        }
 
-        return Math.min(count1, count2);
-    }
 }

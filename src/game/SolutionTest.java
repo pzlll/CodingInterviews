@@ -38,6 +38,6 @@ public class SolutionTest {
 
     @Test
     public void minFlips() {
-        new Solution().minFlips("111000");
+        new Solution().minFlips("01001001101");
     }
 }
