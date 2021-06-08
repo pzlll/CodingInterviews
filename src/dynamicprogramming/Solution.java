@@ -600,15 +600,16 @@ public class Solution {
 
     /**
      * 解题思路：使用动态规划，第i步第j位置的方案数dp[i][j] = dp[i-1][j-1] + dp[i-1][j] + dp[i-1][j+1]
-     *          优化： 1.使用两个数组存储相邻步数
-     *                2.数组大小为min(step/2+1, arrlen)
+     * 优化： 1.使用两个数组存储相邻步数
+     * 2.数组大小为min(step/2+1, arrlen)
+     *
      * @param steps
      * @param arrLen
      * @return
      */
     public int numWays(int steps, int arrLen) {
         int mould = 1000000007;
-        int n = Math.min(steps/2 + 1, arrLen);
+        int n = Math.min(steps / 2 + 1, arrLen);
         int[] ans = new int[n];
         ans[0] = 1;
         int[] bns = new int[n];
@@ -631,8 +632,9 @@ public class Solution {
     /**
      * 解题思路：使用动态规划
      * 转移方程： 若s[i] == s[j]，则区间（i,j）与区间（i,j-1）的填充次数相同（最早填充元素i）
-     *          若s[i] ！= s[j]，则区间（i，j）的填充次数等于区间内所有子区间（（i,k）,（k+1,j））次数的最小值
+     * 若s[i] ！= s[j]，则区间（i，j）的填充次数等于区间内所有子区间（（i,k）,（k+1,j））次数的最小值
      * 技巧：所求dp数组为正三角数组，为方便计算，可从i升序，j降序的顺序计算
+     *
      * @param s
      * @return
      */
@@ -647,20 +649,20 @@ public class Solution {
         for (int i = (n - 1); i >= 0; i--) {
 
             for (int j = (i + 1); j < n; j++) {
-                if(s.charAt(i) == s.charAt(j)) {
-                    dp[i][j] = dp[i][j-1];
+                if (s.charAt(i) == s.charAt(j)) {
+                    dp[i][j] = dp[i][j - 1];
                     continue;
                 }
                 int min = Integer.MAX_VALUE;
                 for (int k = i; k < j; k++) {
-                    min = Math.min(min, dp[i][k] + dp[k+1][j]);
+                    min = Math.min(min, dp[i][k] + dp[k + 1][j]);
                 }
                 dp[i][j] = min;
             }
 
         }
 
-        return dp[0][n-1];
+        return dp[0][n - 1];
     }
 
     /**
@@ -672,6 +674,7 @@ public class Solution {
      * 使用前缀和+哈希表优化可将其复杂度将为O（m）
      * 将前缀和存储到哈希表中，若表中存在键为（pre[k] - target），则其值为以元素K为尾，值为target的子数组个数
      * 同时把pre[k]存入哈希表
+     *
      * @param matrix
      * @param target
      * @return
@@ -693,7 +696,7 @@ public class Solution {
                 map.put(0, 1);
                 for (int k = 0; k < m; k++) {
                     total += sum[k];
-                    if(map.get(total - target) != null) {
+                    if (map.get(total - target) != null) {
                         count += map.get(total - target);
                     }
                     map.put(total, map.getOrDefault(total, 0) + 1);
@@ -707,9 +710,10 @@ public class Solution {
 
     /**
      * 解题思路：
-     *      如果两个整数m、n满足n-m能被k整除，那么n和m对k同余
-     *      将对应前缀和的存入哈希表中，边存边判断，若两个前缀和的余数相等并且间隔大于等于2，则找到答案
-     *      时间复杂度为o(n)，空间复杂度为o(k)
+     * 如果两个整数m、n满足n-m能被k整除，那么n和m对k同余
+     * 将对应前缀和的存入哈希表中，边存边判断，若两个前缀和的余数相等并且间隔大于等于2，则找到答案
+     * 时间复杂度为o(n)，空间复杂度为o(k)
+     *
      * @param nums
      * @param k
      * @return
@@ -722,13 +726,13 @@ public class Solution {
         map.put(total, 0);
 
         for (int i = 1; i <= n; i++) {
-            total += nums[i-1];
+            total += nums[i - 1];
             total %= k;
-            if(map.containsKey(total)) {
-                if((i - map.get(total)) >= 2) {
+            if (map.containsKey(total)) {
+                if ((i - map.get(total)) >= 2) {
                     return true;
                 }
-            }else {
+            } else {
                 map.put(total, i);
             }
         }
@@ -743,10 +747,10 @@ public class Solution {
         int length = 0;
         map.put(0, -1);
         for (int i = 0; i < nums.length; i++) {
-            sum += (nums[i] ==0 ? -1 : 1);
-            if(map.containsKey(sum)) {
+            sum += (nums[i] == 0 ? -1 : 1);
+            if (map.containsKey(sum)) {
                 length = Math.max(length, (i - map.get(sum)));
-            }else {
+            } else {
                 map.put(sum, i);
             }
         }
@@ -756,13 +760,14 @@ public class Solution {
 
     /**
      * 解题思路：动态规划
-     *      使用数组的dp[i][j][k]存储前i个字符串在0的个数为j、1的个数为k的情况下可获得最大的子集
-     *     当i=0时，dp[i][j][k] = 0
-     *     当i>0时，记当前字符串0的个数为s，1的个数为t，则
-     *          若s > j || t > k，dp[i][j][k] = dp[i-1][j][k]
-     *          否则，dp[i][j][k] = dp[i-1][j][k]、dp[i-1][j-s][k-t]最大值
-     *     结果为dp[l][m][n]的值
-     *     优化：dp使用二维数组、从后往前查找，且当j < s || k < t时，无需查找，使用上一个字符串得到的结果
+     * 使用数组的dp[i][j][k]存储前i个字符串在0的个数为j、1的个数为k的情况下可获得最大的子集
+     * 当i=0时，dp[i][j][k] = 0
+     * 当i>0时，记当前字符串0的个数为s，1的个数为t，则
+     * 若s > j || t > k，dp[i][j][k] = dp[i-1][j][k]
+     * 否则，dp[i][j][k] = dp[i-1][j][k]、dp[i-1][j-s][k-t]最大值
+     * 结果为dp[l][m][n]的值
+     * 优化：dp使用二维数组、从后往前查找，且当j < s || k < t时，无需查找，使用上一个字符串得到的结果
+     *
      * @param strs
      * @param m
      * @param n
@@ -770,30 +775,135 @@ public class Solution {
      */
     public int findMaxForm(String[] strs, int m, int n) {
         int l = strs.length;
-        int[][] dp = new int[m+1][n+1];
-
+        int[][] dp = new int[m + 1][n + 1];
 
 
         for (int i = 1; i <= l; i++) {
             int s = 0;
             int t = 0;
-            for (int j = 0; j < strs[i-1].length(); j++) {
-                if(strs[i-1].charAt(j) == '0') {
+            for (int j = 0; j < strs[i - 1].length(); j++) {
+                if (strs[i - 1].charAt(j) == '0') {
                     s++;
-                }else {
+                } else {
                     t++;
                 }
             }
 
             for (int j = m; j >= s; j--) {
                 for (int k = n; k >= t; k--) {
-                    dp[j][k] = Math.max(dp[j][k], dp[j-s][k-t] + 1);
+                    dp[j][k] = Math.max(dp[j][k], dp[j - s][k - t] + 1);
 
                 }
             }
         }
 
         return dp[m][n];
+    }
+
+    /**
+     * 解题思路：在数组中选取一部分元素为正数，另一部分元素为负数，使得其总和为target值，求其方案数
+     * 设负数总和为neg，总和为sum，则sum - neg - neg = target
+     * neg = (sum - target) / 2
+     * 题目保证数组元素为非负整数，若neg为负数或非整数，则方案数为0
+     * 转化为背包问题，从数组中取出部分元素，使其总和为(sum - target) / 2，求其方案数
+     * dp[i][j]:从前i个元素中取部分元素，其总和为j的方案数
+     * 当j=0时（总和为零），dp[i][0] = 1
+     * 当i=0、j!=0时，dp[0][j] = 0
+     * 元素个数从少到多遍历
+     * 总和从小到大遍历
+     * 状态转移方程：
+     * 当前遍历的元素值num[i-1]大于总和j:dp[i][j] = dp[i-1][j]
+     * 当前遍历的元素值num[i-1]小于等于总和j:dp[i][j] = dp[i-1][j] + dp[i-1][j-num[i-1]]
+     * <p>
+     * 优化:
+     * 把二维数组转为一维滑动数组
+     * 元素个数从少到多遍历
+     * 总和从大到num[i]遍历（总和小于num[i]时，其值与上次得到的值相同）(需要用到前面的元素，逆序遍历防止覆盖)
+     * 状态转移方程：
+     * dp[j] += dp[j-num[i-1]]
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int findTargetSumWays(int[] nums, int target) {
+        int n = nums.length;
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+        }
+
+
+        int neg = sum - target;
+        if (neg < 0 || (neg % 2) != 0) {
+            return 0;
+        }
+
+
+        neg /= 2;
+
+
+        int[] dp = new int[neg + 1];
+
+        dp[0] = 1;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = neg; j >= Math.max(0, nums[i - 1]); j--) {
+                dp[j] = dp[j] + dp[j - nums[i - 1]];
+            }
+
+        }
+
+
+        return dp[neg];
+    }
+
+    /**
+     * 解题思路：每次两两碰撞，直到剩下一个石头或无石头，保证石头重量最小
+     * 相当于在所有石头中，取一部分石头为正数。一部分石头为负数，两者相加，使得所得值为最小非负数
+     * 该值即为所求结果（可证明合理性）
+     * 设取负数为neg，总和为sum
+     * 则最小值 = sum - neg - neg = sum - (2 * neg)
+     * 要保证该值最小，则neg需在不超过（sum / 2）的范围内取最大值
+     * 转化为背包问题，从数组中取出重量不超过（sum/2）的最大值
+     *
+     * @param stones
+     * @return
+     */
+    public int lastStoneWeightII(int[] stones) {
+        int n = stones.length;
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += stones[i];
+        }
+
+        int neg = sum / 2;
+
+        boolean[] dp = new boolean[neg + 1];
+
+        dp[0] = true;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = neg; j >= stones[i - 1]; j--) {
+                dp[j] |= dp[j - stones[i - 1]];
+
+            }
+        }
+
+        int max = 0;
+
+        for (int i = neg; i >= 0; i--) {
+            if (dp[i]) {
+                max = i;
+                break;
+            }
+
+        }
+
+        return (sum - 2 * max);
+
     }
 
 
