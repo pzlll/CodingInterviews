@@ -906,5 +906,37 @@ public class Solution {
 
     }
 
+    public int profitableSchemes(int n, int minProfit, int[] group, int[] profit) {
+        int m = group.length;
+        int[][] dp = new int[n + 1][minProfit + 1];
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = 1;
+        }
+
+        int va = 1000000000 + 7;
+
+        for (int i = 1; i <= m; i++) {
+            int cost = group[i - 1];
+            int pro = profit[i - 1];
+            for(int j = n; j >= cost; j--) {
+                for(int k = minProfit; k >= 0; k--) {
+                    if(k > pro) {
+                        dp[j][k] += dp[j-cost][k-pro];
+                    }else {
+                        dp[j][k] += dp[j-cost][0];
+                    }
+
+                    dp[j][k] %= va;
+
+                }
+            }
+
+
+
+        }
+
+        return dp[n][minProfit];
+    }
+
 
 }

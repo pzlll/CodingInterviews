@@ -37,11 +37,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="820" column="64" selection-start-line="820" selection-start-column="64" selection-end-line="820" selection-end-column="64" />
+            <state relative-caret-position="129">
+              <caret line="908" column="32" selection-start-line="908" selection-start-column="15" selection-end-line="908" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -120,10 +129,10 @@
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
-        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
+        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
       </list>
     </option>
@@ -154,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,6 +250,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,7 +261,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623050353975" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623140987433" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -616,7 +625,8 @@
       <workItem from="1622864378669" duration="5111000" />
       <workItem from="1622943250539" duration="11528000" />
       <workItem from="1623046367245" duration="3508000" />
-      <workItem from="1623137587067" duration="2420000" />
+      <workItem from="1623137587067" duration="3364000" />
+      <workItem from="1623219345304" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="add method search.">
       <created>1618130803013</created>
@@ -947,7 +957,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622963983435</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add method lastStoneWeightII.">
+      <created>1623140034748</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1623140034748</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -983,7 +1000,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="573016000" />
+    <option name="totallyTimeSpent" value="577726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,7 +1015,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2245011" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.22727273" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1015,11 +1032,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50609756" side_tool="true" visible="true" weight="0.39040348" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5194013" side_tool="true" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4817073" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.48059866" visible="true" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1077,7 +1094,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method countTriplets." />
     <MESSAGE value="add method kthLargestValue." />
     <MESSAGE value="modify method maxProfit." />
     <MESSAGE value="add method topKFrequent." />
@@ -1102,7 +1118,8 @@
     <MESSAGE value="add method removeNthFromEnd." />
     <MESSAGE value="add method findMaxForm." />
     <MESSAGE value="game 244." />
-    <option name="LAST_COMMIT_MESSAGE" value="game 244." />
+    <MESSAGE value="add method lastStoneWeightII." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method lastStoneWeightII." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1607,13 +1624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="289" column="36" selection-start-line="289" selection-start-column="20" selection-end-line="289" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -1664,10 +1674,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="820" column="64" selection-start-line="820" selection-start-column="64" selection-end-line="820" selection-end-column="64" />
+        <state relative-caret-position="129">
+          <caret line="908" column="32" selection-start-line="908" selection-start-column="15" selection-end-line="908" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
