@@ -938,5 +938,30 @@ public class Solution {
         return dp[n][minProfit];
     }
 
+    /**
+     * 解题思路：
+     * 先遍历coin再遍历金额
+     * 在计算dp[i]的值时，可以确保金额之和等于i的硬币面额的顺序，由于顺序确定，因此不会重复计算不同的排列。
+     * @param amount
+     * @param coins
+     * @return
+     */
+    public int change(int amount, int[] coins) {
+        int n = coins.length;
+        Arrays.sort(coins);
+        int[] dp = new int[amount+1];
+        dp[0] = 1;
+
+        for (int i = 0; i < n; i++) {
+
+            int val = coins[i];
+            for (int j = coins[i]; j <= amount; j++) {
+                dp[j] += dp[j - val];
+            }
+        }
+
+        return dp[amount];
+    }
+
 
 }

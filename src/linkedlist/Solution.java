@@ -347,5 +347,27 @@ public class Solution {
         return ans.next;
     }
 
+    public boolean isPalindrome(ListNode head) {
+        if(head == null) {
+            return false;
+        }
+
+        ListNode first = head;
+
+
+        ListNode second = head;
+
+        while (first != null && first.next != null) {
+            if(first == second) {
+                return true;
+            }
+            first = first.next.next;
+            second = second.next;
+
+        }
+
+        return false;
+    }
+
 
 }
