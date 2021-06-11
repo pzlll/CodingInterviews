@@ -5,6 +5,7 @@ import javax.xml.soap.Node;
 import java.util.ArrayDeque;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Stack;
 
 class ListNode {
     int val;
@@ -347,23 +348,58 @@ public class Solution {
         return ans.next;
     }
 
+
+    /**
+     * 解题思路：
+     * 找到中间结点
+     * 翻转后半段结点
+     * 互相比较，若不同则返回失败
+     * 再次翻转后半段结点
+     * 返回成功
+     * @param head
+     * @return
+     */
     public boolean isPalindrome(ListNode head) {
+        ListNode first = head;
+        ListNode second = head;
+
+        Stack<Integer> stack = new Stack<>();
+
+        while(first != null && first.next != null) {
+            stack.push(second.val);
+
+            second = second.next;
+            first = first.next.next;
+        }
+        if(first != null) {
+            second = second.next;
+        }
+
+        while (!stack.isEmpty()) {
+            if(second == null) {
+                return false;
+            }
+            if(second.val != stack.pop()){
+                return false;
+            }
+            second = second.next;
+        }
+
+        return true;
+    }
+
+    public boolean hasCycle(ListNode head) {
         if(head == null) {
             return false;
         }
-
-        ListNode first = head;
-
-
+        ListNode first = head.next;
         ListNode second = head;
-
         while (first != null && first.next != null) {
             if(first == second) {
                 return true;
             }
-            first = first.next.next;
             second = second.next;
-
+            first = first.next.next;
         }
 
         return false;
