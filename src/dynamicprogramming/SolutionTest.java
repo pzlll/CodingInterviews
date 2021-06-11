@@ -31,4 +31,9 @@ public class SolutionTest {
     public void findMaxForm() {
         new Solution().findMaxForm(new String[]{"10", "0", "1"}, 1 ,1);
     }
+
+    @Test
+    public void numSquares() {
+        new Solution().numSquares(12);
+    }
 }

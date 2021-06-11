@@ -963,5 +963,32 @@ public class Solution {
         return dp[amount];
     }
 
+    /**
+     * 解题思路：动态规划
+     * dp[i]:第i个值至少需要多少个完全平方数相加
+     * 从小到大遍历完全平方数，更新dp[n]需要的数目
+     * 两层循环：
+     * 1.i从1到i*i<=n
+     * 2.j从i*i到n
+     *      每次dp[j]从原先的值和dp[j - i*i]之间选最小值
+     * @param n
+     * @return
+     */
+    public int numSquares(int n) {
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, n);
+
+        dp[0] = 0;
+
+        for (int i = 1; (i * i) <= n; i++) {
+            int val  = i * i;
+            for (int j = val; j <= n; j++) {
+                dp[j] = Math.min(dp[j-val] + 1, dp[j]);
+            }
+        }
+
+        return dp[n];
+    }
+
 
 }
