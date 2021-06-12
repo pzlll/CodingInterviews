@@ -379,4 +379,38 @@ public class Solution {
 
     }
 
+    public int maxDepth(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        if(root != null) {
+            queue.offer(root);
+
+        }
+
+        int count = 1;
+        int ans = 0;
+        while (!queue.isEmpty()) {
+            TreeNode poll = queue.poll();
+            if(poll.left != null) {
+                queue.offer(poll.left);
+            }
+            if(poll.right != null) {
+                queue.offer(poll.right);
+            }
+            count--;
+            if(count == 0) {
+                count = queue.size();
+                ans++;
+            }
+        }
+
+        return ans;
+
+//        if(root == null) {
+//            return 0;
+//        }
+//
+//        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    }
+
 }

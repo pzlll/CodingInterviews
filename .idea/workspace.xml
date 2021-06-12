@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linkedlist/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,22 +36,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17993">
-              <caret line="948" column="21" selection-start-line="948" selection-start-column="15" selection-end-line="948" selection-end-column="21" />
+            <state relative-caret-position="86">
+              <caret line="382" column="8" selection-start-line="382" selection-start-column="8" selection-end-line="406" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="376" selection-start-line="376" selection-end-line="376" />
+            <state relative-caret-position="262">
+              <caret line="996" column="44" selection-start-line="996" selection-start-column="44" selection-end-line="996" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/hash/MyHashSet.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
@@ -129,11 +134,12 @@
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
+        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
       </list>
     </option>
   </component>
@@ -163,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +245,19 @@
             <path>
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="Solution.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="SwordFingerOffer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -251,6 +269,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,7 +280,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623140987433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623394535891" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -283,17 +302,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="game" />
       <recent name="dynamicprogramming" />
+      <recent name="game" />
       <recent name="bitmanipulation" />
       <recent name="bitoperation" />
       <recent name="binarysearch" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.minFlips">
+  <component name="RunManager" selected="JUnit.SolutionTest.numSquares">
     <configuration name="SolutionTest.assignTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -357,22 +376,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.isPowerOfTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bitmanipulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bitmanipulation" />
-      <option name="MAIN_CLASS_NAME" value="bitmanipulation.SolutionTest" />
-      <option name="METHOD_NAME" value="isPowerOfTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionTest.minFlips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -384,6 +387,22 @@
       <option name="PACKAGE_NAME" value="game" />
       <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
       <option name="METHOD_NAME" value="minFlips" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.numSquares" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dynamicprogramming" />
+      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
+      <option name="METHOD_NAME" value="numSquares" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -453,11 +472,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.numSquares" />
         <item itemvalue="JUnit.SolutionTest.minFlips" />
         <item itemvalue="JUnit.SolutionTest.findRotation" />
         <item itemvalue="JUnit.SolutionTest.findMaxForm" />
         <item itemvalue="JUnit.SolutionTest.assignTasks" />
-        <item itemvalue="JUnit.SolutionTest.isPowerOfTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -628,21 +647,8 @@
       <workItem from="1623137587067" duration="3364000" />
       <workItem from="1623219345304" duration="3955000" />
       <workItem from="1623305505851" duration="4967000" />
-      <workItem from="1623391718531" duration="471000" />
-    </task>
-    <task id="LOCAL-00002" summary="add method removeDuplicates.">
-      <created>1619158665198</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1619158665198</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add method removeDuplicates.">
-      <created>1619418024344</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619418024344</updated>
+      <workItem from="1623391718531" duration="3412000" />
+      <workItem from="1623480044553" duration="2125000" />
     </task>
     <task id="LOCAL-00004" summary="add method shipWithinDays.">
       <created>1619443326973</created>
@@ -973,19 +979,24 @@
       <option name="project" value="LOCAL" />
       <updated>1623309191114</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add method isPalindrome and hasCycle.">
+      <created>1623392220695</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1623392220696</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add method numSquares.">
+      <created>1623394043763</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1623394043763</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 11h 50m 15s.xml">
-      <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTest_assignTasks - 2021.05.30 at 15h 15m 52s.xml">
-      <configuration name="SolutionTest.assignTasks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SolutionTest_findMaxForm - 2021.06.06 at 10h 08m 17s.xml">
-      <configuration name="SolutionTest.findMaxForm" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SolutionTest_findMaxForm - 2021.06.06 at 10h 10m 41s.xml">
       <configuration name="SolutionTest.findMaxForm" configurationId="JUnit" />
     </history-entry>
@@ -1007,9 +1018,18 @@
     <history-entry file="SolutionTest_minFlips - 2021.06.06 at 15h 11m 21s.xml">
       <configuration name="SolutionTest.minFlips" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SolutionTest_numSquares - 2021.06.11 at 14h 27m 02s.xml">
+      <configuration name="SolutionTest.numSquares" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest_numSquares - 2021.06.11 at 14h 28m 10s.xml">
+      <configuration name="SolutionTest.numSquares" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolutionTest_numSquares - 2021.06.11 at 14h 29m 39s.xml">
+      <configuration name="SolutionTest.numSquares" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="583353000" />
+    <option name="totallyTimeSpent" value="588419000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1024,7 +1044,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.23281597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.23558758" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1034,18 +1054,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49390244" weight="0.39040348" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49334812" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52050996" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5066519" side_tool="true" visible="true" weight="0.39040348" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.47949" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.47949" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1103,8 +1123,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method topKFrequent." />
-    <MESSAGE value="add method maxUncrossedLines." />
     <MESSAGE value="add method xorGame." />
     <MESSAGE value="add method getImportance." />
     <MESSAGE value="add method maximizeXor." />
@@ -1128,7 +1146,9 @@
     <MESSAGE value="add method lastStoneWeightII." />
     <MESSAGE value="add method profitableSchemes." />
     <MESSAGE value="add method change." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method change." />
+    <MESSAGE value="add method isPalindrome and hasCycle." />
+    <MESSAGE value="add method numSquares." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method numSquares." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1330,18 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6213">
-          <caret line="332" column="28" selection-start-line="332" selection-start-column="19" selection-end-line="332" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1633,21 +1641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-          <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -1683,20 +1676,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17993">
-          <caret line="948" column="21" selection-start-line="948" selection-start-column="15" selection-end-line="948" selection-end-column="21" />
+        <state relative-caret-position="-66">
+          <caret line="361" column="31" selection-start-line="361" selection-start-column="19" selection-end-line="361" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="376" selection-start-line="376" selection-end-line="376" />
+        <state relative-caret-position="86">
+          <caret line="382" column="8" selection-start-line="382" selection-start-column="8" selection-end-line="406" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="996" column="44" selection-start-line="996" selection-start-column="44" selection-end-line="996" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

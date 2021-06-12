@@ -918,19 +918,18 @@ public class Solution {
         for (int i = 1; i <= m; i++) {
             int cost = group[i - 1];
             int pro = profit[i - 1];
-            for(int j = n; j >= cost; j--) {
-                for(int k = minProfit; k >= 0; k--) {
-                    if(k > pro) {
-                        dp[j][k] += dp[j-cost][k-pro];
-                    }else {
-                        dp[j][k] += dp[j-cost][0];
+            for (int j = n; j >= cost; j--) {
+                for (int k = minProfit; k >= 0; k--) {
+                    if (k > pro) {
+                        dp[j][k] += dp[j - cost][k - pro];
+                    } else {
+                        dp[j][k] += dp[j - cost][0];
                     }
 
                     dp[j][k] %= va;
 
                 }
             }
-
 
 
         }
@@ -942,6 +941,7 @@ public class Solution {
      * 解题思路：
      * 先遍历coin再遍历金额
      * 在计算dp[i]的值时，可以确保金额之和等于i的硬币面额的顺序，由于顺序确定，因此不会重复计算不同的排列。
+     *
      * @param amount
      * @param coins
      * @return
@@ -949,7 +949,7 @@ public class Solution {
     public int change(int amount, int[] coins) {
         int n = coins.length;
         Arrays.sort(coins);
-        int[] dp = new int[amount+1];
+        int[] dp = new int[amount + 1];
         dp[0] = 1;
 
         for (int i = 0; i < n; i++) {
@@ -970,24 +970,71 @@ public class Solution {
      * 两层循环：
      * 1.i从1到i*i<=n
      * 2.j从i*i到n
-     *      每次dp[j]从原先的值和dp[j - i*i]之间选最小值
+     * 每次dp[j]从原先的值和dp[j - i*i]之间选最小值
+     *
      * @param n
      * @return
      */
     public int numSquares(int n) {
-        int[] dp = new int[n+1];
+        int[] dp = new int[n + 1];
         Arrays.fill(dp, n);
 
         dp[0] = 0;
 
         for (int i = 1; (i * i) <= n; i++) {
-            int val  = i * i;
+            int val = i * i;
             for (int j = val; j <= n; j++) {
-                dp[j] = Math.min(dp[j-val] + 1, dp[j]);
+                dp[j] = Math.min(dp[j - val] + 1, dp[j]);
             }
         }
 
         return dp[n];
+    }
+
+    /**
+     * 解题思路：
+     * 1.使用动态规划求出符合target值的最大位数
+     * 2.在每次选择该位时，做标记，随后获得最大位数后，从后往前查找，将相应下标并加入字符串中
+     * @param cost
+     * @param target
+     * @return
+     */
+    public String largestNumber(int[] cost, int target) {
+        int n = cost.length;
+        if(target == 0) {
+            return "0";
+        }
+
+        int[] dp = new int[target + 1];
+
+        dp[0] = 0;
+        for (int i = 1; i <= target; i++) {
+            dp[i] = Integer.MIN_VALUE;
+        }
+
+        for (int i = 1; i <= n; i++) {
+            int val = cost[i-1];
+            for (int j = val; j <= target; j++) {
+                dp[j] = Math.max(dp[j], dp[j-val] + 1);
+
+            }
+
+        }
+
+        if(dp[target] <= 0) {
+            return "0";
+        }
+
+
+        StringBuffer str = new StringBuffer();
+        for(int i = 8, j = target; i>= 0; i--) {
+            for(int c = cost[i]; j>=c && dp[j] == (dp[j-c] + 1); j-=c) {
+                str.append(i+1);
+            }
+        }
+
+        return str.toString();
+
     }
 
 
