@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,27 +34,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="382" column="8" selection-start-line="382" selection-start-column="8" selection-end-line="406" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="996" column="44" selection-start-line="996" selection-start-column="44" selection-end-line="996" selection-end-column="44" />
+            <state relative-caret-position="124">
+              <caret line="328" column="16" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#search#0;class#Solution#0" />
+                <element signature="e#8682#8683#0" expanded="true" />
+                <element signature="e#8710#8711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
         <option value="$PROJECT_DIR$/src/heap/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
-        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
@@ -140,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
+        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
       </list>
     </option>
   </component>
@@ -169,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,6 +168,12 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="binarysearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
@@ -269,7 +263,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,7 +273,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623394535891" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623550627378" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -649,6 +642,7 @@
       <workItem from="1623305505851" duration="4967000" />
       <workItem from="1623391718531" duration="3412000" />
       <workItem from="1623480044553" duration="2125000" />
+      <workItem from="1623549788502" duration="820000" />
     </task>
     <task id="LOCAL-00004" summary="add method shipWithinDays.">
       <created>1619443326973</created>
@@ -1029,7 +1023,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="588419000" />
+    <option name="totallyTimeSpent" value="589239000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1044,7 +1038,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.23558758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2383592" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1408,16 +1402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="325" column="5" selection-start-line="325" selection-start-column="5" selection-end-line="325" selection-end-column="5" />
-          <folding>
-            <element signature="method#search#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1702,7 +1686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="7163">
           <caret line="382" column="8" selection-start-line="382" selection-start-column="8" selection-end-line="406" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1714,10 +1698,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="996" column="44" selection-start-line="996" selection-start-column="44" selection-end-line="996" selection-end-column="44" />
+        <state relative-caret-position="190">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="328" column="16" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
+          <folding>
+            <element signature="method#search#0;class#Solution#0" />
+            <element signature="e#8682#8683#0" expanded="true" />
+            <element signature="e#8710#8711#0" expanded="true" />
           </folding>
         </state>
       </provider>
