@@ -368,5 +368,89 @@ public class Solution {
 
     }
 
+    public boolean makeEqual(String[] words) {
+        int[] count = new int[26];
+
+        int n= words.length;
+        for (int i = 0; i < n; i++) {
+            int m = words[i].length();
+            for (int j = 0; j < m; j++) {
+                count[words[i].charAt(j) - 'a']++;
+            }
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if((count[i] % n) != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public int maximumRemovals(String s, String p, int[] removable) {
+        int n = removable.length;
+
+
+
+        int left = 0;
+        int right = n;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            Set<Integer> set = new HashSet<>();
+            StringBuffer str = new StringBuffer();
+            for (int i = 0; i <= mid; i++) {
+                set.add(removable[i]);
+            }
+
+            for (int j = 0; j < s.length(); j++) {
+                if(!set.contains(j)) {
+                    str.append(s.charAt(j));
+                }
+            }
+            if(!isSum(str.toString(), p)) {
+                right = mid;
+            }else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+
+
+    }
+
+    private boolean isSum(String toString, String p) {
+        int j = 0;
+        for (int i = 0; i < toString.length() && j < p.length(); i++) {
+            if(toString.charAt(i) == p.charAt(j)) {
+                j++;
+            }
+        }
+
+        return j == p.length();
+    }
+
+    public boolean mergeTriplets(int[][] triplets, int[] target) {
+        int n = triplets.length;
+
+
+        int a = 0;
+        int b = 0;
+        int c = 0;
+
+        for (int i = 0; i < n; i++) {
+            if(triplets[i][0] > target[0] || triplets[i][1] > target[1] || triplets[i][2] > target[2]) {
+                continue;
+            }
+            a = Math.max(a, triplets[i][0]);
+            b = Math.max(b, triplets[i][1]);
+            c = Math.max(c, triplets[i][2]);
+        }
+
+        return a == target[0] && b == target[1] && c == target[2];
+    }
+
 
 }

@@ -40,4 +40,9 @@ public class SolutionTest {
     public void minFlips() {
         new Solution().minFlips("01001001101");
     }
+
+    @Test
+    public void maximumRemovals() {
+        new Solution().maximumRemovals("abcbddddd", "abcd", new int[]{3,2,1,4,5,6});
+    }
 }
