@@ -413,4 +413,45 @@ public class Solution {
 //        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
+    public boolean isSymmetric(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode p = queue.poll();
+            TreeNode q = queue.poll();
+            if(q == null && p == null) {
+                continue;
+            }
+
+            if(q == null || p == null || p.val != q.val) {
+                return false;
+            }
+
+            queue.offer(p.left);
+            queue.offer(q.right);
+
+            queue.offer(p.right);
+            queue.offer(q.left);
+        }
+
+        return true;
+
+
+    }
+
+    private boolean check(TreeNode p, TreeNode q) {
+        if(p == null && q == null) {
+            return true;
+        }
+
+        if(q == null || p == null) {
+            return false;
+        }
+
+        return p.val == q.val && check(p.left, q.right) && check(p.right, q.left);
+
+    }
+
 }
