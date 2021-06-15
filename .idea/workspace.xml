@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,25 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="340" column="28" lean-forward="true" selection-start-line="340" selection-start-column="28" selection-end-line="340" selection-end-column="28" />
+            <state relative-caret-position="162">
+              <caret line="376" column="39" selection-start-line="376" selection-start-column="15" selection-end-line="376" selection-end-column="39" />
               <folding>
                 <element signature="method#search#0;class#Solution#0" />
-                <element signature="e#8682#8683#0" expanded="true" />
-                <element signature="e#8710#8711#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="434" column="66" lean-forward="true" selection-start-line="434" selection-start-column="66" selection-end-line="434" selection-end-column="66" />
+            <state relative-caret-position="6308">
+              <caret line="438" column="18" selection-start-line="438" selection-start-column="18" selection-end-line="438" selection-end-column="18" />
               <folding>
                 <element signature="method#subsetXORSum#0;class#Solution#0" />
                 <element signature="method#checkZeroOnes#0;class#Solution#0" />
@@ -69,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="608">
               <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
@@ -85,7 +83,7 @@
                 <element signature="e#802#803#0" expanded="true" />
                 <element signature="e#856#857#0" expanded="true" />
                 <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,9 +165,9 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
-        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
+        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
       </list>
     </option>
   </component>
@@ -199,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,7 +304,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,13 +684,8 @@
       <workItem from="1623391718531" duration="3412000" />
       <workItem from="1623480044553" duration="2125000" />
       <workItem from="1623549788502" duration="7206000" />
-    </task>
-    <task id="LOCAL-00005" summary="add method isValidBST.">
-      <created>1619506116831</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1619506116831</updated>
+      <workItem from="1623651128224" duration="1512000" />
+      <workItem from="1623758617640" duration="2628000" />
     </task>
     <task id="LOCAL-00006" summary="add method isValidBST.">
       <created>1619589892465</created>
@@ -1030,7 +1023,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623550637247</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add game 245.">
+      <created>1623651214457</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1623651214461</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1066,7 +1066,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="595625000" />
+    <option name="totallyTimeSpent" value="599765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1081,7 +1081,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2383592" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.24390244" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1160,7 +1160,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method getImportance." />
     <MESSAGE value="add method maximizeXor." />
     <MESSAGE value="add method strangePrinter." />
     <MESSAGE value="add method reverseParentheses." />
@@ -1185,7 +1184,8 @@
     <MESSAGE value="add method isPalindrome and hasCycle." />
     <MESSAGE value="add method numSquares." />
     <MESSAGE value="add method firstBadVersion." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method firstBadVersion." />
+    <MESSAGE value="add game 245." />
+    <option name="LAST_COMMIT_MESSAGE" value="add game 245." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1249,12 +1249,6 @@
           <line>190</line>
           <properties />
           <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/Solution.java</url>
-          <line>398</line>
-          <properties />
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1720,9 +1714,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="376" column="39" selection-start-line="376" selection-start-column="15" selection-end-line="376" selection-end-column="39" />
+          <folding>
+            <element signature="method#search#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6308">
+          <caret line="438" column="18" selection-start-line="438" selection-start-column="18" selection-end-line="438" selection-end-column="18" />
+          <folding>
+            <element signature="method#subsetXORSum#0;class#Solution#0" />
+            <element signature="method#checkZeroOnes#0;class#Solution#0" />
+            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
+            <element signature="method#isOnTime#0;class#Solution#0" />
+            <element signature="method#canReach#0;class#Solution#0" />
+            <element signature="e#7607#7608#0" expanded="true" />
+            <element signature="e#7653#7654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="608">
           <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
           <folding>
             <element signature="e#224#225#0" expanded="true" />
@@ -1738,35 +1758,7 @@
             <element signature="e#802#803#0" expanded="true" />
             <element signature="e#856#857#0" expanded="true" />
             <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="340" column="28" lean-forward="true" selection-start-line="340" selection-start-column="28" selection-end-line="340" selection-end-column="28" />
-          <folding>
-            <element signature="method#search#0;class#Solution#0" />
-            <element signature="e#8682#8683#0" expanded="true" />
-            <element signature="e#8710#8711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="434" column="66" lean-forward="true" selection-start-line="434" selection-start-column="66" selection-end-line="434" selection-end-column="66" />
-          <folding>
-            <element signature="method#subsetXORSum#0;class#Solution#0" />
-            <element signature="method#checkZeroOnes#0;class#Solution#0" />
-            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
-            <element signature="method#isOnTime#0;class#Solution#0" />
-            <element signature="method#canReach#0;class#Solution#0" />
-            <element signature="e#7607#7608#0" expanded="true" />
-            <element signature="e#7653#7654#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
           </folding>
         </state>
       </provider>
