@@ -449,4 +449,32 @@ public class Solution {
         return res;
     }
 
+    public TreeNode sortedArrayToBST(int[] nums) {
+        TreeNode root = CreateTree(nums, 0, nums.length - 1);
+
+        return root;
+    }
+
+    private TreeNode CreateTree(int[] nums, int left, int right) {
+
+        if(left > right) {
+            return null;
+        }
+
+        if(left == right) {
+            TreeNode t = new TreeNode(nums[left]);
+            return t;
+        }
+
+        int mid = left + (right - left) / 2;
+
+        TreeNode t = new TreeNode(nums[mid]);
+
+        t.left = CreateTree(nums, left, mid - 1);
+
+        t.right = CreateTree(nums, mid + 1, right);
+
+        return t;
+    }
+
 }
