@@ -84,47 +84,7 @@ public class Solution {
         return root;
     }
 
-    /**
-     * 层次遍历
-     * 如何确定层数？
-     * 方法一：维护该层的节点数目和下一层的节点数目
-     * 方法二：直接获取每一层队列总数，对其进行遍历操作
-     *
-     * @param root
-     * @return
-     */
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        int thisCount = 1;
-        int nextCount = 0;
-        Queue<TreeNode> queue = new LinkedList<>();
 
-        List<List<Integer>> nums = new ArrayList<>();
-        if (root == null) {
-            return nums;
-        }
-        queue.add(root);
-        List<Integer> num = new ArrayList<>();
-        while (!queue.isEmpty()) {
-            TreeNode top = queue.poll();
-            if (top.left != null) {
-                queue.add(top.left);
-                nextCount++;
-            }
-            if (top.right != null) {
-                queue.add(top.right);
-                nextCount++;
-            }
-            num.add(top.val);
-            if ((--thisCount) == 0) {
-                thisCount = nextCount;
-                nextCount = 0;
-                nums.add(num);
-                num = new ArrayList<>();
-            }
-        }
-
-        return nums;
-    }
 
     private int res = 500000;
     private TreeNode pre = null;
@@ -452,6 +412,41 @@ public class Solution {
 
         return p.val == q.val && check(p.left, q.right) && check(p.right, q.left);
 
+    }
+
+    /**
+     * 解题思路：
+     * 使用count变量记录当前层的节点数，遍历完该层再更新count值
+     * @param root
+     * @return
+     */
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+
+        if(root == null) {
+            return res;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            int count = queue.size();
+            List<Integer> array = new ArrayList<>();
+
+            while (count > 0) {
+                TreeNode p = queue.poll();
+                array.add(p.val);
+                if(p.left != null) {
+                    queue.offer(p.left);
+                }
+                if(p.right != null) {
+                    queue.offer(p.right);
+                }
+                count--;
+            }
+        }
+
+        return res;
     }
 
 }
