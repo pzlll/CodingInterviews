@@ -1037,5 +1037,46 @@ public class Solution {
 
     }
 
+    /**
+     * 解题思路：
+     * 递归：每次一方可以选择任意一边，记录双方的石头总数之差，总共有2‘n种可能
+     * 动态规划：使用dp数组存储从下标i-j当前方与另一方的石头总数之差
+     * i>j：无意义
+     * i=j：值为piles[i]
+     * i<j：当前方可选择i或者j，取最大值
+     * 优化：使用一维数组
+     * @param piles
+     * @return
+     */
+    public boolean stoneGame(int[] piles) {
+        int n = piles.length;
+        int[] dp = new int[n];
+
+//        for (int i = 0; i < n; i++) {
+//            dp[i][i] = piles[i];
+//        }
+
+        for (int i = (n-1); i >= 0; i--) {
+            for (int j = (i + 1); j < n; j++) {
+
+                int max1 = (i+1) == j ? piles[i+1]:dp[j];
+                int max2 = (j-1) == i ? piles[i]:dp[j-1];
+
+                dp[j] = Math.max(piles[i] - max1, piles[j] - max2);
+            }
+        }
+//        for (int i = (n-1); i >= 0; i--) {
+//            for (int j = (i+1); j < n; j++) {
+//                dp[i][j] = Math.max(piles[i] - dp[i+1][j], piles[j] - dp[i][j-1]);
+//            }
+//        }
+
+        if(dp[n-1] > 0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 
 }
