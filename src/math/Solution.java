@@ -14,16 +14,16 @@ public class Solution {
         boolean isPositive = x > 0 ? true : false;
         x = Math.abs(x);
         int res = 0;
-        while(x > 0) {
+        while (x > 0) {
             int i = x % 10;
             int temp = res;
 
             res = res * 10 + i;
 
-            if(isPositive && temp != (res / 10)) {
+            if (isPositive && temp != (res / 10)) {
                 return 0;
             }
-            if(!isPositive && (-temp) < -(res /10)) {
+            if (!isPositive && (-temp) < -(res / 10)) {
                 return 0;
             }
             x = x / 10;
@@ -40,20 +40,21 @@ public class Solution {
      */
     public int myAtoi(String s) {
         int n = s.length();
-        Automation automation  = new Automation();
+        Automation automation = new Automation();
         for (int i = 0; i < n; i++) {
             automation.changeState(s.charAt(i));
         }
 
-        return (int)automation.getAns();
+        return (int) automation.getAns();
 
     }
 
-    class Automation{
+    class Automation {
         private long ans;
         private String state;
         private int sign;
         private Map<String, String[]> table;
+
         public Automation() {
             state = "start";
             ans = 0;
@@ -71,24 +72,24 @@ public class Solution {
 
         public void changeState(char c) {
             this.state = table.get(state)[get_col(c)];
-            if(state.equals("in_number")) {
+            if (state.equals("in_number")) {
                 ans = ans * 10 + c - '0';
-                ans = (sign == 1 ? Math.min(ans, Integer.MAX_VALUE):Math.min(ans, -(long)Integer.MIN_VALUE));
+                ans = (sign == 1 ? Math.min(ans, Integer.MAX_VALUE) : Math.min(ans, -(long) Integer.MIN_VALUE));
             }
-            if(state.equals("signed")) {
+            if (state.equals("signed")) {
                 sign = (c == '+' ? 1 : 0);
             }
         }
 
         private int get_col(char c) {
-            if(c == ' ') {
+            if (c == ' ') {
                 return 0;
             }
-            if(c == '-' || c == '+') {
+            if (c == '-' || c == '+') {
                 return 1;
             }
 
-            if(Character.isDigit(c)) {
+            if (Character.isDigit(c)) {
                 return 2;
             }
 
@@ -207,6 +208,7 @@ public class Solution {
 
     /**
      * 解题思路：对于给定的数字，选择尽可大的符号值，总共有13个符号
+     *
      * @param num
      * @return
      */
@@ -236,16 +238,16 @@ public class Solution {
 //            buffer.append(one[a - 1]);
 //        }
         String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10 ,9, 5, 4, 1};
+        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
         StringBuffer buffer = new StringBuffer();
         int i = 0;
-        while(num > 0) {
+        while (num > 0) {
             while (num >= values[i]) {
                 buffer.append(symbols[i]);
                 num -= values[i];
             }
-            if(num == 0) {
+            if (num == 0) {
                 break;
             }
             i++;
@@ -258,23 +260,22 @@ public class Solution {
         int n = candiesCount.length;
         int m = queries.length;
 
-        long[] front = new long[n+1];
+        long[] front = new long[n + 1];
         for (int i = 1; i <= n; i++) {
-            front[i] = front[i-1] + candiesCount[i-1];
+            front[i] = front[i - 1] + candiesCount[i - 1];
         }
 
         boolean[] ans = new boolean[m];
         for (int i = 0; i < m; i++) {
             int type = queries[i][0];
 
-            long num = front[type+1];
-
+            long num = front[type + 1];
 
 
             long day = queries[i][1];
             long cap = queries[i][2];
 
-            if(num <= day) {
+            if (num <= day) {
                 ans[i] = false;
                 continue;
             }
@@ -282,7 +283,7 @@ public class Solution {
             num = front[type];
 
 
-            if(num >= ((day + 1) * cap)) {
+            if (num >= ((day + 1) * cap)) {
                 ans[i] = false;
                 continue;
             }
@@ -291,6 +292,74 @@ public class Solution {
         }
 
         return ans;
+    }
+
+    /**
+     * 解题思路：
+     * 自动机：建立状态和它们之间的转移关系
+     * @param s
+     * @return
+     */
+    public boolean isNumber(String s) {
+        Map<String, String[]> map = new HashMap<>();
+
+        map.put("a", new String[]{"error", "b", "c", "d", "error"});
+        map.put("b", new String[]{"error", "error", "c", "d", "error"});
+        map.put("c", new String[]{"error", "error", "error", "e", "error"});
+        map.put("d", new String[]{"f", "error", "e", "d", "error"});
+        map.put("e", new String[]{"f", "error", "error", "e", "error"});
+        map.put("f", new String[]{"error", "g", "error", "h", "error"});
+        map.put("g", new String[]{"error", "error", "error", "h", "error"});
+        map.put("h", new String[]{"error", "error", "error", "h", "error"});
+
+        String state = "a";
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int index = 0;
+            switch (c) {
+                case 'e':
+                case 'E':
+                    index = 0;
+                    break;
+                case '+':
+                case '-':
+                    index = 1;
+                    break;
+                case '.':
+                    index = 2;
+                    break;
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    index = 3;
+                    break;
+                default:
+                    index = 4;
+                    break;
+            }
+
+            state = map.get(state)[index];
+            if(state.equals("error")) {
+                return false;
+            }
+
+
+        }
+
+        if(state.equals("d") || state.equals("e") || state.equals("h")) {
+            return true;
+        }
+
+        return false;
+
     }
 
 
