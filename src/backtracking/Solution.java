@@ -233,4 +233,55 @@ public class Solution {
         }
         return dp[n][m];
     }
+
+    /**
+     * 解题思路：回溯法
+     */
+    private int max = 0;
+    public int maxLength(List<String> arr) {
+        int n = arr.size();
+
+        List<Integer> pos = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            String s = arr.get(i);
+            int mask = 0;
+            for (int j = 0; j < s.length(); j++) {
+                if(((mask >> (s.charAt(j) - 'a')) & 1) != 0) {
+                    mask = 0;
+                    break;
+                }
+                mask |= (1<<(s.charAt(j) - 'a'));
+            }
+            if(mask > 0) {
+                pos.add(mask);
+            }
+        }
+
+        int mask = 0;
+        trackArray(pos, 0, mask);
+
+        return max;
+    }
+
+    private void trackArray(List<Integer> pos, int i, int mask) {
+        if(i == pos.size()) {
+            int count = 0;
+            while (mask > 0) {
+                if(mask % 2 == 1) {
+                    count++;
+                }
+                mask /= 2;
+            }
+            max = Math.max(max, count);
+            return;
+        }
+
+        if((mask & pos.get(i)) == 0) {
+            trackArray(pos, i+1, mask|pos.get(i));
+        }
+
+        trackArray(pos, i+1, mask);
+
+    }
 }
