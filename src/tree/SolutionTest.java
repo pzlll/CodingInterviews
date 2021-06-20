@@ -2,6 +2,8 @@ package tree;
 
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class SolutionTest {
@@ -63,5 +65,18 @@ public class SolutionTest {
         r4.right = null;
         r2.right = r4;
         new Solution().isValidBST(root);
+    }
+
+    @Test
+    public void test() {
+        ThroneInheritance t = new ThroneInheritance("king");
+        t.birth("king", "andy");
+        t.birth("king", "bob");
+        t.birth("andy", "matthew");
+        t.birth("king", "catherine");
+        t.birth("bob", "alex");
+        t.birth("bob", "asha");
+        List<String> list = t.getInheritanceOrder();
+
     }
 }
