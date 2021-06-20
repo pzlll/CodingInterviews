@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/ThroneInheritance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/ThroneInheritance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -43,6 +42,24 @@
               <folding>
                 <element signature="e#619#620#0" expanded="true" />
                 <element signature="e#636#637#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="553" column="46" selection-start-line="553" selection-start-column="46" selection-end-line="553" selection-end-column="46" />
+              <folding>
+                <element signature="method#subsetXORSum#0;class#Solution#0" />
+                <element signature="method#checkZeroOnes#0;class#Solution#0" />
+                <element signature="method#minSpeedOnTime#0;class#Solution#0" />
+                <element signature="method#isOnTime#0;class#Solution#0" />
+                <element signature="method#canReach#0;class#Solution#0" />
+                <element signature="e#7607#7608#0" expanded="true" />
+                <element signature="e#7653#7654#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/math/Solution.java" />
@@ -138,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/ThroneInheritance.java" />
+        <option value="$PROJECT_DIR$/src/game/Solution.java" />
       </list>
     </option>
   </component>
@@ -290,7 +307,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624153630236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624170091700" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -665,14 +682,7 @@
       <workItem from="1623823943663" duration="3607000" />
       <workItem from="1623899649056" duration="3505000" />
       <workItem from="1624082575969" duration="5369000" />
-      <workItem from="1624149918761" duration="3704000" />
-    </task>
-    <task id="LOCAL-00012" summary="add method decode.">
-      <created>1620718355422</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1620718355423</updated>
+      <workItem from="1624149918761" duration="12315000" />
     </task>
     <task id="LOCAL-00013" summary="add method xorQueries.">
       <created>1620802936087</created>
@@ -1010,7 +1020,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624085641241</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="add object ThroneInheritance.">
+      <created>1624153643370</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1624153643376</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1046,7 +1063,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="617927000" />
+    <option name="totallyTimeSpent" value="626538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,14 +1088,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49223948" visible="true" weight="0.39040348" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49223948" visible="true" weight="0.28789532" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5077605" side_tool="true" visible="true" weight="0.39040348" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5077605" side_tool="true" visible="true" weight="0.28789532" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -1140,7 +1157,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method isPowerOfTwo." />
     <MESSAGE value="add method isAnagram." />
     <MESSAGE value="add method minCostConnectPoints." />
     <MESSAGE value="add method canEat." />
@@ -1165,7 +1181,8 @@
     <MESSAGE value="add method levelOrder." />
     <MESSAGE value="add method isNumber." />
     <MESSAGE value="add method maxLength." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method maxLength." />
+    <MESSAGE value="add object ThroneInheritance." />
+    <option name="LAST_COMMIT_MESSAGE" value="add object ThroneInheritance." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1648,22 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6308">
-          <caret line="438" column="18" selection-start-line="438" selection-start-column="18" selection-end-line="438" selection-end-column="18" />
-          <folding>
-            <element signature="method#subsetXORSum#0;class#Solution#0" />
-            <element signature="method#checkZeroOnes#0;class#Solution#0" />
-            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
-            <element signature="method#isOnTime#0;class#Solution#0" />
-            <element signature="method#canReach#0;class#Solution#0" />
-            <element signature="e#7607#7608#0" expanded="true" />
-            <element signature="e#7653#7654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -1755,6 +1756,22 @@
           <folding>
             <element signature="e#619#620#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="553" column="46" selection-start-line="553" selection-start-column="46" selection-end-line="553" selection-end-column="46" />
+          <folding>
+            <element signature="method#subsetXORSum#0;class#Solution#0" />
+            <element signature="method#checkZeroOnes#0;class#Solution#0" />
+            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
+            <element signature="method#isOnTime#0;class#Solution#0" />
+            <element signature="method#canReach#0;class#Solution#0" />
+            <element signature="e#7607#7608#0" expanded="true" />
+            <element signature="e#7653#7654#0" expanded="true" />
           </folding>
         </state>
       </provider>

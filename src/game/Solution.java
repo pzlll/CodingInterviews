@@ -330,7 +330,7 @@ public class Solution {
      * 方法：维护长度为n的窗口，计算该窗口内转变为两种类型字符串所需次数，取最小值
      * 不断移动窗口，取转变操作的最小值
      * 提示：1.若转变为0101...字符串需要k次，则转变为1010...字符串需要n-k次
-     *      2.以0101...字符串为基准，则每次比较可转化为对应下标的值与字符串“01”中i%2位置的值比较
+     * 2.以0101...字符串为基准，则每次比较可转化为对应下标的值与字符串“01”中i%2位置的值比较
      *
      * @param s
      * @return
@@ -371,7 +371,7 @@ public class Solution {
     public boolean makeEqual(String[] words) {
         int[] count = new int[26];
 
-        int n= words.length;
+        int n = words.length;
         for (int i = 0; i < n; i++) {
             int m = words[i].length();
             for (int j = 0; j < m; j++) {
@@ -380,7 +380,7 @@ public class Solution {
         }
 
         for (int i = 0; i < 26; i++) {
-            if((count[i] % n) != 0) {
+            if ((count[i] % n) != 0) {
                 return false;
             }
         }
@@ -390,7 +390,6 @@ public class Solution {
 
     public int maximumRemovals(String s, String p, int[] removable) {
         int n = removable.length;
-
 
 
         int left = 0;
@@ -405,13 +404,13 @@ public class Solution {
             }
 
             for (int j = 0; j < s.length(); j++) {
-                if(!set.contains(j)) {
+                if (!set.contains(j)) {
                     str.append(s.charAt(j));
                 }
             }
-            if(!isSum(str.toString(), p)) {
+            if (!isSum(str.toString(), p)) {
                 right = mid;
-            }else {
+            } else {
                 left = mid + 1;
             }
         }
@@ -424,7 +423,7 @@ public class Solution {
     private boolean isSum(String toString, String p) {
         int j = 0;
         for (int i = 0; i < toString.length() && j < p.length(); i++) {
-            if(toString.charAt(i) == p.charAt(j)) {
+            if (toString.charAt(i) == p.charAt(j)) {
                 j++;
             }
         }
@@ -441,7 +440,7 @@ public class Solution {
         int c = 0;
 
         for (int i = 0; i < n; i++) {
-            if(triplets[i][0] > target[0] || triplets[i][1] > target[1] || triplets[i][2] > target[2]) {
+            if (triplets[i][0] > target[0] || triplets[i][1] > target[1] || triplets[i][2] > target[2]) {
                 continue;
             }
             a = Math.max(a, triplets[i][0]);
@@ -450,6 +449,168 @@ public class Solution {
         }
 
         return a == target[0] && b == target[1] && c == target[2];
+    }
+
+    public String largestOddNumber(String num) {
+        int n = num.length();
+        boolean flag = false;
+        int start = 0;
+        int end = 0;
+
+        int i = 0, j = 0, k;
+        while (i < n) {
+            int a;
+            a = num.charAt(i) - '0';
+            if (a % 2 == 1) {
+                j = i + 1;
+                flag = true;
+            }
+            i++;
+        }
+
+        end = j;
+
+
+        return flag ? num.substring(0, end) : "";
+
+    }
+
+    public int numberOfRounds(String startTime, String finishTime) {
+        String h1 = startTime.substring(0, 2);
+        String m1 = startTime.substring(3, 5);
+        String h2 = finishTime.substring(0, 2);
+        String m2 = finishTime.substring(3, 5);
+
+        int count = 0;
+
+        int ih1 = getNum(h1);
+        int ih2 = getNum(h2);
+        int im1 = getNum(m1);
+        int im2 = getNum(m2);
+
+        int count1, count2;
+
+        if (ih1 < ih2 || (ih1 == ih2 && im1 < im2)) {
+            count1 = ih1 * 4 + getMaxCount(im1);
+            count2 = ih2 * 4 + getMinCount(im2);
+            count = count2 - count1;
+        } else {
+            count1 = 24 * 4 - (ih1 * 4 + getMaxCount(im1));
+            count2 = ih2 * 4 + getMinCount(im2);
+            count = count1 + count2;
+        }
+
+
+        return count;
+    }
+
+
+    private int getMaxCount(int time) {
+        if (time > 0 && time <= 15) {
+            return 1;
+        } else if (time > 15 && time <= 30) {
+            return 2;
+        } else if (time > 30 && time <= 45) {
+            return 3;
+        } else if (time > 45 && time < 60) {
+            return 4;
+        } else if (time == 0) {
+            return 0;
+        }
+
+        return -1;
+    }
+
+    private int getMinCount(int time) {
+        if (time >= 0 && time < 15) {
+            return 0;
+        } else if (time >= 15 && time < 30) {
+            return 1;
+        } else if (time >= 30 && time < 45) {
+            return 2;
+        } else if (time >= 45 && time < 60) {
+            return 3;
+        }
+
+        return -1;
+    }
+
+    private int getNum(String s) {
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            sum = sum * 10 + (s.charAt(i) - '0');
+        }
+
+        return sum;
+    }
+
+    /**
+     * 解题思路：遍历grid2所有岛屿，对于其中一个岛屿，只要该岛屿其中一格在grid1为空，则排除改岛屿（但仍然遍历完该岛屿）
+     * 具体实现：
+     * 使用二维数组visited存储grid2节点是否被标记
+     * 遍历二维数组，若该节点在grid2不为零且未被标记，则对其进行深度优先搜索
+     * 深度优先搜索：
+     * 标记该节点为已被访问，设置flag标志，若该节点在grid1中为零，则改变flag
+     * 访问其四个方向，先判断对应坐标是否越界，在grid2中是否为零以及是否被访问过，若都通过，则对其进行深度优先搜索，如果该搜索改变flag的值，将其传回
+     * @param grid1
+     * @param grid2
+     * @return
+     */
+    public int countSubIslands(int[][] grid1, int[][] grid2) {
+        int n = grid1.length;
+        int m = grid1[0].length;
+
+
+        boolean[][] visited = new boolean[n][m];
+
+        int ans = 0;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if(grid2[i][j] == 0) {
+                    continue;
+                }
+                if (!visited[i][j]) {
+                    if (dfsForIsland(grid1, grid2, i, j, visited)) {
+                        ans++;
+                    }
+                }
+
+            }
+        }
+
+        return ans;
+
+    }
+
+    private boolean dfsForIsland(int[][] grid1, int[][] grid2, int i, int j, boolean[][] v) {
+        int n = grid1.length;
+        int m = grid1[0].length;
+        int[][] direct = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
+        boolean flag = true;
+        v[i][j] = true;
+        if(grid1[i][j] == 0) {
+            flag = false;
+        }
+
+        for (int k = 0; k < 4; k++) {
+            int ni = i + direct[k][0];
+            int nj = j + direct[k][1];
+            if(ni < 0 || ni >= n || nj < 0 || nj >= m) {
+                continue;
+            }
+            if(grid2[ni][nj] == 0) {
+                continue;
+            }
+            if(!v[ni][nj]) {
+                if(!dfsForIsland(grid1, grid2, ni, nj, v)) {
+                    flag = false;
+                }
+            }
+        }
+
+        return flag;
+
     }
 
 
