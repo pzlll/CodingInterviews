@@ -284,4 +284,68 @@ public class Solution {
         trackArray(pos, i+1, mask);
 
     }
+
+    /**
+     * 解题思路：
+     * 1.枚举时分
+     * 枚举小时数 0-11和分钟数0-59，分别计算他们包含二进制1的个数，若两数之和等于turnedOn,则找到其中一个答案
+     * 2.二进制枚举
+     * 总共有2^10种结果，对于每一个结果，取其前四位为小时数，后六位为分钟数
+     * 若小时和分钟取值合法且对应结果的二进制1个数等于turnedOn,则找到其中一个答案
+     * @param turnedOn
+     * @return
+     */
+    public List<String> readBinaryWatch(int turnedOn) {
+        int[] time = {8, 4, 2, 1, 32, 16, 8, 4, 2, 1};
+
+        List<String> ans = new ArrayList<>();
+
+        for (int i = 0; i < 1024; i++) {
+            int h = i >> 6;
+            int m = i & 63;
+            if(h < 12 && m < 60 && Integer.bitCount(i) == turnedOn) {
+                ans.add(h + (m < 10 ? "0":"") + m);
+            }
+        }
+
+        int hour = 0;
+        int mimute = 0;
+
+        backTrackBinaryWatch(turnedOn, time, 0, ans, 0, 0);
+
+        return ans;
+    }
+
+    private void backTrackBinaryWatch(int num, int[] time, int i, List<String> ans, int hour, int minute) {
+        if(num == 0) {
+            if(hour <= 12 && minute <= 59) {
+                StringBuffer str = new StringBuffer();
+                str.append(hour);
+
+                str.append(":");
+
+                if(minute < 10) {
+                    str.append(0);
+                }
+
+                str.append(minute);
+                ans.add(str.toString());
+            }
+            return;
+        }
+
+
+
+        if(i == time.length) {
+            return;
+        }
+
+        if(i <= 3) {
+            backTrackBinaryWatch((num -1), time, (i+1), ans, (hour + time[i]), minute);
+        }else {
+            backTrackBinaryWatch((num -1), time, (i+1), ans, hour, minute + time[i]);
+        }
+
+        backTrackBinaryWatch(num, time, i+1, ans, hour, minute);
+    }
 }

@@ -16,4 +16,9 @@ public class SolutionTest {
     public void minimumTimeRequired() {
         new Solution().minimumTimeRequired(new int[]{6518448,8819833,7991995,7454298,2087579,380625,4031400,2905811,4901241,8480231,7750692,3544254},4);
     }
+
+    @Test
+    public void readBinaryWatch() {
+        new Solution().readBinaryWatch(2);
+    }
 }
