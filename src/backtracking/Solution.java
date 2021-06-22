@@ -1,9 +1,6 @@
 package backtracking;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
     /**
@@ -347,5 +344,63 @@ public class Solution {
         }
 
         backTrackBinaryWatch(num, time, i+1, ans, hour, minute);
+    }
+
+    /**
+     * 解题思路：
+     * 回溯法查找全排列
+     * 在查找过程中，先对字符串排序，并且保证每次选择字符，是重复字符集合中从左到右第一个为未被插入的字符（有序性）
+     * 即可保证重复字符集合只被填入一次
+     * @param s
+     * @return
+     */
+    public String[] permutation(String s) {
+
+
+        int n = s.length();
+
+        boolean[] visited = new boolean[n];
+
+        List<String> ans = new ArrayList<>();
+        StringBuffer str = new StringBuffer();
+
+        char[] chars = s.toCharArray();
+
+
+        Arrays.sort(chars);
+
+        backTrackString(chars, visited, str, ans);
+
+        String[] ss = new String[ans.size()];
+        int i = 0;
+        for (String sb :
+                ans) {
+            ss[i] = sb;
+            i++;
+        }
+
+
+        return ss;
+    }
+
+    private void backTrackString(char[] s, boolean[] v, StringBuffer str, List<String> ans) {
+        if(str.length() == s.length) {
+            ans.add(str.toString());
+            return;
+        }
+
+
+        for (int i = 0; i < s.length; i++) {
+            if(!v[i]) {
+                if(i > 0 && !v[i-1] && (s[i] == s[i-1])) {
+                    continue;
+                }
+                str.append(s[i]);
+                v[i] = true;
+                backTrackString(s, v, str, ans);
+                str.deleteCharAt(str.length() - 1);
+                v[i] = false;
+            }
+        }
     }
 }
