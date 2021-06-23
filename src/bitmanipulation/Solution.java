@@ -354,4 +354,23 @@ public class Solution {
 
         return (n & (n-1)) == 0 ? true : false;
     }
+
+
+    /**
+     * 解题思路：
+     * 1.从小到大遍历每一位，看对应位上是否为1，统计结果
+     * 2.n每次与（n-1）相与，可将最低位的1消去，每次消去，统计加一，直到n为零
+     * @param n
+     * @return
+     */
+    public int hammingWeight(int n) {
+        int count = 0;
+        while (n != 0) {
+            n = n & (n-1);
+            count++;
+        }
+
+        return count;
+    }
+
 }
