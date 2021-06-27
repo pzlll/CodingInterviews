@@ -630,6 +630,7 @@ public class Solution {
      * 对于该层的每一个位置：
      * 轮转k次后，（三个list中）位置i的数值变成（i - k + total）% total位置的值
      * 可通过数值list找到
+     *
      * @param grid
      * @param k
      * @return
@@ -680,43 +681,38 @@ public class Solution {
         return grid;
     }
 
+    /**
+     * 解题思路：状态压缩
+     * 若word(i, j)为最美字符串，则前缀（0, i-1）和前缀（0, j）里面字符奇偶性最多不超过1
+     * 使用mask作为一个状态，总共10位，每一位代表特定字符的奇偶性
+     * 使用哈系表存储对应状态以及它的频率
+     * 遍历字符串每一位，更新mask，查找哈希表中与mask相差不多于1的状态，加入累加值
+     *
+     * @param word
+     * @return
+     */
     public long wonderfulSubstrings(String word) {
         int n = word.length();
-        int[] count = new int[10];
-        int[] dp = new int[n + 1];
-        int[] before = new int[10];
-        Arrays.fill(before, 0);
 
+        Map<Integer, Long> freq = new HashMap<>();
 
-        int num = 0;
-        int index = 0;
+        freq.put(0, 1);
 
+        int mask = 0;
+        long ret = 0;
         for (int i = 0; i < n; i++) {
-            char c = word.charAt(i);
-            int v = ++count[c - 'a'];
-            if (v % 2 == 1) {
-                num++;
-
-            } else {
-                num--;
-
+            int c = word.charAt(i) - 'a';
+            mask = mask ^ (1 << c);
+            for (int j = 0; j < 10; j++) {
+                int match = mask ^ (1 << j);
+                if (freq.get(match) != null) {
+                    ret += freq.get(match);
+                }
             }
-            int j = before[c - 'a'] == 0 ? i : before[c - 'a'];
-
-            if (num <= 1) {
-                dp[i + 1] = dp[i] + 1;
-            } else {
-                dp[i + 1] = dp[i] - dp[j] + 1;
-
+            if (freq.get(mask) != null) {
+                ret += freq.get(mask);
             }
-
-
-            before[c - 'a'] = i + 1;
-        }
-
-        int ret = 0;
-        for (int i = 0; i <= n; i++) {
-            ret += dp[i];
+            freq.put(mask, freq.getOrDefault(mask, (long) 0) + 1);
         }
 
         return ret;
