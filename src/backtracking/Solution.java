@@ -108,6 +108,7 @@ public class Solution {
      * 解题思路：对数组进行排序，n个元素，则有2的n次方种组合
      * 若前一元素与当前元素相同，且前一元素不选择，则放弃当前组合
      * 目的是为了避免重复，使得元素{1，1，1}的组合为{{}， {1}， {1，1}， {1，1，1}}
+     *
      * @param nums
      * @return
      */
@@ -116,19 +117,19 @@ public class Solution {
 ////        dfs(false, 0, nums);
         int n = nums.length;
         boolean flag = true;
-        for (int mask = 0; mask < (1<<n); mask++) {
+        for (int mask = 0; mask < (1 << n); mask++) {
             t.clear();
             flag = true;
             for (int i = 0; i < n; i++) {
-                if((mask & (1<<i)) != 0) {
-                    if(i > 0 && ((mask & (1<<(i-1))) == 0) && nums[i - 1] == nums[i]){
+                if ((mask & (1 << i)) != 0) {
+                    if (i > 0 && ((mask & (1 << (i - 1))) == 0) && nums[i - 1] == nums[i]) {
                         flag = false;
                         break;
                     }
                     t.add(nums[i]);
                 }
             }
-            if(flag) {
+            if (flag) {
                 array.add(new ArrayList<>(t));
 
             }
@@ -164,12 +165,12 @@ public class Solution {
         }
 
 
-        while(min < max) {
+        while (min < max) {
             int[] workVol = new int[k];
             int mid = (max + min) / 2;
-            if(backTracking(workVol, mid, 0, jobs)) {
-               max = mid;
-            }else {
+            if (backTracking(workVol, mid, 0, jobs)) {
+                max = mid;
+            } else {
                 min = mid + 1;
             }
         }
@@ -179,21 +180,21 @@ public class Solution {
     }
 
     private boolean backTracking(int[] workVol, int limit, int i, int[] jobs) {
-        if(i == jobs.length) {
+        if (i == jobs.length) {
             return true;
         }
         for (int j = 0; j < workVol.length; j++) {
-            if((workVol[j] + jobs[i]) <= limit) {
+            if ((workVol[j] + jobs[i]) <= limit) {
                 workVol[j] += jobs[i];
-                if(backTracking(workVol, limit, i+1, jobs)) {
+                if (backTracking(workVol, limit, i + 1, jobs)) {
                     return true;
-                }else if(workVol[j] == limit) {
+                } else if (workVol[j] == limit) {
                     workVol[j] -= jobs[i];
                     return false;
                 }
                 workVol[j] -= jobs[i];
             }
-            if(workVol[j] == 0) {
+            if (workVol[j] == 0) {
                 return false;
             }
         }
@@ -216,14 +217,14 @@ public class Solution {
         int n = nums1.length;
         int m = nums2.length;
 
-        int[][] dp = new int[n+1][m+1];
+        int[][] dp = new int[n + 1][m + 1];
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                if(nums1[i-1] == nums2[j - 1]) {
-                    dp[i][j] = dp[i-1][j-1] + 1;
-                }else {
-                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                if (nums1[i - 1] == nums2[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
             }
 
@@ -235,6 +236,7 @@ public class Solution {
      * 解题思路：回溯法
      */
     private int max = 0;
+
     public int maxLength(List<String> arr) {
         int n = arr.size();
 
@@ -244,13 +246,13 @@ public class Solution {
             String s = arr.get(i);
             int mask = 0;
             for (int j = 0; j < s.length(); j++) {
-                if(((mask >> (s.charAt(j) - 'a')) & 1) != 0) {
+                if (((mask >> (s.charAt(j) - 'a')) & 1) != 0) {
                     mask = 0;
                     break;
                 }
-                mask |= (1<<(s.charAt(j) - 'a'));
+                mask |= (1 << (s.charAt(j) - 'a'));
             }
-            if(mask > 0) {
+            if (mask > 0) {
                 pos.add(mask);
             }
         }
@@ -262,10 +264,10 @@ public class Solution {
     }
 
     private void trackArray(List<Integer> pos, int i, int mask) {
-        if(i == pos.size()) {
+        if (i == pos.size()) {
             int count = 0;
             while (mask > 0) {
-                if(mask % 2 == 1) {
+                if (mask % 2 == 1) {
                     count++;
                 }
                 mask /= 2;
@@ -274,11 +276,11 @@ public class Solution {
             return;
         }
 
-        if((mask & pos.get(i)) == 0) {
-            trackArray(pos, i+1, mask|pos.get(i));
+        if ((mask & pos.get(i)) == 0) {
+            trackArray(pos, i + 1, mask | pos.get(i));
         }
 
-        trackArray(pos, i+1, mask);
+        trackArray(pos, i + 1, mask);
 
     }
 
@@ -289,6 +291,7 @@ public class Solution {
      * 2.二进制枚举
      * 总共有2^10种结果，对于每一个结果，取其前四位为小时数，后六位为分钟数
      * 若小时和分钟取值合法且对应结果的二进制1个数等于turnedOn,则找到其中一个答案
+     *
      * @param turnedOn
      * @return
      */
@@ -300,8 +303,8 @@ public class Solution {
         for (int i = 0; i < 1024; i++) {
             int h = i >> 6;
             int m = i & 63;
-            if(h < 12 && m < 60 && Integer.bitCount(i) == turnedOn) {
-                ans.add(h + (m < 10 ? "0":"") + m);
+            if (h < 12 && m < 60 && Integer.bitCount(i) == turnedOn) {
+                ans.add(h + (m < 10 ? "0" : "") + m);
             }
         }
 
@@ -314,14 +317,14 @@ public class Solution {
     }
 
     private void backTrackBinaryWatch(int num, int[] time, int i, List<String> ans, int hour, int minute) {
-        if(num == 0) {
-            if(hour <= 12 && minute <= 59) {
+        if (num == 0) {
+            if (hour <= 12 && minute <= 59) {
                 StringBuffer str = new StringBuffer();
                 str.append(hour);
 
                 str.append(":");
 
-                if(minute < 10) {
+                if (minute < 10) {
                     str.append(0);
                 }
 
@@ -332,18 +335,17 @@ public class Solution {
         }
 
 
-
-        if(i == time.length) {
+        if (i == time.length) {
             return;
         }
 
-        if(i <= 3) {
-            backTrackBinaryWatch((num -1), time, (i+1), ans, (hour + time[i]), minute);
-        }else {
-            backTrackBinaryWatch((num -1), time, (i+1), ans, hour, minute + time[i]);
+        if (i <= 3) {
+            backTrackBinaryWatch((num - 1), time, (i + 1), ans, (hour + time[i]), minute);
+        } else {
+            backTrackBinaryWatch((num - 1), time, (i + 1), ans, hour, minute + time[i]);
         }
 
-        backTrackBinaryWatch(num, time, i+1, ans, hour, minute);
+        backTrackBinaryWatch(num, time, i + 1, ans, hour, minute);
     }
 
     /**
@@ -351,6 +353,7 @@ public class Solution {
      * 回溯法查找全排列
      * 在查找过程中，先对字符串排序，并且保证每次选择字符，是重复字符集合中从左到右第一个为未被插入的字符（有序性）
      * 即可保证重复字符集合只被填入一次
+     *
      * @param s
      * @return
      */
@@ -384,15 +387,15 @@ public class Solution {
     }
 
     private void backTrackString(char[] s, boolean[] v, StringBuffer str, List<String> ans) {
-        if(str.length() == s.length) {
+        if (str.length() == s.length) {
             ans.add(str.toString());
             return;
         }
 
 
         for (int i = 0; i < s.length; i++) {
-            if(!v[i]) {
-                if(i > 0 && !v[i-1] && (s[i] == s[i-1])) {
+            if (!v[i]) {
+                if (i > 0 && !v[i - 1] && (s[i] == s[i - 1])) {
                     continue;
                 }
                 str.append(s[i]);
@@ -402,5 +405,87 @@ public class Solution {
                 v[i] = false;
             }
         }
+    }
+
+    /**
+     * 解题思路：广度优先搜索，到指定位置需遍历的层数（存在返回层数，不存在返回-1）
+     * 对应位置若其board值不为-1,则可跳转到另一指定位置
+     * 两个转换函数：toVal、toIndex
+     * @param board
+     * @return
+     */
+    public int snakesAndLadders(int[][] board) {
+        int n = board.length;
+
+        boolean[] visited = new boolean[n * n];
+
+        int index = (n - 1) * n;
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(index);
+        visited[n * (n - 1)] = true;
+        int count = 1;
+
+        while (!queue.isEmpty()) {
+
+            int m = queue.size();
+            for (int i = 0; i < m; i++) {
+                Integer p = queue.poll();
+                Integer t = toVal(p, n);
+
+                for (int j = 1; j <= 6; j++) {
+                    int s = t + j;
+
+                    index = toIndex(s, n);
+
+                    int i1 = index / n;
+                    int j1 = index % n;
+                    if (board[i1][j1] != -1) {
+                        s = board[i1][j1];
+                        index = toIndex(s, n);
+                    }
+                    if(s == n * n) {
+                        return count;
+                    }
+                    if (visited[index]) {
+                        continue;
+                    }
+                    queue.offer(index);
+                    visited[index] = true;
+                }
+
+            }
+
+            count++;
+        }
+
+        return -1;
+
+    }
+
+    private int toVal(int index, int n) {
+        int i = index / n;
+        int j = index % n;
+        int val = 0;
+        val += (n-1 - i) *n;
+        if ((n - 1 - i) % 2 == 0) {
+            val += j;
+        } else {
+            val = val + (n-1-j);
+        }
+        val++;
+        return val;
+    }
+
+    private int toIndex(int val, int n) {
+        val--;
+        int i = (n - 1) - val / n;
+        int j = 0;
+        if ((n - 1 - i) % 2 == 0) {
+            j = val % n;
+        } else {
+            j = n - 1 - (val % n);
+        }
+        return (i * n + j);
     }
 }
