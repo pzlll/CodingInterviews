@@ -45,4 +45,9 @@ public class SolutionTest {
     public void maximumRemovals() {
         new Solution().maximumRemovals("abcbddddd", "abcd", new int[]{3,2,1,4,5,6});
     }
+
+    @Test
+    public void wonderfulSubstrings() {
+        new Solution().wonderfulSubstrings("aabb");
+    }
 }

@@ -552,6 +552,7 @@ public class Solution {
      * 深度优先搜索：
      * 标记该节点为已被访问，设置flag标志，若该节点在grid1中为零，则改变flag
      * 访问其四个方向，先判断对应坐标是否越界，在grid2中是否为零以及是否被访问过，若都通过，则对其进行深度优先搜索，如果该搜索改变flag的值，将其传回
+     *
      * @param grid1
      * @param grid2
      * @return
@@ -567,7 +568,7 @@ public class Solution {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if(grid2[i][j] == 0) {
+                if (grid2[i][j] == 0) {
                     continue;
                 }
                 if (!visited[i][j]) {
@@ -589,21 +590,21 @@ public class Solution {
         int[][] direct = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
         boolean flag = true;
         v[i][j] = true;
-        if(grid1[i][j] == 0) {
+        if (grid1[i][j] == 0) {
             flag = false;
         }
 
         for (int k = 0; k < 4; k++) {
             int ni = i + direct[k][0];
             int nj = j + direct[k][1];
-            if(ni < 0 || ni >= n || nj < 0 || nj >= m) {
+            if (ni < 0 || ni >= n || nj < 0 || nj >= m) {
                 continue;
             }
-            if(grid2[ni][nj] == 0) {
+            if (grid2[ni][nj] == 0) {
                 continue;
             }
-            if(!v[ni][nj]) {
-                if(!dfsForIsland(grid1, grid2, ni, nj, v)) {
+            if (!v[ni][nj]) {
+                if (!dfsForIsland(grid1, grid2, ni, nj, v)) {
                     flag = false;
                 }
             }
@@ -614,4 +615,110 @@ public class Solution {
     }
 
 
+    public int maxProductDifference(int[] nums) {
+        Arrays.sort(nums);
+        int a = nums[0] * nums[1];
+        int n = nums.length;
+        int b = nums[n - 2] * nums[n - 1];
+        return (b - a);
+    }
+
+    /**
+     * 解题思路：
+     * 层数是两个维度m和n它们除以二取最小值
+     * 使用三个list存储每一层数对应的行、列和数值
+     * 对于该层的每一个位置：
+     * 轮转k次后，（三个list中）位置i的数值变成（i - k + total）% total位置的值
+     * 可通过数值list找到
+     * @param grid
+     * @param k
+     * @return
+     */
+    public int[][] rotateGrid(int[][] grid, int k) {
+        int n = grid.length;
+        int m = grid[0].length;
+        int nlayer = Math.min(n / 2, m / 2);
+        for (int i = 0; i < nlayer; i++) {
+            List<Integer> row = new ArrayList<>();
+            List<Integer> col = new ArrayList<>();
+            List<Integer> val = new ArrayList<>();
+            for (int j = i; j < n - i - 1; j++) {
+                row.add(j);
+                col.add(i);
+                val.add(grid[j][i]);
+            }
+
+            for (int j = i; j < m - i - 1; j++) {
+                row.add(n - i - 1);
+                col.add(j);
+                val.add(grid[n - i][j]);
+            }
+
+            for (int j = n - i - 1; j > i; j--) {
+                row.add(j);
+                col.add(m - i - 1);
+                val.add(grid[j][m - i - 1]);
+            }
+
+            for (int j = m - 1 - i; j > i; j--) {
+                row.add(i);
+                col.add(j);
+                val.add(grid[i][j]);
+            }
+
+            int total = row.size();
+
+            int kk = k % total;
+
+            for (int j = 0; j < total; j++) {
+                int index = (j - kk + total) % total;
+                grid[row.get(j)][col.get(j)] = val.get(index);
+            }
+
+        }
+
+        return grid;
+    }
+
+    public long wonderfulSubstrings(String word) {
+        int n = word.length();
+        int[] count = new int[10];
+        int[] dp = new int[n + 1];
+        int[] before = new int[10];
+        Arrays.fill(before, 0);
+
+
+        int num = 0;
+        int index = 0;
+
+        for (int i = 0; i < n; i++) {
+            char c = word.charAt(i);
+            int v = ++count[c - 'a'];
+            if (v % 2 == 1) {
+                num++;
+
+            } else {
+                num--;
+
+            }
+            int j = before[c - 'a'] == 0 ? i : before[c - 'a'];
+
+            if (num <= 1) {
+                dp[i + 1] = dp[i] + 1;
+            } else {
+                dp[i + 1] = dp[i] - dp[j] + 1;
+
+            }
+
+
+            before[c - 'a'] = i + 1;
+        }
+
+        int ret = 0;
+        for (int i = 0; i <= n; i++) {
+            ret += dp[i];
+        }
+
+        return ret;
+    }
 }
