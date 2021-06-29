@@ -411,6 +411,7 @@ public class Solution {
      * 解题思路：广度优先搜索，到指定位置需遍历的层数（存在返回层数，不存在返回-1）
      * 对应位置若其board值不为-1,则可跳转到另一指定位置
      * 两个转换函数：toVal、toIndex
+     *
      * @param board
      * @return
      */
@@ -444,7 +445,7 @@ public class Solution {
                         s = board[i1][j1];
                         index = toIndex(s, n);
                     }
-                    if(s == n * n) {
+                    if (s == n * n) {
                         return count;
                     }
                     if (visited[index]) {
@@ -467,11 +468,11 @@ public class Solution {
         int i = index / n;
         int j = index % n;
         int val = 0;
-        val += (n-1 - i) *n;
+        val += (n - 1 - i) * n;
         if ((n - 1 - i) % 2 == 0) {
             val += j;
         } else {
-            val = val + (n-1-j);
+            val = val + (n - 1 - j);
         }
         val++;
         return val;
@@ -489,24 +490,83 @@ public class Solution {
         return (i * n + j);
     }
 
-//    public int openLock(String[] deadends, String target) {
-//        Set<String> deadendSet = new HashSet<>();
-//        int n = deadends.length;
-//        for (int i = 0; i < n; i++) {
-//            deadendSet.add(deadends[i]);
-//        }
-//
-//        Queue<String> queue = new LinkedList<>();
-//        queue.offer("0000");
-//        int min = Integer.MAX_VALUE;
-//        for (int i = 0; i < 4; i++) {
-//            for (int j = 1; j < 6; j++) {
-//
-//            }
-//
-//            for (int j = 9; j > 5; j--) {
-//
-//            }
-//        }
-//    }
+    public int openLock(String[] deadends, String target) {
+        Set<String> deadendSet = new HashSet<>();
+        if (target.equals("0000")) {
+            return 0;
+        }
+        int n = deadends.length;
+        for (int i = 0; i < n; i++) {
+            deadendSet.add(deadends[i]);
+        }
+        if (deadendSet.contains(target)) {
+            return -1;
+        }
+
+        Set<String> visited = new HashSet<>();
+        Queue<Union> queue = new LinkedList<>();
+        queue.offer(new Union("0000", 0));
+        visited.add("0000");
+
+        while (!queue.isEmpty()) {
+            int m = queue.size();
+            for (int i = 0; i < m; i++) {
+                Union p = queue.poll();
+                for (int j = 0; j < 4; j++) {
+                    StringBuffer str = new StringBuffer(p.getStatus());
+                    int val = str.charAt(j) - '0';
+                    val = (val + 1) % 10;
+                    str.setCharAt(j, (char) (val + '0'));
+                    String s = str.toString();
+                    if (!visited.contains(s) && !deadendSet.contains(s)) {
+                        if (s.equals(target)) {
+                            return p.getCount() + 1;
+                        }
+                        queue.offer(new Union(s, p.getCount() + 1));
+                        visited.add(s);
+                    }
+
+                    val = (val - 2 + 10) % 10;
+                    str.setCharAt(j, (char) (val + '0'));
+                    s = str.toString();
+                    if (!visited.contains(s) && !deadendSet.contains(s)) {
+                        if (s.equals(target)) {
+                            return p.getCount() + 1;
+                        }
+                        queue.offer(new Union(s, p.getCount() + 1));
+                        visited.add(s);
+                    }
+
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    class Union {
+        private String status;
+        private int count;
+
+        public Union(String status, int count) {
+            this.status = status;
+            this.count = count;
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
+        public int getCount() {
+            return count;
+        }
+
+        public void setCount(int count) {
+            this.count = count;
+        }
+    }
 }

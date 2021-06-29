@@ -21,4 +21,10 @@ public class SolutionTest {
     public void readBinaryWatch() {
         new Solution().readBinaryWatch(2);
     }
+
+    @Test
+    public void openLock() {
+        String[] s = {"0201","0101","0102","1212","2002"};
+        new Solution().openLock(new String[]{}, "8888");
+    }
 }
