@@ -488,4 +488,25 @@ public class Solution {
         }
         return (i * n + j);
     }
+
+//    public int openLock(String[] deadends, String target) {
+//        Set<String> deadendSet = new HashSet<>();
+//        int n = deadends.length;
+//        for (int i = 0; i < n; i++) {
+//            deadendSet.add(deadends[i]);
+//        }
+//
+//        Queue<String> queue = new LinkedList<>();
+//        queue.offer("0000");
+//        int min = Integer.MAX_VALUE;
+//        for (int i = 0; i < 4; i++) {
+//            for (int j = 1; j < 6; j++) {
+//
+//            }
+//
+//            for (int j = 9; j > 5; j--) {
+//
+//            }
+//        }
+//    }
 }

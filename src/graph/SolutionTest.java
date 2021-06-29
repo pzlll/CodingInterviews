@@ -98,4 +98,10 @@ public class SolutionTest {
         int[][] edges = {{0,1,1},{1,2,1},{0,2,1}, {2,3,4},{3,4,2}, {3,5,2}, {4,5,2}};
         new Solution().findCriticalAndPseudoCriticalEdges(n, edges);
     }
+
+    @Test
+    public void numBusesToDestination() {
+        int[][] routes = {{1,2,7}, {3,6,7}};
+        new Solution().numBusesToDestination(routes, 2, 6);
+    }
 }

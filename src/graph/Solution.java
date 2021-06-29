@@ -1194,5 +1194,79 @@ public class Solution {
             return count;
         }
     }
+
+    public int numBusesToDestination(int[][] routes, int source, int target) {
+        if(source == target) {
+            return 0;
+        }
+        int n = routes.length;
+
+        boolean[][] edges = new boolean[n][n];
+
+        Map<Integer, Set<Integer>> station2route = new HashMap<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < routes[i].length; j++) {
+                int station = routes[i][j];
+                Set<Integer> route = station2route.get(station);
+                if(route == null) {
+                    station2route.put(station, new HashSet<>());
+                    station2route.get(station).add(i);
+                }else {
+                    if(!route.contains(i)) {
+                        for (Integer r :
+                                route) {
+                            edges[i][r] = true;
+                            edges[r][i] = true;
+                        }
+                        route.add(i);
+                    }
+                }
+            }
+        }
+
+        int ret = 0;
+        Queue<Integer> queue = new LinkedList<>();
+        if(station2route.get(source) == null) {
+            return -1;
+        }
+
+        if(source == target) {
+            return 0;
+        }
+
+        int[] dist = new int[n];
+        Arrays.fill(dist, -1);
+
+
+
+        for (Integer r:
+             station2route.get(source)) {
+            queue.offer(r);
+            dist[r] = 1;
+        }
+
+        while (!queue.isEmpty()) {
+            Integer p = queue.poll();
+            for (int i = 0; i < n; i++) {
+                if(edges[i][p] && dist[i] == -1) {
+                    dist[i] = dist[p] + 1;
+                    queue.offer(i);
+                }
+            }
+        }
+
+        int min = Integer.MAX_VALUE;
+        for (Integer i :
+                station2route.getOrDefault(target, new HashSet<>())) {
+            if(dist[i] != -1) {
+                min = Math.min(min, dist[i]);
+
+            }
+        }
+
+        return min == Integer.MAX_VALUE ? -1 : min;
+
+    }
 }
 

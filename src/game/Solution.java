@@ -696,7 +696,7 @@ public class Solution {
 
         Map<Integer, Long> freq = new HashMap<>();
 
-        freq.put(0, 1);
+        freq.put(0, (long)1);
 
         int mask = 0;
         long ret = 0;
