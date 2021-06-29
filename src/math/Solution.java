@@ -362,5 +362,35 @@ public class Solution {
 
     }
 
+    /**
+     * 解题思路：公式推导
+     * @param columnNumber
+     * @return
+     */
+    public String convertToTitle(int columnNumber) {
+        StringBuffer str = new StringBuffer();
+        columnNumber--;
+
+        Stack<Character> stack = new Stack<>();
+
+        while (columnNumber > 0) {
+            int offset = (columnNumber-1) % 26;
+
+            int v = 'A' + offset;
+            stack.push((char)v);
+
+
+            columnNumber = (columnNumber-offset - 1)/26;
+        }
+
+        int n = stack.size();
+
+        for (int j = 0; j < n; j++) {
+            str.append(stack.pop());
+        }
+
+        return str.toString();
+    }
+
 
 }
