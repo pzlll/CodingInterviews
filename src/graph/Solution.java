@@ -1146,10 +1146,10 @@ public class Solution {
         for (int i = 0; i < (n * (n - 1) / 2); i++) {
             int x = edges[i][1];
             int y = edges[i][2];
-            if(union7.union(x, y)) {
+            if (union7.union(x, y)) {
                 sum += edges[i][0];
             }
-            if(union7.getCount() == 1) {
+            if (union7.getCount() == 1) {
                 break;
             }
         }
@@ -1170,7 +1170,7 @@ public class Solution {
         }
 
         public int getParent(int x) {
-            if(parent[x] != x) {
+            if (parent[x] != x) {
                 return parent[x] = getParent(parent[x]);
             }
 
@@ -1180,7 +1180,7 @@ public class Solution {
         public boolean union(int x, int y) {
             int rootX = getParent(x);
             int rootY = getParent(y);
-            if(rootX == rootY) {
+            if (rootX == rootY) {
                 return false;
             }
 
@@ -1196,7 +1196,7 @@ public class Solution {
     }
 
     public int numBusesToDestination(int[][] routes, int source, int target) {
-        if(source == target) {
+        if (source == target) {
             return 0;
         }
         int n = routes.length;
@@ -1209,11 +1209,11 @@ public class Solution {
             for (int j = 0; j < routes[i].length; j++) {
                 int station = routes[i][j];
                 Set<Integer> route = station2route.get(station);
-                if(route == null) {
+                if (route == null) {
                     station2route.put(station, new HashSet<>());
                     station2route.get(station).add(i);
-                }else {
-                    if(!route.contains(i)) {
+                } else {
+                    if (!route.contains(i)) {
                         for (Integer r :
                                 route) {
                             edges[i][r] = true;
@@ -1227,11 +1227,11 @@ public class Solution {
 
         int ret = 0;
         Queue<Integer> queue = new LinkedList<>();
-        if(station2route.get(source) == null) {
+        if (station2route.get(source) == null) {
             return -1;
         }
 
-        if(source == target) {
+        if (source == target) {
             return 0;
         }
 
@@ -1239,9 +1239,8 @@ public class Solution {
         Arrays.fill(dist, -1);
 
 
-
-        for (Integer r:
-             station2route.get(source)) {
+        for (Integer r :
+                station2route.get(source)) {
             queue.offer(r);
             dist[r] = 1;
         }
@@ -1249,7 +1248,7 @@ public class Solution {
         while (!queue.isEmpty()) {
             Integer p = queue.poll();
             for (int i = 0; i < n; i++) {
-                if(edges[i][p] && dist[i] == -1) {
+                if (edges[i][p] && dist[i] == -1) {
                     dist[i] = dist[p] + 1;
                     queue.offer(i);
                 }
@@ -1259,7 +1258,7 @@ public class Solution {
         int min = Integer.MAX_VALUE;
         for (Integer i :
                 station2route.getOrDefault(target, new HashSet<>())) {
-            if(dist[i] != -1) {
+            if (dist[i] != -1) {
                 min = Math.min(min, dist[i]);
 
             }
@@ -1320,8 +1319,69 @@ public class Solution {
             dp = next;
         }
 
-        return dp[n-1];
+        return dp[n - 1];
 
+    }
+
+    public int slidingPuzzle(int[][] board) {
+        int[][] match = {{1, 3}, {0, 2, 4}, {1, 5}, {0, 4}, {1, 3, 5}, {2, 4}};
+        StringBuffer str = new StringBuffer();
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                str.append(board[i][j]);
+            }
+        }
+
+        String origin = str.toString();
+
+        if (origin.equals("123450")) {
+            return 0;
+        }
+
+        Queue<String> queue = new LinkedList<>();
+
+        Set<String> seen = new HashSet<>();
+
+        queue.offer(origin);
+        seen.add(origin);
+
+        int step = 0;
+        while (!queue.isEmpty()) {
+            step++;
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
+                String p = queue.poll();
+                int index = getIndex(p);
+                int[] status = match[index];
+                for (int u :
+                        status) {
+                    StringBuffer s = new StringBuffer(p);
+                    char temp = s.charAt(index);
+                    s.setCharAt(index, s.charAt(u));
+                    s.setCharAt(s.charAt(u), temp);
+                    if(s.toString().equals("123450")) {
+                        return step;
+                    }
+                    if(seen.contains(s.toString())) {
+                       continue;
+                    }
+                    queue.offer(s.toString());
+                    seen.add(s.toString());
+                }
+
+            }
+        }
+
+        return -1;
+    }
+
+    private int getIndex(String p) {
+        for (int i = 0; i < p.length(); i++) {
+            if (p.charAt(i) == '0') {
+                return i;
+            }
+        }
+        return -1;
     }
 }
 
