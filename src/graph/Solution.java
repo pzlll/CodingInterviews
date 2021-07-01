@@ -1268,5 +1268,60 @@ public class Solution {
         return min == Integer.MAX_VALUE ? -1 : min;
 
     }
+
+    public int numWays(int n, int[][] relation, int k) {
+//        boolean[][] edge = new boolean[n][n];
+//
+//        for (int i = 0; i < relation.length; i++) {
+//            int a = relation[i][0];
+//            int b = relation[i][1];
+//
+//            edge[a][b] = true;
+//        }
+//
+//        Queue<Integer> queue = new LinkedList<>();
+//
+//        queue.offer(0);
+//
+//        for (int i = 0; i < (k - 1) && !queue.isEmpty(); i++) {
+//            int m = queue.size();
+//            for (int j = 0; j < m; j++) {
+//                Integer p = queue.poll();
+//                for (int l = 0; l < n; l++) {
+//                    if(edge[p][l]) {
+//                        queue.offer(l);
+//                    }
+//                }
+//            }
+//        }
+//
+//        int count = 0;
+//        int m = queue.size();
+//        for (int j = 0; j < m; j++) {
+//            Integer p = queue.poll();
+//            if(edge[p][n-1]) {
+//                count++;
+//            }
+//        }
+//
+//        return count;
+
+        int[] dp = new int[n];
+        dp[0] = 1;
+        for (int i = 0; i < k; i++) {
+            int[] next = new int[n];
+            for (int[] edge :
+                    relation) {
+                int src = edge[0];
+                int dest = edge[1];
+                next[dest] += dp[src];
+            }
+
+            dp = next;
+        }
+
+        return dp[n-1];
+
+    }
 }
 
