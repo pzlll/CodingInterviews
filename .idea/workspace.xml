@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -738,14 +735,7 @@
       <workItem from="1624862136881" duration="3636000" />
       <workItem from="1624938835152" duration="6323000" />
       <workItem from="1625034246132" duration="3397000" />
-      <workItem from="1625121352978" duration="3897000" />
-    </task>
-    <task id="LOCAL-00026" summary="add method xorGame.">
-      <created>1621665119595</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1621665119595</updated>
+      <workItem from="1625121352978" duration="4511000" />
     </task>
     <task id="LOCAL-00027" summary="add method getImportance.">
       <created>1621732570102</created>
@@ -1083,7 +1073,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625123733512</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add method slidingPuzzle.">
+      <created>1625127256880</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1625127256880</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1119,7 +1116,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="675572000" />
+    <option name="totallyTimeSpent" value="676186000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1213,7 +1210,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method change." />
     <MESSAGE value="add method isPalindrome and hasCycle." />
     <MESSAGE value="add method numSquares." />
     <MESSAGE value="add method firstBadVersion." />
@@ -1238,7 +1234,8 @@
     <MESSAGE value="add method openLock." />
     <MESSAGE value="add method Codec." />
     <MESSAGE value="add method numWays." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method numWays." />
+    <MESSAGE value="add method slidingPuzzle." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method slidingPuzzle." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

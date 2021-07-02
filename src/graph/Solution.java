@@ -1329,8 +1329,7 @@ public class Solution {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
                 str.append(board[i][j]);
-            }
-        }
+            } }
 
         String origin = str.toString();
 
