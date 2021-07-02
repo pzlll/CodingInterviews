@@ -94,4 +94,38 @@ public class Solution {
         else
             return false;
     }
+
+    public int maxIceCream(int[] costs, int coins) {
+//        Arrays.sort(costs);
+
+        int[] freq = new int[100001];
+
+        int n = costs.length;
+        for (int i = 0; i < n; i++) {
+            freq[costs[i]]++;
+        }
+
+        int ret = 0;
+        int sum = 0;
+
+        for (int i = 1; i <= 100000; i++) {
+            if(freq[i] == 0) {
+                continue;
+            }
+            if(i <= coins) {
+                int count = Math.min(freq[i], coins / i);
+                coins -= count * i;
+            }
+        }
+        for (int i = 0; i < costs.length; i++) {
+            sum += costs[i];
+            if(sum <= coins) {
+                ret++;
+            }else {
+                break;
+            }
+        }
+
+        return ret;
+    }
 }
