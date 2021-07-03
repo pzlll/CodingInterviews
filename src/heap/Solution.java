@@ -116,6 +116,49 @@ public class Solution {
 
         return Arrays.asList(ret);
     }
+
+    /**
+     * 解题思路：
+     * 哈希表+大顶堆：先遍历字符串，得到每个字符的频率，然后将每个字符存入大顶堆（根据其频率大小比较）
+     * 哈希表+桶排序：先遍历字符串，得到每个字符的频率且找到最大频率，设置频率为1-max的桶，
+     * 将每个字符根据其频率存入桶中，从大到小遍历桶，得到答案
+     *
+     * @param s
+     * @return
+     */
+    public String frequencySort(String s) {
+        Map<Character, Integer> freq = new HashMap<>();
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+
+        PriorityQueue<Character> priorityQueue = new PriorityQueue<>(new Comparator<Character>() {
+            @Override
+            public int compare(Character o1, Character o2) {
+                return freq.get(o2) - freq.get(o1);
+            }
+        });
+
+        for (char c :
+                freq.keySet()) {
+            priorityQueue.offer(c);
+        }
+
+        StringBuffer str = new StringBuffer();
+
+        for (int i = 0; i < freq.size(); i++) {
+            char c = priorityQueue.poll();
+            int count = freq.get(c);
+
+            for (int j = 0; j < count; j++) {
+                str.append(c);
+            }
+        }
+
+        return str.toString();
+    }
 }
 class Compound {
     private Integer index;

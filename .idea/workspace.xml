@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/Solution.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,87 +34,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="492" column="23" selection-start-line="492" selection-start-column="15" selection-end-line="492" selection-end-column="23" />
-              <folding>
-                <element signature="method#check#0;class#Solution#0" />
-                <element signature="method#findWords#0;class#Solution#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/heap/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="1325" column="28" selection-start-line="1325" selection-start-column="15" selection-end-line="1325" selection-end-column="28" />
-              <folding>
-                <element signature="method#calcEquation#0;class#Solution#0" />
-                <element signature="class#Point#0;class#Solution#0" />
-                <element signature="method#findCircleNum#0;class#Solution#0" />
-                <element signature="method#DFS#0;class#Solution#0" />
-                <element signature="method#findRedundantConnection#0;class#Solution#0" />
-                <element signature="method#find#0;class#Solution#0" />
-                <element signature="method#removeStones#0;class#Solution#0" />
-                <element signature="class#Union#0;class#Solution#0" />
-                <element signature="method#hitBricks#0;class#Solution#0" />
-                <element signature="method#isInside#0;class#Solution#0" />
-                <element signature="class#UnionNode#0;class#Solution#0" />
-                <element signature="method#accountsMerge#0;class#Solution#0" />
-                <element signature="e#11145#11146#0" expanded="true" />
-                <element signature="e#11216#11217#0" expanded="true" />
-                <element signature="class#Union2#0;class#Solution#0" />
-                <element signature="method#makeConnected#0;class#Solution#0" />
-                <element signature="class#Union3#0;class#Solution#0" />
-                <element signature="method#canFinish#0;class#Solution#0" />
-                <element signature="method#dfs#0;class#Solution#0" />
-                <element signature="method#findOrder#0;class#Solution#0" />
-                <element signature="method#dfs2#0;class#Solution#0" />
-                <element signature="method#regionsBySlashes#0;class#Solution#0" />
-                <element signature="class#Union4#0;class#Solution#0" />
-                <element signature="method#maxNumEdgesToRemove#0;class#Solution#0" />
-                <element signature="method#minimumEffortPath#0;class#Solution#0" />
-                <element signature="e#20438#20439#0" expanded="true" />
-                <element signature="e#20490#20491#0" expanded="true" />
-                <element signature="method#swimInWater#0;class#Solution#0" />
-                <element signature="e#21703#21704#0" expanded="true" />
-                <element signature="e#21755#21756#0" expanded="true" />
-                <element signature="method#minSwapsCouples#0;class#Solution#0" />
-                <element signature="class#Union5#0;class#Solution#0" />
-                <element signature="method#getSum2#0;class#Solution#0" />
-                <element signature="method#getSum#0;class#Solution#0" />
-                <element signature="class#Union6#0;class#Solution#0" />
-                <element signature="e#29310#29311#0" expanded="true" />
-                <element signature="e#29362#29363#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backtracking/SolutionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding>
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tree/Codec.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="323">
+              <caret line="128" column="31" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#maxSlidingWindow#0;class#Solution#0" />
+                <element signature="method#adjustHeap2#0;class#Solution#0" />
+                <element signature="method#adjustHeap#0;class#Solution#0" />
+                <element signature="e#4046#4047#0" expanded="true" />
+                <element signature="e#4112#4113#0" expanded="true" />
+                <element signature="class#Compound#0" />
+                <element signature="e#4763#4764#0" expanded="true" />
+                <element signature="e#4791#4792#0" expanded="true" />
+                <element signature="e#4834#4835#0" expanded="true" />
+                <element signature="e#4868#4869#0" expanded="true" />
+                <element signature="e#4901#4902#0" expanded="true" />
+                <element signature="e#4929#4930#0" expanded="true" />
+                <element signature="e#4972#4973#0" expanded="true" />
+                <element signature="e#5006#5007#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tree/Trie.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/math/Trie.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/SortA.java" />
@@ -175,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
-        <option value="$PROJECT_DIR$/src/heap/Solution.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
@@ -199,6 +140,8 @@
         <option value="$PROJECT_DIR$/src/backtracking/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/Codec.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
+        <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
+        <option value="$PROJECT_DIR$/src/heap/Solution.java" />
       </list>
     </option>
   </component>
@@ -228,6 +171,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,7 +225,19 @@
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="greedy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodingInterviews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="heap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CodingInterviews" type="b2602c69:ProjectViewProjectNode" />
@@ -339,8 +296,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +306,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625065412438" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625297310801" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -736,20 +691,8 @@
       <workItem from="1624938835152" duration="6323000" />
       <workItem from="1625034246132" duration="3397000" />
       <workItem from="1625121352978" duration="4511000" />
-    </task>
-    <task id="LOCAL-00027" summary="add method getImportance.">
-      <created>1621732570102</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1621732570102</updated>
-    </task>
-    <task id="LOCAL-00028" summary="add method maximizeXor.">
-      <created>1621736936851</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1621736936851</updated>
+      <workItem from="1625214231712" duration="2238000" />
+      <workItem from="1625296111346" duration="1188000" />
     </task>
     <task id="LOCAL-00029" summary="add method strangePrinter.">
       <created>1621848686455</created>
@@ -1080,7 +1023,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625127256880</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="add method slidingPuzzle.">
+      <created>1625214281445</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1625214281446</updated>
+    </task>
+    <task id="LOCAL-00077" summary="add method maxIceCream.">
+      <created>1625216314962</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1625216314962</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1116,7 +1073,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="676186000" />
+    <option name="totallyTimeSpent" value="679612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1131,7 +1088,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.28325942" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.2899113" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1148,7 +1105,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5099778" side_tool="true" visible="true" weight="0.31842965" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5099778" side_tool="true" visible="true" weight="0.31842965" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49889135" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -1210,7 +1167,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method isPalindrome and hasCycle." />
     <MESSAGE value="add method numSquares." />
     <MESSAGE value="add method firstBadVersion." />
     <MESSAGE value="add game 245." />
@@ -1235,7 +1191,8 @@
     <MESSAGE value="add method Codec." />
     <MESSAGE value="add method numWays." />
     <MESSAGE value="add method slidingPuzzle." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method slidingPuzzle." />
+    <MESSAGE value="add method maxIceCream." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maxIceCream." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,13 +1271,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/NumArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/NumMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1452,20 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/heap/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="85" column="36" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#maxSlidingWindow#0;class#Solution#0" />
-            <element signature="method#adjustHeap2#0;class#Solution#0" />
-            <element signature="method#adjustHeap#0;class#Solution#0" />
-            <element signature="class#Compound#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1752,30 +1688,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backtracking/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Codec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="8075">
           <caret line="492" column="23" selection-start-line="492" selection-start-column="15" selection-end-line="492" selection-end-column="23" />
           <folding>
             <element signature="method#check#0;class#Solution#0" />
@@ -1786,7 +1701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="9101">
           <caret line="1325" column="28" selection-start-line="1325" selection-start-column="15" selection-end-line="1325" selection-end-column="28" />
           <folding>
             <element signature="method#calcEquation#0;class#Solution#0" />
@@ -1826,6 +1741,58 @@
             <element signature="class#Union6#0;class#Solution#0" />
             <element signature="e#29310#29311#0" expanded="true" />
             <element signature="e#29362#29363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backtracking/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/Codec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/greedy/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="97" column="26" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/heap/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="128" column="31" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#maxSlidingWindow#0;class#Solution#0" />
+            <element signature="method#adjustHeap2#0;class#Solution#0" />
+            <element signature="method#adjustHeap#0;class#Solution#0" />
+            <element signature="e#4046#4047#0" expanded="true" />
+            <element signature="e#4112#4113#0" expanded="true" />
+            <element signature="class#Compound#0" />
+            <element signature="e#4763#4764#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4834#4835#0" expanded="true" />
+            <element signature="e#4868#4869#0" expanded="true" />
+            <element signature="e#4901#4902#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+            <element signature="e#4972#4973#0" expanded="true" />
+            <element signature="e#5006#5007#0" expanded="true" />
           </folding>
         </state>
       </provider>
