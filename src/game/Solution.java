@@ -717,4 +717,90 @@ public class Solution {
 
         return ret;
     }
+
+    public int[] buildArray(int[] nums) {
+        int n = nums.length;
+
+        int[] ans = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            ans[i] = nums[nums[i]];
+        }
+
+        return ans;
+    }
+
+    public int eliminateMaximum(int[] dist, int[] speed) {
+        int n = dist.length;
+        int[] time = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            time[i] = (int)Math.ceil(dist[i]/(double)speed[i]);
+        }
+
+        Arrays.sort(time);
+
+        int t = 0;
+        int j = 0;
+        while (j <= n && time[j] <= t) {
+            j++;
+        }
+
+        while (j <= t) {
+            if(j == n) {
+                return n;
+            }
+
+            t++;
+            while (j <= n && time[j] <= t) {
+                j++;
+            }
+        }
+
+        return t;
+    }
+
+    public int countGoodNumbers(long n) {
+        long ans = 1;
+        long t = 1000000007;
+
+        int m = 0;
+        long temp = n;
+        while (temp > 0) {
+            temp = temp >> 1;
+            m++;
+        }
+
+        m = Math.max(2, m);
+
+        long[] dp = new long[m];
+
+        dp[0] = 5;
+        dp[1] = 5 * 4;
+        for (int i = 2; i < m; i++) {
+            dp[i] = (dp[i -1] * dp[i-1]) % t;
+        }
+
+//        for (int i = 1; i <= n; i++) {
+//            if(i % 2 == 1) {
+//                ans = (ans * 5) % t;
+//            }else {
+//                ans = (ans * 4) % t;
+//            }
+//
+//        }
+
+        int i = 0;
+        while (n > 0) {
+            if((n & 1) == 1) {
+                ans *= dp[i];
+                ans %= t;
+            }
+            i++;
+            n >>= 1;
+        }
+
+        return (int)ans;
+    }
+
 }

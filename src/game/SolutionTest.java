@@ -50,4 +50,9 @@ public class SolutionTest {
     public void wonderfulSubstrings() {
         new Solution().wonderfulSubstrings("aabb");
     }
+
+    @Test
+    public void eliminateMaximum() {
+        new Solution().eliminateMaximum(new int[]{4,3,3,3,4}, new int[]{1,1,1,1,4});
+    }
 }
