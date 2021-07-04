@@ -337,4 +337,29 @@ public class Solution {
 
         return false;
     }
+
+    public int[] findErrorNums(int[] nums) {
+
+        int n = nums.length;
+        boolean[] v = new boolean[n + 1];
+
+        int[] ans = new int[2];
+
+        for (int i = 0; i < n; i++) {
+            int index = nums[i];
+            if(!v[index]) {
+                v[index] = true;
+            }else {
+                ans[0] = index;
+            }
+        }
+
+        for (int i = 1; i <= n; i++) {
+            if(!v[i]) {
+                ans[1] = i;
+            }
+        }
+
+        return ans;
+    }
 }
