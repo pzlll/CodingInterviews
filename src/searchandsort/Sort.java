@@ -2,16 +2,16 @@ package searchandsort;
 
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Sort {
     public static void bubbleSort(int[] t) {
         for (int i = 0; i < t.length - 1; i++) {
-            for (int j = 0; j <t.length - 1 - i ; j++) {
-                if(t[j] > t[j+1]) {
+            for (int j = 0; j < t.length - 1 - i; j++) {
+                if (t[j] > t[j + 1]) {
                     int temp = t[j];
-                    t[j] = t[j+1];
-                    t[j+1] = temp;
+                    t[j] = t[j + 1];
+                    t[j + 1] = temp;
                 }
             }
         }
@@ -19,14 +19,14 @@ public class Sort {
     }
 
     public static void selectSort(int[] t) {
-        for (int i = 0; i < t.length - 1 ; i++) {
+        for (int i = 0; i < t.length - 1; i++) {
             int min = i;
-            for (int j = i+1; j < t.length; j++) {
-                if(t[j] < t[min]) {
+            for (int j = i + 1; j < t.length; j++) {
+                if (t[j] < t[min]) {
                     min = j;
                 }
             }
-            if(min != i) {
+            if (min != i) {
                 int temp = t[min];
                 t[min] = t[i];
                 t[i] = temp;
@@ -40,22 +40,22 @@ public class Sort {
         for (int i = 1; i < length; i++) {
             int temp = t[i];
             int index = i - 1;
-            while(index >= 0 && t[index] > temp) {
-                t[index+1] = t[index];
+            while (index >= 0 && t[index] > temp) {
+                t[index + 1] = t[index];
                 index--;
             }
-            t[index+1] = temp;
+            t[index + 1] = temp;
         }
     }
 
     public static void hillSort(int[] t) {
         int length = t.length;
 
-        for (int i = length/2; i > 0; i = i/2) {
+        for (int i = length / 2; i > 0; i = i / 2) {
             for (int j = i; j < length; j++) {
                 int temp = t[j];
                 int index = j - i;
-                while(index >= 0 && t[index] > temp) {
+                while (index >= 0 && t[index] > temp) {
                     t[index + i] = t[index];
                     index -= i;
                 }
@@ -67,19 +67,20 @@ public class Sort {
 
     public static void mergeSort(int[] t) {
         int start = 0;
-        int end = t.length-1;;
+        int end = t.length - 1;
+        ;
         mergeSort(t, start, end);
     }
 
     private static void mergeSort(int[] t, int start, int end) {
-        if(start >= end) {
-            return ;
+        if (start >= end) {
+            return;
         }
 
         int mid = (start + end) / 2;
 
         mergeSort(t, start, mid);
-        mergeSort(t, mid+1, end);
+        mergeSort(t, mid + 1, end);
 
         int[] k = new int[end - start + 1];
 
@@ -87,17 +88,17 @@ public class Sort {
         int j = mid + 1;
         int index = 0;
 
-        while(i <= mid && j <= end) {
+        while (i <= mid && j <= end) {
             if (t[i] < t[j]) {
                 k[index++] = t[i++];
-            }else {
+            } else {
                 k[index++] = t[j++];
             }
         }
-        while(i <= mid) {
+        while (i <= mid) {
             k[index++] = t[i++];
         }
-        while(j <= end) {
+        while (j <= end) {
             k[index++] = t[j++];
         }
 
@@ -106,19 +107,17 @@ public class Sort {
         }
 
 
-
-
     }
 
     public static void quickSort(int[] t) {
-        if(t.length <= 0) {
+        if (t.length <= 0) {
             return;
         }
-        quickSort(t, 0, t.length-1);
+        quickSort(t, 0, t.length - 1);
     }
 
     private static void quickSort(int[] t, int start, int end) {
-        if(start >= end) {
+        if (start >= end) {
             return;
         }
         int temp = t[start];
@@ -126,12 +125,12 @@ public class Sort {
         int i = start;
         int j = end;
 
-        while(i < j) {
-            while(i < j && t[j] >= temp) {
+        while (i < j) {
+            while (i < j && t[j] >= temp) {
                 j--;
             }
             t[i] = t[j];
-            while(i < j && t[i] < temp) {
+            while (i < j && t[i] < temp) {
                 i++;
             }
             t[j] = t[i];
@@ -139,8 +138,8 @@ public class Sort {
         }
         t[i] = temp;
 
-        quickSort(t, start, i-1);
-        quickSort(t, i+1, end);
+        quickSort(t, start, i - 1);
+        quickSort(t, i + 1, end);
 
     }
 
@@ -149,14 +148,14 @@ public class Sort {
         int length = t.length - 1;
         System.out.println(Arrays.toString(t));
         for (int i = 0; i < length; i++) {
-            swap(t, 0, length-i);
-            adjustHeap(t, 0, length-i);
+            swap(t, 0, length - i);
+            adjustHeap(t, 0, length - i);
         }
     }
 
     private static void MaxHeap(int[] t) {
-        for (int i = t.length/2; i >= 0; i--) {
-            adjustHeap(t, i, t.length-1);
+        for (int i = t.length / 2; i >= 0; i--) {
+            adjustHeap(t, i, t.length - 1);
         }
     }
 
@@ -165,15 +164,15 @@ public class Sort {
         int right = 2 * i + 2;
         int flag = i;
 
-        if(left < length && t[flag] < t[left]) {
+        if (left < length && t[flag] < t[left]) {
             flag = left;
         }
 
-        if(right < length && t[flag] < t[right]) {
+        if (right < length && t[flag] < t[right]) {
             flag = right;
         }
 
-        if(flag != i) {
+        if (flag != i) {
             swap(t, i, flag);
             adjustHeap(t, flag, length);
 
@@ -196,7 +195,7 @@ public class Sort {
         int i = 0;
 
         while (index < length) {
-            while(bucket[index] > 0) {
+            while (bucket[index] > 0) {
                 t[i++] = index;
                 bucket[index]--;
             }
@@ -213,5 +212,71 @@ public class Sort {
         int temp = t[i];
         t[i] = t[flag];
         t[flag] = temp;
+    }
+
+    /**
+     * 解题思路：哈希表+排序
+     *
+     * @param orders
+     * @return
+     */
+    public List<List<String>> displayTable(List<List<String>> orders) {
+        Map<String, Integer>[] map = new HashMap[501];
+
+        Set<String> foods = new TreeSet<>();
+
+        for (List<String> order :
+                orders) {
+            String customer = order.get(0);
+            int table = getNum(order.get(1));
+            String food = order.get(2);
+
+            foods.add(food);
+
+            if (map[table] == null) {
+                map[table] = new HashMap<>();
+            }
+
+            map[table].put(food, map[table].getOrDefault(food, 0) + 1);
+        }
+
+        List<List<String>> ans = new ArrayList<>();
+
+        List<String> list = new ArrayList<>();
+        list.add("Table");
+        for (String s :
+                foods) {
+            list.add(s);
+        }
+
+        ans.add(list);
+
+
+        for (int i = 1; i < 501; i++) {
+            if (map[i] != null) {
+                list = new ArrayList<>();
+                list.add(String.valueOf(i));
+                for (String s :
+                        foods) {
+                    Integer count = (map[i].get(s) == null ? 0 : map[i].get(s));
+                    list.add(String.valueOf(count));
+                }
+                ans.add(list);
+            }
+        }
+
+        return ans;
+    }
+
+    private int getNum(String s) {
+        int sum = 0;
+        int n = s.length();
+        int i = 0;
+        while (i < n) {
+            sum = sum * 10 + s.charAt(i) - '0';
+            i++;
+        }
+
+        return sum;
     }
 }
