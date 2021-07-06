@@ -301,4 +301,81 @@ public class Solution {
 
 
     }
+
+    public String countOfAtoms(String formula) {
+        HashMap<String,Integer> freq = new HashMap<>();
+
+        Stack<HashMap<String, Integer>> stack = new Stack<>();
+        stack.push(freq);
+
+        int i = 0;
+        int n = formula.length();
+
+        while (i < n) {
+            char c = formula.charAt(i);
+            switch (c) {
+                case '(':
+                    i++;
+                    freq = new HashMap<>();
+                    stack.push(freq);
+                    break;
+                case ')':
+                    i++;
+                    int sum = 0;
+                    while (i < n && Character.isDigit(formula.charAt(i))) {
+                        sum = formula.charAt(i) - '0' + sum * 10;
+                        i++;
+                    }
+                    int num = sum == 0 ? 1 : sum;
+                    for (Map.Entry<String, Integer> entry :
+                            stack.pop().entrySet()) {
+                        String key = entry.getKey();
+                        Integer value = entry.getValue() * num;
+                        Map<String,Integer> map = stack.peek();
+                        map.put(key, map.getOrDefault(key, 0) + value);
+                    }
+                    break;
+                default:
+                    StringBuffer str = new StringBuffer();
+                    str.append(formula.charAt(i));
+                    i++;
+                    while (i < n && Character.isLowerCase(formula.charAt(i))) {
+                        str.append(formula.charAt(i));
+                        i++;
+                    }
+
+                    sum = 0;
+                    while (i < n && Character.isDigit(formula.charAt(i))) {
+
+                        sum = sum * 10 + formula.charAt(i) - '0';
+                        i++;
+                    }
+                    int count = sum;
+                    stack.peek().put(str.toString(), stack.peek().getOrDefault(str.toString(), 0) + count);
+
+                    break;
+            }
+
+        }
+
+        Set<String> set = new TreeSet<>();
+        freq = stack.peek();
+        for (String s :
+                freq.keySet()) {
+            set.add(s);
+        }
+
+        StringBuffer str = new StringBuffer();
+
+        for (String s :
+                set) {
+            int value = freq.get(s);
+            str.append(s);
+            if(value > 1){
+                str.append(value);
+            }
+        }
+
+        return str.toString();
+    }
 }

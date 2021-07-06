@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searchandsort/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchandsort/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/searchandsort/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="340" column="4" selection-start-line="340" selection-start-column="4" selection-end-line="363" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="325" column="46" selection-start-line="325" selection-start-column="46" selection-end-line="325" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -99,7 +99,6 @@
         <option value="$PROJECT_DIR$/src/bitoperation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
-        <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
@@ -125,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
+        <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
       </list>
     </option>
   </component>
@@ -154,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -284,7 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +295,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625392161009" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625471757188" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -683,6 +683,8 @@
       <workItem from="1625214231712" duration="2238000" />
       <workItem from="1625296111346" duration="1799000" />
       <workItem from="1625365925228" duration="6835000" />
+      <workItem from="1625466634867" duration="2630000" />
+      <workItem from="1625551604420" duration="269000" />
     </task>
     <task id="LOCAL-00031" summary="add method hammingDistance.">
       <created>1622096450614</created>
@@ -1063,7 +1065,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="687058000" />
+    <option name="totallyTimeSpent" value="689957000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1075,10 +1077,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1850" height="1053" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.29323724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.29988915" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1109,7 +1110,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.16796009" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.16796009" />
       <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20092024" side_tool="true" visible="true" weight="0.23664503" />
     </layout>
   </component>
@@ -1396,13 +1397,6 @@
             <element signature="e#16338#16339#0" expanded="true" />
             <element signature="e#16420#16421#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="268" column="36" selection-start-line="268" selection-start-column="18" selection-end-line="268" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1774,6 +1768,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="340" column="4" selection-start-line="340" selection-start-column="4" selection-end-line="363" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="325" column="46" selection-start-line="325" selection-start-column="46" selection-end-line="325" selection-end-column="46" />
         </state>
       </provider>
     </entry>
