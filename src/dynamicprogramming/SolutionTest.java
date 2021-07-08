@@ -36,4 +36,9 @@ public class SolutionTest {
     public void numSquares() {
         new Solution().numSquares(12);
     }
+
+    @Test
+    public void numSubarraysWithSum() {
+        new Solution().numSubarraysWithSum(new int[]{1,0,1,0,1}, 2);
+    }
 }

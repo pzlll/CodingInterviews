@@ -1078,5 +1078,26 @@ public class Solution {
         }
     }
 
+    public int numSubarraysWithSum(int[] nums, int goal) {
+        int n = nums.length;
+        int[] sum = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            sum[i] = sum[i - 1] + nums[i-1];
+        }
+
+        int ans = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+
+        for (int i = 1; i <= n; i++) {
+            int a = sum[i];
+            Integer te = map.get(a - goal);
+            ans = ans + (te == null ? 0 : te);
+            map.put(a, map.getOrDefault(a, 0) + 1);
+        }
+
+
+        return ans;
+    }
 
 }

@@ -193,5 +193,35 @@ public class Solution {
         return x > y ? x : y;
     }
 
+    public int countPairs(int[] deliciousness) {
+        int n = deliciousness.length;
+
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, deliciousness[i]);
+        }
+
+        max *= 2;
+
+        int p = 1;
+        int ans = 0;
+        while (p <= max) {
+            Map<Integer,Integer> freq = new HashMap<>();
+            for (int i = 0; i < n; i++) {
+                if(p - deliciousness[i] < 0) {
+                    continue;
+                }
+                ans = ans + freq.getOrDefault(p - deliciousness[i], 0);
+                freq.put(deliciousness[i], freq.getOrDefault(deliciousness[i], 0) + 1);
+            }
+
+            p <<= 1;
+        }
+
+        return ans;
+    }
+
 
 }
