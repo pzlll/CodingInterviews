@@ -1103,4 +1103,30 @@ public class Solution {
         return true;
     }
 
+    public int majorityElement(int[] nums) {
+        int n = nums.length;
+
+        int key = 0;
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if(count == 0) {
+                key = nums[i];
+            }
+            count = count + (nums[i] == key ? 1 : -1);
+
+        }
+
+        count = 0;
+        for (int i = 0; i < n; i++) {
+            if(nums[i] == key) {
+                count++;
+            }
+        }
+
+
+
+        return (count > n/2 ? key : -1);
+
+    }
+
 }
