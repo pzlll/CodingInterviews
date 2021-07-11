@@ -362,4 +362,24 @@ public class Solution {
 
         return ans;
     }
+
+    public int hIndex(int[] citations) {
+        int n = citations.length;
+        Integer[] cit = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            cit[i] = citations[i];
+        }
+        Arrays.sort(cit, Collections.reverseOrder());
+
+
+        int max = -1;
+        for (int i = 0; i < n; i++) {
+            if((i + 1) <= cit[i]) {
+                max = (i + 1);
+            }
+        }
+
+        return max;
+
+    }
 }
