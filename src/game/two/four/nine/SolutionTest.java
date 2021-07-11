@@ -1,8 +1,6 @@
-package game.tfn;
+package game.two.four.nine;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SolutionTest {
 

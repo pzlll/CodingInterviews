@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/game/tfn/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/tfn/SolutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searchandsort/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchandsort/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/tfn/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/two/four/nine/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/tfn/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/two/four/nine/SolutionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,23 +45,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/tfn/Solution.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#subsetXORSum#0;class#Solution#0" />
+                <element signature="method#checkZeroOnes#0;class#Solution#0" />
+                <element signature="method#minSpeedOnTime#0;class#Solution#0" />
+                <element signature="method#isOnTime#0;class#Solution#0" />
+                <element signature="method#canReach#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/tfn/SolutionTest.java">
+        <entry file="file://$PROJECT_DIR$/src/game/two/four/nine/SolutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/two/four/nine/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1140">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -98,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/math/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/hash/SolutionTest.java" />
@@ -138,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
         <option value="$PROJECT_DIR$/src/heap/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Sort.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/hash/Solution.java" />
@@ -149,6 +169,8 @@
         <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/tfn/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/tfn/Solution.java" />
+        <option value="$PROJECT_DIR$/src/game/two/four/nine/Solution.java" />
+        <option value="$PROJECT_DIR$/src/game/Solution.java" />
       </list>
     </option>
   </component>
@@ -325,7 +347,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625990559807" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625990788209" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -377,12 +399,12 @@
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game.tfn.*" />
+          <option name="PATTERN" value="game.two.four.nine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="game.tfn" />
-      <option name="MAIN_CLASS_NAME" value="game.tfn.SolutionTest" />
+      <option name="PACKAGE_NAME" value="game.two.four.nine" />
+      <option name="MAIN_CLASS_NAME" value="game.two.four.nine.SolutionTest" />
       <option name="METHOD_NAME" value="countPalindromicSubsequence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -718,14 +740,7 @@
       <workItem from="1625747579735" duration="3860000" />
       <workItem from="1625810701825" duration="2924000" />
       <workItem from="1625920665804" duration="1567000" />
-      <workItem from="1625963301296" duration="6236000" />
-    </task>
-    <task id="LOCAL-00036" summary="add method isAnagram.">
-      <created>1622337344410</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1622337344410</updated>
+      <workItem from="1625963301296" duration="6467000" />
     </task>
     <task id="LOCAL-00037" summary="add method minCostConnectPoints.">
       <created>1622466346860</created>
@@ -1063,7 +1078,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625963401191</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="add game 249.">
+      <created>1625990619302</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1625990619302</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1099,7 +1121,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="707138000" />
+    <option name="totallyTimeSpent" value="707369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1112,9 +1134,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.31430155" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.31430155" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1124,7 +1145,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4883592" visible="true" weight="0.31842965" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4883592" visible="true" weight="0.31842965" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
@@ -1193,7 +1214,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method isNumber." />
     <MESSAGE value="add method maxLength." />
     <MESSAGE value="add object ThroneInheritance." />
     <MESSAGE value="add game 246." />
@@ -1218,7 +1238,8 @@
     <MESSAGE value="add method numSubarraysWithSum." />
     <MESSAGE value="add method majorityElement." />
     <MESSAGE value="add method TimeMap." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method TimeMap." />
+    <MESSAGE value="add game 249." />
+    <option name="LAST_COMMIT_MESSAGE" value="add game 249." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1657,47 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="55" column="81" selection-start-line="55" selection-start-column="81" selection-end-line="55" selection-end-column="81" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="772" lean-forward="true" selection-start-line="772" selection-end-line="772" />
-          <folding>
-            <element signature="method#subsetXORSum#0;class#Solution#0" />
-            <element signature="method#checkZeroOnes#0;class#Solution#0" />
-            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
-            <element signature="method#isOnTime#0;class#Solution#0" />
-            <element signature="method#canReach#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchandsort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1815,13 +1795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tfn/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1829,13 +1802,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tfn/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/game/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#subsetXORSum#0;class#Solution#0" />
+            <element signature="method#checkZeroOnes#0;class#Solution#0" />
+            <element signature="method#minSpeedOnTime#0;class#Solution#0" />
+            <element signature="method#isOnTime#0;class#Solution#0" />
+            <element signature="method#canReach#0;class#Solution#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/two/four/nine/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/two/four/nine/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
