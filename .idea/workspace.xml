@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/binarysearch/TimeMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,31 +37,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/math/SolutionTest.java">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="1113" column="24" lean-forward="true" selection-start-line="1113" selection-start-column="24" selection-end-line="1113" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="392" column="34" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="34" />
+              <folding>
+                <element signature="method#search#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/array/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/binarysearch/TimeMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="1105" column="30" selection-start-line="1105" selection-start-column="15" selection-end-line="1105" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="method#duplicate#0;class#Solution#0" />
-                <element signature="method#multiply#0;class#Solution#0" />
-                <element signature="method#twoSum#0;class#Solution#0" />
-                <element signature="method#findMedianSortedArrays#0;class#Solution#0" />
-                <element signature="method#getKElement#0;class#Solution#0" />
-                <element signature="method#fib#0;class#Solution#0" />
-                <element signature="method#isToeplitzMatrix#0;class#Solution#0" />
-                <element signature="method#isInside#0;class#Solution#0" />
-                <element signature="method#getRow#0;class#Solution#0" />
-                <element signature="method#flipAndInvertImage#0;class#Solution#0" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="399" column="21" selection-start-line="397" selection-start-column="20" selection-end-line="399" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -95,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/math/Trie.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/SortA.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Untitled.java" />
         <option value="$PROJECT_DIR$/src/math/SolutionTest.java" />
@@ -140,12 +156,13 @@
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Solution.java" />
-        <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Sort.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/hash/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
+        <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
+        <option value="$PROJECT_DIR$/src/binarysearch/TimeMap.java" />
       </list>
     </option>
   </component>
@@ -175,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -312,6 +328,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +339,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625811963974" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625922808850" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -713,14 +730,8 @@
       <workItem from="1625466634867" duration="2630000" />
       <workItem from="1625551604420" duration="2863000" />
       <workItem from="1625747579735" duration="3860000" />
-      <workItem from="1625810701825" duration="1259000" />
-    </task>
-    <task id="LOCAL-00034" summary="add method numSubmatrixSumTarget.">
-      <created>1622273302634</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1622273302634</updated>
+      <workItem from="1625810701825" duration="2924000" />
+      <workItem from="1625920665804" duration="1567000" />
     </task>
     <task id="LOCAL-00035" summary="add method isPowerOfTwo.">
       <created>1622337154384</created>
@@ -1058,7 +1069,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625752346350</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="add method majorityElement.">
+      <created>1625811998163</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1625811998164</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1094,7 +1112,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="697670000" />
+    <option name="totallyTimeSpent" value="700902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1109,7 +1127,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.30654103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.3104213" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1188,7 +1206,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method stoneGame." />
     <MESSAGE value="add method levelOrder." />
     <MESSAGE value="add method isNumber." />
     <MESSAGE value="add method maxLength." />
@@ -1213,7 +1230,8 @@
     <MESSAGE value="add method countOfAtoms." />
     <MESSAGE value="add method displayTable." />
     <MESSAGE value="add method numSubarraysWithSum." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method numSubarraysWithSum." />
+    <MESSAGE value="add method majorityElement." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method majorityElement." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1292,7 +1310,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit-4.13.1.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/LinkedList.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/List.java" />
     <entry file="jar://D:/Tools/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java" />
@@ -1514,16 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="392" column="34" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="34" />
-          <folding>
-            <element signature="method#search#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/ThroneInheritance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1714,27 +1721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5738">
-          <caret line="304" column="30" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchandsort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="216" column="7" selection-start-line="216" selection-start-column="7" selection-end-line="216" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="1090" lean-forward="true" selection-start-line="1090" selection-end-line="1090" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1800,6 +1790,43 @@
             <element signature="method#isInside#0;class#Solution#0" />
             <element signature="method#getRow#0;class#Solution#0" />
             <element signature="method#flipAndInvertImage#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stackandqueue/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="399" column="21" selection-start-line="397" selection-start-column="20" selection-end-line="399" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1113" column="24" lean-forward="true" selection-start-line="1113" selection-start-column="24" selection-end-line="1113" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="392" column="34" selection-start-line="392" selection-start-column="18" selection-end-line="392" selection-end-column="34" />
+          <folding>
+            <element signature="method#search#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/TimeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

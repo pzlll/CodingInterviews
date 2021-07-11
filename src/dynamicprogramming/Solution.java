@@ -1,5 +1,7 @@
 package dynamicprogramming;
 
+import org.omg.CORBA.INTERNAL;
+
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -1098,6 +1100,36 @@ public class Solution {
 
 
         return ans;
+    }
+
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> list = new ArrayList<>();
+        if(numRows <= 0) {
+            return list;
+        }
+        List<Integer> l1 = new ArrayList<>();
+        l1.add(1);
+        list.add(l1);
+        if(numRows == 1) {
+            return list;
+        }
+
+        for (int i = 1; i < numRows; i++) {
+            List<Integer> l2 = new ArrayList<>();
+            l2.add(1);
+
+            for (int j = 0; j < (l1.size() - 1); j++) {
+                l2.add(l1.get(j) + l1.get(j+1));
+            }
+
+            l2.add(1);
+
+            list.add(l2);
+            l1 = l2;
+
+        }
+
+        return list;
     }
 
 }
