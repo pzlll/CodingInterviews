@@ -410,4 +410,26 @@ public class Solution {
 
         return Long.toString(nVal-1);
     }
+
+    public int hIndex(int[] citations) {
+        int n = citations.length;
+
+        int left = 0;
+        int right = citations.length - 1;
+
+        if(citations[right] == 0) {
+            return 0;
+        }
+
+        while (left < right) {
+            int mid = left +(right - left) / 2;
+            if((n - mid) <= citations[mid]) {
+                right = mid;
+            }else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
 }

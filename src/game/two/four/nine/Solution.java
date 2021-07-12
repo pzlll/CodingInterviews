@@ -1,8 +1,6 @@
 package game.two.four.nine;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Solution {
 
@@ -48,55 +46,93 @@ public class Solution {
         return count;
     }
 
-    private int count = 0;
 
 
     public int colorTheGrid(int m, int n) {
-        int[] graph = new int[m * n];
-        makeColor(graph, 0, m, n);
+        Set<Integer> rows = new HashSet<>();
+
+        for (int i = 0; i < Math.pow(3, m); i++) {
+            if(isGoodRow(i, m)) {
+                rows.add(i);
+            }
+        }
+
+        Map<Integer, List<Integer>> rowToRow = new HashMap<>();
+
+        for (Integer row :
+                rows) {
+            List<Integer> list = new ArrayList<>();
+            
+            for (Integer r :
+                    rows) {
+                
+                if (canTogether(row, r, m)) {
+                    list.add(r);
+                }
+            }
+
+            rowToRow.put(row, list);
+        }
+        
+        Map<Integer, Integer> f = new HashMap<>();
+        for (Integer row :
+                rows) {
+            f.put(row, 1);
+        }
+
+        for (int i = 1; i < n; i++) {
+            Map<Integer, Integer> g = new HashMap<>();
+
+
+
+            for (Integer row :
+                    f.keySet()) {
+                List<Integer> list = rowToRow.get(row);
+                for (Integer in :
+                        list) {
+                    g.put(in, g.getOrDefault(in, 0) + f.get(row) % 1000000007);
+                }
+            }
+            f = g;
+        }
+        
+        int count = 0;
+
+
+        for (Integer in :
+                f.values()) {
+            count = (count + in) % 1000000007;
+        }
+
 
         return count;
     }
 
-    private void makeColor(int[] graph, int i, int m, int n) {
-        if (i == (m * n - 1)) {
-            if(goodColor(graph, -1, i, m, n)) {
-                count = (count + 1) % 1000000007;
+    private boolean canTogether(Integer a, Integer b, int m) {
+        for (int i = 0; i < m; i++) {
+            if((a%3) == (b%3)) {
+                return false;
             }
-            if(goodColor(graph, 0, i, m, n)) {
-                count = (count + 1) % 1000000007;
-            }
-            if(goodColor(graph, 1, i, m, n)) {
-                count = (count + 1) % 1000000007;
-            }
-            return;
+            a /= 3;
+            b /= 3;
         }
-        if (goodColor(graph, -1, i, m, n)) {
-            graph[i] = -1;
-            makeColor(graph, i + 1, m, n);
-        }
-
-        if (goodColor(graph, 0, i, m, n)) {
-            graph[i] = -1;
-            makeColor(graph, i + 1, m, n);
-        }
-
-        if (goodColor(graph, 1, i, m, n)) {
-            graph[i] = -1;
-            makeColor(graph, i + 1, m, n);
-        }
-
+        
+        return true;
     }
 
-    private boolean goodColor(int[] graph, int color, int i, int m, int n) {
-        if ((i % n != 0) && graph[i - 1] == color) {
-            return false;
-        }
-
-        if ((i / n != 0) && graph[i - n] == color) {
-            return false;
+    private boolean isGoodRow(int i, int m) {
+        int p = -1;
+        for(int j = 0; j < m; j++) {
+            int q = i % 3;
+            i /= 3;
+            if(p == q) {
+                return false;
+            }
+            p = q;
         }
 
         return true;
     }
+
+
 }
