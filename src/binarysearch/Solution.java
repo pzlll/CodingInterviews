@@ -432,4 +432,60 @@ public class Solution {
 
         return left;
     }
+
+    public int minAbsoluteSumDiff(int[] nums1, int[] nums2) {
+        int ret = 0;
+        int sum = 0;
+        int MOD = 1000000007;
+        int n = nums1.length;
+
+        int[] rec = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            rec[i] = nums1[i];
+
+        }
+
+        Arrays.sort(rec);
+        int maxn = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+
+            int a = Math.abs(nums1[i] - nums2[i]);
+            sum = (sum + a) % MOD;
+
+            int j = binarySearchDiff(rec, nums2[i]);
+
+            if(j < n) {
+                maxn = Math.max(maxn, a - (Math.abs(rec[j] - nums2[i])));
+            }
+
+            if(j > 0) {
+                maxn = Math.max(maxn, a - (Math.abs(rec[j-1] - nums2[i])));
+            }
+
+        }
+
+        return (sum - maxn + MOD) % MOD;
+    }
+
+    private int binarySearchDiff(int[] rec, int target) {
+
+        int low = 0;
+        int high = rec.length -1;
+        if(rec[high] < target) {
+            return high + 1;
+        }
+
+        while (low < high) {
+            int mid = low + (high - low) /2 ;
+
+            if(rec[mid] < target) {
+                low = mid + 1;
+            }else {
+                high = mid;
+            }
+        }
+
+        return low;
+    }
 }
