@@ -524,4 +524,44 @@ public class Solution {
 
     }
 
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> ret = new ArrayList<>();
+
+        Arrays.sort(nums);
+
+        int n = nums.length;
+        int pre1 = -1;
+        for (int i = 0; i < n; i++) {
+            if(i != 0 && pre1 == nums[i]) {
+                continue;
+            }
+            int pre2 = -1;
+            for (int j = i + 1,  k = n-1; j < n && j < k; j++) {
+                if(j != (i + 1) && pre2 == nums[j]) {
+                    continue;
+                }
+
+                while (j < k && ((nums[i] + nums[j] +nums[k]) != 0)) {
+                    if((nums[i] + nums[j] +nums[k]) < 0) {
+                        j++;
+                    }else {
+                        k--;
+                    }
+                }
+
+                if (j < k && (nums[i] + nums[j] +nums[k]) == 0) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(nums[j]);
+                    list.add(nums[k]);
+                    ret.add(list);
+                }
+                pre2 = nums[j];
+            }
+            pre1 = nums[i];
+        }
+
+        return ret;
+    }
+
 }
