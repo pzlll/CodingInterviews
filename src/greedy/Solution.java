@@ -1,6 +1,9 @@
 package greedy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class Solution {
     public int findContentChildren(int[] g, int[] s) {
@@ -127,5 +130,17 @@ public class Solution {
         }
 
         return ret;
+    }
+
+    public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
+        int n = arr.length;
+        Arrays.sort(arr);
+        arr[0] = 1;
+        List<List<String>> list = new ArrayList<>();
+        for (int i = 1; i < n; i++) {
+            arr[i] = Math.min(arr[i], arr[i-1] + 1);
+        }
+
+        return arr[n-1];
     }
 }
