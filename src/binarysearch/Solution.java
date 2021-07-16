@@ -488,4 +488,43 @@ public class Solution {
 
         return low;
     }
+
+    public int search2(int[] nums, int target) {
+        int n = nums.length;
+        int left = 0;
+        int right = n - 1;
+        if(n == 0 || nums[left] > target || nums[right] < target) {
+            return 0;
+        }
+        int large = n;
+
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if(nums[mid] <= target) {
+                left = mid + 1;
+            }else {
+                right = mid - 1;
+                large = mid;
+            }
+        }
+
+
+        left = 0;
+        right = n - 1;
+        int small = n;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if(nums[mid] < target) {
+                left = mid + 1;
+            }else {
+                right = mid - 1;
+                small = mid;
+            }
+        }
+
+        return large - small;
+
+    }
 }

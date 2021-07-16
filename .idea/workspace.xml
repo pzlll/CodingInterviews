@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7676">
-              <caret line="435" column="33" selection-start-line="435" selection-start-column="15" selection-end-line="435" selection-end-column="33" />
+            <state relative-caret-position="76">
+              <caret line="491" column="4" selection-start-line="491" selection-start-column="4" selection-end-line="528" selection-end-column="5" />
               <folding>
                 <element signature="method#search#0;class#Solution#0" />
               </folding>
@@ -49,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="6840">
               <caret line="526" column="39" selection-start-line="526" selection-start-column="31" selection-end-line="526" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/greedy/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="138" column="52" selection-start-line="138" selection-start-column="52" selection-end-line="138" selection-end-column="52" />
+            <state relative-caret-position="361">
+              <caret line="134" column="60" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,9 +166,9 @@
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/four/nine/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
+        <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
       </list>
     </option>
   </component>
@@ -763,14 +763,8 @@
       <workItem from="1626071538092" duration="5271000" />
       <workItem from="1626177303424" duration="620000" />
       <workItem from="1626243196700" duration="5848000" />
-      <workItem from="1626331835562" duration="1656000" />
-    </task>
-    <task id="LOCAL-00041" summary="add method getIntersectionNode.">
-      <created>1622788261941</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1622788261941</updated>
+      <workItem from="1626331835562" duration="1745000" />
+      <workItem from="1626416951650" duration="1980000" />
     </task>
     <task id="LOCAL-00042" summary="add method countAndSay.">
       <created>1622874865030</created>
@@ -1108,7 +1102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626249380960</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="add method maximumElementAfterDecrementingAndRearranging.">
+      <created>1626349964702</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1626349964704</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1144,7 +1145,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721427000" />
+    <option name="totallyTimeSpent" value="723496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1159,7 +1160,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.3337029" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.33758315" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1176,7 +1177,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5121951" side_tool="true" visible="true" weight="0.31842965" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5121951" side_tool="true" visible="true" weight="0.31842965" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49833703" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -1238,7 +1239,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method readBinaryWatch." />
     <MESSAGE value="add method permutation." />
     <MESSAGE value="add method hammingWeight." />
     <MESSAGE value="add method maxPoints." />
@@ -1263,7 +1263,8 @@
     <MESSAGE value="add method hIndex." />
     <MESSAGE value="add method minAbsoluteSumDiff." />
     <MESSAGE value="add method threeSum." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method threeSum." />
+    <MESSAGE value="add method maximumElementAfterDecrementingAndRearranging." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maximumElementAfterDecrementingAndRearranging." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1826,26 +1827,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7676">
-          <caret line="435" column="33" selection-start-line="435" selection-start-column="15" selection-end-line="435" selection-end-column="33" />
-          <folding>
-            <element signature="method#search#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/binarysearch/SolutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="6840">
           <caret line="526" column="39" selection-start-line="526" selection-start-column="31" selection-end-line="526" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1860,12 +1844,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/SolutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/greedy/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="138" column="52" selection-start-line="138" selection-start-column="52" selection-end-line="138" selection-end-column="52" />
+        <state relative-caret-position="361">
+          <caret line="134" column="60" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/binarysearch/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="491" column="4" selection-start-line="491" selection-start-column="4" selection-end-line="528" selection-end-column="5" />
+          <folding>
+            <element signature="method#search#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
