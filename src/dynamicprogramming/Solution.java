@@ -87,6 +87,22 @@ public class Solution {
 
 
         return max;
+
+//        int n = nums.length;
+//        int[] sum = new int[n+1];
+//        for (int i = 1; i < n+1; i++) {
+//            sum[i] = sum[i-1] + nums[i-1];
+//        }
+//
+//        int min = 0;
+//        int max = Integer.MIN_VALUE;
+//
+//        for (int i = 1; i <= n; i++) {
+//            max = Math.max(sum[i] - min, max);
+//            min = Math.min(min, sum[i]);
+//        }
+//
+//        return max;
     }
 
     /**
