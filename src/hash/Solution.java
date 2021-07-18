@@ -223,5 +223,40 @@ public class Solution {
         return ans;
     }
 
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> map = new HashMap<>();
+
+        for (String s :
+                strs) {
+            char[] chs = s.toCharArray();
+            int[] count = new int[26];
+
+            for (int i = 0; i < chs.length; i++) {
+                count[chs[i] - 'a']++;
+            }
+
+            StringBuffer str = new StringBuffer();
+            for (int i = 0; i < 26; i++) {
+
+                if(count[i] > 0) {
+                    str.append((char)('a' + i));
+                    str.append(count[i]);
+                }
+            }
+
+            String t = str.toString();
+            List<String> list = map.getOrDefault(t, new ArrayList<>());
+            list.add(s);
+            map.put(t, list);
+        }
+
+        List<List<String>> ret = new ArrayList<>();
+        for (List<String> list :
+                map.values()) {
+            ret.add(list);
+        }
+
+        return ret;
+    }
 
 }

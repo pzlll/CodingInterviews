@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,13 +36,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="104" selection-end-column="21" />
+            <state relative-caret-position="76">
+              <caret line="225" column="43" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#isHappy#0;class#Solution#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -98,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
-        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/ThroneInheritance.java" />
@@ -115,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/game/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/searchandsort/Sort.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
         <option value="$PROJECT_DIR$/src/array/Solution.java" />
         <option value="$PROJECT_DIR$/src/stackandqueue/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/TimeMap.java" />
@@ -129,6 +138,8 @@
         <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
+        <option value="$PROJECT_DIR$/src/hash/Solution.java" />
+        <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
       </list>
     </option>
   </component>
@@ -158,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -314,7 +326,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,7 +336,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626506009090" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626573541138" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -725,14 +736,8 @@
       <workItem from="1626243196700" duration="5848000" />
       <workItem from="1626331835562" duration="1745000" />
       <workItem from="1626416951650" duration="4214000" />
-      <workItem from="1626505365722" duration="636000" />
-    </task>
-    <task id="LOCAL-00043" summary="add method removeElements.">
-      <created>1622875868613</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1622875868613</updated>
+      <workItem from="1626505365722" duration="1272000" />
+      <workItem from="1626570861003" duration="3721000" />
     </task>
     <task id="LOCAL-00044" summary="add method removeNthFromEnd.">
       <created>1622878965014</created>
@@ -1070,7 +1075,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626419168230</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="add method maxSubArray.">
+      <created>1626506027748</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1626506027749</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1106,7 +1118,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="726366000" />
+    <option name="totallyTimeSpent" value="730723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1119,9 +1131,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.34146342" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.34534368" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1152,7 +1163,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32984033" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17017739" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.7990798" visible="true" weight="0.17017739" />
       <window_info anchor="right" id="leetcode" order="10" sideWeight="0.20092024" side_tool="true" visible="true" weight="0.23664503" />
     </layout>
   </component>
@@ -1200,8 +1211,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method hammingWeight." />
-    <MESSAGE value="add method maxPoints." />
     <MESSAGE value="add method snakesAndLadders." />
     <MESSAGE value="add method rotateGrid." />
     <MESSAGE value="add game 247." />
@@ -1225,7 +1234,9 @@
     <MESSAGE value="add method threeSum." />
     <MESSAGE value="add method maximumElementAfterDecrementingAndRearranging." />
     <MESSAGE value="add method search2." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method search2." />
+    <MESSAGE value="add method maxSubArray." />
+    <MESSAGE value="add method groupAnagrams." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method groupAnagrams." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1485,13 +1496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="361" column="31" selection-start-line="361" selection-start-column="19" selection-end-line="361" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8569">
@@ -1643,17 +1647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="216" column="7" selection-start-line="216" selection-start-column="7" selection-end-line="216" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3534">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isHappy#0;class#Solution#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1824,10 +1817,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="104" selection-end-column="21" />
+        <state relative-caret-position="57">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hash/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="225" column="43" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isHappy#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
