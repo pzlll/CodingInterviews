@@ -1,5 +1,7 @@
 package slidingwindow;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -333,5 +335,42 @@ public class Solution {
         }
 
         return res;
+    }
+
+    /**
+     * 解题思路：排序+滑动窗口+前缀和
+     * @param nums
+     * @param k
+     * @return
+     */
+    public int maxFrequency(int[] nums, int k) {
+        int n = nums.length;
+
+        int i = 0;
+        int j = 0;
+        long[] sum = new long[n + 1];
+        Arrays.sort(nums);
+        for (int l = 1; l < (n + 1); l++) {
+            sum[l] = sum[l-1] + nums[l-1];
+        }
+
+        int max = 0;
+        while (j < n) {
+            long val = (j-i)*(long)nums[j] - (sum[j] - sum[i-1]);
+            if(val > k) {
+                while (i < j) {
+                    i++;
+                    val = (j-i)*(long)nums[j] - (sum[j] - sum[i-1]);
+                    if(val <= k) {
+                        break;
+                    }
+                }
+            }
+
+            max = Math.max(max, (j-i+1));
+            j++;
+        }
+
+        return max;
     }
 }
