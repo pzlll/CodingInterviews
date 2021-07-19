@@ -477,4 +477,52 @@ public class Solution {
         return t;
     }
 
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> ret = new ArrayList<>();
+
+        int layer = 0;
+        Deque<TreeNode> stack = new LinkedList<>();
+
+        if(root != null) {
+            stack.push(root);
+        }
+        layer++;
+
+        while (!stack.isEmpty()) {
+            int n = stack.size();
+            List<Integer> list = new ArrayList<>();
+            Deque<TreeNode> stack2 = new LinkedList<>();
+
+            for (int i = 0; i < n; i++) {
+                TreeNode p = stack.pop();
+
+                list.add(p.val);
+                if(layer % 2 == 1) {
+                    if(p.left != null) {
+                        stack2.push(p.left);
+
+                    }
+                    if(p.right != null) {
+                        stack2.push(p.right);
+                    }
+                }else {
+                    if(p.right != null) {
+                        stack2.push(p.right);
+                    }
+                    if(p.left != null) {
+                        stack2.push(p.left);
+
+                    }
+                }
+            }
+
+            ret.add(list);
+            stack = stack2;
+
+            layer++;
+        }
+
+        return ret;
+    }
+
 }
