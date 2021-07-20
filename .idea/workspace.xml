@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/game/two/five/zero/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/two/five/zero/SolutionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/slidingwindow/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/slidingwindow/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doublepointer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/doublepointer/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/two/five/zero/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="1216">
               <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,11 +59,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/slidingwindow/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="340" column="23" selection-start-line="340" selection-start-column="23" selection-end-line="340" selection-end-column="23" />
+            <state relative-caret-position="6479">
+              <caret line="345" column="22" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="479" column="47" selection-start-line="479" selection-start-column="31" selection-end-line="479" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="567" column="4" lean-forward="true" selection-start-line="567" selection-start-column="4" selection-end-line="578" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#twoSum#0;class#Solution#0" />
+                <element signature="method#reverseVowels#0;class#Solution#0" />
+                <element signature="method#hasCycle#0;class#Solution#0" />
+                <element signature="method#findLongestWord#0;class#Solution#0" />
+                <element signature="method#isMatcc#0;class#Solution#0" />
+                <element signature="method#moveZeroes#0;class#Solution#0" />
+                <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/bitoperation/Solution.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
-        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/tree/ThroneInheritance.java" />
         <option value="$PROJECT_DIR$/src/bitmanipulation/Solution.java" />
@@ -162,7 +192,6 @@
         <option value="$PROJECT_DIR$/src/game/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/four/nine/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/SolutionTest.java" />
-        <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
         <option value="$PROJECT_DIR$/src/binarysearch/Solution.java" />
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
@@ -171,6 +200,8 @@
         <option value="$PROJECT_DIR$/src/game/two/five/zero/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/zero/Solution.java" />
         <option value="$PROJECT_DIR$/src/slidingwindow/Solution.java" />
+        <option value="$PROJECT_DIR$/src/tree/Solution.java" />
+        <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
       </list>
     </option>
   </component>
@@ -200,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,7 +402,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -783,14 +814,8 @@
       <workItem from="1626416951650" duration="4214000" />
       <workItem from="1626505365722" duration="1272000" />
       <workItem from="1626570861003" duration="8893000" />
-      <workItem from="1626680781444" duration="813000" />
-    </task>
-    <task id="LOCAL-00045" summary="add method findMaxForm.">
-      <created>1622946438954</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1622946438954</updated>
+      <workItem from="1626680781444" duration="2346000" />
+      <workItem from="1626761954101" duration="882000" />
     </task>
     <task id="LOCAL-00046" summary="game 244.">
       <created>1622951812119</created>
@@ -1128,7 +1153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626575118788</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add method maxFrequency.">
+      <created>1626681607905</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1626681607907</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1164,7 +1196,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="736708000" />
+    <option name="totallyTimeSpent" value="739123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1179,7 +1211,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.34922394" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50988144" visible="true" weight="0.35365853" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1258,7 +1290,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method snakesAndLadders." />
     <MESSAGE value="add method rotateGrid." />
     <MESSAGE value="add game 247." />
     <MESSAGE value="add method numBusesToDestination." />
@@ -1283,7 +1314,8 @@
     <MESSAGE value="add method search2." />
     <MESSAGE value="add method maxSubArray." />
     <MESSAGE value="add method groupAnagrams." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method groupAnagrams." />
+    <MESSAGE value="add method maxFrequency." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maxFrequency." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1353,12 +1385,6 @@
           <line>78</line>
           <properties />
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/doublepointer/Solution.java</url>
-          <line>547</line>
-          <properties />
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1513,18 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14991">
           <caret line="821" column="33" selection-start-line="821" selection-start-column="33" selection-end-line="821" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8569">
-          <caret line="456" selection-start-line="456" selection-end-line="456" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1801,23 +1815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6840">
-          <caret line="526" column="39" selection-start-line="526" selection-start-column="31" selection-end-line="526" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#twoSum#0;class#Solution#0" />
-            <element signature="method#reverseVowels#0;class#Solution#0" />
-            <element signature="method#hasCycle#0;class#Solution#0" />
-            <element signature="method#findLongestWord#0;class#Solution#0" />
-            <element signature="method#isMatcc#0;class#Solution#0" />
-            <element signature="method#moveZeroes#0;class#Solution#0" />
-            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/greedy/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2489">
@@ -1856,10 +1853,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/game/two/five/zero/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4199">
-          <caret line="227" column="20" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
+        <state relative-caret-position="1216">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/slidingwindow/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6479">
+          <caret line="345" column="22" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1870,20 +1877,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/two/five/zero/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/linkedlist/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <state relative-caret-position="4199">
+          <caret line="227" column="20" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="479" column="47" selection-start-line="479" selection-start-column="31" selection-end-line="479" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/slidingwindow/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="340" column="23" selection-start-line="340" selection-start-column="23" selection-end-line="340" selection-end-column="23" />
+        <state relative-caret-position="286">
+          <caret line="567" column="4" lean-forward="true" selection-start-line="567" selection-start-column="4" selection-end-line="578" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#twoSum#0;class#Solution#0" />
+            <element signature="method#reverseVowels#0;class#Solution#0" />
+            <element signature="method#hasCycle#0;class#Solution#0" />
+            <element signature="method#findLongestWord#0;class#Solution#0" />
+            <element signature="method#isMatcc#0;class#Solution#0" />
+            <element signature="method#moveZeroes#0;class#Solution#0" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
+          </folding>
         </state>
       </provider>
     </entry>
