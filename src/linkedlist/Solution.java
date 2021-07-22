@@ -2,10 +2,7 @@ package linkedlist;
 
 
 import javax.xml.soap.Node;
-import java.util.ArrayDeque;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 class ListNode {
     int val;
@@ -366,6 +363,18 @@ public class Solution {
         return true;
     }
 
+    class Node {
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
+
     public boolean hasCycle(ListNode head) {
         if(head == null) {
             return false;
@@ -381,6 +390,36 @@ public class Solution {
         }
 
         return false;
+    }
+
+    public Node copyRandomList(Node head) {
+        Node p = new Node(-1);
+        Node q = p;
+        Map<Node, Node> oldMap = new HashMap<>();
+        Map<Integer, Node> newMap = new HashMap<>();
+        Node t = head;
+
+        while (head != null) {
+            q.next = new Node(head.val);
+            oldMap.put(head, q.next);
+            head = head.next;
+            q = q.next;
+        }
+
+
+
+        q = p.next;
+
+        while (q != null) {
+            Node node = oldMap.get(t);
+            q.random = node;
+            q = q.next;
+            t = t.next;
+        }
+
+        return p.next;
+
+
     }
 
 
