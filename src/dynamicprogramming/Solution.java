@@ -1148,4 +1148,40 @@ public class Solution {
         return list;
     }
 
+    /**
+     * 解题思路：差分数组＋前缀和
+     * @param ranges
+     * @param left
+     * @param right
+     * @return
+     */
+    public boolean isCovered(int[][] ranges, int left, int right) {
+        int n = ranges.length;
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, ranges[i][1]);
+        }
+
+        int[] diff = new int[max + 1];
+
+        for (int i = 0; i < n; i++) {
+            diff[ranges[i][0]]++;
+            if(ranges[i][1] < max) {
+                diff[ranges[i][1] + 1]--;
+            }
+        }
+
+        int sum = 0;
+        for (int i = 1; i <= max; i++) {
+            sum = sum + diff[i];
+            if(i >= left && i <= right && (sum == 0)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 }

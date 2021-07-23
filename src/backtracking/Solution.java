@@ -569,4 +569,65 @@ public class Solution {
             this.count = count;
         }
     }
+
+    private Map<Character, List<Character>> map;
+    private List<String> ret;
+
+    public List<String> letterCombinations(String digits) {
+        map = new HashMap<>();
+        char num = '2';
+        char c = 'a';
+        for (int i = 2; i < 10; i++) {
+            if(i == 7) {
+                List<Character> list = new ArrayList<>();
+                list.add((char)(c++));
+                list.add((char)(c++));
+                list.add((char)(c++));
+                list.add((char)(c++));
+                map.put((char)(num++), list);
+            }else {
+                List<Character> list = new ArrayList<>();
+                list.add((char)(c++));
+                list.add((char)(c++));
+                list.add((char)(c++));
+                map.put((char)(num++), list);
+            }
+
+        }
+
+        ret = new ArrayList<>();
+
+        if(digits.length() == 0) {
+            ret.add("");
+            return ret;
+        }
+
+        StringBuffer str = new StringBuffer();
+        char[] ch = digits.toCharArray();
+        getLetter(str, ch, 0);
+
+
+
+        return ret;
+
+    }
+
+    private void getLetter(StringBuffer str, char[] ch, int i) {
+        int n = ch.length;
+
+        if(str.length() == n) {
+            ret.add(str.toString());
+            return;
+        }
+
+        for (Character c :
+                map.get(ch[i])) {
+            str.append(c);
+            getLetter(str, ch, i+1);
+            str.deleteCharAt(str.length()-1);
+        }
+
+
+
+    }
 }

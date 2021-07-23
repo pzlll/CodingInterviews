@@ -27,4 +27,9 @@ public class SolutionTest {
         String[] s = {"0201","0101","0102","1212","2002"};
         new Solution().openLock(new String[]{}, "8888");
     }
+
+    @Test
+    public void letterCombinations() {
+        new Solution().letterCombinations("23");
+    }
 }
