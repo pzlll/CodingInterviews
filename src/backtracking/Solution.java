@@ -630,4 +630,30 @@ public class Solution {
 
 
     }
+
+    public List<String> generateParenthesis(int n) {
+        List<String> ans = new ArrayList<String>();
+        backtrack(ans, new StringBuilder(), 0, 0, n);
+        return ans;
+    }
+
+    private void backtrack(List<String> ans, StringBuilder str, int left, int right, int n) {
+        if(str.length() == 2 * n) {
+            ans.add(str.toString());
+            return;
+        }
+
+        if(left < n) {
+            str.append('(');
+            backtrack(ans,str, left + 1, right, n);
+            str.deleteCharAt(str.length()-1);
+        }
+
+        if(right < left) {
+            str.append(')');
+            backtrack(ans, str, left, right+1, n);
+
+        }
+    }
+
 }

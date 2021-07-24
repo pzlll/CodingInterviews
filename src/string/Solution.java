@@ -369,4 +369,37 @@ public class Solution {
         return s;
     }
 
+
+    public String maximumTime(String time) {
+        Map<Integer, Character> map = new HashMap<Integer, Character>(){{
+            put(0, '2');
+            put(1, '9');
+            put(2, ':');
+            put(3, '5');
+            put(4, '9');
+        }};
+
+        StringBuffer str = new StringBuffer();
+
+        for (int i = 0; i < time.length(); i++) {
+            if(time.charAt(i) != '?') {
+                str.append(time.charAt(i));
+            }else {
+                if(i == 1 && str.charAt(0) == '2') {
+                    str.append('3');
+                }else if(i == 0 && (time.charAt(1) >= '4' && time.charAt(1) <= '9')) {
+                    str.append('1');
+                }
+                else{
+                    str.append(map.get(i));
+
+                }
+            }
+
+        }
+
+        return str.toString();
+
+    }
+
 }
