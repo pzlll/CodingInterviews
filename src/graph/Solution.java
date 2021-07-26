@@ -1382,5 +1382,47 @@ public class Solution {
         }
         return -1;
     }
+
+    public int[] restoreArray(int[][] adjacentPairs) {
+        int n = adjacentPairs.length + 1;
+        int[] ret = new int[n];
+
+        int first = 0;
+        Map<Integer, List<Integer>> map = new HashMap<>();
+
+        for (int i = 0; i < (n - 1); i++) {
+            int a = adjacentPairs[i][0];
+            int b = adjacentPairs[i][1];
+
+
+
+            List<Integer> list = map.getOrDefault(a, new ArrayList<>());
+            list.add(b);
+            map.put(a, list);
+            list = map.getOrDefault(b, new ArrayList<>());
+            list.add(a);
+            map.put(b, list);
+        }
+
+        for (Map.Entry<Integer, List<Integer>> entry :
+            map.entrySet()) {
+            if (entry.getValue().size() == 1) {
+                first = entry.getKey();
+                break;
+            }
+        }
+
+        Set<Integer> visited = new HashSet<>();
+
+        ret[0] = first;
+        ret[1] = map.get(first).get(0);
+
+        for(int i = 2; i < n; i++) {
+            List<Integer> in = map.get(ret[i-1]);
+            ret[i] = (ret[i-2] == in.get(0) ? in.get(1) : in.get(0));
+        }
+
+        return ret;
+    }
 }
 

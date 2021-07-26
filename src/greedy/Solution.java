@@ -1,9 +1,7 @@
 package greedy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Solution {
     public int findContentChildren(int[] g, int[] s) {
@@ -142,5 +140,67 @@ public class Solution {
         }
 
         return arr[n-1];
+    }
+
+    /**
+     * 解题思路：最长公共子序列->最长递增子序列
+     * 哈希表+贪心+二分查找
+     * @param target
+     * @param arr
+     * @return
+     */
+    public int minOperations(int[] target, int[] arr) {
+        int n = target.length;
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(target[i], i);
+        }
+
+        int m = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(map.get(arr[i]) != null) {
+                m++;
+            }
+        }
+
+        if(m == 0) {
+            return n;
+        }
+        int[] temp = new int[m];
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(map.get(arr[i]) != null) {
+                temp[j++] = map.get(arr[i]);
+            }
+        }
+
+        int[] dp = new int[m+1];
+        int len = 1;
+        dp[1] = temp[0];
+        for (int i = 1; i < m; i++) {
+            if(temp[i] > dp[len]) {
+                dp[++len] = temp[i];
+            }else {
+                int left = 1;
+                int right = len;
+                while (left < right) {
+                    int mid = (left + right) / 2;
+                    if(dp[mid] >= temp[i]) {
+                        right = mid;
+                    }else {
+                        left = mid + 1;
+                    }
+                }
+                dp[left] = temp[i];
+            }
+        }
+
+
+
+
+        return n - len;
+
+
     }
 }
