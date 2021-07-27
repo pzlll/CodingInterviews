@@ -525,4 +525,37 @@ public class Solution {
         return ret;
     }
 
+    private int rootVal;
+    private int min = -1;
+    public int findSecondMinimumValue(TreeNode root) {
+        if(root == null) {
+            return -1;
+        }
+        rootVal = root.val;
+        DFSfind(root);
+
+        return min;
+
+
+    }
+    private void DFSfind(TreeNode root) {
+
+        if(root == null) {
+            return ;
+        }
+        if(root.val > rootVal) {
+            if(min == -1 || root.val < min) {
+                min = root.val;
+            }
+        }
+
+        if(min == -1 || root.val < min) {
+            DFSfind(root.left);
+
+            DFSfind(root.right);
+        }
+
+
+    }
+
 }

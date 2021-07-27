@@ -1,5 +1,9 @@
 package game.two.five.one;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Solution {
     public int getLucky(String s, int k) {
         char[] ch = s.toCharArray();
@@ -77,5 +81,31 @@ public class Solution {
 
 
         return str.toString();
+    }
+
+    public int maxCompatibilitySum(int[][] students, int[][] mentors) {
+        int n = students.length;
+        int m = students[0].length;
+
+        int[][] score = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < m; k++) {
+                    score[i][j] += (students[i][k] == mentors[j][k] ? 1 : 0);
+                }
+            }
+        }
+
+        boolean[] v = new boolean[n];
+        List<Integer> list = new ArrayList<>();
+        List<List<Integer>> sort = new ArrayList<>();
+        getList(v, n, list,sort);
+    }
+
+    private void getList(boolean[] v, int n, List<Integer> list, List<List<Integer>> sort) {
+        if(list.size() == n) {
+            sort.add(Collections.copy();)
+        }
     }
 }
