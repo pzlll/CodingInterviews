@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/two/five/one/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/two/five/one/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/two/five/one/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="1995">
               <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,12 +50,61 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="552" column="32" selection-start-line="552" selection-start-column="32" selection-end-line="552" selection-end-column="32" />
+            <state relative-caret-position="152">
+              <caret line="564" column="34" selection-start-line="564" selection-start-column="25" selection-end-line="564" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#223#224#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="1426" column="5" selection-start-line="1426" selection-start-column="5" selection-end-line="1426" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#calcEquation#0;class#Solution#0" />
+                <element signature="class#Point#0;class#Solution#0" />
+                <element signature="method#findCircleNum#0;class#Solution#0" />
+                <element signature="method#DFS#0;class#Solution#0" />
+                <element signature="method#findRedundantConnection#0;class#Solution#0" />
+                <element signature="method#find#0;class#Solution#0" />
+                <element signature="method#removeStones#0;class#Solution#0" />
+                <element signature="class#Union#0;class#Solution#0" />
+                <element signature="method#hitBricks#0;class#Solution#0" />
+                <element signature="method#isInside#0;class#Solution#0" />
+                <element signature="class#UnionNode#0;class#Solution#0" />
+                <element signature="method#accountsMerge#0;class#Solution#0" />
+                <element signature="e#11177#11178#0" expanded="true" />
+                <element signature="e#11248#11249#0" expanded="true" />
+                <element signature="class#Union2#0;class#Solution#0" />
+                <element signature="method#makeConnected#0;class#Solution#0" />
+                <element signature="class#Union3#0;class#Solution#0" />
+                <element signature="method#canFinish#0;class#Solution#0" />
+                <element signature="method#dfs#0;class#Solution#0" />
+                <element signature="method#findOrder#0;class#Solution#0" />
+                <element signature="method#dfs2#0;class#Solution#0" />
+                <element signature="method#regionsBySlashes#0;class#Solution#0" />
+                <element signature="class#Union4#0;class#Solution#0" />
+                <element signature="method#maxNumEdgesToRemove#0;class#Solution#0" />
+                <element signature="method#minimumEffortPath#0;class#Solution#0" />
+                <element signature="e#20470#20471#0" expanded="true" />
+                <element signature="e#20522#20523#0" expanded="true" />
+                <element signature="method#swimInWater#0;class#Solution#0" />
+                <element signature="e#21735#21736#0" expanded="true" />
+                <element signature="e#21787#21788#0" expanded="true" />
+                <element signature="method#minSwapsCouples#0;class#Solution#0" />
+                <element signature="class#Union5#0;class#Solution#0" />
+                <element signature="method#getSum2#0;class#Solution#0" />
+                <element signature="method#getSum#0;class#Solution#0" />
+                <element signature="class#Union6#0;class#Solution#0" />
+                <element signature="e#29342#29343#0" expanded="true" />
+                <element signature="e#29394#29395#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,10 +188,10 @@
         <option value="$PROJECT_DIR$/src/backtracking/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
-        <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/greedy/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/greedy/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/one/Solution.java" />
+        <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
       </list>
     </option>
@@ -173,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,6 +391,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -764,14 +813,8 @@
       <workItem from="1627107368084" duration="2394000" />
       <workItem from="1627176735307" duration="5636000" />
       <workItem from="1627283245336" duration="4387000" />
-      <workItem from="1627391508038" duration="2074000" />
-    </task>
-    <task id="LOCAL-00049" summary="add method profitableSchemes.">
-      <created>1623223932966</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1623223932966</updated>
+      <workItem from="1627391508038" duration="2149000" />
+      <workItem from="1627438477352" duration="8796000" />
     </task>
     <task id="LOCAL-00050" summary="add method change.">
       <created>1623309191112</created>
@@ -1109,7 +1152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627287029472</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="add method findSecondMinimumValue.">
+      <created>1627394310305</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1627394310308</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1145,7 +1195,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760710000" />
+    <option name="totallyTimeSpent" value="769581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1158,9 +1208,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.22727273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.23004435" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1239,8 +1288,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method convertToTitle." />
-    <MESSAGE value="add method openLock." />
     <MESSAGE value="add method Codec." />
     <MESSAGE value="add method numWays." />
     <MESSAGE value="add method slidingPuzzle." />
@@ -1264,7 +1311,9 @@
     <MESSAGE value="add method copyRandomList." />
     <MESSAGE value="add method letterCombinations." />
     <MESSAGE value="add method minOperations." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method minOperations." />
+    <MESSAGE value="add method findSecondMinimumValue." />
+    <MESSAGE value="add method distanceK." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method distanceK." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1773,44 +1822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10393">
-          <caret line="1395" selection-start-line="1395" selection-end-line="1395" />
-          <folding>
-            <element signature="method#calcEquation#0;class#Solution#0" />
-            <element signature="class#Point#0;class#Solution#0" />
-            <element signature="method#findCircleNum#0;class#Solution#0" />
-            <element signature="method#DFS#0;class#Solution#0" />
-            <element signature="method#findRedundantConnection#0;class#Solution#0" />
-            <element signature="method#find#0;class#Solution#0" />
-            <element signature="method#removeStones#0;class#Solution#0" />
-            <element signature="class#Union#0;class#Solution#0" />
-            <element signature="method#hitBricks#0;class#Solution#0" />
-            <element signature="method#isInside#0;class#Solution#0" />
-            <element signature="class#UnionNode#0;class#Solution#0" />
-            <element signature="method#accountsMerge#0;class#Solution#0" />
-            <element signature="class#Union2#0;class#Solution#0" />
-            <element signature="method#makeConnected#0;class#Solution#0" />
-            <element signature="class#Union3#0;class#Solution#0" />
-            <element signature="method#canFinish#0;class#Solution#0" />
-            <element signature="method#dfs#0;class#Solution#0" />
-            <element signature="method#findOrder#0;class#Solution#0" />
-            <element signature="method#dfs2#0;class#Solution#0" />
-            <element signature="method#regionsBySlashes#0;class#Solution#0" />
-            <element signature="class#Union4#0;class#Solution#0" />
-            <element signature="method#maxNumEdgesToRemove#0;class#Solution#0" />
-            <element signature="method#minimumEffortPath#0;class#Solution#0" />
-            <element signature="method#swimInWater#0;class#Solution#0" />
-            <element signature="method#minSwapsCouples#0;class#Solution#0" />
-            <element signature="class#Union5#0;class#Solution#0" />
-            <element signature="method#getSum2#0;class#Solution#0" />
-            <element signature="method#getSum#0;class#Solution#0" />
-            <element signature="class#Union6#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/greedy/SolutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1830,7 +1841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/two/five/one/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="1995">
           <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1838,10 +1849,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="1426" column="5" selection-start-line="1426" selection-start-column="5" selection-end-line="1426" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calcEquation#0;class#Solution#0" />
+            <element signature="class#Point#0;class#Solution#0" />
+            <element signature="method#findCircleNum#0;class#Solution#0" />
+            <element signature="method#DFS#0;class#Solution#0" />
+            <element signature="method#findRedundantConnection#0;class#Solution#0" />
+            <element signature="method#find#0;class#Solution#0" />
+            <element signature="method#removeStones#0;class#Solution#0" />
+            <element signature="class#Union#0;class#Solution#0" />
+            <element signature="method#hitBricks#0;class#Solution#0" />
+            <element signature="method#isInside#0;class#Solution#0" />
+            <element signature="class#UnionNode#0;class#Solution#0" />
+            <element signature="method#accountsMerge#0;class#Solution#0" />
+            <element signature="e#11177#11178#0" expanded="true" />
+            <element signature="e#11248#11249#0" expanded="true" />
+            <element signature="class#Union2#0;class#Solution#0" />
+            <element signature="method#makeConnected#0;class#Solution#0" />
+            <element signature="class#Union3#0;class#Solution#0" />
+            <element signature="method#canFinish#0;class#Solution#0" />
+            <element signature="method#dfs#0;class#Solution#0" />
+            <element signature="method#findOrder#0;class#Solution#0" />
+            <element signature="method#dfs2#0;class#Solution#0" />
+            <element signature="method#regionsBySlashes#0;class#Solution#0" />
+            <element signature="class#Union4#0;class#Solution#0" />
+            <element signature="method#maxNumEdgesToRemove#0;class#Solution#0" />
+            <element signature="method#minimumEffortPath#0;class#Solution#0" />
+            <element signature="e#20470#20471#0" expanded="true" />
+            <element signature="e#20522#20523#0" expanded="true" />
+            <element signature="method#swimInWater#0;class#Solution#0" />
+            <element signature="e#21735#21736#0" expanded="true" />
+            <element signature="e#21787#21788#0" expanded="true" />
+            <element signature="method#minSwapsCouples#0;class#Solution#0" />
+            <element signature="class#Union5#0;class#Solution#0" />
+            <element signature="method#getSum2#0;class#Solution#0" />
+            <element signature="method#getSum#0;class#Solution#0" />
+            <element signature="class#Union6#0;class#Solution#0" />
+            <element signature="e#29342#29343#0" expanded="true" />
+            <element signature="e#29394#29395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="552" column="32" selection-start-line="552" selection-start-column="32" selection-end-line="552" selection-end-column="32" />
+        <state relative-caret-position="152">
+          <caret line="564" column="34" selection-start-line="564" selection-start-column="25" selection-end-line="564" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#223#224#0" expanded="true" />

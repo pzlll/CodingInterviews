@@ -558,4 +558,53 @@ public class Solution {
 
     }
 
+
+
+    private Map<TreeNode, TreeNode> map = new HashMap<>();
+    private Set<Integer> visited = new HashSet<>();
+    public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+        DFSfortree(root);
+        List<Integer> ret = new ArrayList<>();
+        DFSfortree(target, k, ret);
+
+        return ret;
+    }
+
+    private void DFSfortree(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+
+        if(root.left != null) {
+            map.put(root.left, root);
+            DFSfortree(root.left);
+        }
+
+        if(root.right != null) {
+            map.put(root.right, root);
+            DFSfortree(root.right);
+        }
+
+    }
+
+    private void DFSfortree(TreeNode root, int k, List<Integer> ret) {
+        if(root == null) {
+            return;
+        }
+        if(k == 0) {
+            ret.add(root.val);
+            return;
+        }
+
+
+        visited.add(root.val);
+        if(root.left != null && !visited.contains(root.left.val))
+            DFSfortree(root.left, k-1, ret);
+        if(root.right != null && !visited.contains(root.right.val))
+            DFSfortree(root.right, k-1, ret);
+        if(map.get(root) != null && !visited.contains(map.get(root).val))
+            DFSfortree(map.get(root), k-1, ret);
+
+
+    }
 }
