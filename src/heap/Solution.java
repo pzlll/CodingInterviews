@@ -159,6 +159,86 @@ public class Solution {
 
         return str.toString();
     }
+
+    class Power{
+        private int index;
+        private int power;
+
+        public Power(int index, int power) {
+            this.index = index;
+            this.power = power;
+        }
+
+        public int getIndex() {
+            return index;
+        }
+
+        public void setIndex(int index) {
+            this.index = index;
+        }
+
+        public int getPower() {
+            return power;
+        }
+
+        public void setPower(int power) {
+            this.power = power;
+        }
+    }
+
+    /**
+     * 解题思路：二分查找+堆排序
+     * @param mat
+     * @param k
+     * @return
+     */
+    public int[] kWeakestRows(int[][] mat, int k) {
+        int n = mat.length;
+        PriorityQueue<Power> queue = new PriorityQueue<>(new Comparator<Power>() {
+            @Override
+            public int compare(Power o1, Power o2) {
+                return ((o1.getPower() - o2.getPower()) == 0 ? (o2.getIndex() - o1.getIndex()) : (o2.getPower() - o1.getPower()));
+            }
+        });
+
+        for (int i = 0; i < n; i++) {
+            int count = getCount(mat[i]);
+            Power power = new Power(i, count);
+            queue.add(power);
+            if(queue.size() > k) {
+                queue.poll();
+            }
+        }
+
+        int[] ret = new int[k];
+        for (int i = k-1; i >= 0; i--) {
+            Power p = queue.poll();
+            ret[i] = p.getIndex();
+        }
+
+        return ret;
+    }
+
+    private int getCount(int[] ints) {
+        int left = 0;
+        int right = ints.length - 1;
+
+        if(ints[right] == 1) {
+            return (right + 1);
+        }
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if(ints[mid] == 1) {
+                left = mid + 1;
+            }else {
+                right = mid;
+            }
+        }
+
+        return left;
+
+    }
 }
 class Compound {
     private Integer index;
