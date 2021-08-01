@@ -607,4 +607,31 @@ public class Solution {
 
 
     }
+
+    public List<Integer> pathInZigZagTree(int label) {
+        List<Integer> ret = new ArrayList<>();
+        int i = 1;
+        int sum = 1<<1;
+        while (label > (sum - 1)) {
+            i++;
+            sum <<= 1;
+        }
+        int a = 0;
+
+        int b = ((i % 2) == 0 ? (((1 << (i - 1)) + (1 << i) - 1) - label) : label);
+        ret.add(a);
+        i--;
+
+        while (i > 0) {
+            a = ((i % 2) == 0 ? (((1 << (i - 1)) + (1 << i) - 1) - b) : b);
+            ret.add(a);
+            b /= 2;
+            i--;
+        }
+
+
+        Collections.reverse(ret);
+
+        return ret;
+    }
 }
