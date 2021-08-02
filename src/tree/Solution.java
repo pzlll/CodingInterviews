@@ -3,6 +3,7 @@ package tree;
 import org.omg.CORBA.INTERNAL;
 import sun.reflect.generics.tree.Tree;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 class TreeNode {
@@ -633,5 +634,93 @@ public class Solution {
         Collections.reverse(ret);
 
         return ret;
+    }
+
+    class verNode{
+        private int col;
+        private int row;
+        private int value;
+
+        public verNode(int row, int col, int value) {
+            this.col = col;
+            this.row = row;
+            this.value = value;
+        }
+
+        public int getCol() {
+            return col;
+        }
+
+        public void setCol(int col) {
+            this.col = col;
+        }
+
+        public int getRow() {
+            return row;
+        }
+
+        public void setRow(int row) {
+            this.row = row;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public void setValue(int value) {
+            this.value = value;
+        }
+    }
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
+        List<verNode> list = new ArrayList<>();
+        DFSTraverse(root, 0, 0, list);
+
+
+
+        Collections.sort(list, new Comparator<verNode>() {
+            @Override
+            public int compare(verNode o1, verNode o2) {
+                int col = o1.getCol() - o2.getCol();
+                int row = o1.getRow() - o2.getRow();
+                int val = o1.getValue() - o2.getValue();
+
+                return ((col == 0) ? (row == 0 ? val : row) : col);
+            }
+        });
+
+
+
+        List<List<Integer>> ret = new ArrayList<>();
+
+        if(list.size() == 0) {
+            return ret;
+        }
+
+        int col = list.get(0).getCol();
+        List<Integer> temp = new ArrayList<>();
+        for (verNode ver :
+                list) {
+            if(ver.getCol() != col) {
+
+                ret.add(temp);
+                temp = new ArrayList<>();
+                col = ver.getCol();
+            }
+            temp.add(ver.getValue());
+
+        }
+        ret.add(temp);
+
+        return ret;
+    }
+
+    private void DFSTraverse(TreeNode root, int row, int col, List<verNode> list) {
+        if(root == null) {
+            return;
+        }
+        list.add(new verNode(row, col, root.val));
+        DFSTraverse(root.left, row + 1, col - 1, list);
+        DFSTraverse(root.right, row + 1, col + 1, list);
+
     }
 }
