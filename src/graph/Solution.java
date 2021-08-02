@@ -1330,7 +1330,8 @@ public class Solution {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
                 str.append(board[i][j]);
-            } }
+            }
+        }
 
         String origin = str.toString();
 
@@ -1359,11 +1360,11 @@ public class Solution {
                     char temp = s.charAt(index);
                     s.setCharAt(index, s.charAt(u));
                     s.setCharAt(s.charAt(u), temp);
-                    if(s.toString().equals("123450")) {
+                    if (s.toString().equals("123450")) {
                         return step;
                     }
-                    if(seen.contains(s.toString())) {
-                       continue;
+                    if (seen.contains(s.toString())) {
+                        continue;
                     }
                     queue.offer(s.toString());
                     seen.add(s.toString());
@@ -1396,7 +1397,6 @@ public class Solution {
             int b = adjacentPairs[i][1];
 
 
-
             List<Integer> list = map.getOrDefault(a, new ArrayList<>());
             list.add(b);
             map.put(a, list);
@@ -1406,7 +1406,7 @@ public class Solution {
         }
 
         for (Map.Entry<Integer, List<Integer>> entry :
-            map.entrySet()) {
+                map.entrySet()) {
             if (entry.getValue().size() == 1) {
                 first = entry.getKey();
                 break;
@@ -1418,12 +1418,78 @@ public class Solution {
         ret[0] = first;
         ret[1] = map.get(first).get(0);
 
-        for(int i = 2; i < n; i++) {
-            List<Integer> in = map.get(ret[i-1]);
-            ret[i] = (ret[i-2] == in.get(0) ? in.get(1) : in.get(0));
+        for (int i = 2; i < n; i++) {
+            List<Integer> in = map.get(ret[i - 1]);
+            ret[i] = (ret[i - 2] == in.get(0) ? in.get(1) : in.get(0));
         }
 
         return ret;
+    }
+
+    public int networkDelayTime(int[][] times, int n, int k) {
+        int[][] edges = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(edges[i], Integer.MAX_VALUE);
+        }
+        for (int i = 0; i < times.length; i++) {
+            int a = times[i][0] - 1;
+            int b = times[i][1] - 1;
+            int c = times[i][2];
+
+            edges[a][b] = c;
+        }
+
+        for(int i = 0; i < n; i++) {
+            edges[i][i] = 0;
+        }
+
+        boolean[] visited = new boolean[n];
+        int[] dist = new int[n];
+
+        k = k -1;
+        visited[k] = true;
+        for (int i = 0; i < n; i++) {
+            dist[i] = edges[k][i];
+        }
+
+
+        while (true) {
+            int min = Integer.MAX_VALUE;
+            int minIndex = -1;
+
+            for (int i = 0; i < n; i++) {
+                if(!visited[i]) {
+                    if(dist[i] < min) {
+                        min = dist[i];
+                        minIndex = i;
+                    }
+                }
+            }
+            if(minIndex == -1) {
+                break;
+            }
+
+            visited[minIndex] = true;
+
+            for (int i = 0; i < n; i++) {
+                if(!visited[i] && (edges[minIndex][i] < Integer.MAX_VALUE)) {
+                    dist[i] = Math.min(dist[i], min + edges[minIndex][i]);
+
+                }
+            }
+
+
+        }
+
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            if(!visited[i]) {
+                return -1;
+            }
+            max = Integer.max(max, dist[i]);
+        }
+
+        return max;
     }
 }
 
