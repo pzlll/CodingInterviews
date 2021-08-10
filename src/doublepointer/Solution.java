@@ -578,4 +578,31 @@ public class Solution {
         return max;
     }
 
+    /**
+     * 解题思路：遍历数组，把当前遍历的元素作为等差数组结尾并计算其个数，利用前一个元素遍历的结果降低复杂度
+     * @param nums
+     * @return
+     */
+    public int numberOfArithmeticSlices(int[] nums) {
+        int n = nums.length;
+        if(n < 2) {
+            return 0;
+        }
+        int sum = 0;
+        int t = 0;
+        int d = nums[1] - nums[0];
+        for (int i = 2; i < n; i++) {
+            if((nums[i] - nums[i-1]) == d) {
+                t++;
+            }else {
+                d = nums[i] - nums[i-1];
+                t = 0;
+            }
+            sum += t;
+        }
+
+        return sum;
+
+    }
+
 }

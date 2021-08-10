@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/game/two/five/three/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doublepointer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/doublepointer/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +37,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/two/five/three/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="487">
@@ -43,6 +46,25 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#807#808#0" expanded="true" />
                 <element signature="e#853#854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="585" column="39" selection-start-line="585" selection-start-column="15" selection-end-line="585" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#twoSum#0;class#Solution#0" />
+                <element signature="method#reverseVowels#0;class#Solution#0" />
+                <element signature="method#hasCycle#0;class#Solution#0" />
+                <element signature="method#findLongestWord#0;class#Solution#0" />
+                <element signature="method#isMatcc#0;class#Solution#0" />
+                <element signature="method#moveZeroes#0;class#Solution#0" />
+                <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -118,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/game/two/five/zero/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/zero/Solution.java" />
         <option value="$PROJECT_DIR$/src/slidingwindow/Solution.java" />
-        <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/SolutionTest.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
@@ -132,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/three/Solution.java" />
+        <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
       </list>
     </option>
   </component>
@@ -161,6 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,8 +354,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +364,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1628404757860" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1628602894858" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -757,14 +779,8 @@
       <workItem from="1627541836800" duration="2266000" />
       <workItem from="1627781306279" duration="10883000" />
       <workItem from="1627888562277" duration="3060000" />
-      <workItem from="1628385263635" duration="4388000" />
-    </task>
-    <task id="LOCAL-00058" summary="add method levelOrder.">
-      <created>1623827344332</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1623827344332</updated>
+      <workItem from="1628385263635" duration="4635000" />
+      <workItem from="1628601357361" duration="1535000" />
     </task>
     <task id="LOCAL-00059" summary="add method isNumber.">
       <created>1623937042628</created>
@@ -1102,7 +1118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628389625354</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="add game 253.">
+      <created>1628404774056</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1628404774056</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1138,7 +1161,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="790178000" />
+    <option name="totallyTimeSpent" value="791960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1153,7 +1176,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.24113081" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.24390244" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1163,7 +1186,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48614192" visible="true" weight="0.31842965" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48614192" weight="0.31842965" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
@@ -1232,7 +1255,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method numSubarraysWithSum." />
     <MESSAGE value="add method majorityElement." />
     <MESSAGE value="add method TimeMap." />
     <MESSAGE value="add game 249." />
@@ -1257,7 +1279,8 @@
     <MESSAGE value="add method networkDelayTime." />
     <MESSAGE value="add method tribonacci." />
     <MESSAGE value="add method sortItems." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method sortItems." />
+    <MESSAGE value="add game 253." />
+    <option name="LAST_COMMIT_MESSAGE" value="add game 253." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1627,23 +1650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7619">
-          <caret line="567" column="4" selection-start-line="567" selection-start-column="4" selection-end-line="578" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#twoSum#0;class#Solution#0" />
-            <element signature="method#reverseVowels#0;class#Solution#0" />
-            <element signature="method#hasCycle#0;class#Solution#0" />
-            <element signature="method#findLongestWord#0;class#Solution#0" />
-            <element signature="method#isMatcc#0;class#Solution#0" />
-            <element signature="method#moveZeroes#0;class#Solution#0" />
-            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1121">
@@ -1877,6 +1883,23 @@
             <element signature="imports" expanded="true" />
             <element signature="e#807#808#0" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/doublepointer/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="585" column="39" selection-start-line="585" selection-start-column="15" selection-end-line="585" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#twoSum#0;class#Solution#0" />
+            <element signature="method#reverseVowels#0;class#Solution#0" />
+            <element signature="method#hasCycle#0;class#Solution#0" />
+            <element signature="method#findLongestWord#0;class#Solution#0" />
+            <element signature="method#isMatcc#0;class#Solution#0" />
+            <element signature="method#moveZeroes#0;class#Solution#0" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
