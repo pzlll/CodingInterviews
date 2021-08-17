@@ -416,4 +416,30 @@ public class Solution {
         return ans;
     }
 
+
+    public boolean checkRecord(String s) {
+        char[] chars = s.toCharArray();
+        int count = 0;
+        int num = 0;
+        for (int i = 0; i < chars.length; i++) {
+            count = count + (chars[i] == 'A' ? 1 : 0);
+            if(count >= 2) {
+                return false;
+            }
+            if(chars[i] == 'L') {
+                num++;
+            }else {
+                num = 0;
+            }
+
+            if(num >= 3) {
+                return false;
+            }
+        }
+
+
+
+
+        return true;
+    }
 }
