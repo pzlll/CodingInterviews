@@ -656,4 +656,46 @@ public class Solution {
         }
     }
 
+    private int res = 0;
+
+    /**
+     * 解题思路：
+     * 1.回溯
+     * 2.状态压缩+动态规划
+     * @param n
+     * @return
+     */
+    public int countArrangement(int n) {
+        int[] f = new int[1<<n];
+
+
+        f[0] = 1;
+        for (int i = 0; i < (1 << n); i++) {
+            int index = Integer.bitCount(i);
+
+            for (int j = 0; j < n; j++) {
+                if((i & (1 << j)) != 0 && ((index % (j+1) == 0) || (j+1) % index == 0)) {
+                    f[index] += f[index ^ (1 <<j)];
+                }
+            }
+        }
+
+        return f[1<<n -1];
+    }
+
+    private void backtrackArray(int i, int n, boolean[] v) {
+        if(i == n) {
+            res++;
+            return;
+        }
+
+        for (int j = 0; j < n; j++) {
+            if(!v[j] && ((i+1) % (j+1) == 0 || (j+1) % (i+1) == 0)) {
+                v[j] = true;
+                backtrackArray(i+1, n, v);
+                v[j] = false;
+            }
+        }
+    }
+
 }
