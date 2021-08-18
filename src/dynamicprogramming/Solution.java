@@ -1210,4 +1210,55 @@ public class Solution {
         return d;
     }
 
+    /**
+     * 解题思路：
+     * 动态规划
+     * 使用三维数组存储对应天数 A的个数 连续L的个数
+     * 第i天的状态由第i-1天的状态获得
+     * @param n
+     * @return
+     */
+    public int checkRecord(int n) {
+        int[][] dp = new int[2][3];
+
+        dp[0][0] = 1;
+
+        int mod = 1000000007;
+
+        for (int i = 1; i <= n; i++) {
+            int a = 0;
+            int b = 0;
+            for (int k = 0; k < 3; k++) {
+                a += dp[0][k];
+                a %= mod;
+            }
+            b = a;
+            for (int k = 0; k < 3; k++) {
+                b += dp[1][k];
+                b %= mod;
+            }
+
+            for (int j = 0; j < 2; j++) {
+                for (int k = 2; k >= 1; k--) {
+                    dp[j][k] = dp[j][k-1];
+                    dp[j][k] %= mod;
+                }
+            }
+
+            dp[0][0] = a;
+            dp[1][0] = b;
+
+        }
+
+        int res = 0;
+        for (int j = 0; j < 2; j++) {
+            for (int k = 0; k < 3; k++) {
+                res += dp[j][k];
+                res %= mod;
+            }
+        }
+
+        return res;
+    }
+
 }

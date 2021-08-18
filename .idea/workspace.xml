@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="4199">
               <caret line="419" column="4" selection-start-line="419" selection-start-column="4" selection-end-line="443" selection-end-column="5" />
               <folding>
                 <element signature="method#longestPalindrome#0;class#Solution#0" />
@@ -88,14 +88,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
+            <state relative-caret-position="259">
+              <caret line="667" column="31" selection-start-line="667" selection-start-column="15" selection-end-line="667" selection-end-column="31" />
               <folding>
                 <element signature="method#check#0;class#Solution#0" />
                 <element signature="method#findWords#0;class#Solution#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="1212" column="4" lean-forward="true" selection-start-line="1212" selection-start-column="4" selection-end-line="1267" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,12 +191,12 @@
         <option value="$PROJECT_DIR$/src/game/two/five/one/Solution.java" />
         <option value="$PROJECT_DIR$/src/tree/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/two/Solution.java" />
-        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
         <option value="$PROJECT_DIR$/src/graph/Solution.java" />
         <option value="$PROJECT_DIR$/src/game/two/five/three/Solution.java" />
         <option value="$PROJECT_DIR$/src/doublepointer/Solution.java" />
         <option value="$PROJECT_DIR$/src/string/Solution.java" />
         <option value="$PROJECT_DIR$/src/backtracking/Solution.java" />
+        <option value="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" />
       </list>
     </option>
   </component>
@@ -214,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,6 +396,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -813,14 +825,8 @@
       <workItem from="1628385263635" duration="4635000" />
       <workItem from="1628601357361" duration="1535000" />
       <workItem from="1629191060640" duration="609000" />
-      <workItem from="1629202732394" duration="2149000" />
-    </task>
-    <task id="LOCAL-00060" summary="add method maxLength.">
-      <created>1624085641238</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1624085641241</updated>
+      <workItem from="1629202732394" duration="3361000" />
+      <workItem from="1629270642014" duration="1950000" />
     </task>
     <task id="LOCAL-00061" summary="add object ThroneInheritance.">
       <created>1624153643370</created>
@@ -1158,7 +1164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629191665111</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="add method countArrangement.">
+      <created>1629206211400</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1629206211401</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1194,7 +1207,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="794718000" />
+    <option name="totallyTimeSpent" value="797880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1209,7 +1222,7 @@
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.24944568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.2522173" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1288,7 +1301,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method TimeMap." />
     <MESSAGE value="add game 249." />
     <MESSAGE value="add method hIndex." />
     <MESSAGE value="add method minAbsoluteSumDiff." />
@@ -1313,7 +1325,8 @@
     <MESSAGE value="add method sortItems." />
     <MESSAGE value="add game 253." />
     <MESSAGE value="add method checkRecord" />
-    <option name="LAST_COMMIT_MESSAGE" value="add method checkRecord" />
+    <MESSAGE value="add method countArrangement." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method countArrangement." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1824,16 +1837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="1186" column="25" selection-start-line="1186" selection-start-column="15" selection-end-line="1186" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -1912,7 +1915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/string/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="4199">
           <caret line="419" column="4" selection-start-line="419" selection-start-column="4" selection-end-line="443" selection-end-column="5" />
           <folding>
             <element signature="method#longestPalindrome#0;class#Solution#0" />
@@ -1928,11 +1931,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backtracking/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
+        <state relative-caret-position="259">
+          <caret line="667" column="31" selection-start-line="667" selection-start-column="15" selection-end-line="667" selection-end-column="31" />
           <folding>
             <element signature="method#check#0;class#Solution#0" />
             <element signature="method#findWords#0;class#Solution#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="1212" column="4" lean-forward="true" selection-start-line="1212" selection-start-column="4" selection-end-line="1267" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
