@@ -1261,4 +1261,68 @@ public class Solution {
         return res;
     }
 
+    /**
+     * 解题思路：动态规划
+     * 使用动态数组存储第i次遍历之后，所有单元格的路径数量
+     * 若第i次，某单元格的路径数量为a，此时判断其相邻四个单元格，若出界，则对应出边界的路径数量加a
+     * 若不出界，则在第i+1次遍历后，相邻的每个单元格的路径数量加a
+     *
+     * @param m
+     * @param n
+     * @param maxMove
+     * @param startRow
+     * @param startColumn
+     * @return
+     */
+    public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
+        int[][] dp = new int[m][n];
+
+        dp[startRow][startColumn] = 1;
+        int res = 0;
+        int mod = 1000000007;
+
+        for (int i = 1; i <= maxMove; i++) {
+            int[][] dpNew = new int[m][n];
+            for (int j = 0; j < m; j++) {
+                for (int k = 0; k < n; k++) {
+                    if(dp[j][k] != 0) {
+                        if((k-1) >= 0) {
+                            dpNew[j][k-1] += dp[j][k];
+                            dpNew[j][k-1] %= mod;
+                        }else {
+                            res += dp[j][k];
+                            res %= mod;
+                        }
+
+                        if((k+1) < n) {
+                            dpNew[j][k+1] += dp[j][k];
+                            dpNew[j][k+1] %= mod;
+                        }else {
+                            res += dp[j][k];
+                            res %= mod;
+                        }
+
+                        if((j-1) >= 0) {
+                            dpNew[j-1][k] += dp[j][k];
+                            dpNew[j-1][k] %= mod;
+                        }else {
+                            res += dp[j][k];
+                            res %= mod;
+                        }
+
+                        if((j+1) < m) {
+                            dpNew[j+1][k] += dp[j][k];
+                            dpNew[j+1][k] %= mod;
+                        }else {
+                            res += dp[j][k];
+                            res %= mod;
+                        }
+                    }
+                }
+            }
+            dp = dpNew;
+        }
+        return res;
+    }
+
 }
