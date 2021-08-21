@@ -651,4 +651,33 @@ public class Solution {
         }
     }
 
+    public String reverseStr(String s, int k) {
+        char[] ch = s.toCharArray();
+        int i = 0;
+        int j = s.length() - 1;
+        while (i < j) {
+            if(k > (j - i + 1)) {
+                reverseString(ch, i, j);
+
+            }else {
+                reverseString(ch, i, i + k -1);
+            }
+
+            i += 2 * k;
+        }
+
+
+        return String.valueOf(ch);
+    }
+
+    private void reverseString(char[] ch, int left, int right) {
+        while (left < right) {
+            char c = ch[left];
+            ch[left] = ch[right];
+            ch[right] = c;
+            left++;
+            right--;
+        }
+    }
+
 }
