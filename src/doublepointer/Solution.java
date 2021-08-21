@@ -605,4 +605,50 @@ public class Solution {
 
     }
 
+    /**
+     * 解题思路：双指针
+     * @param chars
+     * @return
+     */
+    public int compress(char[] chars) {
+        int i = 0;
+        int left = 0;
+        int right = 0;
+        int n = chars.length;
+        while(right < n) {
+            while (right < n && chars[left] == chars[right]) {
+                right++;
+            }
+
+
+            int count = right - left;
+            chars[i++] = chars[left];
+            if(count > 1) {
+                int a = i;
+
+
+                while (count != 0) {
+                    int k = count % 10;
+                    count /= 10;
+                    chars[i++] = (char) (k + '0');
+                }
+
+                reverseCharArray(chars, a, i-1);
+            }
+
+
+            left = right;
+        }
+
+        return i;
+    }
+
+    private void reverseCharArray(char[] chars, int left, int right) {
+        for (int i = 0; i <= (right - left)/2; i++) {
+            char temp = chars[i + left];
+            chars[left + i] = chars[right - i];
+            chars[right - i] = temp;
+        }
+    }
+
 }
