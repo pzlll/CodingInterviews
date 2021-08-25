@@ -698,4 +698,29 @@ public class Solution {
         }
     }
 
+    private List<Integer> list = new ArrayList<>();
+    List<List<Integer>> res2 = new ArrayList<>();
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+
+        list.add(0);
+        DFS(0, graph);
+
+        return res2;
+    }
+
+    private void DFS(int i, int[][] graph) {
+        if(i == graph.length-1) {
+            res2.add(new ArrayList<>(list));
+            return;
+        }
+
+        for (int j = 0; j < graph[i].length; j++) {
+            list.add(graph[i][j]);
+            DFS(graph[i][j], graph);
+            list.remove(list.size()-1);
+        }
+
+
+    }
+
 }

@@ -32,4 +32,9 @@ public class SolutionTest {
     public void letterCombinations() {
         new Solution().letterCombinations("23");
     }
+
+    @Test
+    public void allPathsSourceTarget() {
+        new Solution().allPathsSourceTarget(new int[][]{{1,2}, {3}, {3}, {}});
+    }
 }
