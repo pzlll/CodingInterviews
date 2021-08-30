@@ -1325,4 +1325,24 @@ public class Solution {
         return res;
     }
 
+    public int sumOddLengthSubarrays(int[] arr) {
+        int[] dp = new int[arr.length + 1];
+        int n = arr.length;
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = dp[i - 1] + arr[i - 1];
+        }
+
+        int sum = 0;
+
+        for(int i = 1; i <= n; i += 2) {
+            for (int j = i; j <= n; j += 1) {
+                sum += (dp[j] - dp[j - i]);
+
+            }
+        }
+
+        return sum;
+    }
+
 }

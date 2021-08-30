@@ -41,4 +41,9 @@ public class SolutionTest {
     public void numSubarraysWithSum() {
         new Solution().numSubarraysWithSum(new int[]{1,0,1,0,1}, 2);
     }
+
+    @Test
+    public void sumOddLengthSubarrays() {
+        new Solution().sumOddLengthSubarrays(new int[]{1,4,2,5,3});
+    }
 }

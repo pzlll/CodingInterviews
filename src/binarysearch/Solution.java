@@ -3,6 +3,9 @@ package binarysearch;
 import java.util.*;
 
 public class Solution {
+    public Solution() {
+    }
+
     /**
      * 解题思路：通过元素与下一元素的大小关系可确定峰值元素位置
      * 若当前元素小于下一元素，则峰值在右侧
