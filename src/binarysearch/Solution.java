@@ -527,4 +527,47 @@ public class Solution {
         return large - small;
 
     }
+
+    private double[] rate;
+    private int length;
+
+    /**
+     * 解题思路：前缀和+二分查找
+     * 选择的数在[1, total]之间
+     *
+     * @param w
+     */
+    public Solution(int[] w) {
+        int n = w.length;
+        length = n;
+        rate = new double[n];
+        int sum = 0;
+        double[] f = new double[n];
+        f[0] = w[0];
+        sum += w[0];
+        for (int i = 1; i < n; i++) {
+            sum += w[i];
+            f[i] = f[i-1] + w[i];
+        }
+        for (int i = 0; i < n; i++) {
+            rate[i] = f[i]/sum;
+        }
+    }
+
+    public int pickIndex() {
+        Random random = new Random();
+        double d = random.nextDouble();
+        int left = 0;
+        int right = length - 1;
+        while (left < right) {
+            int mid = (right + left)/2;
+            if(rate[mid] >= d) {
+                right = mid;
+            }else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
 }

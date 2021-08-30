@@ -203,4 +203,42 @@ public class Solution {
 
 
     }
+
+    /**
+     * 解题思路：贪心
+     * 要使需要的船数尽可能地少，应当使载两人的船尽可能地多。
+     *
+     * 设 people 的长度为 n。考虑体重最轻的人：
+     *
+     * 若他不能与体重最重的人同乘一艘船，那么体重最重的人无法与任何人同乘一艘船，此时应单独分配一艘船给体重最重的人。从 people 中去掉体重最重的人后，我们缩小了问题的规模，变成求解剩余n−1 个人所需的最小船数，将其加一即为原问题的答案。
+     * 若他能与体重最重的人同乘一艘船，那么他能与其余任何人同乘一艘船，为了尽可能地利用船的承载重量，选择与体重最重的人同乘一艘船是最优的。从 people 中去掉体重最轻和体重最重的人后，我们缩小了问题的规模，变成求解剩余 n-2 个人所需的最小船数，将其加一即为原问题的答案。
+     * @param people
+     * @param limit
+     * @return
+     */
+    public int numRescueBoats(int[] people, int limit) {
+        Arrays.sort(people);
+
+        int i = 0;
+        int j = people.length-1;
+
+        int count = 0;
+        while (i <= j) {
+            if(i == j) {
+                count++;
+                break;
+            }else {
+                if((people[i] + people[j]) <= limit) {
+                    i++;
+                    j--;
+                    count++;
+                }else {
+                    j--;
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
 }
