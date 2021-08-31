@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="1347" column="4" selection-start-line="1347" selection-start-column="4" selection-end-line="1367" selection-end-column="5" />
+            <state relative-caret-position="385">
+              <caret line="1375" column="5" lean-forward="true" selection-start-line="1375" selection-start-column="5" selection-end-line="1375" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -415,7 +414,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630310675595" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630413651052" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -840,14 +839,7 @@
       <workItem from="1629875112959" duration="1838000" />
       <workItem from="1629958921762" duration="1969000" />
       <workItem from="1630307166735" duration="3521000" />
-      <workItem from="1630411931747" duration="878000" />
-    </task>
-    <task id="LOCAL-00067" summary="add method snakesAndLadders.">
-      <created>1624760542976</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1624760542978</updated>
+      <workItem from="1630411931747" duration="1453000" />
     </task>
     <task id="LOCAL-00068" summary="add method rotateGrid.">
       <created>1624776303949</created>
@@ -1185,7 +1177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630310672888</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="add method corpFlightBookings.">
+      <created>1630413153330</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1630413153331</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1221,7 +1220,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="810903000" />
+    <option name="totallyTimeSpent" value="811478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1234,7 +1233,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.26995566" />
       <window_info id="Designer" order="1" />
@@ -1315,7 +1313,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method maxSubArray." />
     <MESSAGE value="add method groupAnagrams." />
     <MESSAGE value="add method maxFrequency." />
     <MESSAGE value="add method copyRandomList." />
@@ -1340,7 +1337,8 @@
     <MESSAGE value="add method allPathsSourceTarget." />
     <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method sumOddLengthSubarrays." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method sumOddLengthSubarrays." />
+    <MESSAGE value="add method corpFlightBookings." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method corpFlightBookings." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1957,8 +1955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="1347" column="4" selection-start-line="1347" selection-start-column="4" selection-end-line="1367" selection-end-column="5" />
+        <state relative-caret-position="385">
+          <caret line="1375" column="5" lean-forward="true" selection-start-line="1375" selection-start-column="5" selection-end-line="1375" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
