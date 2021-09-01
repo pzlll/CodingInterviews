@@ -1345,6 +1345,35 @@ public class Solution {
         return sum;
     }
 
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        int[] dp = new int[n];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[src] = 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 1; i <= k; i++) {
+            int[] temp = new int[n];
+            Arrays.fill(temp, Integer.MAX_VALUE);
+            temp[src] = 0;
 
+            for (int j = 0; j < flights.length; j++) {
+                int a = flights[j][0];
+                int b = flights[j][1];
+                int cost = flights[j][2];
+
+                if(dp[a] == Integer.MAX_VALUE) {
+                    continue;
+                }
+
+                temp[b] = Math.min(temp[b], dp[a] + cost);
+
+
+
+            }
+            dp = temp;
+            min = Math.min(min, dp[dst]);
+        }
+
+        return (min == Integer.MAX_VALUE ? -1: min);
+    }
 
 }
