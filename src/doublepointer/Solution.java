@@ -680,4 +680,51 @@ public class Solution {
         }
     }
 
+    public int compareVersion(String version1, String version2) {
+        int i = 0;
+        int j = 0;
+        int n = version1.length();
+        int m = version2.length();
+
+        while (i < n && j < m) {
+            int sum1 = 0;
+            int sum2 = 0;
+            while (i < n && version1.charAt(i) != '.') {
+                sum1 = sum1 * 10 + (version1.charAt(i) - '0');
+                i++;
+            }
+
+            while (j < m && version2.charAt(j) != '.') {
+                sum2 = sum2 * 10 + (version2.charAt(j) - '0');
+                j++;
+            }
+            i++;
+            j++;
+
+            if(sum1 > sum2) {
+                return 1;
+            }else if(sum1 < sum2) {
+                return -1;
+            }
+        }
+
+        return 0;
+    }
+
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode p = head;
+        ListNode q = head;
+        while (k > 0 && q != null) {
+            q = q.next;
+            k--;
+        }
+
+        while (q != null) {
+            q = q.next;
+            p = p.next;
+        }
+
+        return p;
+    }
+
 }

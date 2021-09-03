@@ -239,6 +239,37 @@ public class Solution {
         return left;
 
     }
+
+    public int[] smallestK(int[] arr, int k) {
+        if(arr.length == 0 || k == 0) {
+            return new int[]{};
+        }
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        queue.offer(arr[0]);
+
+        for (int i = 1; i < arr.length; i++) {
+            if(queue.size() < k || (queue.peek() > arr[i])) {
+                queue.offer(arr[i]);
+            }
+            if(queue.size() > k) {
+                queue.poll();
+            }
+        }
+
+        k = queue.size();
+        int[] res = new int[k];
+
+        for (int i = 0; i < k; i++) {
+            res[i] = queue.poll();
+        }
+
+        return res;
+    }
 }
 class Compound {
     private Integer index;

@@ -1,5 +1,8 @@
 package simulation;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Solution {
     public int getMaximumGenerated(int n) {
         if(n == 0 || n == 1) {
@@ -22,5 +25,12 @@ public class Solution {
 
 
         return max;
+    }
+
+    public int unhappyFriends(int n, int[][] preferences, int[][] pairs) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        
+        return 0;
     }
 }
