@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/doublepointer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/doublepointer/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/SolutionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -387,7 +382,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630657231368" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630658047487" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -815,14 +810,7 @@
       <workItem from="1630411931747" duration="3361000" />
       <workItem from="1630478792375" duration="1658000" />
       <workItem from="1630562811759" duration="995000" />
-      <workItem from="1630655375119" duration="1854000" />
-    </task>
-    <task id="LOCAL-00070" summary="add method numBusesToDestination.">
-      <created>1624947718083</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1624947718084</updated>
+      <workItem from="1630655375119" duration="2522000" />
     </task>
     <task id="LOCAL-00071" summary="add method convertToTitle.">
       <created>1624950611091</created>
@@ -1160,7 +1148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630478856728</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="add method smallestK.">
+      <created>1630657244079</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1630657244081</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1196,7 +1191,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="817893000" />
+    <option name="totallyTimeSpent" value="818561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1209,7 +1204,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6816" visible="true" weight="0.27993348" />
       <window_info id="Designer" order="1" />
@@ -1221,14 +1215,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32606325" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48447895" visible="true" weight="0.31842965" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48447895" visible="true" weight="0.31842965" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51552105" side_tool="true" visible="true" weight="0.31842965" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.51552105" side_tool="true" visible="true" weight="0.31842965" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49722838" weight="0.32606325" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -1290,7 +1284,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method maxFrequency." />
     <MESSAGE value="add method copyRandomList." />
     <MESSAGE value="add method letterCombinations." />
     <MESSAGE value="add method minOperations." />
@@ -1315,7 +1308,8 @@
     <MESSAGE value="add method sumOddLengthSubarrays." />
     <MESSAGE value="add method corpFlightBookings." />
     <MESSAGE value="add method findCheapestPrice." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method findCheapestPrice." />
+    <MESSAGE value="add method smallestK." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method smallestK." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
