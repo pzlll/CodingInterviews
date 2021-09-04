@@ -30,7 +30,39 @@ public class Solution {
     public int unhappyFriends(int n, int[][] preferences, int[][] pairs) {
         Map<Integer, Integer> map = new HashMap<>();
 
+        for (int[] pair :
+                pairs) {
+            map.put(pair[0], pair[1]);
+            map.put(pair[1], pair[0]);
+        }
         
-        return 0;
+        int[][] rank = new int[n][n];
+
+        for (int i = 0; i < preferences.length; i++) {
+            for (int j = 0; j < preferences[i].length; j++) {
+                rank[i][preferences[i][j]] = n - j;
+            }
+        }
+
+        boolean[] visited = new boolean[n];
+        int unhappy = 0;
+
+        for (int i = 0; i < n; i++) {
+            if(!visited[i]) {
+                int y = map.get(i);
+                for (int j = 0; (y != preferences[i][j]) ; j++) {
+                    int u = preferences[i][j];
+                    int v = map.get(u);
+                    if(rank[u][i] > rank[u][v]) {
+                        unhappy++;
+                        break;
+                    }
+                }
+
+            }
+
+        }
+        
+        return unhappy;
     }
 }

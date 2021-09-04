@@ -1376,4 +1376,29 @@ public class Solution {
         return (min == Integer.MAX_VALUE ? -1: min);
     }
 
+    public int fib(int n) {
+        if(n == 1 || n == 0) {
+            return  n;
+        }
+
+        int a = 0;
+        int b = 1;
+        int c = 0;
+        int mod = 1000000007;
+        while (n >= 2) {
+            c = (a + b) % mod;
+
+            a = b;
+
+            b = c;
+
+
+            n--;
+        }
+
+        return c;
+
+
+    }
+
 }
