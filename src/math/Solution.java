@@ -405,5 +405,34 @@ public class Solution {
         return true;
     }
 
+    /**
+     * 解题思路：拒绝采样
+     * @return
+     */
+    public int rand10() {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(2, 1);
+        map.put(3, 2);
+        map.put(5, 3);
+        map.put(7, 4);
+        map.put(8, 5);
+        map.put(10, 6);
+        map.put(14, 7);
+        map.put(15, 8);
+        map.put(21, 9);
+        map.put(20, 10);
+
+        while (true) {
+            int ret = rand7() * rand7();
+            if(map.containsKey(ret)) {
+                return map.get(ret);
+            }
+
+        }
+    }
+
+    private int rand7() {
+        return 0;
+    }
 
 }
