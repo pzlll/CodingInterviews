@@ -241,4 +241,17 @@ public class Solution {
 
         return count;
     }
+
+    public int balancedStringSplit(String s) {
+        int d = 0;
+
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            d += (s.charAt(i) == 'L' ? 1 : -1);
+            count += (d == 0 ? 1 : 0);
+
+        }
+
+        return count;
+    }
 }
