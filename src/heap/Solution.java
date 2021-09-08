@@ -270,7 +270,51 @@ public class Solution {
 
         return res;
     }
+
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+        int n = profits.length;
+        int[][] ipos = new int[n][3];
+        for (int i = 0; i < n; i++) {
+            ipos[i][0] = profits[i];
+            ipos[i][1] = capital[i];
+            ipos[i][2] = i;
+        }
+
+        Arrays.sort(ipos, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return (o1[1] - o2[1] == 0) ? o1[2] - o2[2] : o1[1] - o2[1];
+            }
+        });
+
+        PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return (o2[0] - o1[0] == 0) ? o1[2] - o2[2] : o2[0] - o1[0];
+            }
+        });
+
+        int i = 0;
+        while (k > 0) {
+            while (i < n && ipos[i][1] <= w) {
+                queue.add(ipos[i]);
+                i++;
+            }
+
+            if(!queue.isEmpty()) {
+                int[] p = queue.poll();
+                w += p[0];
+                k--;
+            }else {
+                break;
+            }
+        }
+
+        return w;
+    }
 }
+
+
 class Compound {
     private Integer index;
     private Integer value;
