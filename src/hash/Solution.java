@@ -259,4 +259,23 @@ public class Solution {
         return ret;
     }
 
+    public int numberOfBoomerangs(int[][] points) {
+        int count = 0;
+        int n = points.length;
+        for (int i = 0; i < n; i++) {
+            Map<Double, Integer> map = new HashMap<>();
+
+            for (int j = 0; j < n; j++) {
+                double dist = Math.pow(Math.abs(points[i][0] - points[j][0]), 2) +
+                        Math.pow(Math.abs(points[i][1] - points[j][1]), 2);
+                map.put(dist, map.getOrDefault(dist, 0) + 1);
+                if(map.get(dist) > 1) {
+                    count += (map.get(dist) - 1) * 2;
+                }
+            }
+        }
+
+        return count;
+    }
+
 }

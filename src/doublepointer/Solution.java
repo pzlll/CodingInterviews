@@ -727,4 +727,40 @@ public class Solution {
         return p;
     }
 
+    public String findLongestWord2(String s, List<String> dictionary) {
+        List<String> ret = new ArrayList<>();
+
+        for (String dict :
+                dictionary) {
+            if(isBelongs(s, dict)) {
+                ret.add(dict);
+            }
+        }
+
+        Collections.sort(ret, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return (o1.length() == o2.length()) ? o1.compareTo(o2) : o2.length() - o1.length();
+            }
+        });
+
+        return (ret.size() ==0) ? "" : ret.get(0);
+    }
+
+    private boolean isBelongs(String s, String dict) {
+        int n = s.length();
+        int m = dict.length();
+
+        int i = 0;
+        int j = 0;
+        while (i < n && j < m) {
+            if(s.charAt(i) == dict.charAt(j)) {
+                j++;
+            }
+            i++;
+        }
+
+        return j == m;
+    }
+
 }

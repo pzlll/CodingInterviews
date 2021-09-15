@@ -404,4 +404,8 @@ public class Solution {
 
         return stack.isEmpty();
     }
+
+    public boolean checkValidString(String s) {
+        return false;
+    }
 }
