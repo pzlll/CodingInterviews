@@ -1401,22 +1401,54 @@ public class Solution {
 
     }
 
-        public int minSteps(int n) {
-            int[] dp = new int[n+1];
+    public int minSteps(int n) {
+        int[] dp = new int[n+1];
 
-            Arrays.fill(dp, Integer.MAX_VALUE);
+        Arrays.fill(dp, Integer.MAX_VALUE);
 
-            dp[1] = 0;
-            for (int i = 2; i <= n; i++) {
-                for (int j = 1; (double)j <= Math.sqrt((double)i); j++) {
-                    if(i % j == 0) {
-                        dp[i] = Math.min(dp[i], dp[j] + i / j);
-                        dp[i] = Math.min(dp[i], dp[i/j] + j);
-                    }
+        dp[1] = 0;
+        for (int i = 2; i <= n; i++) {
+            for (int j = 1; (double)j <= Math.sqrt((double)i); j++) {
+                if(i % j == 0) {
+                    dp[i] = Math.min(dp[i], dp[j] + i / j);
+                    dp[i] = Math.min(dp[i], dp[i/j] + j);
                 }
             }
-
-            return dp[n];
         }
+
+        return dp[n];
+    }
+
+    public int findNumberOfLIS(int[] nums) {
+        int n = nums.length;
+        int []dp = new int[n];
+        int []cnt = new int[n];
+
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            dp[i] = 1;
+            cnt[i] = 1;
+            for (int j = 0; j < i; j++) {
+                if(nums[j] < nums[i]) {
+                    if(dp[j] + 1 > dp[i]) {
+                        dp[i] = dp[j] + 1;
+                        cnt[i] = cnt[j];
+                    }else if(dp[j] + 1 == dp[i]){
+                        cnt[i] += cnt[j];
+                    }
+                }
+                max = Math.max(max, dp[i]);
+            }
+        }
+
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            if(dp[i] == max) {
+                res += cnt[i];
+            }
+        }
+
+        return res;
+    }
 
 }
