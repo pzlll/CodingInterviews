@@ -442,4 +442,24 @@ public class Solution {
 
         return true;
     }
+
+    public int lengthOfLastWord(String s) {
+        int i = s.length() -1;
+        int len = 0;
+        while (i >= 0) {
+            if(s.charAt(i) != ' ') {
+                break;
+            }
+            i--;
+        }
+        while (i >= 0) {
+            if(s.charAt(i) == ' ') {
+                break;
+            }
+            len++;
+            i--;
+        }
+
+        return len;
+    }
 }
