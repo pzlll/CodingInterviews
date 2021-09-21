@@ -573,4 +573,37 @@ public class Solution {
 
         return left;
     }
+
+    /**
+     * 解题思路：模拟+二分查找
+     * 模拟：选择1-n中任意一个位置
+     * 若该位置大于左右的值，则返回下标
+     * 若大于左小于右，则右侧一定有峰值
+     * 若小于左大于右，则左侧一定有峰值
+     * 若小于左小于右，则两侧都有峰值
+     * @param nums
+     * @return
+     */
+    public int findPeakElement2(int[] nums) {
+        int left = 0;
+        int n = nums.length;
+        int right = n - 1;
+        while (left <= right) {
+            int mid = (right - left) / 2 + left;
+            boolean r = (mid + 1 == n) ? true : nums[mid] > nums[mid + 1];
+            boolean l = (mid - 1 == 0) ? true : nums[mid] > nums[mid - 1];
+            if(l && r) {
+                return mid;
+            }
+            if(l) {
+                left = mid + 1;
+            }else {
+                right = mid - 1;
+            }
+
+
+        }
+
+        return -1;
+    }
 }
