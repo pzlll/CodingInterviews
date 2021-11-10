@@ -724,5 +724,67 @@ public class Solution {
     }
 
 
+    public List<List<Integer>> permute(int[] nums) {
+        int n = nums.length;
+
+        List<List<Integer>> res = new ArrayList<>();
+
+        List<Integer> list = new ArrayList<>();
+        boolean[] visited = new boolean[n];
+        backtrackPermute(list, visited, nums, 0, n);
+
+        return res;
+    }
+
+    private void backtrackPermute(List<Integer> list, boolean[] visited, int[] nums, int i, int n) {
+        if(i == n) {
+            res2.add(new ArrayList<>(list));
+            return;
+        }
+
+        for (int j = 0; j < n; j++) {
+            if(!visited[j]) {
+                visited[j] = true;
+                list.add(nums[j]);
+                backtrackPermute(list, visited, nums, i+1, n);
+                list.remove(i);
+                visited[j] = false;
+            }
+        }
+
+
+
+
+    }
+
+    private List<List<Integer>> res3;
+
+    public List<List<Integer>> subsets(int[] nums) {
+
+        int n = nums.length;
+        res3 = new ArrayList<>();
+
+        List<Integer> list = new ArrayList<>();
+
+        backtrackSubsets(list, nums,  0, n);
+
+        return res3;
+
+    }
+
+    private void backtrackSubsets(List<Integer> list, int[] nums, int i, int n) {
+        if(i == n) {
+            res3.add(new ArrayList<>(list));
+            return;
+        }
+
+        list.add(nums[i]);
+        backtrackSubsets(list, nums, i+1, n);
+        list.remove(list.size() - 1);
+        backtrackSubsets(list, nums, i+1, n);
+
+
+    }
+
 
 }

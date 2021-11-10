@@ -37,4 +37,9 @@ public class SolutionTest {
     public void allPathsSourceTarget() {
         new Solution().allPathsSourceTarget(new int[][]{{1,2}, {3}, {3}, {}});
     }
+
+    @Test
+    public void subsets() {
+        new Solution().subsets(new int[]{1, 2 ,3});
+    }
 }

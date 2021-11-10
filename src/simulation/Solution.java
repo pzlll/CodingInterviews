@@ -65,4 +65,15 @@ public class Solution {
         
         return unhappy;
     }
+
+    public int findPoisonedDuration(int[] timeSeries, int duration) {
+        int n = timeSeries.length;
+        int time = 0;
+        for (int i = 0; i < n - 1; i++) {
+            time += Math.min(duration, timeSeries[i+1] - timeSeries[i]);
+        }
+        time += duration;
+
+        return time;
+    }
 }
