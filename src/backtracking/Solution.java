@@ -786,5 +786,58 @@ public class Solution {
 
     }
 
+    private int[][] direct = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+
+
+    public boolean exist2(char[][] board, String word) {
+
+        int m = board.length;
+        int n = board[0].length;
+
+        boolean[][] visited = new boolean[m][n];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(board[i][j] == word.charAt(0)) {
+                    visited[i][j] = true;
+                    if(backtrackExist(board, visited, i, j, m, n, 1, word)) {
+                        return true;
+                    }
+                    visited[i][j] = false;
+                }
+            }
+        }
+
+
+        return false;
+    }
+
+    private boolean backtrackExist(char[][] board, boolean[][] visited, int i, int j, int m, int n, int k, String word) {
+        if(k == word.length()) {
+            return true;
+        }
+
+        for (int l = 0; l < 4; l++) {
+            int i1 = i + direct[l][0];
+            int j1 = j + direct[l][1];
+            if(isValid(i1, j1 , m, n) && !visited[i1][j1])  {
+                if(board[i1][j1] == word.charAt(k)) {
+                    visited[i1][j1] = true;
+                    if(backtrackExist(board, visited, i1, j1, m, n, k+1, word)) {
+                        return true;
+                    }
+                    visited[i1][j1] = false;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private boolean isValid(int i1, int j1, int m, int n) {
+        return (i1 >= 0 && i1 < m) && (j1 >=0 && j1 < n);
+    }
+
 
 }

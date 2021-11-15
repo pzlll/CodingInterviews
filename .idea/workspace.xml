@@ -9,10 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method lengthOfLastWord.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingInterviews.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingInterviews.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backtracking/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/SolutionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -761,14 +759,9 @@
       <workItem from="1635937129091" duration="3666000" />
       <workItem from="1636344862586" duration="673000" />
       <workItem from="1636447515032" duration="883000" />
-      <workItem from="1636543012536" duration="4771000" />
-    </task>
-    <task id="LOCAL-00080" summary="add method countOfAtoms.">
-      <created>1625552088959</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1625552088960</updated>
+      <workItem from="1636543012536" duration="5449000" />
+      <workItem from="1636715321848" duration="425000" />
+      <workItem from="1636974188542" duration="3705000" />
     </task>
     <task id="LOCAL-00081" summary="add method displayTable.">
       <created>1625553918024</created>
@@ -1106,7 +1099,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632187456023</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="add method lengthOfLastWord.">
+      <created>1636550360475</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1636550360476</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TestHistory">
