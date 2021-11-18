@@ -7,10 +7,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method lengthOfLastWord.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method exist.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitoperation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitoperation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -761,14 +769,9 @@
       <workItem from="1636447515032" duration="883000" />
       <workItem from="1636543012536" duration="5449000" />
       <workItem from="1636715321848" duration="425000" />
-      <workItem from="1636974188542" duration="3705000" />
-    </task>
-    <task id="LOCAL-00081" summary="add method displayTable.">
-      <created>1625553918024</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1625553918025</updated>
+      <workItem from="1636974188542" duration="3760000" />
+      <workItem from="1637145263813" duration="2557000" />
+      <workItem from="1637229756328" duration="1905000" />
     </task>
     <task id="LOCAL-00082" summary="add method numSubarraysWithSum.">
       <created>1625752346349</created>
@@ -1106,7 +1109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636550360476</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="add method exist.">
+      <created>1636979884369</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1636979884369</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1222,7 +1232,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method titleToNumber." />
     <MESSAGE value="add game 252." />
     <MESSAGE value="add method verticalTraversal." />
     <MESSAGE value="add method networkDelayTime." />
@@ -1247,7 +1256,8 @@
     <MESSAGE value="add method isValidSudoku." />
     <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method lengthOfLastWord." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method lengthOfLastWord." />
+    <MESSAGE value="add method exist." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method exist." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

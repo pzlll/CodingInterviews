@@ -723,8 +723,25 @@ public class Solution {
         DFSTraverse(root.right, row + 1, col + 1, list);
 
     }
+    private static int sum = 0;
 
+    public int findTilt(TreeNode root) {
 
+        loopForTilt(root);
+        return sum;
+    }
+
+    public int loopForTilt(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+
+        int left = findTilt(root.left);
+        int right = findTilt(root.right);
+        sum += Math.abs(left - right);
+
+        return  left + right + root.val;
+    }
 
 
 }
