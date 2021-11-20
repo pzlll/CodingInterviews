@@ -7,10 +7,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method exist.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method loopForTilt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitoperation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitoperation/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recursionandcirculation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursionandcirculation/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -771,21 +771,9 @@
       <workItem from="1636715321848" duration="425000" />
       <workItem from="1636974188542" duration="3760000" />
       <workItem from="1637145263813" duration="2557000" />
-      <workItem from="1637229756328" duration="1905000" />
-    </task>
-    <task id="LOCAL-00082" summary="add method numSubarraysWithSum.">
-      <created>1625752346349</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1625752346350</updated>
-    </task>
-    <task id="LOCAL-00083" summary="add method majorityElement.">
-      <created>1625811998163</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1625811998164</updated>
+      <workItem from="1637229756328" duration="1970000" />
+      <workItem from="1637321291075" duration="955000" />
+      <workItem from="1637413670254" duration="1325000" />
     </task>
     <task id="LOCAL-00084" summary="add method TimeMap.">
       <created>1625963401174</created>
@@ -1116,7 +1104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636979884369</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="add method loopForTilt.">
+      <created>1637231805296</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1637231805297</updated>
+    </task>
+    <task id="LOCAL-00132" summary="add method loopForTilt.">
+      <created>1637231842011</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1637231842011</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1232,7 +1234,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add game 252." />
     <MESSAGE value="add method verticalTraversal." />
     <MESSAGE value="add method networkDelayTime." />
     <MESSAGE value="add method tribonacci." />
@@ -1257,7 +1258,8 @@
     <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method lengthOfLastWord." />
     <MESSAGE value="add method exist." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method exist." />
+    <MESSAGE value="add method loopForTilt." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method loopForTilt." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

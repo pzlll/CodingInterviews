@@ -1,6 +1,8 @@
 package recursionandcirculation;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public int Fibonacci(int n) {
@@ -66,5 +68,28 @@ public class Solution {
         }
 
         return cover(target-1) + 2 * cover(target-2);
+    }
+
+    private Map<Integer, Integer> map = new HashMap<>();
+    public int integerReplacement(int n) {
+        if(n == 1) {
+            return 0;
+        }
+        if(!map.containsKey(n)) {
+            if(n % 2 == 0) {
+                int count = integerReplacement(n/2 + 1);
+                map.put(n, count);
+                return count;
+            }else{
+                int count = Math.min(integerReplacement(n/2), integerReplacement(n/2 + 1)) + 2;
+                map.put(n, count);
+                return count;
+            }
+        }else{
+            return map.get(n);
+        }
+
+
+
     }
 }

@@ -304,4 +304,26 @@ public class Solution {
 
     }
 
+    public int findLHS(int[] nums) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        }
+
+        int length = 0;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            Integer key = entry.getKey();
+            Integer value = entry.getValue();
+            if(map.get(key - 1) != null) {
+                length = Math.max(length, value + map.get(key -1));
+            }else if(map.get(key + 1) != null) {
+                length = Math.max(length, value + map.get(key + 1));
+            }
+        }
+
+        return length;
+    }
+
 }
