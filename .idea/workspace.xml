@@ -7,15 +7,20 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method loopForTilt.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursionandcirculation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursionandcirculation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -64,14 +69,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,10 +127,15 @@
       </list>
     </option>
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="CodingInterviews/invalid/Web" />
+    </ignored-facets>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../Tools/apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:/Tools/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\Tools\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -144,12 +146,15 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="1296" />
     <option name="height" value="741" />
   </component>
-  <component name="ProjectId" id="20PC5Ez11lUUGZcixT5QHgXqdML" />
+  <component name="ProjectId" id="20ao0NWWdA6sXqebspHUEix9QLD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -337,7 +342,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../downloads/org.ops4j.pax.tipi.hamcrest.core-1.3.0.1.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -350,24 +355,24 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="backtracking" />
       <recent name="heap" />
       <recent name="dynamicprogramming" />
+      <recent name="backtracking" />
       <recent name="greedy" />
       <recent name="game.two.five.zero" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.subsets">
+  <component name="RunManager" selected="JUnit.SolutionTest.smallestK">
     <configuration name="SolutionTest.allPathsSourceTarget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -384,17 +389,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.lengthOfLIS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.letterCombinations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dynamicprogramming" />
-      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
-      <option name="METHOD_NAME" value="lengthOfLIS" />
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.SolutionTest" />
+      <option name="METHOD_NAME" value="letterCombinations" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.minOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greedy" />
+      <option name="MAIN_CLASS_NAME" value="greedy.SolutionTest" />
+      <option name="METHOD_NAME" value="minOperations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -411,22 +432,6 @@
       <option name="PACKAGE_NAME" value="heap" />
       <option name="MAIN_CLASS_NAME" value="heap.SolutionTest" />
       <option name="METHOD_NAME" value="smallestK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.subsets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.SolutionTest" />
-      <option name="METHOD_NAME" value="subsets" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -512,11 +517,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SolutionTest.subsets" />
-        <item itemvalue="JUnit.SolutionTest.lengthOfLIS" />
         <item itemvalue="JUnit.SolutionTest.smallestK" />
         <item itemvalue="JUnit.SolutionTest.sumOddLengthSubarrays" />
         <item itemvalue="JUnit.SolutionTest.allPathsSourceTarget" />
+        <item itemvalue="JUnit.SolutionTest.minOperations" />
+        <item itemvalue="JUnit.SolutionTest.letterCombinations" />
       </list>
     </recent_temporary>
   </component>
@@ -763,17 +768,34 @@
       <workItem from="1632055559564" duration="2625000" />
       <workItem from="1632125938904" duration="895000" />
       <workItem from="1632186231633" duration="1841000" />
-      <workItem from="1635936664004" duration="394000" />
-      <workItem from="1635937129091" duration="3666000" />
-      <workItem from="1636344862586" duration="673000" />
-      <workItem from="1636447515032" duration="883000" />
-      <workItem from="1636543012536" duration="5449000" />
-      <workItem from="1636715321848" duration="425000" />
-      <workItem from="1636974188542" duration="3760000" />
-      <workItem from="1637145263813" duration="2557000" />
-      <workItem from="1637229756328" duration="1970000" />
-      <workItem from="1637321291075" duration="955000" />
-      <workItem from="1637413670254" duration="1325000" />
+    </task>
+    <task id="LOCAL-00080" summary="add method countOfAtoms.">
+      <created>1625552088959</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1625552088960</updated>
+    </task>
+    <task id="LOCAL-00081" summary="add method displayTable.">
+      <created>1625553918024</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1625553918025</updated>
+    </task>
+    <task id="LOCAL-00082" summary="add method numSubarraysWithSum.">
+      <created>1625752346349</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1625752346350</updated>
+    </task>
+    <task id="LOCAL-00083" summary="add method majorityElement.">
+      <created>1625811998163</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1625811998164</updated>
     </task>
     <task id="LOCAL-00084" summary="add method TimeMap.">
       <created>1625963401174</created>
@@ -1090,35 +1112,7 @@
       <option name="project" value="LOCAL" />
       <updated>1632187456023</updated>
     </task>
-    <task id="LOCAL-00129" summary="add method lengthOfLastWord.">
-      <created>1636550360475</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1636550360476</updated>
-    </task>
-    <task id="LOCAL-00130" summary="add method exist.">
-      <created>1636979884369</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1636979884369</updated>
-    </task>
-    <task id="LOCAL-00131" summary="add method loopForTilt.">
-      <created>1637231805296</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1637231805297</updated>
-    </task>
-    <task id="LOCAL-00132" summary="add method loopForTilt.">
-      <created>1637231842011</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1637231842011</updated>
-    </task>
-    <option name="localTasksCounter" value="133" />
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1205,7 +1199,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1234,6 +1228,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="add method titleToNumber." />
+    <MESSAGE value="add game 252." />
     <MESSAGE value="add method verticalTraversal." />
     <MESSAGE value="add method networkDelayTime." />
     <MESSAGE value="add method tribonacci." />
@@ -1257,9 +1253,7 @@
     <MESSAGE value="add method isValidSudoku." />
     <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method lengthOfLastWord." />
-    <MESSAGE value="add method exist." />
-    <MESSAGE value="add method loopForTilt." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method loopForTilt." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method lengthOfLastWord." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1321,10 +1315,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -371,6 +371,23 @@ public class Solution {
         }
 
         return count;
+
+
     }
+
+    public int missingNumber(int[] nums) {
+        int val = 0;
+        int n = nums.length;
+        for (int i = 1; i <= n; i++) {
+            val ^= i;
+        }
+
+        for (int i = 0; i < n; i++) {
+            val ^= nums[i];
+        }
+
+        return val;
+    }
+
 
 }
