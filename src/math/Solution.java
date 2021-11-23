@@ -446,4 +446,69 @@ public class Solution {
         return count;
     }
 
+    private int[] origin;
+    private int n;
+
+    public Solution(int[] nums) {
+        this.n = nums.length;
+        this.origin = new int[this.n];
+        for (int i = 0; i < this.n; i++) {
+            this.origin[i] = nums[i];
+        }
+    }
+
+    public int[] reset() {
+        return this.origin;
+    }
+
+    public int[] shuffle() {
+        int[] arrange = new int[this.n];
+
+        for (int i = 0; i < n; i++) {
+            arrange[i] = i;
+        }
+
+        int[] ret = new int[this.n];
+        for (int i = 0; i < n; i++) {
+            Random random = new Random();
+            int index = random.nextInt(n-i);
+            ret[i] = this.origin[arrange[index]];
+            int temp = arrange[index];
+            arrange[index] = arrange[n-i-1];
+            arrange[n-i-1] = temp;
+        }
+
+        return ret;
+    }
+
+    public int[] topKFrequent(int[] nums, int k) {
+        int n = nums.length;
+        PriorityQueue<int[]> queue = new PriorityQueue<int[]>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
+            }
+        });
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            freq.put(nums[i], freq.getOrDefault(nums[i], 0) + 1);
+        }
+
+        for (Map.Entry<Integer, Integer> entry :
+                freq.entrySet()) {
+            int[] key = new int[]{entry.getKey(), entry.getValue()};
+            queue.offer(key);
+            if(queue.size() > k) {
+                queue.poll();
+            }
+        }
+
+        int[] ret = new int[k];
+        for (int i = 0; i < k; i++) {
+            ret[i] = queue.poll()[0];
+        }
+
+        return ret;
+    }
+
 }

@@ -326,4 +326,41 @@ public class Solution {
         return length;
     }
 
+    public boolean buddyStrings(String s, String goal) {
+        Map<Character, Integer> freq = new HashMap<>();
+        Set<Character> diff = new HashSet<>();
+
+
+        int j = 0;
+        int count = 0;
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            freq.put(s.charAt(i), freq.getOrDefault(s.charAt(i), 0) + 1);
+
+            if(s.charAt(i) != goal.charAt(i)) {
+                if(count == 0) {
+                    j = i;
+                }else if(count == 1) {
+                    return s.charAt(j) == goal.charAt(i) && s.charAt(i) == goal.charAt(j);
+                }else {
+                    return false;
+                }
+                count++;
+            }
+
+        }
+        if(diff.size() == 0) {
+            for (Map.Entry<Character, Integer> entry :
+                    freq.entrySet()) {
+                if (entry.getValue() > 1) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+        return diff.size() == 2;
+
+    }
+
 }

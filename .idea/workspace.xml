@@ -7,12 +7,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method loopForTilt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +133,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/Tools/apache-maven-3.6.3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Tools/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\Tools\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -334,6 +332,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -768,6 +768,9 @@
       <workItem from="1632055559564" duration="2625000" />
       <workItem from="1632125938904" duration="895000" />
       <workItem from="1632186231633" duration="1841000" />
+      <workItem from="1637494854963" duration="1507000" />
+      <workItem from="1637579197469" duration="2266000" />
+      <workItem from="1637666572609" duration="1276000" />
     </task>
     <task id="LOCAL-00080" summary="add method countOfAtoms.">
       <created>1625552088959</created>
@@ -1199,7 +1202,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1228,7 +1231,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method titleToNumber." />
     <MESSAGE value="add game 252." />
     <MESSAGE value="add method verticalTraversal." />
     <MESSAGE value="add method networkDelayTime." />
@@ -1253,7 +1255,8 @@
     <MESSAGE value="add method isValidSudoku." />
     <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method lengthOfLastWord." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method lengthOfLastWord." />
+    <MESSAGE value="add method loopForTilt." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method loopForTilt." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
