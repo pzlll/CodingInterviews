@@ -1451,4 +1451,44 @@ public class Solution {
         return res;
     }
 
+    public int countVowelPermutation(int n) {
+        long a1 = 1, a2 = 0;
+        long e1 = 1, e2 = 0;
+        long i1 = 1, i2 = 0;
+        long o1 = 1, o2 = 0;
+        long u1 = 1, u2 = 0;
+        long mod = 1000000007;
+
+        for (int i = 1; i < n; i++) {
+            e2 += (a1 + i1)%mod;
+            a2 += (e1 + i1 + u1)%mod;
+            i2 += (e1 + o1)%mod;
+            o2 += i1;
+            u2 += (i1 + o1)%mod;
+
+            a1 = a2;
+            e1 = e2;
+            i1 = i2;
+            o1 = o2;
+            u1 = u2;
+            a2 = 0;
+            e2 = 0;
+            i2 = 0;
+            o2 = 0;
+            u2 = 0;
+        }
+
+        long res = 0;
+        res = (res + a1) % mod;
+        res = (res + e1) % mod;
+        res = (res + i1) % mod;
+        res = (res + o1) % mod;
+        res = (res + u1) % mod;
+        return (int)res;
+
+
+
+
+    }
+
 }

@@ -3,6 +3,8 @@ package math;
 import java.util.*;
 
 public class Solution {
+
+    public Solution() {}
     /**
      * !关键是判断溢出
      * 解题思路：若得到的结果除以10不等于原先的数，则溢出

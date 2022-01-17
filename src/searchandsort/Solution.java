@@ -382,4 +382,41 @@ public class Solution {
         return max;
 
     }
+
+    public int[][] merge(int[][] intervals) {
+        if(intervals.length == 0) {
+            return new int[][]{};
+        }
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+
+        List<int[]> list = new ArrayList<>();
+
+        list.add(intervals[0]);
+        int index = 0;
+        int pre = intervals[0][1];
+        for (int i = 1; i < intervals.length; i++) {
+            if(pre < intervals[i][0]) {
+                list.add(intervals[i]);
+                index++;
+                pre = intervals[i][1];
+            }else {
+                int[] ints = list.get(index);
+                ints[1] = Math.max(pre, intervals[i][1]);
+                list.set(index, ints);
+                pre = ints[1];
+            }
+        }
+
+        int[][] res = new int[list.size()][2];
+        for (int i = 0; i < res.length; i++) {
+            res[i] = list.get(i);
+        }
+
+        return res;
+    }
 }
