@@ -9,9 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method merge.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searchandsort/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchandsort/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doublepointer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/doublepointer/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tree/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Codec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -796,14 +794,7 @@
       <workItem from="1642410330871" duration="5221000" />
       <workItem from="1642476031321" duration="443000" />
       <workItem from="1642658990445" duration="2229000" />
-      <workItem from="1642746692237" duration="7410000" />
-    </task>
-    <task id="LOCAL-00082" summary="add method numSubarraysWithSum.">
-      <created>1625752346349</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1625752346350</updated>
+      <workItem from="1642746692237" duration="8933000" />
     </task>
     <task id="LOCAL-00083" summary="add method majorityElement.">
       <created>1625811998163</created>
@@ -1141,7 +1132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642425918058</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="add method merge.">
+      <created>1645581702732</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1645581702732</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
