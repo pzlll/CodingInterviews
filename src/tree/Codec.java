@@ -19,19 +19,15 @@ public class Codec {
             for (int i = 0; i < n; i++) {
                 TreeNode p = queue.poll();
                 if(p == null) {
-                    str.append("none");
+                    str.append("n");
                 }else {
                     str.append(Integer.toString(p.val));
                     queue.offer(p.left);
                     queue.offer(p.right);
                 }
 
-                str.append(' ');
             }
-            if(nNum == n) {
-                break;
-            }
-            nNum = 0;
+
 
 
         }
@@ -41,40 +37,31 @@ public class Codec {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        String[] dataArrays = data.split(" ");
-        if(dataArrays.length == 1) {
+        StringBuffer dataBuffer = new StringBuffer(data);
+        if(dataBuffer.charAt(0) == 'n') {
             return null;
         }
+        int i = 0;
+        TreeNode root = new TreeNode(dataBuffer.charAt(0) - '0');
+        i++;
         Queue<TreeNode> queue = new LinkedList<>();
-        TreeNode root = new TreeNode(Integer.parseInt(dataArrays[0]));
-        int i = 1;
-        queue.offer(root);
-        while (i < dataArrays.length) {
+        queue.add(root);
+        while (i < dataBuffer.length()) {
             int n = queue.size();
             for (int j = 0; j < n; j++) {
-                TreeNode p = queue.poll();
-                TreeNode left;
-                TreeNode right;
-                if(dataArrays[i].equals("none")) {
-                    left = null;
-                }else {
-                    left = new TreeNode(Integer.parseInt(dataArrays[i]));
-                    queue.offer(left);
-                }
+                TreeNode poll = queue.poll();
+                TreeNode left = dataBuffer.charAt(i) == 'n' ? null : new TreeNode(dataBuffer.charAt(i) - '0');
                 i++;
-
-                if(dataArrays[i].equals("none")) {
-                    right = null;
-                }else {
-                    right = new TreeNode(Integer.parseInt(dataArrays[i]));
-                    queue.offer(right);
-                }
+                TreeNode right = dataBuffer.charAt(i) == 'n' ? null : new TreeNode(dataBuffer.charAt(i) - '0');
                 i++;
-
-                p.left = left;
-                p.right = right;
-
-
+                poll.left = left;
+                poll.right = right;
+                if(left != null) {
+                    queue.add(left);
+                }
+                if(right != null) {
+                    queue.add(right);
+                }
             }
         }
 

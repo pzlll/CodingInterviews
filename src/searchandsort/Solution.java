@@ -419,4 +419,39 @@ public class Solution {
 
         return res;
     }
+
+    public int findMinDifference(List<String> timePoints) {
+        if(timePoints.size() == 0) {
+            return 0;
+        }
+        List<Integer> times = new ArrayList<>();
+
+        for (String s :
+                timePoints) {
+            String[] split = s.split(":");
+            int time = 0;
+            int k = 60;
+            for (int i = 0; i < split.length; i++) {
+                String t = split[i];
+                int temp = 0;
+                for (int j = 0; j < t.length(); j++) {
+                    temp = temp * 10 + (t.charAt(j) - '0');
+                }
+                time = time + temp * k;
+                k = 0;
+            }
+            times.add(time);
+        }
+
+        Collections.sort(times);
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < times.size() - 1; i++) {
+            min = Math.min(min, times.get(i+1) - times.get(i));
+        }
+
+        min = Math.min(min, 1440 - times.get(times.size() - 1) + times.get(0));
+
+        return min;
+    }
 }

@@ -254,4 +254,28 @@ public class Solution {
 
         return count;
     }
+
+    public boolean stoneGameIX(int[] stones) {
+        int sum = 0;
+        int count = 0;
+        int temp = 0;
+
+        for (int i = 0; i < stones.length; i++) {
+            if(stones[i] % 3 != 0) {
+                temp++;
+            }
+
+            sum += stones[i];
+            count++;
+        }
+
+        if(temp == 0) {
+            return false;
+        }
+        if(sum % 3 != 0) {
+            return false;
+        }
+
+        return count % 2 == 0;
+    }
 }

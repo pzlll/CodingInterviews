@@ -7,27 +7,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method searchRange.">
-      <change afterPath="$PROJECT_DIR$/src/random/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/SolutionForSkyLine.java" afterDir="false" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method merge.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingInterviews.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingInterviews.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/bitmanipulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/bitmanipulation/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/bitoperation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/bitoperation/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution$Automation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution$Automation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/recursionandcirculation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/recursionandcirculation/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/searchandsort/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searchandsort/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Codec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -808,14 +793,10 @@
       <workItem from="1641870090437" duration="4255000" />
       <workItem from="1642054485765" duration="3622000" />
       <workItem from="1642141807843" duration="881000" />
-      <workItem from="1642410330871" duration="5046000" />
-    </task>
-    <task id="LOCAL-00081" summary="add method displayTable.">
-      <created>1625553918024</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1625553918025</updated>
+      <workItem from="1642410330871" duration="5221000" />
+      <workItem from="1642476031321" duration="443000" />
+      <workItem from="1642658990445" duration="2229000" />
+      <workItem from="1642746692237" duration="7410000" />
     </task>
     <task id="LOCAL-00082" summary="add method numSubarraysWithSum.">
       <created>1625752346349</created>
@@ -1153,7 +1134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637667876832</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="add method merge.">
+      <created>1642425918058</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1642425918058</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1269,7 +1257,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method networkDelayTime." />
     <MESSAGE value="add method tribonacci." />
     <MESSAGE value="add method sortItems." />
     <MESSAGE value="add game 253." />
@@ -1294,7 +1281,8 @@
     <MESSAGE value="add method loopForTilt." />
     <MESSAGE value="add method buddyStrings." />
     <MESSAGE value="add method searchRange." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method searchRange." />
+    <MESSAGE value="add method merge." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method merge." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
