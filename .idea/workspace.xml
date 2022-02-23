@@ -7,9 +7,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method merge.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method reverseOnlyLetters.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/doublepointer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/doublepointer/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tree/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Codec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -794,14 +793,7 @@
       <workItem from="1642410330871" duration="5221000" />
       <workItem from="1642476031321" duration="443000" />
       <workItem from="1642658990445" duration="2229000" />
-      <workItem from="1642746692237" duration="8933000" />
-    </task>
-    <task id="LOCAL-00083" summary="add method majorityElement.">
-      <created>1625811998163</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1625811998164</updated>
+      <workItem from="1642746692237" duration="11676000" />
     </task>
     <task id="LOCAL-00084" summary="add method TimeMap.">
       <created>1625963401174</created>
@@ -1139,7 +1131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645581702732</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="add method reverseOnlyLetters.">
+      <created>1645583111505</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1645583111505</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1255,7 +1254,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method tribonacci." />
     <MESSAGE value="add method sortItems." />
     <MESSAGE value="add game 253." />
     <MESSAGE value="add method checkRecord" />
@@ -1280,7 +1278,8 @@
     <MESSAGE value="add method buddyStrings." />
     <MESSAGE value="add method searchRange." />
     <MESSAGE value="add method merge." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method merge." />
+    <MESSAGE value="add method reverseOnlyLetters." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method reverseOnlyLetters." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

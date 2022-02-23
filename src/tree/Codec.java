@@ -22,6 +22,7 @@ public class Codec {
                     str.append("n");
                 }else {
                     str.append(Integer.toString(p.val));
+                    str.append('=');
                     queue.offer(p.left);
                     queue.offer(p.right);
                 }
@@ -42,17 +43,58 @@ public class Codec {
             return null;
         }
         int i = 0;
-        TreeNode root = new TreeNode(dataBuffer.charAt(0) - '0');
+        int sum = 0;
+        boolean f = false;
+        if(dataBuffer.charAt(0) == '-') {
+            f = true;
+            i++;
+        }
+
+        while (dataBuffer.charAt(i) != '=') {
+            sum = sum * 10 + dataBuffer.charAt(i) - '0';
+            i++;
+        }
+        TreeNode root = f ? new TreeNode(-sum) : new TreeNode(sum);
         i++;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
+        TreeNode right, left;
         while (i < dataBuffer.length()) {
             int n = queue.size();
             for (int j = 0; j < n; j++) {
                 TreeNode poll = queue.poll();
-                TreeNode left = dataBuffer.charAt(i) == 'n' ? null : new TreeNode(dataBuffer.charAt(i) - '0');
+                if(dataBuffer.charAt(i) == 'n') {
+                    left = null;
+                }else {
+                    boolean flag = false;
+                    if(dataBuffer.charAt(i) == '-') {
+                        i++;
+                        flag = true;
+                    }
+                    sum = 0;
+                    while (dataBuffer.charAt(i) != '=') {
+                        sum = sum * 10 + dataBuffer.charAt(i) - '0';
+                        i++;
+                    }
+                    left = flag ? new TreeNode(-sum) : new TreeNode(sum);
+
+                }
                 i++;
-                TreeNode right = dataBuffer.charAt(i) == 'n' ? null : new TreeNode(dataBuffer.charAt(i) - '0');
+                if(dataBuffer.charAt(i) == 'n') {
+                    right = null;
+                }else {
+                    boolean flag = false;
+                    if(dataBuffer.charAt(i) == '-') {
+                        i++;
+                        flag = true;
+                    }
+                    sum = 0;
+                    while (dataBuffer.charAt(i) != '=') {
+                        sum = sum * 10 + dataBuffer.charAt(i) - '0';
+                        i++;
+                    }
+                    right = flag ? new TreeNode(-sum) : new TreeNode(sum);
+                }
                 i++;
                 poll.left = left;
                 poll.right = right;
@@ -67,6 +109,8 @@ public class Codec {
 
         return root;
     }
+
+
 
 
 }
