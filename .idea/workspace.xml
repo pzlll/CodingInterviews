@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method codeC.">
-      <change afterPath="$PROJECT_DIR$/src/array/RandomizedSet.java" afterDir="false" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add java RandomizedSet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -794,13 +794,7 @@
       <workItem from="1642476031321" duration="443000" />
       <workItem from="1642658990445" duration="2229000" />
       <workItem from="1642746692237" duration="15381000" />
-    </task>
-    <task id="LOCAL-00085" summary="add game 249.">
-      <created>1625990619302</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1625990619302</updated>
+      <workItem from="1645682827375" duration="1815000" />
     </task>
     <task id="LOCAL-00086" summary="add game 249.">
       <created>1625990797918</created>
@@ -1138,7 +1132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645592435294</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="add java RandomizedSet.">
+      <created>1645682875276</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1645682875276</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1254,7 +1255,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add game 253." />
     <MESSAGE value="add method checkRecord" />
     <MESSAGE value="add method countArrangement." />
     <MESSAGE value="add method checkRecord." />
@@ -1279,7 +1279,8 @@
     <MESSAGE value="add method merge." />
     <MESSAGE value="add method reverseOnlyLetters." />
     <MESSAGE value="add method codeC." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method codeC." />
+    <MESSAGE value="add java RandomizedSet." />
+    <option name="LAST_COMMIT_MESSAGE" value="add java RandomizedSet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

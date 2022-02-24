@@ -1594,6 +1594,47 @@ public class Solution {
         return new ArrayList<>();
     }
 
+    public int[] findBall(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int []ans = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            ans[i] = dfsFindBall(grid, 0, i, 0);
+        }
+
+        return ans;
+    }
+
+    private int dfsFindBall(int[][] grid, int i, int j, int direction) {
+        if(j < 0 || j >= grid[0].length) {
+            return -1;
+        }
+        if(i == grid.length) {
+            return j;
+        }
+
+        if(direction == 0) {
+            if(grid[i][j] == 1) {
+                return dfsFindBall(grid, i, j + 1, -1);
+            }else {
+                return dfsFindBall(grid, i, j - 1, 1);
+            }
+        }else if(direction == -1) {
+            if(grid[i][j] == 1) {
+                return dfsFindBall(grid, i + 1, j, 0);
+            }else {
+                return -1;
+            }
+        }else {
+            if(grid[i][j] == 1) {
+                return -1;
+            }else {
+                return dfsFindBall(grid, i + 1, j, 0);
+            }
+        }
+    }
+
 
 }
 
