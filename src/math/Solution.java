@@ -525,4 +525,34 @@ public class Solution {
         return count;
     }
 
+    public double myPow(double x, int n) {
+
+
+        long N = n;
+        if(N == 0) {
+            return 1.0;
+        }
+
+        boolean flag = false;
+        if(N < 0) {
+            flag = true;
+            N = -N;
+        }
+
+
+        double res = 1;
+        while (N > 0) {
+            res  = res * ((N & 1) == 1 ? x: 1);
+            N >>= 1;
+            x *= x;
+        }
+
+
+
+
+        return flag ? 1.0/res : res;
+    }
+
+
+
 }
