@@ -76,4 +76,50 @@ public class Solution {
 
         return time;
     }
+
+    public String complexNumberMultiply(String num1, String num2) {
+        String[] s1 = num1.split("\\+");
+
+        String[] s2 = num2.split("\\+");
+
+        int a = stringToInteger(s1[0]);
+
+        int b = stringToInteger(s1[1].substring(0, s1[1].length() - 1));
+
+        int c = stringToInteger(s2[0]);
+        int d = stringToInteger(s2[1].substring(0, s1[1].length() - 1));
+
+        int r1 = a * c - b * d;
+        int r2 = b * c + a * d;
+
+        StringBuffer str = new StringBuffer();
+        str.append(r1);
+        str.append('+');
+        str.append(r2);
+        str.append('i');
+
+        return new String(str);
+
+
+    }
+
+    private int stringToInteger(String s) {
+        boolean flag = false;
+        int i = 0;
+        int n = s.length();
+        if(s.charAt(i) == '-') {
+            flag = true;
+            i++;
+        }
+
+        int sum = 0;
+
+        while (i < n) {
+            sum = sum * 10 + s.charAt(i) - '0';
+            i++;
+        }
+
+        return flag ? -sum : sum;
+
+    }
 }

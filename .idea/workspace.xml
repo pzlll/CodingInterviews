@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method findBall.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -795,6 +795,7 @@
       <workItem from="1642658990445" duration="2229000" />
       <workItem from="1642746692237" duration="15381000" />
       <workItem from="1645682827375" duration="4453000" />
+      <workItem from="1645770984732" duration="1334000" />
     </task>
     <task id="LOCAL-00087" summary="add method hIndex.">
       <created>1626078631661</created>
