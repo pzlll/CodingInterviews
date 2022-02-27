@@ -7,7 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method complexNumberMultiply.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method myPow.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
@@ -795,14 +795,7 @@
       <workItem from="1642658990445" duration="2229000" />
       <workItem from="1642746692237" duration="15381000" />
       <workItem from="1645682827375" duration="4453000" />
-      <workItem from="1645770984732" duration="3633000" />
-    </task>
-    <task id="LOCAL-00088" summary="add method minAbsoluteSumDiff.">
-      <created>1626247413719</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1626247413726</updated>
+      <workItem from="1645770984732" duration="4328000" />
     </task>
     <task id="LOCAL-00089" summary="add method threeSum.">
       <created>1626249380960</created>
@@ -1140,7 +1133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645772341689</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="add method myPow.">
+      <created>1645778553456</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1645778553456</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1256,7 +1256,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method checkRecord." />
     <MESSAGE value="add method compress." />
     <MESSAGE value="add method reverseStr." />
     <MESSAGE value="add method allPathsSourceTarget." />
@@ -1281,7 +1280,8 @@
     <MESSAGE value="add java RandomizedSet." />
     <MESSAGE value="add method findBall." />
     <MESSAGE value="add method complexNumberMultiply." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method complexNumberMultiply." />
+    <MESSAGE value="add method myPow." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method myPow." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
