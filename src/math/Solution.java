@@ -574,6 +574,35 @@ public class Solution {
         return start == 1 ? 1 : start - 1;
     }
 
+    public String optimalDivision(int[] nums) {
+        StringBuffer str = new StringBuffer();
+        int n = nums.length;
+        if(nums.length == 1) {
+            str.append(nums[0]);
+            return new String(str);
+        }
+
+        if(nums.length == 2) {
+            str.append(nums[0]);
+            str.append('/');
+            str.append(nums[1]);
+            return new String(str);
+        }
+
+
+        str.append(nums[0]);
+        str.append('/');
+        str.append('(');
+        for (int i = 1; i < n - 1; i++) {
+            str.append(nums[i]);
+            str.append('/');
+        }
+
+        str.append(nums[n-1]);
+        str.append(')');
+
+        return new String(str);
+    }
 
 
 }

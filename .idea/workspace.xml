@@ -7,7 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method myPow.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method mySqrt.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
     </list>
@@ -796,13 +796,7 @@
       <workItem from="1642746692237" duration="15381000" />
       <workItem from="1645682827375" duration="4453000" />
       <workItem from="1645770984732" duration="4328000" />
-    </task>
-    <task id="LOCAL-00089" summary="add method threeSum.">
-      <created>1626249380960</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1626249380960</updated>
+      <workItem from="1645945268319" duration="1866000" />
     </task>
     <task id="LOCAL-00090" summary="add method maximumElementAfterDecrementingAndRearranging.">
       <created>1626349964702</created>
@@ -1140,7 +1134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645778553456</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="add method mySqrt.">
+      <created>1645945445935</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1645945445936</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1256,7 +1257,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method compress." />
     <MESSAGE value="add method reverseStr." />
     <MESSAGE value="add method allPathsSourceTarget." />
     <MESSAGE value="add method sumOddLengthSubarrays." />
@@ -1281,7 +1281,8 @@
     <MESSAGE value="add method findBall." />
     <MESSAGE value="add method complexNumberMultiply." />
     <MESSAGE value="add method myPow." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method myPow." />
+    <MESSAGE value="add method mySqrt." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method mySqrt." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
