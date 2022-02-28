@@ -840,8 +840,38 @@ public class Solution {
     }
 
 
+    public int maximumRequests(int n, int[][] requests) {
+        int[] stuffs = new int[n];
+        return backtrackRequests(requests, 0, stuffs, 0);
+    }
+
+    private int backtrackRequests(int[][] requests, int i, int[] stuffs, int count) {
+        if(i == requests.length) {
+            boolean flag = true;
+            for (int j = 0; j < stuffs.length; j++) {
+                if(stuffs[j] != 0) {
+                    flag = false;
+                    break;
+                }
+            }
 
 
+            return flag ? count : 0;
+
+        }
+
+        int from = requests[i][0];
+        int to = requests[i][1];
+        stuffs[from]--;
+        stuffs[to]++;
+        int max = 0;
+        max = backtrackRequests(requests, i + 1, stuffs, count + 1);
+        stuffs[from]++;
+        stuffs[to]--;
+        max = Math.max(max, backtrackRequests(requests, i + 1, stuffs, count));
+
+        return max;
+    }
 
 
 }
