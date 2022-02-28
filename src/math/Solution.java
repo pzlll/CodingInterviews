@@ -158,35 +158,7 @@ public class Solution {
         }
     }
 
-    public int divide(int dividend, int divisor) {
-        if (divisor == 0) {
-            return 0;
-        }
-        if (divisor == 1) {
-            return dividend;
-        }
-        if (divisor == -1) {
-            if (dividend > Integer.MIN_VALUE) {
-                return -dividend;
-            } else {
-                return Integer.MAX_VALUE;
-            }
-        }
-        long a = Math.abs(dividend);
-        long b = Math.abs(divisor);
 
-        int num = 0;
-        while (a >= b) {
-            a = a - b;
-            num++;
-        }
-
-        if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0)) {
-            num = -num;
-        }
-
-        return num;
-    }
 
     /**
      * 解题思路：判断数是否只包含质数（2，3，5），则把数中的质数（2，3，5）剔除，看剩下的数是否为1
@@ -604,7 +576,87 @@ public class Solution {
         return new String(str);
     }
 
+    public int divide(int dividend, int divisor) {
+        if(dividend == Integer.MIN_VALUE) {
+            if(divisor == 1) {
+                return Integer.MIN_VALUE;
+            }
+            if(divisor == -1) {
+                return Integer.MAX_VALUE;
+            }
+        }
 
+        if(divisor == Integer.MIN_VALUE) {
+            if(dividend == 1) {
+                return Integer.MIN_VALUE;
+            }else {
+                return 0;
+            }
+        }
+
+        if(divisor == 0) {
+            return 0;
+        }
+
+        boolean flag = false;
+        if(dividend > 0) {
+            dividend = -dividend;
+            flag = !flag;
+        }
+
+        if(divisor > 0) {
+            divisor = -divisor;
+            flag = !flag;
+        }
+
+        int left = 1;
+        int right = Integer.MAX_VALUE;
+
+        int ans = 0;
+
+        while (left <= right) {
+            int mid = left + (right - left) >> 1;
+
+            boolean check = quickAdd(divisor, mid, dividend);
+
+            if(check) {
+                ans = mid;
+                if(mid == Integer.MAX_VALUE) {
+                    break;
+                }
+                left = mid + 1;
+            }else {
+                right = mid - 1;
+            }
+
+        }
+
+        return flag ? -ans : ans;
+
+    }
+
+    private boolean quickAdd(int divisor, int z, int dividend) {
+        int res = 0;
+        int add = divisor;
+        while (z > 0) {
+            if((z & 1) != 0) {
+                if(res < dividend - add) {
+                    return false;
+                }
+                res += add;
+            }
+
+            if(z != 1) {
+                if(add < dividend - add) {
+                    return false;
+                }
+                add += add;
+            }
+            z >>= 1;
+        }
+
+        return true;
+    }
 
 
 }
