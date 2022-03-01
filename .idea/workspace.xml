@@ -7,9 +7,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method maximumRequests.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method divide.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -796,14 +797,7 @@
       <workItem from="1642746692237" duration="15381000" />
       <workItem from="1645682827375" duration="4453000" />
       <workItem from="1645770984732" duration="4328000" />
-      <workItem from="1645945268319" duration="8099000" />
-    </task>
-    <task id="LOCAL-00092" summary="add method maxSubArray.">
-      <created>1626506027748</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1626506027749</updated>
+      <workItem from="1645945268319" duration="13550000" />
     </task>
     <task id="LOCAL-00093" summary="add method groupAnagrams.">
       <created>1626575118786</created>
@@ -1141,7 +1135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646031848011</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="add method divide.">
+      <created>1646035551828</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1646035551828</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1257,7 +1258,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method sumOddLengthSubarrays." />
     <MESSAGE value="add method corpFlightBookings." />
     <MESSAGE value="add method findCheapestPrice." />
     <MESSAGE value="add method smallestK." />
@@ -1282,7 +1282,8 @@
     <MESSAGE value="add method mySqrt." />
     <MESSAGE value="add method optimalDivision." />
     <MESSAGE value="add method maximumRequests." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method maximumRequests." />
+    <MESSAGE value="add method divide." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method divide." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

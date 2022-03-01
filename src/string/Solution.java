@@ -462,4 +462,37 @@ public class Solution {
 
         return len;
     }
+
+    public String convert(String s, int numRows) {
+        StringBuffer[] strs = new StringBuffer[numRows];
+
+        for (int i = 0; i < numRows; i++) {
+            strs[i] = new StringBuffer();
+        }
+
+        int i = 0;
+        int n = numRows;
+        int m = s.length();
+        while(i < m) {
+            int j = 0;
+            while (i < m && j < n) {
+                strs[j].append(s.charAt(i));
+                j++;
+                i++;
+            }
+            j -= 2;
+            while (i < m && j > 0) {
+                strs[j].append(s.charAt(i));
+                j--;
+                i++;
+            }
+        }
+
+        StringBuffer res = new StringBuffer();
+        for (int j = 0; j < n; j++) {
+            res.append(strs[j]);
+        }
+
+        return new String(res);
+    }
 }

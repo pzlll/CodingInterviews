@@ -658,5 +658,63 @@ public class Solution {
         return true;
     }
 
+    public String fractionToDecimal(int numerator, int denominator) {
+        long numeratorL = numerator;
+        long denominatorL = denominator;
+
+        StringBuffer str = new StringBuffer();
+        boolean flag = (numerator > 0) ^ (denominator > 0);
+        if(flag) {
+            str.append('-');
+        }
+
+        str.append(numeratorL / denominatorL);
+        if(numeratorL % denominatorL == 0) {
+            return new String(str);
+        }
+
+        str.append('.');
+
+        HashMap<Long, Integer> map = new HashMap<>();
+
+        long remainder = numeratorL % denominatorL;
+
+        remainder *= 10;
+
+        StringBuffer str2 = new StringBuffer();
+
+        int index = 0;
+        while (remainder != 0) {
+            long temp = remainder;
+            if(remainder % denominatorL == 0) {
+                str2.append(remainder / denominatorL);
+                str.append(str2);
+                return new String(str);
+            }
+            if(remainder / denominatorL != 0) {
+                str2.append(remainder / denominatorL);
+                remainder = remainder % denominatorL;
+            }
+
+            if(map.containsKey(remainder)) {
+                int i = map.get(remainder);
+                str.append(str2.substring(0, i));
+                str.append('(');
+                str.append(str2.subSequence(i, str2.length()));
+                str.append(')');
+                return new String(str);
+
+            }
+            remainder *= 10;
+
+            map.put(temp, index);
+            index++;
+
+
+        }
+
+        return new String(str);
+    }
+
 
 }
