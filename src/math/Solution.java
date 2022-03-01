@@ -659,14 +659,21 @@ public class Solution {
     }
 
     public String fractionToDecimal(int numerator, int denominator) {
-        long numeratorL = numerator;
-        long denominatorL = denominator;
+        if(numerator == 0) {
+            return "0";
+        }
+
 
         StringBuffer str = new StringBuffer();
         boolean flag = (numerator > 0) ^ (denominator > 0);
         if(flag) {
             str.append('-');
         }
+
+        long numeratorL = numerator;
+        numeratorL = numeratorL < 0 ? -numeratorL : numeratorL;
+        long denominatorL = denominator;
+        denominatorL = denominatorL < 0 ? -denominatorL : denominatorL;
 
         str.append(numeratorL / denominatorL);
         if(numeratorL % denominatorL == 0) {
@@ -684,30 +691,30 @@ public class Solution {
         StringBuffer str2 = new StringBuffer();
 
         int index = 0;
+
         while (remainder != 0) {
+            map.put(remainder, index);
             long temp = remainder;
             if(remainder % denominatorL == 0) {
                 str2.append(remainder / denominatorL);
                 str.append(str2);
                 return new String(str);
             }
-            if(remainder / denominatorL != 0) {
-                str2.append(remainder / denominatorL);
-                remainder = remainder % denominatorL;
-            }
-
+            str2.append(remainder / denominatorL);
+            remainder = remainder % denominatorL;
+            remainder *= 10;
             if(map.containsKey(remainder)) {
                 int i = map.get(remainder);
+                System.out.print(i);
                 str.append(str2.substring(0, i));
                 str.append('(');
-                str.append(str2.subSequence(i, str2.length()));
+                str.append(str2.substring(i, index + 1));
                 str.append(')');
                 return new String(str);
 
             }
-            remainder *= 10;
 
-            map.put(temp, index);
+
             index++;
 
 
