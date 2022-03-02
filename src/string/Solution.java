@@ -495,4 +495,43 @@ public class Solution {
 
         return new String(res);
     }
+
+    public String nearestPalindromic(String n) {
+        int m = n.length();
+
+        List<Long> candidates = getCandidates(n);
+
+        long selfNumber = Long.parseLong(n);
+
+        long ans = -1;
+        for (Long candidate :
+                candidates) {
+            if(ans == -1 || Math.abs(candidate - selfNumber) < Math.abs(ans - selfNumber)
+                    || (Math.abs(candidate - selfNumber) == Math.abs(ans - selfNumber) && candidate < ans)) {
+                ans = candidate;
+            }
+
+        }
+
+        return Long.toString(ans);
+    }
+
+    private List<Long> getCandidates(String n) {
+        int len = n.length();
+        List<Long> res = new ArrayList<>();
+        res.add((long)(Math.pow(10, len - 1) - 1));
+        res.add((long)(Math.pow(10, len)) + 1);
+
+        Long selfPrefix = Long.parseLong(n.substring(0, (len + 1)/2));
+
+        for (long i = selfPrefix - 1; i <= selfPrefix + 1; i++) {
+            StringBuffer sb = new StringBuffer();
+            String prefix = String.valueOf(i);
+            sb.append(prefix);
+            StringBuffer suffix = new StringBuffer(prefix).reverse();
+            sb.append(suffix.substring(len & 1));
+            res.add(Long.parseLong(new String(sb)));
+        }
+        return res;
+    }
 }

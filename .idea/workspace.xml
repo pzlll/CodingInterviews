@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method convert.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method fractionToDecimal.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -796,14 +796,8 @@
       <workItem from="1642746692237" duration="15381000" />
       <workItem from="1645682827375" duration="4453000" />
       <workItem from="1645770984732" duration="4328000" />
-      <workItem from="1645945268319" duration="18531000" />
-    </task>
-    <task id="LOCAL-00094" summary="add method maxFrequency.">
-      <created>1626681607905</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1626681607907</updated>
+      <workItem from="1645945268319" duration="18545000" />
+      <workItem from="1646188003495" duration="3739000" />
     </task>
     <task id="LOCAL-00095" summary="add method copyRandomList.">
       <created>1626961452001</created>
@@ -1141,7 +1135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646119625770</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="add method fractionToDecimal.">
+      <created>1646137790870</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1646137790870</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1257,7 +1258,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method findCheapestPrice." />
     <MESSAGE value="add method smallestK." />
     <MESSAGE value="add method unhappyFriends." />
     <MESSAGE value="add method rand10." />
@@ -1282,7 +1282,8 @@
     <MESSAGE value="add method maximumRequests." />
     <MESSAGE value="add method divide." />
     <MESSAGE value="add method convert." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method convert." />
+    <MESSAGE value="add method fractionToDecimal." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method fractionToDecimal." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
