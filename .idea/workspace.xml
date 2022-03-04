@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method nearestPalindromic.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method addDigits.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -799,13 +799,7 @@
       <workItem from="1645945268319" duration="18545000" />
       <workItem from="1646188003495" duration="3757000" />
       <workItem from="1646276193937" duration="2247000" />
-    </task>
-    <task id="LOCAL-00096" summary="add method letterCombinations.">
-      <created>1627027722587</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1627027722588</updated>
+      <workItem from="1646365100680" duration="5327000" />
     </task>
     <task id="LOCAL-00097" summary="add method minOperations.">
       <created>1627287029467</created>
@@ -1143,7 +1137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646208031994</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="add method addDigits.">
+      <created>1646365162552</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1646365162553</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1259,7 +1260,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method unhappyFriends." />
     <MESSAGE value="add method rand10." />
     <MESSAGE value="add method balancedStringSplit." />
     <MESSAGE value="add method findMaximizedCapital." />
@@ -1284,7 +1284,8 @@
     <MESSAGE value="add method convert." />
     <MESSAGE value="add method fractionToDecimal." />
     <MESSAGE value="add method nearestPalindromic." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method nearestPalindromic." />
+    <MESSAGE value="add method addDigits." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method addDigits." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

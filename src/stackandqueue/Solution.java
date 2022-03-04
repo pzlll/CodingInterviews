@@ -408,4 +408,68 @@ public class Solution {
     public boolean checkValidString(String s) {
         return false;
     }
+
+    public long subArrayRanges(int[] nums) {
+        int n = nums.length;
+
+        Stack<Integer> minStack = new Stack<>();
+        Stack<Integer> maxStack = new Stack<>();
+
+        int[] minLeft = new int[n];
+        int[] minRight = new int[n];
+        int[] maxLeft = new int[n];
+        int[] maxRight = new int[n];
+
+
+        for (int i = 0; i < n; i++) {
+            while (!minStack.isEmpty() && isLess(nums, i, minStack.peek())) {
+                minStack.pop();
+            }
+
+            minLeft[i] = minStack.isEmpty() ? -1 : minStack.peek();
+            minStack.push(i);
+
+        }
+        minStack.clear();
+        for (int i = n - 1; i >= 0; i--) {
+            while (!minStack.isEmpty() && isLess(nums, i, minStack.peek())) {
+                minStack.pop();
+            }
+
+            minRight[i] = minStack.isEmpty() ? n : minStack.peek();
+            minStack.push(i);
+
+        }
+
+        for (int i = 0; i < n; i++) {
+            while (!maxStack.isEmpty() && isLess(nums, maxStack.peek(), i)) {
+                maxStack.pop();
+            }
+            maxLeft[i] = maxStack.isEmpty() ? -1 : maxStack.peek();
+            maxStack.push(i);
+        }
+
+        maxStack.clear();
+
+        for (int i = n - 1; i >= 0; i--) {
+            while (!maxStack.isEmpty() && isLess(nums, maxStack.peek(), i)) {
+                maxStack.pop();
+            }
+            maxRight[i] = maxStack.isEmpty() ? n : maxStack.peek();
+            maxStack.push(i);
+        }
+
+        long sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum = sum - (long)(i - minLeft[i]) * (minRight[i] - i) * nums[i];
+
+            sum = sum + (long)(i - maxLeft[i]) * (maxRight[i] - i) * nums[i];
+        }
+
+        return sum;
+    }
+
+    private boolean isLess(int[] nums, Integer i, int j) {
+        return nums[i] < nums[j] ? true : (nums[i] == nums[j] ? i < j : false);
+    }
 }
