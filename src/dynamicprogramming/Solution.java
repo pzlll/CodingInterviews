@@ -1491,4 +1491,53 @@ public class Solution {
 
     }
 
+    public int[] platesBetweenCandles(String s, int[][] queries) {
+        int n = s.length();
+
+        int[] sum = new int[n + 1];
+
+        int[] left = new int[n];
+        int[] right = new int[n];
+
+        for (int i = 1; i <= n; i++) {
+            sum[i] = sum[i-1] + (s.charAt(i-1) == '*' ? 1 : 0);
+        }
+
+        
+        int l = -1;
+        for (int i = 0; i < n; i++) {
+            if(s.charAt(i) == '|') {
+                l = i;
+                left[i] = i;
+            }else {
+                left[i] = l;
+            }
+        }
+
+        int r = n;
+        for (int i = n-1; i >= 0; i--) {
+            if(s.charAt(i) == '|') {
+                r = i;
+                right[i] = i;
+            }else {
+                right[i] = r;
+            }
+        }
+
+        int[] res = new int[queries.length];
+
+        for (int i = 0; i < queries.length; i++) {
+            l = queries[i][0];
+            r = queries[i][1];
+
+            if(left[r] < l || right[l] > r) {
+                res[i] = 0;
+            }else {
+                res[i] = sum[left[r]] - sum[right[l]];
+            }
+        }
+
+        return res;
+    }
+
 }
