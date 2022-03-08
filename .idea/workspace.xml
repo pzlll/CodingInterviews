@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method findLUSlength.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method platesBetweenCandles.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitmanipulation/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -801,14 +801,7 @@
       <workItem from="1646276193937" duration="2247000" />
       <workItem from="1646365100680" duration="5338000" />
       <workItem from="1646448465936" duration="3457000" />
-      <workItem from="1646725079329" duration="1511000" />
-    </task>
-    <task id="LOCAL-00099" summary="add method pathInZigZagTree.">
-      <created>1627781350780</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1627781350782</updated>
+      <workItem from="1646725079329" duration="3324000" />
     </task>
     <task id="LOCAL-00100" summary="add method kWeakestRows.">
       <created>1627782922013</created>
@@ -1146,7 +1139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646450641409</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="add method platesBetweenCandles.">
+      <created>1646726620563</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1646726620564</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1262,7 +1262,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method findMaximizedCapital." />
     <MESSAGE value="add method findLongestWord2." />
     <MESSAGE value="add method isValidSudoku." />
     <MESSAGE value="add method pickIndex." />
@@ -1287,7 +1286,8 @@
     <MESSAGE value="add method addDigits." />
     <MESSAGE value="add method subArrayRanges." />
     <MESSAGE value="add method findLUSlength." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method findLUSlength." />
+    <MESSAGE value="add method platesBetweenCandles." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method platesBetweenCandles." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
