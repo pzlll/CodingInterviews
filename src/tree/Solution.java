@@ -743,5 +743,55 @@ public class Solution {
         return  left + right + root.val;
     }
 
+    public int countHighestScoreNodes(int[] parents) {
+        int n = parents.length;
+        int[][] children = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(children[i], -1);
+        }
+
+        for (int i = 1; i < n; i++) {
+            int parent = parents[i];
+            int index = children[parent][0] == -1 ? 0 : 1;
+            children[parent][index] = i;
+        }
+
+        int[] count = new int[n];
+
+        count[0] = DFSHighestScoreNodes(children, 0, count);
+
+        long max = 0;
+        int res = 0;
+
+
+
+        for (int i = 0; i < n; i++) {
+            long left = children[i][0] == -1 ? 1 : count[children[i][0]];
+            long right = children[i][1] == -1 ? 1 : count[children[i][1]];
+            long top = i == 0 ? 1 : (n - count[i]);
+            if(left * right * top > max) {
+                max = left * right * top;
+                res = 1;
+            }else if(left * right * top == max){
+                res++;
+            }
+
+        }
+
+        return res;
+    }
+
+    private int DFSHighestScoreNodes(int[][] children, int i, int[] count) {
+        if(i == -1) {
+            return 0;
+        }
+
+        int left = DFSHighestScoreNodes(children, children[i][0], count);
+        int right = DFSHighestScoreNodes(children, children[i][1], count);
+
+        count[i] = left + right + 1;
+
+        return count[i];
+    }
 
 }
