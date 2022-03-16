@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method getSum.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -803,6 +803,8 @@
       <workItem from="1646448465936" duration="3457000" />
       <workItem from="1646725079329" duration="3334000" />
       <workItem from="1646963042501" duration="3615000" />
+      <workItem from="1647329938991" duration="945000" />
+      <workItem from="1647413600230" duration="597000" />
     </task>
     <task id="LOCAL-00101" summary="add method titleToNumber.">
       <created>1627783917303</created>

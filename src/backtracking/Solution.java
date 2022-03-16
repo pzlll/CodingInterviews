@@ -873,5 +873,33 @@ public class Solution {
         return max;
     }
 
+    public int countMaxOrSubsets(int[] nums) {
+        int sum = 0;
+
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+            sum |= nums[i];
+        }
+
+        int count = 0;
+        for (int i = 0; i < 1 << n; i++) {
+            int mask = 1;
+            int val = 0;
+            for (int j = 0; j < n; j++) {
+                if((mask & i) != 0) {
+                    val |= nums[j];
+                }
+                mask <<= 1;
+            }
+
+            if(val ==sum) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 
 }
