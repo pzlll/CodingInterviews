@@ -794,4 +794,59 @@ public class Solution {
         return count[i];
     }
 
+    public List<Integer> busiestServers(int k, int[] arrival, int[] load) {
+        Queue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0] == 0 ? o1[1] - o2[1] : o1[0] - o2[0];
+            }
+        });
+
+        TreeSet<Integer> treeSet = new TreeSet<>();
+
+        for (int i = 0; i < k; i++) {
+            treeSet.add(i);
+        }
+
+        int[] requests = new int[k];
+
+        for (int i = 0; i < load.length; i++) {
+            int time = arrival[i];
+            int l = load[i];
+
+            while (!queue.isEmpty()) {
+                if(queue.peek()[0] > time) {
+                    break;
+                }
+                int[] poll = queue.poll();
+                treeSet.add(poll[1]);
+            }
+
+            if(!treeSet.isEmpty()) {
+                Integer p = treeSet.ceiling(i % k);
+                if(p == null) {
+                    p = treeSet.first();
+                }
+                requests[p]++;
+                treeSet.remove(p);
+                queue.add(new int[]{i + time, p});
+            }
+        }
+
+        int max = 0;
+        for (int i = 0; i < k; i++) {
+            max = Math.max(max, requests[i]);
+        }
+
+        List<Integer> res = new ArrayList<>();
+
+        for (int i = 0; i < k; i++) {
+            if(requests[i] == max) {
+                res.add(i);
+            }
+        }
+
+        return res;
+    }
+
 }
