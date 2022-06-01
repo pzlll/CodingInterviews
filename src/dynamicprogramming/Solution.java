@@ -1540,4 +1540,44 @@ public class Solution {
         return res;
     }
 
+
+    public boolean makesquare(int[] matchsticks) {
+        int n = matchsticks.length;
+
+        int average = 0;
+        for (int i = 0; i < n; i++) {
+            average += matchsticks[i];
+        }
+
+        if(average % 4 != 0) {
+            return false;
+        }
+
+        average /= 4;
+
+        int[] dp = new int[1 << n];
+
+        Arrays.fill(dp, -1);
+        dp[0] = 0;
+
+        for (int i = 1; i < (1<<n); i++) {
+            for (int j = 0; j < n; j++) {
+                if((i & (1<<j)) == 0) {
+                    continue;
+                }
+
+                int i1 = i & ~(1<<j);
+
+                if(dp[i1] >= 0 && dp[i1] + matchsticks[j] <= average) {
+                    dp[i] = (dp[i1] + matchsticks[j]) % average;
+                    break;
+                }
+            }
+        }
+
+        return dp[(1 << n) - 1] == 0;
+
+    }
+
+
 }

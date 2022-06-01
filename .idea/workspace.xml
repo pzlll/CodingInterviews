@@ -7,11 +7,26 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method countMaxOrSubsets.">
-      <change afterPath="$PROJECT_DIR$/src/hash/AllOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hash/Bank.java" afterDir="false" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method busiestServers.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingInterviews.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingInterviews.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/bitmanipulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/bitmanipulation/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/searchandsort/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/searchandsort/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Codec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Codec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +366,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../downloads/commons-lang3-3.12.0.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../downloads/hamcrest-core-1.3.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -381,7 +396,7 @@
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SolutionForSkyLine">
+  <component name="RunManager" selected="JUnit.SolutionTest.makesquare">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Solution" />
       <module name="CodingInterviews" />
@@ -408,17 +423,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.allPathsSourceTarget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.makesquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backtracking.*" />
+          <option name="PATTERN" value="dynamicprogramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.SolutionTest" />
-      <option name="METHOD_NAME" value="allPathsSourceTarget" />
+      <option name="PACKAGE_NAME" value="dynamicprogramming" />
+      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
+      <option name="METHOD_NAME" value="makesquare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -520,11 +535,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.makesquare" />
         <item itemvalue="Application.SolutionForSkyLine" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionTest.smallestK" />
         <item itemvalue="JUnit.SolutionTest.sumOddLengthSubarrays" />
-        <item itemvalue="JUnit.SolutionTest.allPathsSourceTarget" />
       </list>
     </recent_temporary>
   </component>
@@ -807,14 +822,15 @@
       <workItem from="1646963042501" duration="3615000" />
       <workItem from="1647329938991" duration="945000" />
       <workItem from="1647413600230" duration="9959000" />
-      <workItem from="1648606330629" duration="3425000" />
-    </task>
-    <task id="LOCAL-00102" summary="add game 252.">
-      <created>1627799281891</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1627799281892</updated>
+      <workItem from="1648606330629" duration="3438000" />
+      <workItem from="1649314283460" duration="1185000" />
+      <workItem from="1649587202061" duration="182000" />
+      <workItem from="1649657479102" duration="591000" />
+      <workItem from="1649747938806" duration="5000" />
+      <workItem from="1650860681172" duration="6000" />
+      <workItem from="1652249501609" duration="12000" />
+      <workItem from="1652931415571" duration="71000" />
+      <workItem from="1654069087303" duration="2526000" />
     </task>
     <task id="LOCAL-00103" summary="add method verticalTraversal.">
       <created>1627889182196</created>
@@ -1152,7 +1168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647415752192</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="add method busiestServers.">
+      <created>1648630577435</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1648630577435</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1268,7 +1291,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method pickIndex." />
     <MESSAGE value="add method lengthOfLastWord." />
     <MESSAGE value="add method loopForTilt." />
     <MESSAGE value="add method buddyStrings." />
@@ -1293,7 +1315,8 @@
     <MESSAGE value="add method platesBetweenCandles." />
     <MESSAGE value="add method getSum." />
     <MESSAGE value="add method countMaxOrSubsets." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method countMaxOrSubsets." />
+    <MESSAGE value="add method busiestServers." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method busiestServers." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1352,6 +1375,11 @@
           <url>file://$PROJECT_DIR$/src/tree/SolutionTest.java</url>
           <line>78</line>
           <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dynamicprogramming/Solution.java</url>
+          <line>1583</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

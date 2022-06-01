@@ -46,4 +46,9 @@ public class SolutionTest {
     public void sumOddLengthSubarrays() {
         new Solution().sumOddLengthSubarrays(new int[]{1,4,2,5,3});
     }
+
+    @Test
+    public void makesquare() {
+        new Solution().makesquare(new int[]{1,1,2,2,2});
+    }
 }
