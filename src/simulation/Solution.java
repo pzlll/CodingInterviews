@@ -1,6 +1,8 @@
 package simulation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Solution {
@@ -121,5 +123,124 @@ public class Solution {
 
         return flag ? -sum : sum;
 
+    }
+
+    public int[] findDiagonalOrder(int[][] mat) {
+        int m = mat.length;
+        int n = mat[0].length;
+
+        int i = 0;
+        int j = 0;
+        int[] direct = {-1, 1};
+
+        int[] ret = new int[n * m];
+
+        int k = 0;
+        while (k < n * m) {
+            ret[k] = mat[i][j];
+
+            boolean flag = true;
+
+            if(i + direct[0] < 0) {
+                if(j + direct[1] >= n) {
+                    i += 1;
+                }else {
+                    j += 1;
+                }
+            }else if(i + direct[0] >= m) {
+                j += 1;
+            }else if(j + direct[1] < 0) {
+                if(i + direct[0] >= m) {
+                    j += 1;
+                }else {
+                    i += 1;
+                }
+            }else if(j + direct[1] >= n) {
+                i += 1;
+            }else {
+                flag = false;
+                i += direct[0];
+                j += direct[1];
+            }
+            if(flag) {
+                direct[0] = -direct[0];
+                direct[1] = -direct[1];
+            }
+
+
+
+
+        k++;
+
+
+        }
+
+        return ret;
+    }
+
+    public List<List<Integer>> shiftGrid(int[][] grid, int k) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        List<List<Integer>> res = new ArrayList<>();
+
+
+        for (int i = 0; i < m; i++) {
+            List<Integer> list = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+                list.add(0);
+            }
+            res.add(list);
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                int index = (i * n + j + k) % (n * m);
+                res.get(index / n).set(index % n, grid[i][j]);
+            }
+        }
+
+        return res;
+    }
+
+    public void gameOfLife(int[][] board) {
+        int[] arr = {-1 , 0, 1};
+
+        int m = board.length;
+        int n = board[0].length;
+        int[][] res = new int[m][n];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                int count = 0;
+                for (int k = 0; k < 3; k++) {
+                    for (int l = 0; l < 3; l++) {
+
+                        int neighborI = i + arr[k];
+                        int neighborJ = j + arr[l];
+                        if(neighborI == i && neighborJ == j) {
+                            continue;
+                        }
+                        if(neighborI >= 0 && neighborI < m && neighborJ >= 0 && neighborJ < n) {
+                            count += board[neighborI][neighborJ];
+                        }
+                    }
+                }
+
+                if(count == 3) {
+                    res[i][j] = 1;
+                }else if(count == 2 && board[i][j] == 1) {
+                    res[i][j] = 1;
+                }else {
+                    res[i][j] = 0;
+                }
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = res[i][j];
+            }
+        }
     }
 }

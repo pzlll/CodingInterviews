@@ -651,4 +651,66 @@ public class Solution {
 
         return max >= (n - 1);
     }
+
+    public int minEatingSpeed(int[] piles, int h) {
+        int start = 1;
+        int end = 0;
+        for (int i = 0; i < piles.length; i++) {
+            end = Math.max(end, piles[i]);
+        }
+        int ans = 0;
+
+        while (start <= end) {
+            int mid = (end - start) / 2 + start;
+            if(isGoodSpeed(piles, h , mid)) {
+                ans = mid;
+                end = mid - 1;
+            }else {
+                start = mid + 1;
+            }
+        }
+
+        return ans;
+    }
+
+    private boolean isGoodSpeed(int[] piles, int h, int i) {
+
+        int k = 0;
+        for (int j = 0; j < piles.length; j++) {
+            k += (piles[j]/i);
+            if(piles[j] % i != 0) {
+                k++;
+            }
+        }
+
+        return k <= h;
+    }
+
+    public int findPairs(int[] nums, int k) {
+        Arrays.sort(nums);
+
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if(set.contains(nums[i])) {
+                continue;
+            }
+            int start = i + 1;
+            int end = nums.length - 1;
+            while (start < end) {
+                int mid = (end + start) / 2;
+                if(Math.abs(nums[mid] - nums[i]) == k) {
+                    set.add(nums[i]);
+                    break;
+                }else if(Math.abs(nums[mid] - nums[i]) > k) {
+                    end = mid - 1;
+                }else {
+                    start = mid + 1;
+                }
+            }
+
+        }
+
+        return set.size();
+    }
 }

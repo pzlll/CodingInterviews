@@ -849,4 +849,87 @@ public class Solution {
         return res;
     }
 
+    public TreeNode deleteNode(TreeNode root, int key) {
+        TreeNode pre = new TreeNode();
+        pre.left = root;
+        TreeNode result = pre;
+        TreeNode p = root;
+
+        while (p != null) {
+            if(p.val == key) {
+                break;
+            }else if(p.val > key) {
+                pre = p;
+                p = p.left;
+            }else {
+                pre = p;
+                p = p.right;
+            }
+        }
+
+        if(p == null){
+            return root;
+        }
+
+        if(p.left == null && p.right == null) {
+            if(p == root) {
+                return null;
+            }else {
+                if(pre.left == p) {
+                    pre.left = null;
+                }else {
+                    pre.right = null;
+                }
+                return root;
+            }
+        }else if(p.right != null) {
+            TreeNode pre1 = p;
+            TreeNode p1 = p.right;
+            while (p1.left != null) {
+                pre1 = p1;
+                p1 = p1.left;
+            }
+
+            if(pre1 == p) {
+                pre1.right = p1.right;
+            }else {
+                pre1.left = p1.right;
+            }
+
+            p1.left = p.left;
+            p1.right = p.right;
+            if(pre.left == p) {
+                pre.left = p1;
+            }else {
+                pre.right = p1;
+            }
+
+            return result.left;
+
+
+        }else {
+            TreeNode pre1 = p;
+            TreeNode p1 = p.left;
+            while (p1.right != null) {
+                pre1 = p1;
+                p1 = p1.right;
+            }
+            if(pre1 == p) {
+                pre1.left = p1.left;
+            }else {
+                pre1.right = p1.left;
+            }
+
+            p1.left = p.left;
+            p1.right = p.right;
+            if(pre.left == p) {
+                pre.left = p1;
+            }else {
+                pre.right = p1;
+            }
+
+            return result.left;
+        }
+    }
+
 }

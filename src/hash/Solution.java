@@ -363,6 +363,91 @@ public class Solution {
 
     }
 
+    public List<String> findAndReplacePattern(String[] words, String pattern) {
+        Map<Character, List<Integer>> freq = new HashMap<>();
+        for (int i = 0; i < pattern.length(); i++) {
+            List<Integer> orDefault = freq.getOrDefault(pattern.charAt(i), new ArrayList<>());
+            orDefault.add(i);
+            freq.put(pattern.charAt(i), orDefault);
+        }
+
+        List<String> ret = new ArrayList<>();
+
+
+
+
+        for (int i = 0; i < words.length; i++) {
+            boolean flag = true;
+            String word = words[i];
+
+            Set<Character> seen = new HashSet<>();
+
+            for (Map.Entry<Character, List<Integer>> entry :
+                    freq.entrySet()) {
+                List<Integer> value = entry.getValue();
+                int index = value.get(0);
+                if(seen.contains(word.charAt(index))) {
+                    flag = false;
+                    break;
+                }
+                seen.add(word.charAt(index));
+
+                for (int j = 1; j < value.size(); j++) {
+                    int index2 = value.get(j);
+                    if(word.charAt(index) != word.charAt(index2)) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if(!flag) {
+                    break;
+                }
+            }
+
+            if(flag) {
+                ret.add(word);
+            }
+
+
+        }
+
+        return ret;
+    }
+
+    public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
+        int n = nums1.length;
+        int[] nums5 = new int[n * n];
+        int[] nums6 = new int[n * n];
+
+        int k = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                nums5[k] = nums1[i] + nums2[j];
+                nums6[k] = nums3[i] + nums4[j];
+                k++;
+            }
+        }
+
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int i = 0; i < n * n; i++) {
+            freq.put(nums6[i], freq.getOrDefault(nums6[i], 0) + 1);
+        }
+
+        int count = 0;
+        for (int i = 0; i < n * n; i++) {
+            int value = -nums5[i];
+            if(freq.get(value) != null) {
+                count += freq.get(value);
+
+            }
+        }
+
+
+
+        return count;
+
+    }
+
 
 
 }

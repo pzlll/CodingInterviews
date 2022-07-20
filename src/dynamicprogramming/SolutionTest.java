@@ -51,4 +51,9 @@ public class SolutionTest {
     public void makesquare() {
         new Solution().makesquare(new int[]{1,1,2,2,2});
     }
+
+    @Test
+    public void countPalindromicSubsequences() {
+        new Solution().countPalindromicSubsequences("bccb");
+    }
 }

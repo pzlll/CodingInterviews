@@ -1579,5 +1579,74 @@ public class Solution {
 
     }
 
+    public int countPalindromicSubsequences(String s) {
+        int n = s.length();
+
+        int type = 0;
+        char[] chars = s.toCharArray();
+        int mod = 1000000007;
+        Map<Character, int[][]> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if(!map.containsKey(chars[i])) {
+                int[][] dp = new int[n][n];
+                for (int j = 0; j < n; j++) {
+                    if(chars[j] == chars[i]) {
+                        dp[j][j] = 1;
+                    }
+                }
+                map.put(chars[i], dp);
+            }
+        }
+
+        for (int l = 2; l <= n; l++) {
+            for (int i = 0; (i + l - 1) < n; i++) {
+                int j = i + l - 1;
+                for (Character c :
+                        map.keySet()) {
+                    int[][] ints = map.get(c);
+
+                    if(chars[i] == c && chars[j] == c) {
+                        int sum = 0;
+                        for (Map.Entry<Character, int[][]> entry :
+                                map.entrySet()) {
+                            int[][] value = entry.getValue();
+                            sum = sum + value[i + 1][j - 1];
+                            sum %= mod;
+                        }
+                        sum += 2;
+                        sum %= mod;
+                        ints[i][j] += sum;
+                    }else if(chars[i] == c && chars[j] != c) {
+                        ints[i][j] += ints[i][j-1];
+                    }else if(chars[i] != c && chars[j] == c) {
+                        ints[i][j] += ints[i + 1][j];
+                    }else {
+                        ints[i][j] += ints[i + 1][j - 1];
+                    }
+                    map.put(c, ints);
+                }
+
+
+            }
+
+        }
+
+
+
+        int ret = 0;
+
+        for (Character c :
+                map.keySet()) {
+            int[][] ints = map.get(c);
+            ret = ret + ints[0][n-1];
+            ret %= mod;
+        }
+
+        return ret;
+
+
+
+    }
+
 
 }
