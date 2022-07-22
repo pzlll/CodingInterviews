@@ -278,4 +278,44 @@ public class Solution {
 
         return count % 2 == 0;
     }
+
+    public int intersectionSizeTwo(int[][] intervals) {
+        int n = intervals.length;
+
+        List<Integer>[] temp = new List[n];
+
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[0] == o2[0]) {
+                    return o2[1] - o1[1];
+                }
+                return o1[0] - o2[0];
+            }
+        });
+
+        for (int i = 0; i < n; i++) {
+            temp[i] = new ArrayList<>();
+        }
+
+        int res = 0;
+
+        for (int i = n - 1; i >= 0; i--) {
+            for(int j = intervals[i][0], k = temp[i].size(); k < 2; k++,j++) {
+                res++;
+                help(intervals, temp, i - 1, j);
+            }
+        }
+
+        return res;
+    }
+
+    private void help(int[][] intervals, List<Integer>[] temp,  int pos, int num) {
+        for (int i = pos; i >= 0; i--) {
+            if(intervals[i][1] < num) {
+                break;
+            }
+            temp[i].add(num);
+        }
+    }
 }

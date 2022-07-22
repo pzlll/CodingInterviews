@@ -222,24 +222,29 @@ public class Solution {
                             continue;
                         }
                         if(neighborI >= 0 && neighborI < m && neighborJ >= 0 && neighborJ < n) {
-                            count += board[neighborI][neighborJ];
+                            if(board[neighborI][neighborJ] == 1 || board[neighborI][neighborJ] == -1)
+                            count += 1;
                         }
                     }
                 }
 
                 if(count == 3) {
-                    res[i][j] = 1;
-                }else if(count == 2 && board[i][j] == 1) {
-                    res[i][j] = 1;
-                }else {
-                    res[i][j] = 0;
+                    if(board[i][j] == 0) {
+                        board[i][j] = 2;
+                    }
+                }else if(count != 2 && board[i][j] == 1) {
+                    board[i][j] = -1;
                 }
             }
         }
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                board[i][j] = res[i][j];
+                if(board[i][j] == -1) {
+                    board[i][j] = 0;
+                }else if(board[i][j] == 2) {
+                    board[i][j] = 1;
+                }
             }
         }
     }

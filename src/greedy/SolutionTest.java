@@ -26,4 +26,9 @@ public class SolutionTest {
                 new int[]{5,10,8,11,3,15,9,20,18,13},
                 new int[] {15,8,2,9,11,20,8,11,7,2});
     }
+
+    @Test
+    public void intersectionSizeTwo() {
+        new Solution().intersectionSizeTwo(new int[][]{{1,2},{2,3},{2,4},{4,5}});
+    }
 }

@@ -932,4 +932,24 @@ public class Solution {
         }
     }
 
+    public TreeNode pruneTree(TreeNode root) {
+        if(root == null) {
+            return null;
+        }
+        return dfsPruneTree(root);
+    }
+
+    private TreeNode dfsPruneTree(TreeNode root) {
+        if(root == null) {
+            return null;
+        }
+        root.left = dfsPruneTree(root.left);
+        root.right = dfsPruneTree(root.right);
+
+        if(root.left == null && root.right == null && root.val == 0) {
+            return null;
+        }
+        return root;
+    }
+
 }
