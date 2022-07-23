@@ -1635,6 +1635,61 @@ public class Solution {
         }
     }
 
+    public boolean sequenceReconstruction(int[] nums, int[][] sequences) {
+        int n = nums.length;
+
+        int[] degree = new int[n + 1];
+
+        Map<Integer, List<Integer>> map = new HashMap<>();
+
+        for (int i = 0; i < sequences.length; i++) {
+            for (int j = 1; j < sequences[i].length; j++) {
+                int index = sequences[i][j];
+                degree[index]++;
+                List<Integer> orDefault = map.getOrDefault(sequences[i][j - 1], new ArrayList<>());
+                orDefault.add(index);
+                map.put(sequences[i][j-1], orDefault);
+            }
+        }
+
+        Queue<Integer> queue = new LinkedList<>();
+
+
+        for (int i = 1; i <= n; i++) {
+            if(degree[i] == 0) {
+                queue.add(i);
+            }
+        }
+
+        int k = 0;
+        while (queue.size() != 0) {
+            if(queue.size() > 1) {
+                return false;
+            }
+            Integer poll = queue.poll();
+            if(poll != nums[k++]) {
+                return false;
+            }
+
+            for (Integer i :
+                    map.getOrDefault(poll, new ArrayList<>())) {
+                degree[i]--;
+                if(degree[i] == 0) {
+                    queue.add(i);
+                }
+            }
+
+
+
+        }
+
+        if(k != nums.length) {
+            return false;
+        }
+
+        return true;
+    }
+
 
 }
 

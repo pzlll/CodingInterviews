@@ -7,12 +7,16 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method gameOfLife.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method intersectionSizeTwo.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/SolutionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -833,14 +837,8 @@
       <workItem from="1658110739441" duration="3629000" />
       <workItem from="1658210357813" duration="2800000" />
       <workItem from="1658279167827" duration="3562000" />
-      <workItem from="1658370758986" duration="4726000" />
-    </task>
-    <task id="LOCAL-00105" summary="add method tribonacci.">
-      <created>1628385747545</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1628385747549</updated>
+      <workItem from="1658370758986" duration="4797000" />
+      <workItem from="1658546050563" duration="3859000" />
     </task>
     <task id="LOCAL-00106" summary="add method sortItems.">
       <created>1628389625354</created>
@@ -1178,7 +1176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658305157109</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="add method intersectionSizeTwo.">
+      <created>1658470481055</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1658470481056</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1294,7 +1299,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method buddyStrings." />
     <MESSAGE value="add method searchRange." />
     <MESSAGE value="add method merge." />
     <MESSAGE value="add method reverseOnlyLetters." />
@@ -1319,7 +1323,8 @@
     <MESSAGE value="add method busiestServers." />
     <MESSAGE value="add method makesquare." />
     <MESSAGE value="add method gameOfLife." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method gameOfLife." />
+    <MESSAGE value="add method intersectionSizeTwo." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method intersectionSizeTwo." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1378,11 +1383,6 @@
           <url>file://$PROJECT_DIR$/src/tree/SolutionTest.java</url>
           <line>78</line>
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/greedy/Solution.java</url>
-          <line>300</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
