@@ -7,16 +7,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method intersectionSizeTwo.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method sequenceReconstruction.">
+      <change afterPath="$PROJECT_DIR$/src/game/FoodRatings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/FoodRatingsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/doublepointer/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/SolutionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -376,26 +371,29 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="game" />
       <recent name="simulation" />
       <recent name="heap" />
       <recent name="dynamicprogramming" />
       <recent name="backtracking" />
-      <recent name="greedy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.intersectionSizeTwo">
-    <configuration name="SolutionForSkyLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.SolutionForSkyLine" />
+  <component name="RunManager" selected="JUnit.FoodRatingsTest.test">
+    <configuration name="FoodRatingsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.FoodRatingsTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -528,11 +526,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FoodRatingsTest.test" />
         <item itemvalue="JUnit.SolutionTest.intersectionSizeTwo" />
         <item itemvalue="JUnit.SolutionTest.findDiagonalOrder" />
         <item itemvalue="JUnit.SolutionTest.countPalindromicSubsequences" />
         <item itemvalue="JUnit.SolutionTest.makesquare" />
-        <item itemvalue="Application.SolutionForSkyLine" />
       </list>
     </recent_temporary>
   </component>
@@ -838,14 +836,8 @@
       <workItem from="1658210357813" duration="2800000" />
       <workItem from="1658279167827" duration="3562000" />
       <workItem from="1658370758986" duration="4797000" />
-      <workItem from="1658546050563" duration="3859000" />
-    </task>
-    <task id="LOCAL-00106" summary="add method sortItems.">
-      <created>1628389625354</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1628389625354</updated>
+      <workItem from="1658546050563" duration="3883000" />
+      <workItem from="1658629254184" duration="9714000" />
     </task>
     <task id="LOCAL-00107" summary="add game 253.">
       <created>1628404774056</created>
@@ -1183,7 +1175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658470481056</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="add method sequenceReconstruction.">
+      <created>1658560264472</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1658560264472</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1299,7 +1298,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method searchRange." />
     <MESSAGE value="add method merge." />
     <MESSAGE value="add method reverseOnlyLetters." />
     <MESSAGE value="add method codeC." />
@@ -1324,7 +1322,8 @@
     <MESSAGE value="add method makesquare." />
     <MESSAGE value="add method gameOfLife." />
     <MESSAGE value="add method intersectionSizeTwo." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method intersectionSizeTwo." />
+    <MESSAGE value="add method sequenceReconstruction." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method sequenceReconstruction." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1383,6 +1382,16 @@
           <url>file://$PROJECT_DIR$/src/tree/SolutionTest.java</url>
           <line>78</line>
           <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
