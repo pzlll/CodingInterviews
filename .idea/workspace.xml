@@ -7,11 +7,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method sequenceReconstruction.">
-      <change afterPath="$PROJECT_DIR$/src/game/FoodRatings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/FoodRatingsTest.java" afterDir="false" />
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="第 303 场周赛。">
+      <change afterPath="$PROJECT_DIR$/src/tree/CBTInserter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -837,14 +838,8 @@
       <workItem from="1658279167827" duration="3562000" />
       <workItem from="1658370758986" duration="4797000" />
       <workItem from="1658546050563" duration="3883000" />
-      <workItem from="1658629254184" duration="9714000" />
-    </task>
-    <task id="LOCAL-00107" summary="add game 253.">
-      <created>1628404774056</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1628404774056</updated>
+      <workItem from="1658629254184" duration="9886000" />
+      <workItem from="1658713950646" duration="3064000" />
     </task>
     <task id="LOCAL-00108" summary="add method checkRecord">
       <created>1629191665107</created>
@@ -1182,7 +1177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658560264472</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="第 303 场周赛。">
+      <created>1658643785540</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1658643785540</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1298,7 +1300,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method merge." />
     <MESSAGE value="add method reverseOnlyLetters." />
     <MESSAGE value="add method codeC." />
     <MESSAGE value="add java RandomizedSet." />
@@ -1323,7 +1324,8 @@
     <MESSAGE value="add method gameOfLife." />
     <MESSAGE value="add method intersectionSizeTwo." />
     <MESSAGE value="add method sequenceReconstruction." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method sequenceReconstruction." />
+    <MESSAGE value="第 303 场周赛。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第 303 场周赛。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1387,11 +1389,6 @@
           <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
           <line>54</line>
           <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
