@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add class CBTInserter.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method fractionAddition.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -837,14 +837,7 @@
       <workItem from="1658546050563" duration="3883000" />
       <workItem from="1658629254184" duration="9886000" />
       <workItem from="1658713950646" duration="3693000" />
-      <workItem from="1658889966342" duration="2942000" />
-    </task>
-    <task id="LOCAL-00109" summary="add method countArrangement.">
-      <created>1629206211400</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1629206211401</updated>
+      <workItem from="1658889966342" duration="4116000" />
     </task>
     <task id="LOCAL-00110" summary="add method checkRecord.">
       <created>1629273196368</created>
@@ -1182,7 +1175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658729926918</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="add method fractionAddition.">
+      <created>1658904070061</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1658904070063</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1298,7 +1298,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method codeC." />
     <MESSAGE value="add java RandomizedSet." />
     <MESSAGE value="add method findBall." />
     <MESSAGE value="add method complexNumberMultiply." />
@@ -1323,7 +1322,8 @@
     <MESSAGE value="add method sequenceReconstruction." />
     <MESSAGE value="第 303 场周赛。" />
     <MESSAGE value="add class CBTInserter." />
-    <option name="LAST_COMMIT_MESSAGE" value="add class CBTInserter." />
+    <MESSAGE value="add method fractionAddition." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method fractionAddition." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
