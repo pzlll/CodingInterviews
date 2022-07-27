@@ -247,5 +247,73 @@ public class Solution {
                 }
             }
         }
+
+    }
+
+    public String fractionAddition(String expression) {
+        int d = 0;
+        int l = 1;
+
+        int d1 = 0;
+        int l1 = 0;
+
+        int i = 0;
+        while (i < expression.length()) {
+            boolean flag = false;
+
+            if(expression.charAt(i) == '-') {
+                flag = true;
+                i++;
+            }else if(expression.charAt(i) == '+') {
+                i++;
+            }
+
+            while (Character.isDigit(expression.charAt(i))) {
+                d1 = d1 * 10 + (expression.charAt(i) - '0');
+                i++;
+            }
+            i++;
+            while (i < expression.length() && Character.isDigit(expression.charAt(i))) {
+                l1 = l1 * 10 + (expression.charAt(i) - '0');
+                i++;
+            }
+            d1 = flag ? -d1 : d1;
+            d = d * l1 + d1 * l;
+            l = l * l1;
+            d1 = 0;
+            l1 = 0;
+        }
+
+
+
+        if(d == 0) {
+            return "0/1";
+        }
+
+        boolean flag = false;
+        if(d < 0) {
+            flag = true;
+            d = -d;
+        }
+
+        int a = d > l ? d : l;
+        int b = d > l ? l : d;
+        while (a % b != 0) {
+            int c = a % b;
+            a = b;
+            b = c;
+        }
+
+        d = d / b;
+        l = l / b;
+        StringBuffer str = new StringBuffer();
+        if(flag) {
+            str.append('-');
+        }
+        str.append(d);
+        str.append('/');
+        str.append(l);
+
+        return str.toString();
     }
 }
