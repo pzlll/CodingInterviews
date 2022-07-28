@@ -510,5 +510,36 @@ public class Solution {
         return res;
     }
 
+    public int longestConsecutive(int[] nums) {
+        int n = nums.length;
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < n; i++) {
+            set.add(nums[i]);
+        }
+
+        Set<Integer> used = new HashSet<>();
+
+        int max = 0;
+
+        for (Integer i :
+                set) {
+            if(!set.contains(i - 1)) {
+                int count = 1;
+                while (set.contains(i + 1)) {
+                    count++;
+                    i++;
+                }
+
+                max = Math.max(max, count);
+            }
+        }
+
+        return max;
+    }
+
 
 }
