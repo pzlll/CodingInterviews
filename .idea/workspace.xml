@@ -7,7 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method fractionAddition.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method firstMissingPositive.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
     </list>
@@ -837,14 +837,8 @@
       <workItem from="1658546050563" duration="3883000" />
       <workItem from="1658629254184" duration="9886000" />
       <workItem from="1658713950646" duration="3693000" />
-      <workItem from="1658889966342" duration="4116000" />
-    </task>
-    <task id="LOCAL-00110" summary="add method checkRecord.">
-      <created>1629273196368</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1629273196370</updated>
+      <workItem from="1658889966342" duration="4178000" />
+      <workItem from="1658972410046" duration="1121000" />
     </task>
     <task id="LOCAL-00111" summary="add method compress.">
       <created>1629528728379</created>
@@ -1182,7 +1176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658904070063</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="add method firstMissingPositive.">
+      <created>1658905828588</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1658905828588</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1298,7 +1299,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add java RandomizedSet." />
     <MESSAGE value="add method findBall." />
     <MESSAGE value="add method complexNumberMultiply." />
     <MESSAGE value="add method myPow." />
@@ -1323,7 +1323,8 @@
     <MESSAGE value="第 303 场周赛。" />
     <MESSAGE value="add class CBTInserter." />
     <MESSAGE value="add method fractionAddition." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method fractionAddition." />
+    <MESSAGE value="add method firstMissingPositive." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method firstMissingPositive." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

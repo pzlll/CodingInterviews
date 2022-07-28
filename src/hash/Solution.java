@@ -476,5 +476,39 @@ public class Solution {
 
     }
 
+    public int[] arrayRankTransform(int[] arr) {
+        if(arr.length == 0) {
+            return arr;
+        }
+
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = arr[i];
+        }
+
+        Arrays.sort(arr);
+
+        int i = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(arr[i], i+1);
+
+        i++;
+
+        for (int j = 1; j < arr.length; j++) {
+            if(arr[j] > arr[j - 1]) {
+                map.put(arr[j], i+1);
+                i++;
+            }
+        }
+
+        int[] res = new int[arr.length];
+
+        for (int j = 0; j < arr.length; j++) {
+            res[j] = map.get(temp[j]);
+        }
+
+        return res;
+    }
+
 
 }
