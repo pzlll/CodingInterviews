@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method arrayRankTransform.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,17 +370,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="math" />
       <recent name="game" />
       <recent name="simulation" />
       <recent name="heap" />
       <recent name="dynamicprogramming" />
-      <recent name="backtracking" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FoodRatingsTest.test">
+  <component name="RunManager" selected="JUnit.SolutionTest.validSquare">
     <configuration name="FoodRatingsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -444,17 +445,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.makesquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.validSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dynamicprogramming" />
-      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
-      <option name="METHOD_NAME" value="makesquare" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.SolutionTest" />
+      <option name="METHOD_NAME" value="validSquare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -524,11 +525,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.validSquare" />
         <item itemvalue="JUnit.FoodRatingsTest.test" />
         <item itemvalue="JUnit.SolutionTest.intersectionSizeTwo" />
         <item itemvalue="JUnit.SolutionTest.findDiagonalOrder" />
         <item itemvalue="JUnit.SolutionTest.countPalindromicSubsequences" />
-        <item itemvalue="JUnit.SolutionTest.makesquare" />
       </list>
     </recent_temporary>
   </component>
@@ -839,6 +840,7 @@
       <workItem from="1658713950646" duration="3693000" />
       <workItem from="1658889966342" duration="4178000" />
       <workItem from="1658972410046" duration="3012000" />
+      <workItem from="1659059259362" duration="1845000" />
     </task>
     <task id="LOCAL-00112" summary="add method reverseStr.">
       <created>1629529764941</created>

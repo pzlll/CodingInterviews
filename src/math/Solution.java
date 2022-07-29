@@ -737,5 +737,51 @@ public class Solution {
         return num;
     }
 
+    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
+        int[][] temp = new int[4][2];
+        temp[0][0] = p1[0];
+        temp[0][1] = p1[1];
+        temp[1][0] = p2[0];
+        temp[1][1] = p2[1];
+        temp[2][0] = p3[0];
+        temp[2][1] = p3[1];
+        temp[3][0] = p4[0];
+        temp[3][1] = p4[1];
+        for(int i = 0; i < 4; i++) {
+            int next1 = (i + 1) % 4;
+            double a = Math.abs(temp[i][0] - temp[next1][0]) * Math.abs(temp[i][0] - temp[next1][0]);
+            a += Math.abs(temp[i][1] - temp[next1][1]) * Math.abs(temp[i][1] - temp[next1][1]);
+            int next2 = (next1 + 1) % 4;
+            double b = Math.abs(temp[i][0] - temp[next2][0]) * Math.abs(temp[i][0] - temp[next2][0]);
+            b += Math.abs(temp[i][1] - temp[next2][1]) * Math.abs(temp[i][1] - temp[next2][1]);
+            int next3 = (next2 + 1) % 4;
+            double c = Math.abs(temp[i][0] - temp[next3][0]) * Math.abs(temp[i][0] - temp[next3][0]);
+            c += Math.abs(temp[i][1] - temp[next3][1]) * Math.abs(temp[i][1] - temp[next3][1]);
+            if(a < b) {
+                double t = a;
+                a = b;
+                b = t;
+            }
+            if(a < c) {
+                double t = a;
+                a = c;
+                c = t;
+            }
+            if(a == 0) {
+                return false;
+            }
+
+            if(b != c) {
+                return false;
+            }
+
+            if(a != (b + c)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 
 }

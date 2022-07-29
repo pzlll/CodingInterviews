@@ -36,4 +36,9 @@ public class SolutionTest {
 
         System.out.println(Arrays.toString(a[0]) + Arrays.toString(a[1]));
     }
+
+    @Test
+    public void validSquare() {
+        new Solution().validSquare(new int[]{0,0},new int[]{1,1}, new int[]{1,0} ,new int[]{0,1});
+    }
 }
