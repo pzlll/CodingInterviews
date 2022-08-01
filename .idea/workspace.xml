@@ -7,10 +7,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method arrayRankTransform.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method validSquare.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,8 +374,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="math" />
       <recent name="game" />
+      <recent name="math" />
       <recent name="simulation" />
       <recent name="heap" />
       <recent name="dynamicprogramming" />
@@ -380,7 +384,7 @@
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.validSquare">
+  <component name="RunManager" selected="JUnit.SolutionTest.closestMeetingNode">
     <configuration name="FoodRatingsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -397,33 +401,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.countPalindromicSubsequences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.closestMeetingNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="PATTERN" value="game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dynamicprogramming" />
-      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
-      <option name="METHOD_NAME" value="countPalindromicSubsequences" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.findDiagonalOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="simulation" />
-      <option name="MAIN_CLASS_NAME" value="simulation.SolutionTest" />
-      <option name="METHOD_NAME" value="findDiagonalOrder" />
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
+      <option name="METHOD_NAME" value="closestMeetingNode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -440,6 +428,22 @@
       <option name="PACKAGE_NAME" value="greedy" />
       <option name="MAIN_CLASS_NAME" value="greedy.SolutionTest" />
       <option name="METHOD_NAME" value="intersectionSizeTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.maximumGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
+      <option name="METHOD_NAME" value="maximumGroups" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -525,11 +529,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.closestMeetingNode" />
+        <item itemvalue="JUnit.SolutionTest.maximumGroups" />
         <item itemvalue="JUnit.SolutionTest.validSquare" />
         <item itemvalue="JUnit.FoodRatingsTest.test" />
         <item itemvalue="JUnit.SolutionTest.intersectionSizeTwo" />
-        <item itemvalue="JUnit.SolutionTest.findDiagonalOrder" />
-        <item itemvalue="JUnit.SolutionTest.countPalindromicSubsequences" />
       </list>
     </recent_temporary>
   </component>
@@ -840,14 +844,8 @@
       <workItem from="1658713950646" duration="3693000" />
       <workItem from="1658889966342" duration="4178000" />
       <workItem from="1658972410046" duration="3012000" />
-      <workItem from="1659059259362" duration="1845000" />
-    </task>
-    <task id="LOCAL-00112" summary="add method reverseStr.">
-      <created>1629529764941</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1629529764941</updated>
+      <workItem from="1659059259362" duration="1875000" />
+      <workItem from="1659234663114" duration="7460000" />
     </task>
     <task id="LOCAL-00113" summary="add method allPathsSourceTarget.">
       <created>1629878705814</created>
@@ -1185,7 +1183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658973960744</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="add method validSquare.">
+      <created>1659077041052</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1659077041052</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1301,7 +1306,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method complexNumberMultiply." />
     <MESSAGE value="add method myPow." />
     <MESSAGE value="add method mySqrt." />
     <MESSAGE value="add method optimalDivision." />
@@ -1326,7 +1330,8 @@
     <MESSAGE value="add method fractionAddition." />
     <MESSAGE value="add method firstMissingPositive." />
     <MESSAGE value="add method arrayRankTransform." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method arrayRankTransform." />
+    <MESSAGE value="add method validSquare." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method validSquare." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1390,6 +1395,16 @@
           <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
           <line>54</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/Solution.java</url>
+          <line>991</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/Solution.java</url>
+          <line>1011</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

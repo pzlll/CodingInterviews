@@ -55,4 +55,14 @@ public class SolutionTest {
     public void eliminateMaximum() {
         new Solution().eliminateMaximum(new int[]{4,3,3,3,4}, new int[]{1,1,1,1,4});
     }
+
+    @Test
+    public void maximumGroups() {
+        new Solution().maximumGroups(new int[]{5,3,1,0,2,4,5});
+    }
+
+    @Test
+    public void closestMeetingNode() {
+        new Solution().closestMeetingNode(new int[]{5,3,1,0,2,4,5}, 2,3);
+    }
 }

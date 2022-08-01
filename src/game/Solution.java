@@ -838,6 +838,179 @@ public class Solution {
         return count;
     }
 
+    //第 304 场周赛
+    public int minimumOperations(int[] nums) {
+        int count = 0;
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
 
+        while (sum != 0) {
+            int min = 101;
+            for (int i = 0; i < nums.length; i++) {
+                if(nums[i] > 0) {
+                    min = Math.min(min, nums[i]);
+                }
+            }
+
+            for (int i = 0; i < nums.length; i++) {
+                if(nums[i] > 0) {
+                    nums[i] -= min;
+                }
+            }
+
+            sum = 0;
+            for (int i = 0; i < nums.length; i++) {
+                sum += nums[i];
+            }
+            count++;
+        }
+
+        return count;
+    }
+
+    class A{
+        private int val;
+        private int count;
+        public A(int val, int count) {
+            this.val = val;
+            this.count = count;
+        }
+    }
+
+    public int maximumGroups(int[] grades) {
+        List<A> list = new ArrayList<>();
+
+        for (int i = 0; i < grades.length; i++) {
+            list.add(new A(grades[i], 1));
+        }
+
+        Collections.sort(list, new Comparator<A>() {
+            @Override
+            public int compare(A o1, A o2) {
+                if(o1.val == o2.val) {
+                    return o1.count - o2.count;
+                }else {
+                    return o1.val - o2.val;
+                }
+            }
+        });
+
+        boolean flag = true;
+        for (int i = 0; i < list.size() - 1; i++) {
+            if(list.get(i).val == list.get(i + 1).val || list.get(i).count == list.get(i + 1).count) {
+                flag = false;
+                break;
+            }
+        }
+
+        if(flag) {
+            return list.size();
+        }
+
+        while (true) {
+            A a1 = list.get(0);
+            A a2 = list.get(1);
+            A a = new A(a1.val + a2.val, a1.count + a2.count);
+            list.remove(0);
+            list.remove(0);
+            list.add(a);
+            Collections.sort(list, new Comparator<A>() {
+                @Override
+                public int compare(A o1, A o2) {
+                    if(o1.val == o2.val) {
+                        return o1.count - o2.count;
+                    }else {
+                        return o1.val - o2.val;
+                    }
+                }
+            });
+
+            flag = true;
+            for (int i = 0; i < list.size() - 1; i++) {
+                if(list.get(i).val == list.get(i + 1).val || list.get(i).count == list.get(i + 1).count) {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if(flag) {
+                return list.size();
+            }
+
+        }
+
+    }
+
+    public int closestMeetingNode(int[] edges, int node1, int node2) {
+        if(node1 == node2) {
+            return node1;
+        }
+
+
+
+        Map<Integer,Integer> map1 = new HashMap<>();
+        Map<Integer, Integer> map2 = new HashMap<>();
+
+        for (int i = 0; i < edges.length; i++) {
+            map1.put(i, -1);
+            map2.put(i, -1);
+        }
+
+        map1.put(node1, 0);
+        map2.put(node2, 0);
+
+
+        int[] copy = Arrays.copyOf(edges, edges.length);
+
+
+        int count = 1;
+        while (edges[node1] != -1) {
+            if(map1.get(edges[node1]) != -1) {
+                break;
+            }
+            int temp = node1;
+            map1.put(edges[node1], count);
+            node1 = edges[node1];
+            edges[temp] = -1;
+            count++;
+        }
+
+        count = 1;
+        while (copy[node2] != -1) {
+            if(map2.get(copy[node2]) != -1) {
+                break;
+            }
+            int temp = node2;
+            map2.put(copy[node2], count);
+            node2 = copy[node2];
+            copy[temp] = -1;
+            count++;
+        }
+
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < edges.length; i++) {
+            if(map1.get(i) != -1 && map2.get(i) != -1) {
+                min = Math.min(min, Math.max(map1.get(i), map2.get(i)));
+            }
+        }
+
+        if(min == Integer.MAX_VALUE) {
+            return -1;
+        }
+        int index = edges.length - 1;
+        for (int i = edges.length - 1; i >= 0; i--) {
+            if(map1.get(i) != -1 && map2.get(i) != -1){
+                int max = Math.max(map1.get(i), map2.get(i));
+                if(max == min) {
+                    index = i;
+                }
+            }
+        }
+
+        return index;
+
+    }
 
 }
