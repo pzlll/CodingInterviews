@@ -7,14 +7,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method validSquare.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="第 304 场周赛.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/hash/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/math/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/math/SolutionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/simulation/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/game/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/game/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -845,14 +842,7 @@
       <workItem from="1658889966342" duration="4178000" />
       <workItem from="1658972410046" duration="3012000" />
       <workItem from="1659059259362" duration="1875000" />
-      <workItem from="1659234663114" duration="7460000" />
-    </task>
-    <task id="LOCAL-00113" summary="add method allPathsSourceTarget.">
-      <created>1629878705814</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1629878705815</updated>
+      <workItem from="1659234663114" duration="9270000" />
     </task>
     <task id="LOCAL-00114" summary="add method pickIndex.">
       <created>1630308966700</created>
@@ -1190,7 +1180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659077041052</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="第 304 场周赛.">
+      <created>1659336442662</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1659336442663</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1306,7 +1303,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method myPow." />
     <MESSAGE value="add method mySqrt." />
     <MESSAGE value="add method optimalDivision." />
     <MESSAGE value="add method maximumRequests." />
@@ -1331,7 +1327,8 @@
     <MESSAGE value="add method firstMissingPositive." />
     <MESSAGE value="add method arrayRankTransform." />
     <MESSAGE value="add method validSquare." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method validSquare." />
+    <MESSAGE value="第 304 场周赛." />
+    <option name="LAST_COMMIT_MESSAGE" value="第 304 场周赛." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
