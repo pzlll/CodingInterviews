@@ -730,4 +730,30 @@ public class Solution {
 
         return slow;
     }
+
+    public String orderlyQueue(String s, int k) {
+        if(k == 1) {
+            String str = s;
+            int n = s.length();
+            for(int i = 1; i < s.length(); i++) {
+                String t = s.substring(i, n) + s.substring(0, i);
+                boolean flag = false;
+                for (int j = 0; j < n; j++) {
+                    if(t.charAt(j) < str.charAt(j)) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if(flag) {
+                    str = t;
+                }
+            }
+
+            return str;
+        }else {
+            char[] ch = s.toCharArray();
+            Arrays.sort(ch);
+            return new String(ch);
+        }
+    }
 }
