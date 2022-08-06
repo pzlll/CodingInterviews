@@ -543,4 +543,33 @@ public class Solution {
         }
 
     }
+
+    public List<String> stringMatching(String[] words) {
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words.length; j++) {
+                if(i == j || words[i].length() > words[j].length()) {
+                    continue;
+                }
+                int i1 = 0;
+                int j1 = 0;
+                while (i1 < words[i].length() && j1 < words[j].length()) {
+                    if(words[i].charAt(i1) == words[j].charAt(j1)) {
+                        i1++;
+                        j1++;
+                    }else {
+                        j1 = j1 - i1 + 1;
+                        i1 = 0;
+
+                    }
+                }
+                if(i1 == words[i].length()) {
+                    res.add(words[i]);
+                    break;
+                }
+            }
+        }
+
+        return res;
+    }
 }

@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method findDuplicate.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method orderlyQueue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarysearch/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarysearch/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -842,14 +842,9 @@
       <workItem from="1659059259362" duration="1875000" />
       <workItem from="1659234663114" duration="9414000" />
       <workItem from="1659406955504" duration="1228000" />
-      <workItem from="1659509872746" duration="1201000" />
-    </task>
-    <task id="LOCAL-00115" summary="add method sumOddLengthSubarrays.">
-      <created>1630310672887</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1630310672888</updated>
+      <workItem from="1659509872746" duration="1240000" />
+      <workItem from="1659582376018" duration="1188000" />
+      <workItem from="1659754806374" duration="609000" />
     </task>
     <task id="LOCAL-00116" summary="add method corpFlightBookings.">
       <created>1630413153330</created>
@@ -1187,7 +1182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659342752225</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="add method orderlyQueue.">
+      <created>1659511128922</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1659511128922</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1303,7 +1305,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method optimalDivision." />
     <MESSAGE value="add method maximumRequests." />
     <MESSAGE value="add method divide." />
     <MESSAGE value="add method convert." />
@@ -1328,7 +1329,8 @@
     <MESSAGE value="add method validSquare." />
     <MESSAGE value="第 304 场周赛." />
     <MESSAGE value="add method findDuplicate." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method findDuplicate." />
+    <MESSAGE value="add method orderlyQueue." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method orderlyQueue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
