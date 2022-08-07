@@ -472,4 +472,36 @@ public class Solution {
     private boolean isLess(int[] nums, Integer i, int j) {
         return nums[i] < nums[j] ? true : (nums[i] == nums[j] ? i < j : false);
     }
+
+    public int[] exclusiveTime(int n, List<String> logs) {
+        Stack<int[]> stack = new Stack<>();
+
+        int[] time = new int[n];
+        int realTime = 0;
+
+        for (String s :
+                logs) {
+            String[] split = s.split(":");
+            int i = Integer.parseInt(split[0]);
+            int timestamp = Integer.parseInt(split[2]);
+            if(split[1].equals("start")) {
+
+                if(!stack.isEmpty()) {
+                    int[] peek = stack.peek();
+                    time[peek[0]] += (timestamp - peek[1]);
+                }
+                stack.push(new int[]{i, timestamp});
+
+            }else if(split[1].equals("end")) {
+                int[] pop = stack.pop();
+                time[pop[0]] += (timestamp - realTime + 1);
+                if(!stack.isEmpty()) {
+                    stack.peek()[1] = timestamp + 1;
+                }
+            }
+        }
+
+        return time;
+
+    }
 }

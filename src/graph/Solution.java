@@ -1690,6 +1690,108 @@ public class Solution {
         return true;
     }
 
+    public int reachableNodes(int n, int[][] edges, int[] restricted) {
+//        Union8 union8 = new Union8(n);
+        Set<Integer> set = new HashSet<>();
+        Set<Integer>[] con = new Set[n];
+        for (int i = 0; i < restricted.length; i++) {
+            set.add(restricted[i]);
+        }
+//        int[][] edgesMatrix = new int[n][n];
+        for (int i = 0; i < edges.length; i++) {
+            if(set.contains(edges[i][0]) || set.contains(edges[i][1])) {
+                continue;
+            }
+//            union8.union(edges[i][0], edges[i][1]);
+            if(con[edges[i][0]] == null) {
+                con[edges[i][0]] = new HashSet<>();
+            }
+            con[edges[i][0]].add(edges[i][1]);
+            if(con[edges[i][1]] == null) {
+                con[edges[i][1]] = new HashSet<>();
+            }
+            con[edges[i][1]].add(edges[i][0]);
+//            con[edges[i][0]] = new
+//            edgesMatrix[edges[i][0]][edges[i][1]] = 1;
+//            edgesMatrix[edges[i][1]][edges[i][0]] = 1;
+        }
+
+        boolean[] visited = new boolean[n];
+
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(0);
+
+        while (!queue.isEmpty()) {
+            Integer poll = queue.poll();
+            visited[poll] = true;
+            if(con[poll] != null) {
+                for (Integer i :
+                        con[poll]) {
+                    if(!visited[i]) {
+                        queue.add(i);
+                        visited[i] = true;
+                    }
+                }
+            }
+
+        }
+
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if(visited[i]) {
+                count++;
+            }
+        }
+
+
+        return count;
+    }
+
+    class Union8 {
+        private int[] point;
+        private int[] count;
+        public Union8(int n) {
+            point = new int[n];
+            for (int i = 0; i < n; i++) {
+                point[i] = i;
+            }
+            count = new int[n];
+            for (int i = 0; i < n; i++) {
+                count[i] = 1;
+            }
+        }
+
+        public int find(int x) {
+            if(point[x] != x) {
+                point[x] = find(point[x]);
+                return point[x];
+            }else {
+                return x;
+            }
+        }
+
+        public void union(int x, int y) {
+            int X = find(x);
+            int Y = find(y);
+            if(X != Y) {
+                point[x] = Y;
+                count[Y] += count[X];
+                count[X] = 0;
+
+            }
+        }
+
+        public int getCount() {
+            int max = 0;
+            for (int i = 0; i < count.length; i++) {
+                max = Math.max(max, count[i]);
+            }
+
+            return max;
+        }
+    }
+
 
 }
 

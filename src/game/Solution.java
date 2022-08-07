@@ -1013,4 +1013,50 @@ public class Solution {
 
     }
 
+    // 第305场周赛
+    public int arithmeticTriplets(int[] nums, int diff) {
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            set.add(nums[i]);
+        }
+
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if(set.contains(nums[i] + diff) && set.contains(nums[i] + 2 * diff)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public boolean validPartition(int[] nums) {
+
+        int n = nums.length;
+        boolean[] f = new boolean[n + 1];
+
+        f[0] = true;
+
+        for (int i = 1; i <= n; i++) {
+            if(i > 1) {
+                if(nums[i - 1] == nums[i - 2])
+                    f[i] = f[i] | f[i - 2];
+            }
+            if(i > 2) {
+                if(nums[i - 1] == nums[i - 2] && nums[i - 3] == nums[i - 2])
+                    f[i] |= f[i - 3];
+                if(nums[i - 1] == nums[i - 2] + 1 && nums[i - 3] + 1 == nums[i - 2])
+                    f[i] |= f[i - 3];
+            }
+        }
+
+        return f[n + 1];
+
+
+    }
+
+
+
+
 }

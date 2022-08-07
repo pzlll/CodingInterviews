@@ -7,9 +7,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method orderlyQueue.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method stringMatching.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -844,14 +846,9 @@
       <workItem from="1659406955504" duration="1228000" />
       <workItem from="1659509872746" duration="1240000" />
       <workItem from="1659582376018" duration="1188000" />
-      <workItem from="1659754806374" duration="609000" />
-    </task>
-    <task id="LOCAL-00116" summary="add method corpFlightBookings.">
-      <created>1630413153330</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1630413153331</updated>
+      <workItem from="1659754806374" duration="1414000" />
+      <workItem from="1659837796051" duration="6652000" />
+      <workItem from="1659854459980" duration="3689000" />
     </task>
     <task id="LOCAL-00117" summary="add method corpFlightBookings.">
       <created>1630413691382</created>
@@ -1189,7 +1186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659511128922</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="add method stringMatching.">
+      <created>1659755635856</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1659755635857</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1305,7 +1309,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method maximumRequests." />
     <MESSAGE value="add method divide." />
     <MESSAGE value="add method convert." />
     <MESSAGE value="add method fractionToDecimal." />
@@ -1330,7 +1333,8 @@
     <MESSAGE value="第 304 场周赛." />
     <MESSAGE value="add method findDuplicate." />
     <MESSAGE value="add method orderlyQueue." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method orderlyQueue." />
+    <MESSAGE value="add method stringMatching." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method stringMatching." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1394,16 +1398,6 @@
           <url>file://$PROJECT_DIR$/src/game/FoodRatings.java</url>
           <line>54</line>
           <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/Solution.java</url>
-          <line>991</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/Solution.java</url>
-          <line>1011</line>
-          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
