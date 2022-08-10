@@ -572,4 +572,125 @@ public class Solution {
 
         return res;
     }
+
+    public String solveEquation(String equation) {
+        String[] split = equation.split("=");
+        int sum1 = 0;
+        int count1 = 0;
+        int sum2 = 0;
+        int count2 = 0;
+
+        int i = 0;
+        boolean flag = false;
+        int sum = 0;
+        boolean valid = false;
+        while (i < split[0].length()) {
+            char c = split[0].charAt(i);
+            if(c == '+') {
+                if(sum != 0) {
+                    sum1 = sum1 + (flag ? -sum : sum);
+                    sum = 0;
+                }
+                flag = false;
+                i++;
+                valid = false;
+                continue;
+            }
+            if(c == '-') {
+                if(sum != 0) {
+                    sum1 = sum1 + (flag ? -sum : sum);
+                    sum = 0;
+                }
+                flag = true;
+                i++;
+                valid = false;
+                continue;
+            }
+            if(c == 'x') {
+                if(!valid) {
+                    count1 = count1 + (flag ? -1 : 1);
+                }else {
+                    count1 = count1 + (flag ? -sum : sum);
+                }
+                sum = 0;
+                i++;
+                valid = false;
+                continue;
+            }
+            sum = sum * 10 + c - '0';
+            i++;
+            valid = true;
+
+
+        }
+        if(sum != 0) {
+            sum1 = sum1 + (flag ? -sum : sum);
+            sum = 0;
+        }
+
+        i = 0;
+        flag = false;
+        valid = false;
+        while (i < split[1].length()) {
+            char c = split[1].charAt(i);
+            if(c == '+') {
+                if(sum != 0) {
+                    sum2 = sum2 + (flag ? -sum : sum);
+                    sum = 0;
+                }
+                flag = false;
+                i++;
+                valid = false;
+                continue;
+            }
+            if(c == '-') {
+                if(sum != 0) {
+                    sum2 = sum2 + (flag ? -sum : sum);
+                    sum = 0;
+                }
+                flag = true;
+                i++;
+                valid = false;
+                continue;
+            }
+            if(c == 'x') {
+                if(!valid) {
+                    count2 = count2 + (flag ? -1 : 1);
+                }else {
+                    count2 = count2 + (flag ? -sum : sum);
+                }
+                sum = 0;
+                i++;
+                valid = false;
+                continue;
+            }
+            sum = sum * 10 + c - '0';
+            i++;
+            valid = true;
+
+        }
+
+        if(sum != 0) {
+            sum2 = sum2 + (flag ? -sum : sum);
+            sum = 0;
+        }
+
+        System.out.println("sum1 : " + sum1);
+        System.out.println("sum2 : " + sum2);
+        System.out.println("count1 : " + count1);
+        System.out.println("count2 : " + count2);
+
+
+        count1 = count1 - count2;
+        sum2 = sum2 - sum1;
+        if(sum2 == 0 && count1 == 0){
+            return "Infinite solutions";
+        }
+
+        if(count1 == 0 && sum2 != 0) {
+            return "No solution";
+        }
+
+        return "x=" + sum2/count1;
+    }
 }

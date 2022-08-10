@@ -7,11 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method stringMatching.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method exclusiveTime.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -848,14 +846,8 @@
       <workItem from="1659582376018" duration="1188000" />
       <workItem from="1659754806374" duration="1414000" />
       <workItem from="1659837796051" duration="6652000" />
-      <workItem from="1659854459980" duration="3689000" />
-    </task>
-    <task id="LOCAL-00117" summary="add method corpFlightBookings.">
-      <created>1630413691382</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1630413691387</updated>
+      <workItem from="1659854459980" duration="3736000" />
+      <workItem from="1660096333276" duration="4115000" />
     </task>
     <task id="LOCAL-00118" summary="add method findCheapestPrice.">
       <created>1630478856727</created>
@@ -1193,7 +1185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659755635857</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="add method exclusiveTime.">
+      <created>1659859674044</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1659859674045</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1309,7 +1308,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method divide." />
     <MESSAGE value="add method convert." />
     <MESSAGE value="add method fractionToDecimal." />
     <MESSAGE value="add method nearestPalindromic." />
@@ -1334,7 +1332,8 @@
     <MESSAGE value="add method findDuplicate." />
     <MESSAGE value="add method orderlyQueue." />
     <MESSAGE value="add method stringMatching." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method stringMatching." />
+    <MESSAGE value="add method exclusiveTime." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method exclusiveTime." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
