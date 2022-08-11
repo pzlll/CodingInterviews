@@ -693,4 +693,37 @@ public class Solution {
 
         return "x=" + sum2/count1;
     }
+
+    public String reformat(String s) {
+        char[] arr = s.toCharArray();
+        int sumDigit = 0;
+        int sumChar = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(Character.isDigit(arr[i])) {
+                sumDigit++;
+            }
+        }
+
+        sumChar = arr.length - sumDigit;
+
+        if(Math.abs(sumChar - sumDigit) > 1) {
+            return "";
+        }
+
+        boolean flag = sumChar > sumDigit;
+
+        for (int i = 0, j = 1; i < arr.length; i+=2) {
+            if(Character.isLowerCase(arr[i]) != flag) {
+                while (j < arr.length && (Character.isLowerCase(arr[j]) != flag)) {
+                    j += 2;
+                }
+                char temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+
+        }
+
+        return new String(arr);
+    }
 }
