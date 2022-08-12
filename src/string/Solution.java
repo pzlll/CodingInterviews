@@ -726,4 +726,21 @@ public class Solution {
 
         return new String(arr);
     }
+
+    public List<List<Integer>> groupThePeople(int[] groupSizes) {
+        Map<Integer, List<Integer>> group = new HashMap<>();
+
+        List<List<Integer>> res = new ArrayList<>();
+        for (int i = 0; i < groupSizes.length; i++) {
+            List<Integer> orDefault = group.getOrDefault(groupSizes[i], new ArrayList<>());
+            orDefault.add(i);
+            if(orDefault.size() == groupSizes[i]) {
+                res.add(orDefault);
+                orDefault = new ArrayList<>();
+                group.put(groupSizes[i], orDefault);
+            }
+        }
+
+        return res;
+    }
 }

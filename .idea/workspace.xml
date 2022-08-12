@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method exclusiveTime.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -849,6 +850,7 @@
       <workItem from="1659854459980" duration="3736000" />
       <workItem from="1660096333276" duration="4115000" />
       <workItem from="1660184649675" duration="2081000" />
+      <workItem from="1660266983875" duration="6241000" />
     </task>
     <task id="LOCAL-00118" summary="add method findCheapestPrice.">
       <created>1630478856727</created>

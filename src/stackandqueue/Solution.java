@@ -504,4 +504,50 @@ public class Solution {
         return time;
 
     }
+
+    public int calculate1(String s) {
+        Stack<Integer> stack = new Stack<>();
+        Stack<Character> stack3 = new Stack<>();
+
+        int index = 0;
+        char preSign = '+';
+        while (index < s.length()) {
+            int sum = 0;
+
+            while (index < s.length() && s.charAt(index) == ' ') {
+                index++;
+            }
+            while (index < s.length() && Character.isDigit(s.charAt(index))) {
+                sum = sum * 10 + s.charAt(index) - '0';
+                index++;
+            }
+            while (index < s.length() && s.charAt(index) == ' ') {
+                index++;
+            }
+            if(preSign == '+') {
+                stack.push(sum);
+            }else if(preSign == '-') {
+                stack.push(-sum);
+            }else if(preSign == '*') {
+                stack.push(stack.pop() * sum);
+            }else if(preSign == '/') {
+                stack.push(stack.pop() / sum);
+            }
+
+            if(index < s.length() && s.charAt(index) != ' ') {
+                preSign = s.charAt(index);
+                index++;
+            }
+            while (index < s.length() && s.charAt(index) == ' ') {
+                index++;
+            }
+        }
+
+        int a = 0;
+        while (!stack.isEmpty()) {
+            a += stack.pop();
+        }
+
+        return a;
+    }
 }
