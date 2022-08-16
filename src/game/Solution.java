@@ -1056,7 +1056,115 @@ public class Solution {
 
     }
 
+    //
 
+    public int[][] largestLocal(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        int[][] res = new int[m-2][n-2];
+
+        for (int i = 0; i < res.length; i++) {
+            for (int j = 0; j < res[0].length; j++) {
+                int max = 0;
+                for (int k = i; k < i + 3; k++) {
+                    for (int l = j; l < j + 3; l++) {
+                        max = Math.max(max, grid[k][l]);
+                    }
+                }
+                res[i][j] = max;
+            }
+        }
+
+        return res;
+    }
+
+    public int edgeScore(int[] edges) {
+        int n = edges.length;
+        long[] res = new long[n];
+        Arrays.fill(res, 0);
+
+        for (int i = 0; i < n; i++) {
+            res[edges[i]] += i;
+        }
+
+        long max = 0;
+
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, res[i]);
+        }
+
+        for (int i = 0; i < n; i++) {
+            if(res[i] == max) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public String smallestNumber(String pattern) {
+        Set<Integer> set = new HashSet<>();
+        StringBuffer str = new StringBuffer();
+        return dfsForSmallestNumber(pattern, 0, 1, set,str);
+    }
+
+    private String dfsForSmallestNumber(String pattern, int i, int val, Set<Integer> set, StringBuffer str) {
+        if(i == pattern.length() + 1) {
+            return new String(str);
+        }
+
+
+        if(i == 0) {
+            for (int j = 1; j <= 9; j++) {
+                str.append(j);
+                set.add(j);
+                String s;
+                s = dfsForSmallestNumber(pattern, 1, j, set,str);
+                if(s != null) {
+                    return s;
+                }
+                str.deleteCharAt(0);
+                set.remove(j);
+            }
+        }else {
+            if(pattern.charAt(i-1) == 'I') {
+                for (int j = str.charAt(str.length() - 1) - '0' + 1; j < 10; j++) {
+                    if(set.contains(j)) {
+                        continue;
+                    }
+                    str.append(j);
+                    set.add(j);
+                    String s;
+                    s = dfsForSmallestNumber(pattern,i+1, j, set, str);
+                    if(s != null) {
+                        return s;
+                    }
+
+                    str.deleteCharAt(i);
+                    set.remove(j);
+                }
+            }else {
+                for (int j = str.charAt(str.length() - 1) - '0' - 1; j > 0; j--) {
+                    if(set.contains(j)) {
+                        continue;
+                    }
+                    str.append(j);
+                    set.add(j);
+                    String s;
+                    s = dfsForSmallestNumber(pattern,i+1, j, set, str);
+                    if(s != null) {
+                        return s;
+                    }
+                    str.deleteCharAt(i);
+                    set.remove(j);
+                }
+            }
+        }
+
+
+        return null;
+    }
 
 
 }

@@ -7,10 +7,18 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method exclusiveTime.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method calculate1.">
+      <change afterPath="$PROJECT_DIR$/src/design/OrderedStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stackandqueue/MyCircularDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stackandqueue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stackandqueue/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/binarysearch/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/game/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/game/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/game/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/graph/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +388,7 @@
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.closestMeetingNode">
+  <component name="RunManager" selected="JUnit.SolutionTest.smallestNumber">
     <configuration name="FoodRatingsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -413,22 +421,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.intersectionSizeTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="greedy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="greedy" />
-      <option name="MAIN_CLASS_NAME" value="greedy.SolutionTest" />
-      <option name="METHOD_NAME" value="intersectionSizeTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionTest.maximumGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -440,6 +432,22 @@
       <option name="PACKAGE_NAME" value="game" />
       <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
       <option name="METHOD_NAME" value="maximumGroups" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.smallestNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
+      <option name="METHOD_NAME" value="smallestNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -525,11 +533,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.smallestNumber" />
         <item itemvalue="JUnit.SolutionTest.closestMeetingNode" />
         <item itemvalue="JUnit.SolutionTest.maximumGroups" />
         <item itemvalue="JUnit.SolutionTest.validSquare" />
         <item itemvalue="JUnit.FoodRatingsTest.test" />
-        <item itemvalue="JUnit.SolutionTest.intersectionSizeTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -850,14 +858,10 @@
       <workItem from="1659854459980" duration="3736000" />
       <workItem from="1660096333276" duration="4115000" />
       <workItem from="1660184649675" duration="2081000" />
-      <workItem from="1660266983875" duration="6241000" />
-    </task>
-    <task id="LOCAL-00118" summary="add method findCheapestPrice.">
-      <created>1630478856727</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1630478856728</updated>
+      <workItem from="1660266983875" duration="6857000" />
+      <workItem from="1660443852409" duration="5068000" />
+      <workItem from="1660531967679" duration="597000" />
+      <workItem from="1660613369457" duration="3618000" />
     </task>
     <task id="LOCAL-00119" summary="add method smallestK.">
       <created>1630657244079</created>
@@ -1195,7 +1199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659859674045</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="add method calculate1.">
+      <created>1660286548671</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1660286548672</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1311,7 +1322,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method convert." />
     <MESSAGE value="add method fractionToDecimal." />
     <MESSAGE value="add method nearestPalindromic." />
     <MESSAGE value="add method addDigits." />
@@ -1336,16 +1346,12 @@
     <MESSAGE value="add method orderlyQueue." />
     <MESSAGE value="add method stringMatching." />
     <MESSAGE value="add method exclusiveTime." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method exclusiveTime." />
+    <MESSAGE value="add method calculate1." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method calculate1." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/heap/Solution.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/Solution.java</url>
           <line>197</line>

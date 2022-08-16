@@ -65,4 +65,9 @@ public class SolutionTest {
     public void closestMeetingNode() {
         new Solution().closestMeetingNode(new int[]{5,3,1,0,2,4,5}, 2,3);
     }
+
+    @Test
+    public void smallestNumber() {
+        new Solution().smallestNumber("DDDDDDDD");
+    }
 }
