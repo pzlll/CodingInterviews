@@ -743,4 +743,25 @@ public class Solution {
 
         return res;
     }
+
+    public int isPrefixOfWord(String sentence, String searchWord) {
+        String[] s = sentence.split(" ");
+        for (int i = 0; i < s.length; i++) {
+            if(s[i].length() < searchWord.length()) {
+                continue;
+            }
+            boolean flag = true;
+            for (int j = 0; j < searchWord.length(); j++) {
+                if(s[i].charAt(j) != searchWord.charAt(j)) {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 }

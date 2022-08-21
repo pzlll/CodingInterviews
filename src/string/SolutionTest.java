@@ -78,4 +78,9 @@ public class SolutionTest {
     public void fizzBuzz() {
         new Solution().fizzBuzz(1);
     }
+
+    @Test
+    public void isPrefixOfWord() {
+        new Solution().isPrefixOfWord("hello from the other side", "they");
+    }
 }

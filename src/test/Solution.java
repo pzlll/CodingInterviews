@@ -1,6 +1,7 @@
 package test;
 
-import org.apache.commons.lang3.RandomStringUtils;
+//import org.apache.commons.lang3.RandomStringUtils;
+
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -129,108 +130,5 @@ public class Solution {
     }
 
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-//        String s1 = scanner.nextLine();
-//        String s2 = scanner.nextLine();
-
-
-        //产生两个n位的随机数字
-        String s1 = RandomStringUtils.randomNumeric(1000000);
-        String s2 = RandomStringUtils.randomNumeric(1000000);
-
-        int n = s1.length();
-        int m = s2.length();
-
-
-        int max = Math.max(n, m);
-        int k = 0;
-
-        //将max设置为两个整数的位数的最大值，并向上取到离它最近的2的k次方
-        while (max != 0) {
-            k++;
-            max >>= 1;
-        }
-        max = 1 << k;
-
-
-        double[] a = new double[max];
-        double[] b = new double[max];
-
-        for (int i = 0; i < n; i++) {
-            a[i] = s1.charAt(n - 1 - i) - '0';
-        }
-
-        for (int i = 0; i < m; i++) {
-            b[i] = s2.charAt(m - 1 - i) - '0';
-        }
-
-        length = Math.max(n, m) * 2 + 1;
-
-//        staA = new double[max];
-//        staB = new double[max];
-//
-//        for (int i = 0; i < n; i++) {
-//            staA[i] = a[i];
-//        }
-//
-//        for (int i = 0; i < m; i++) {
-//            staB[i] = b[i];
-//        }
-
-        double[] c = new double[2 * max + 1];
-
-        System.out.println("--------A--------");
-
-        long startTime=System.currentTimeMillis();
-
-        bruteMethod(a, b, c, Math.max(n, m));
-
-        long endTime=System.currentTimeMillis();
-
-        sumRes(c, n);
-
-//        printRes(c, max);
-
-        Arrays.fill(c, 0);
-
-        System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
-
-        System.out.println("--------B--------");
-
-        startTime=System.currentTimeMillis();
-
-        mergeMethod(a, b, c, max, 0, 0);
-
-        endTime=System.currentTimeMillis();
-
-        sumRes(c, n);
-
-//        printRes(c, max);
-
-        Arrays.fill(c, 0);
-
-        System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
-
-        System.out.println("--------C--------");
-
-
-        startTime=System.currentTimeMillis();
-
-        mergeMethodPro(a, b, c, max, 0, 0);
-
-        endTime=System.currentTimeMillis();
-
-        sumRes(c, n);
-//        printRes(c, max);
-
-        System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
-
-
-
-
-
-
-    }
 }
