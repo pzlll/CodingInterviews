@@ -952,4 +952,45 @@ public class Solution {
         return root;
     }
 
+    public List<List<String>> printTree(TreeNode root) {
+        int height = getHeight(root);
+        int n = (int)Math.pow(2, height) - 1;
+
+        List<List<String>> res = new ArrayList<>();
+        for (int i = 0; i < height; i++) {
+            List<String> a = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+                a.add("");
+            }
+            res.add(a);
+        }
+
+        setTreeValue(root, 0, (n-1)/2, res);
+        res.get(0).set((n-1)/2, root.val + "");
+
+        return res;
+    }
+
+    private void setTreeValue(TreeNode root, int row, int col, List<List<String>> res) {
+        if(root == null) {
+            return;
+        }
+        res.get(row).set(col, root.val + "");
+        int temp = (int)Math.pow(2, res.size() - 2 - row);
+        setTreeValue(root.left, row + 1, col - temp, res);
+        setTreeValue(root.right, row + 1, col + temp, res);
+    }
+
+
+    private int getHeight(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+
+        int a = getHeight(root.left);
+        int b = getHeight(root.right);
+
+        return a > b ? a+1 : b+1;
+    }
+
 }
