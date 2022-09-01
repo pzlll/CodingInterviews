@@ -993,4 +993,39 @@ public class Solution {
         return a > b ? a+1 : b+1;
     }
 
+    public int deepestLeavesSum(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        if(root == null) {
+            return 0;
+        }
+
+        queue.add(root);
+
+        int sum = 0;
+
+        int count = 1;
+        int nextCount = 0;
+        while (count > 0) {
+            sum = 0;
+            while (count > 0) {
+                TreeNode poll = queue.poll();
+                sum += poll.val;
+                if(poll.left != null) {
+                    nextCount++;
+                    queue.add(poll.left);
+                }
+                if(poll.right != null) {
+                    nextCount++;
+                    queue.add(poll.right);
+                }
+                count--;
+            }
+            count = nextCount;
+            nextCount = 0;
+        }
+
+        return sum;
+    }
+
 }

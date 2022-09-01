@@ -550,4 +550,35 @@ public class Solution {
 
         return a;
     }
+
+    public int[] finalPrices(int[] prices) {
+        int[] res = new int[prices.length];
+
+        Stack<Integer> stack = new Stack<>();
+
+        int i = prices.length - 1;
+        while (i >= 0) {
+            while (!stack.isEmpty()) {
+                if(stack.peek() <= prices[i]) {
+                    break;
+                }
+                stack.pop();
+            }
+
+            if(!stack.isEmpty()) {
+                res[i] = prices[i] - stack.peek();
+            }else {
+                res[i] = prices[i];
+            }
+
+            stack.push(prices[i]);
+            i--;
+        }
+
+
+
+
+
+        return res;
+    }
 }
