@@ -373,4 +373,59 @@ public class Solution {
 
         return max;
     }
+
+    private Map<Character, Integer> freq;
+    private Map<Character, Integer> count;
+
+    public String minWindow(String s, String t) {
+        freq = new HashMap<>();
+        count = new HashMap<>();
+        for (int i = 0; i < t.length(); i++) {
+            freq.put(t.charAt(i), freq.getOrDefault(t.charAt(i), 0) + 1);
+        }
+
+        int r = 0;
+        int l = 0;
+        int length = Integer.MAX_VALUE;
+        int minl = -1;
+
+        while (r < s.length()) {
+
+            if(r < s.length() && freq.containsKey(s.charAt(r))) {
+                count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
+
+            }
+            while (check() && l <= r) {
+                if(r - l + 1 < length) {
+                    length = r - l + 1;
+                    minl = l;
+
+                }
+                if(count.get(s.charAt(l)) != null) {
+                    count.put(s.charAt(l), count.get(s.charAt(l)) - 1);
+
+                }
+                l++;
+            }
+
+            r++;
+
+        }
+
+
+        return minl == -1 ? "" : s.substring(minl, minl + length);
+
+    }
+
+    private boolean check() {
+        for (Map.Entry<Character, Integer> entry :
+                freq.entrySet()) {
+            Character key = entry.getKey();
+            Integer value = entry.getValue();
+            if(count.get(key) == null || count.get(key) < value) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

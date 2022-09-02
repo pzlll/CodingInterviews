@@ -1028,4 +1028,43 @@ public class Solution {
         return sum;
     }
 
+    private int max = 0;
+
+    public int longestUnivaluePath(TreeNode root) {
+        dfslongestUnivaluePath(root);
+
+        return max;
+
+    }
+
+    public int dfslongestUnivaluePath(TreeNode root) {
+
+        if(root == null) {
+            return 0;
+        }
+
+        int left = 0;
+        int right = 0;
+        int now = 0;
+        if(root.left != null) {
+            int temp;
+            temp = dfslongestUnivaluePath(root.left);
+            if(root.val == root.left.val) {
+                left = temp + 1;
+            }
+        }
+        if(root.right != null) {
+            int temp;
+            temp = dfslongestUnivaluePath(root.right);
+            if(root.val == root.right.val) {
+                right = temp + 1;
+            }
+
+        }
+
+        max = Math.max(max, left + right);
+
+        return left > right ? left : right;
+    }
+
 }
