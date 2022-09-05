@@ -51,6 +51,36 @@ public class Solution {
         return res;
     }
 
+    public ListNode sortList(ListNode head) {
+        if(head == null) {
+            return null;
+        }
+        int n = 0;
+        ListNode p = head;
+
+        while (p != null) {
+            n++;
+            p = p.next;
+        }
+
+        ListNode[] list = new ListNode[n];
+
+        p = head;
+
+        int i = 0;
+        do {
+            list[i] = p;
+            p = p.next;
+            list[i].next = null;
+            i++;
+        }while (p != null);
+
+
+        ListNode res = divideLists(list, 0, n - 1);
+
+        return res;
+    }
+
     private ListNode divideLists(ListNode[] lists, int start, int end) {
         if(start == end) {
             return lists[start];

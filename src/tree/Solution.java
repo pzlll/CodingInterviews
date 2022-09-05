@@ -1066,5 +1066,51 @@ public class Solution {
 
         return left > right ? left : right;
     }
+    private Set<String> seen;
+    private Map<String, TreeNode> repeat;
+
+    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
+        seen = new HashSet<>();
+        repeat = new HashMap<>();
+        dfsfindDuplicateSubtrees(root);
+
+        List<TreeNode> res = new ArrayList<>();
+
+        for (TreeNode t :
+                repeat.values()) {
+            res.add(t);
+        }
+
+        return res;
+    }
+
+    private String dfsfindDuplicateSubtrees(TreeNode root) {
+        if(root == null) {
+            return "";
+        }
+        StringBuffer str = new StringBuffer();
+
+        str.append(root.val);
+
+        str.append("(");
+        str.append(dfsfindDuplicateSubtrees(root.left));
+        str.append(")");
+        str.append("(");
+        str.append(dfsfindDuplicateSubtrees(root.right));
+        str.append(")");
+
+        String s = new String(str);
+
+        if(seen.contains(s) || !repeat.containsKey(s)) {
+            repeat.put(s, root);
+        }else {
+            seen.add(s);
+        }
+
+
+        return s;
+
+
+    }
 
 }

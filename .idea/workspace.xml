@@ -7,10 +7,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add class minWindow.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method divideLists.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/divideandconquer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divideandconquer/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -855,14 +856,9 @@
       <workItem from="1660531967679" duration="597000" />
       <workItem from="1660613369457" duration="3618000" />
       <workItem from="1662081950302" duration="7987000" />
-      <workItem from="1662171323583" duration="2842000" />
-    </task>
-    <task id="LOCAL-00121" summary="add method unhappyFriends.">
-      <created>1630755779468</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1630755779469</updated>
+      <workItem from="1662171323583" duration="3455000" />
+      <workItem from="1662275807319" duration="1994000" />
+      <workItem from="1662343709935" duration="1040000" />
     </task>
     <task id="LOCAL-00122" summary="add method rand10.">
       <created>1630914365362</created>
@@ -1200,7 +1196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662102330578</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="add method divideLists.">
+      <created>1662176598139</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1662176598140</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1316,7 +1319,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method addDigits." />
     <MESSAGE value="add method subArrayRanges." />
     <MESSAGE value="add method findLUSlength." />
     <MESSAGE value="add method platesBetweenCandles." />
@@ -1341,7 +1343,8 @@
     <MESSAGE value="add method calculate1." />
     <MESSAGE value="add class finalPrices." />
     <MESSAGE value="add class minWindow." />
-    <option name="LAST_COMMIT_MESSAGE" value="add class minWindow." />
+    <MESSAGE value="add method divideLists." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method divideLists." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
