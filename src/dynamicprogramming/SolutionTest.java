@@ -56,4 +56,9 @@ public class SolutionTest {
     public void countPalindromicSubsequences() {
         new Solution().countPalindromicSubsequences("bccb");
     }
+
+    @Test
+    public void uniqueLetterString() {
+        new Solution().uniqueLetterString("leetcode");
+    }
 }

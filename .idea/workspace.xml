@@ -7,11 +7,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method divideLists.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method findDuplicateSubtrees.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/divideandconquer/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/divideandconquer/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,33 +370,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dynamicprogramming" />
       <recent name="game" />
       <recent name="math" />
       <recent name="simulation" />
       <recent name="heap" />
-      <recent name="dynamicprogramming" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.smallestNumber">
-    <configuration name="FoodRatingsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="game" />
-      <option name="MAIN_CLASS_NAME" value="game.FoodRatingsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SolutionTest.uniqueLetterString">
     <configuration name="SolutionTest.closestMeetingNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -441,6 +424,22 @@
       <option name="PACKAGE_NAME" value="game" />
       <option name="MAIN_CLASS_NAME" value="game.SolutionTest" />
       <option name="METHOD_NAME" value="smallestNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.uniqueLetterString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dynamicprogramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dynamicprogramming" />
+      <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
+      <option name="METHOD_NAME" value="uniqueLetterString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -526,11 +525,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.uniqueLetterString" />
         <item itemvalue="JUnit.SolutionTest.smallestNumber" />
         <item itemvalue="JUnit.SolutionTest.closestMeetingNode" />
         <item itemvalue="JUnit.SolutionTest.maximumGroups" />
         <item itemvalue="JUnit.SolutionTest.validSquare" />
-        <item itemvalue="JUnit.FoodRatingsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -858,14 +857,8 @@
       <workItem from="1662081950302" duration="7987000" />
       <workItem from="1662171323583" duration="3455000" />
       <workItem from="1662275807319" duration="1994000" />
-      <workItem from="1662343709935" duration="1040000" />
-    </task>
-    <task id="LOCAL-00122" summary="add method rand10.">
-      <created>1630914365362</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1630914365362</updated>
+      <workItem from="1662343709935" duration="1661000" />
+      <workItem from="1662445852517" duration="3802000" />
     </task>
     <task id="LOCAL-00123" summary="add method balancedStringSplit.">
       <created>1631017358533</created>
@@ -1203,7 +1196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662176598140</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="add method findDuplicateSubtrees.">
+      <created>1662346208715</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1662346208716</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1319,7 +1319,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method subArrayRanges." />
     <MESSAGE value="add method findLUSlength." />
     <MESSAGE value="add method platesBetweenCandles." />
     <MESSAGE value="add method getSum." />
@@ -1344,7 +1343,8 @@
     <MESSAGE value="add class finalPrices." />
     <MESSAGE value="add class minWindow." />
     <MESSAGE value="add method divideLists." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method divideLists." />
+    <MESSAGE value="add method findDuplicateSubtrees." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method findDuplicateSubtrees." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

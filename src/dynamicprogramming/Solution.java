@@ -1679,5 +1679,35 @@ public class Solution {
         return max;
     }
 
+    public int uniqueLetterString(String s) {
+        int n = s.length();
+
+        Map<Character, List<Integer>> map = new HashMap<>();
+
+        for (int i = 0; i < n; i++) {
+            if(!map.containsKey(s.charAt(i))) {
+                ArrayList<Integer> integers = new ArrayList<>();
+                integers.add(-1);
+                map.put(s.charAt(i), integers);
+            }
+            map.get(s.charAt(i)).add(i);
+        }
+
+        int sum = 0;
+
+        for (Map.Entry<Character, List<Integer>> entry :
+                map.entrySet()) {
+            List<Integer> value = entry.getValue();
+            value.add(s.length());
+
+            for (int i = 1; i < value.size() - 1; i++) {
+                sum += ((value.get(i) - value.get(i -1) ) * (value.get(i) - value.get(i + 1)));
+            }
+        }
+
+        return sum;
+
+    }
+
 
 }
