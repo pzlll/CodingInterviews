@@ -7,10 +7,17 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method findDuplicateSubtrees.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method uniqueLetterString.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamicprogramming/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/array/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/array/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/divideandconquer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/divideandconquer/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/slidingwindow/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/slidingwindow/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -858,14 +865,8 @@
       <workItem from="1662171323583" duration="3455000" />
       <workItem from="1662275807319" duration="1994000" />
       <workItem from="1662343709935" duration="1661000" />
-      <workItem from="1662445852517" duration="3802000" />
-    </task>
-    <task id="LOCAL-00123" summary="add method balancedStringSplit.">
-      <created>1631017358533</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1631017358536</updated>
+      <workItem from="1662445852517" duration="3846000" />
+      <workItem from="1662515882850" duration="3059000" />
     </task>
     <task id="LOCAL-00124" summary="add method findMaximizedCapital.">
       <created>1631071221865</created>
@@ -1203,7 +1204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662346208716</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="add method uniqueLetterString.">
+      <created>1662451826278</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1662451826279</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1319,7 +1327,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method findLUSlength." />
     <MESSAGE value="add method platesBetweenCandles." />
     <MESSAGE value="add method getSum." />
     <MESSAGE value="add method countMaxOrSubsets." />
@@ -1344,7 +1351,8 @@
     <MESSAGE value="add class minWindow." />
     <MESSAGE value="add method divideLists." />
     <MESSAGE value="add method findDuplicateSubtrees." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method findDuplicateSubtrees." />
+    <MESSAGE value="add method uniqueLetterString." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method uniqueLetterString." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -764,4 +764,63 @@ public class Solution {
 
         return -1;
     }
+
+    public String reorderSpaces(String text) {
+        int num = 0;
+        for (int i = 0; i < text.length(); i++) {
+            if(text.charAt(i) == ' ') {
+                num++;
+            }
+        }
+
+        List<String> list = new ArrayList<>();
+
+        int i = 0;
+        int j = 0;
+
+        while (i < text.length()) {
+            while (i < text.length() && text.charAt(i) == ' ') {
+                i++;
+            }
+
+            j = i;
+            while (j < text.length() && text.charAt(j) != ' ') {
+                j++;
+            }
+            if(i < text.length()) {
+                list.add(text.substring(i, j));
+
+            }
+            i = j;
+
+        }
+
+        StringBuffer str = new StringBuffer();
+
+        for (int k = 0; k < list.size() - 1; k++) {
+            str.append(list.get(k));
+            if(list.size() > 1) {
+                for (int l = 0; l < (num/(list.size() - 1)); l++) {
+                    str.append(' ');
+                }
+            }
+        }
+        str.append(list.get(list.size() - 1));
+
+
+
+        if(list.size() == 1) {
+            for (int k = 0; k < num; k++) {
+                str.append(' ');
+            }
+        }else {
+            for (int k = 0; k < num % (list.size() - 1); k++) {
+                str.append(' ');
+            }
+        }
+
+
+        return new String(str);
+
+    }
 }
