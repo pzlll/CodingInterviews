@@ -823,4 +823,24 @@ public class Solution {
         return new String(str);
 
     }
+
+    public int[] constructArray(int n, int k) {
+        int[] ans = new int[n];
+
+        int l = 0;
+
+        for (int i = 1; i <= n - k; i++) {
+            ans[l++] = i;
+        }
+
+
+        for (int i = n -k + 1, j = n; i <= j; i++, j++) {
+            ans[l++] = i;
+            if(i != j) {
+                ans[l++] = j;
+            }
+        }
+
+        return ans;
+    }
 }

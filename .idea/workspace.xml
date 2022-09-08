@@ -7,16 +7,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method uniqueLetterString.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method reorderSpaces.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/array/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/array/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/divideandconquer/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/divideandconquer/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/SolutionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/slidingwindow/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/slidingwindow/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/stackandqueue/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/tree/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -866,14 +858,8 @@
       <workItem from="1662275807319" duration="1994000" />
       <workItem from="1662343709935" duration="1661000" />
       <workItem from="1662445852517" duration="3846000" />
-      <workItem from="1662515882850" duration="3059000" />
-    </task>
-    <task id="LOCAL-00124" summary="add method findMaximizedCapital.">
-      <created>1631071221865</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1631071221866</updated>
+      <workItem from="1662515882850" duration="3674000" />
+      <workItem from="1662602836100" duration="843000" />
     </task>
     <task id="LOCAL-00125" summary="add method findLongestWord2.">
       <created>1631714623873</created>
@@ -1211,7 +1197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662451826279</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="add method reorderSpaces.">
+      <created>1662522843459</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1662522843460</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1327,7 +1320,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method platesBetweenCandles." />
     <MESSAGE value="add method getSum." />
     <MESSAGE value="add method countMaxOrSubsets." />
     <MESSAGE value="add method busiestServers." />
@@ -1352,7 +1344,8 @@
     <MESSAGE value="add method divideLists." />
     <MESSAGE value="add method findDuplicateSubtrees." />
     <MESSAGE value="add method uniqueLetterString." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method uniqueLetterString." />
+    <MESSAGE value="add method reorderSpaces." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method reorderSpaces." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
