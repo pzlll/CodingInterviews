@@ -7,9 +7,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method reorderSpaces.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method constructArray.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -859,14 +859,8 @@
       <workItem from="1662343709935" duration="1661000" />
       <workItem from="1662445852517" duration="3846000" />
       <workItem from="1662515882850" duration="3674000" />
-      <workItem from="1662602836100" duration="843000" />
-    </task>
-    <task id="LOCAL-00125" summary="add method findLongestWord2.">
-      <created>1631714623873</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1631714623874</updated>
+      <workItem from="1662602836100" duration="866000" />
+      <workItem from="1663032412562" duration="1769000" />
     </task>
     <task id="LOCAL-00126" summary="add method isValidSudoku.">
       <created>1631869740282</created>
@@ -1204,7 +1198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662522843460</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="add method constructArray.">
+      <created>1662605354595</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1662605354596</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1320,7 +1321,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method getSum." />
     <MESSAGE value="add method countMaxOrSubsets." />
     <MESSAGE value="add method busiestServers." />
     <MESSAGE value="add method makesquare." />
@@ -1345,7 +1345,8 @@
     <MESSAGE value="add method findDuplicateSubtrees." />
     <MESSAGE value="add method uniqueLetterString." />
     <MESSAGE value="add method reorderSpaces." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method reorderSpaces." />
+    <MESSAGE value="add method constructArray." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method constructArray." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
