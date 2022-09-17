@@ -3,6 +3,8 @@ package greedy;
 import java.lang.reflect.Array;
 import java.util.*;
 
+import static org.apache.commons.lang3.ArrayUtils.swap;
+
 public class Solution {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
@@ -317,5 +319,32 @@ public class Solution {
             }
             temp[i].add(num);
         }
+    }
+
+    public int maximumSwap(int num) {
+        char[] chars = String.valueOf(num).toCharArray();
+
+        int max = chars.length - 1;
+        int j = max - 1;
+
+        int maxValue = num;
+
+        while (j >= 0) {
+            if(chars[j] > chars[max]) {
+                max = j;
+            }else if(chars[j] < chars[max]) {
+                swap(chars, j, max);
+                maxValue = Math.max(maxValue, Integer.parseInt(new String(chars)));
+                swap(chars,max, j);
+            }
+        }
+
+        return maxValue;
+    }
+
+    public void swap(char[] c, int i, int j) {
+        char temp = c[i];
+        c[i] = c[j];
+        c[j] = temp;
     }
 }

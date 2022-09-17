@@ -843,4 +843,19 @@ public class Solution {
 
         return ans;
     }
+
+    public int maxLengthBetweenEqualCharacters(String s) {
+        Map<Character, Integer> index = new HashMap<>();
+
+        int max = -1;
+        for (int i = 0; i < s.length(); i++) {
+            if(index.containsKey(s.charAt(i))) {
+                max = index.get(s.charAt(i)) - i - 1;
+            }else {
+                index.put(s.charAt(i), i);
+            }
+        }
+
+        return max;
+    }
 }

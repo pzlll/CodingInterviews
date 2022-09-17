@@ -7,9 +7,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method constructArray.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method maximumSwap.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -860,14 +862,10 @@
       <workItem from="1662445852517" duration="3846000" />
       <workItem from="1662515882850" duration="3674000" />
       <workItem from="1662602836100" duration="866000" />
-      <workItem from="1663032412562" duration="1769000" />
-    </task>
-    <task id="LOCAL-00126" summary="add method isValidSudoku.">
-      <created>1631869740282</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1631869740285</updated>
+      <workItem from="1663032412562" duration="1816000" />
+      <workItem from="1663052009485" duration="11000" />
+      <workItem from="1663208579405" duration="3881000" />
+      <workItem from="1663394596865" duration="693000" />
     </task>
     <task id="LOCAL-00127" summary="add method pickIndex.">
       <created>1632060268832</created>
@@ -1205,7 +1203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662605354596</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="add method maximumSwap.">
+      <created>1663042504496</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1663042504497</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1321,7 +1326,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method countMaxOrSubsets." />
     <MESSAGE value="add method busiestServers." />
     <MESSAGE value="add method makesquare." />
     <MESSAGE value="add method gameOfLife." />
@@ -1346,7 +1350,8 @@
     <MESSAGE value="add method uniqueLetterString." />
     <MESSAGE value="add method reorderSpaces." />
     <MESSAGE value="add method constructArray." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method constructArray." />
+    <MESSAGE value="add method maximumSwap." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maximumSwap." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
