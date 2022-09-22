@@ -7,11 +7,15 @@
     <bookmark url="file://$PROJECT_DIR$/src/doublepointer/Solution.java" line="591" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method maximumSwap.">
+    <list default="true" id="ec24a971-35d4-481e-aa06-51c86669bf6a" name="Default Changelist" comment="add method maxLengthBetweenEqualCharacters.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/backtracking/SolutionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/dynamicprogramming/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/greedy/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingInterviews/string/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,17 +375,33 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="backtracking" />
       <recent name="dynamicprogramming" />
       <recent name="game" />
       <recent name="math" />
       <recent name="simulation" />
-      <recent name="heap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.uniqueLetterString">
+  <component name="RunManager" selected="JUnit.SolutionTest.canPartitionKSubsets">
+    <configuration name="SolutionTest.canPartitionKSubsets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingInterviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.SolutionTest" />
+      <option name="METHOD_NAME" value="canPartitionKSubsets" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionTest.closestMeetingNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingInterviews" />
       <extension name="coverage">
@@ -441,22 +461,6 @@
       <option name="PACKAGE_NAME" value="dynamicprogramming" />
       <option name="MAIN_CLASS_NAME" value="dynamicprogramming.SolutionTest" />
       <option name="METHOD_NAME" value="uniqueLetterString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.validSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingInterviews" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.SolutionTest" />
-      <option name="METHOD_NAME" value="validSquare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -526,11 +530,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.canPartitionKSubsets" />
         <item itemvalue="JUnit.SolutionTest.uniqueLetterString" />
         <item itemvalue="JUnit.SolutionTest.smallestNumber" />
         <item itemvalue="JUnit.SolutionTest.closestMeetingNode" />
         <item itemvalue="JUnit.SolutionTest.maximumGroups" />
-        <item itemvalue="JUnit.SolutionTest.validSquare" />
       </list>
     </recent_temporary>
   </component>
@@ -865,14 +869,10 @@
       <workItem from="1663032412562" duration="1816000" />
       <workItem from="1663052009485" duration="11000" />
       <workItem from="1663208579405" duration="3881000" />
-      <workItem from="1663394596865" duration="693000" />
-    </task>
-    <task id="LOCAL-00127" summary="add method pickIndex.">
-      <created>1632060268832</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1632060268834</updated>
+      <workItem from="1663394596865" duration="855000" />
+      <workItem from="1663469842110" duration="595000" />
+      <workItem from="1663642345272" duration="2795000" />
+      <workItem from="1663730795959" duration="3247000" />
     </task>
     <task id="LOCAL-00128" summary="add method lengthOfLastWord.">
       <created>1632187456020</created>
@@ -1210,7 +1210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663042504497</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="add method maxLengthBetweenEqualCharacters.">
+      <created>1663398091365</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1663398091365</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1326,7 +1333,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add method busiestServers." />
     <MESSAGE value="add method makesquare." />
     <MESSAGE value="add method gameOfLife." />
     <MESSAGE value="add method intersectionSizeTwo." />
@@ -1351,7 +1357,8 @@
     <MESSAGE value="add method reorderSpaces." />
     <MESSAGE value="add method constructArray." />
     <MESSAGE value="add method maximumSwap." />
-    <option name="LAST_COMMIT_MESSAGE" value="add method maximumSwap." />
+    <MESSAGE value="add method maxLengthBetweenEqualCharacters." />
+    <option name="LAST_COMMIT_MESSAGE" value="add method maxLengthBetweenEqualCharacters." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

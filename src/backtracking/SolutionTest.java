@@ -42,4 +42,9 @@ public class SolutionTest {
     public void subsets() {
         new Solution().subsets(new int[]{1, 2 ,3});
     }
+
+    @Test
+    public void canPartitionKSubsets() {
+        new Solution().canPartitionKSubsets(new int[]{10,12,1,2,10,7,5,19,13,1}, 4);
+    }
 }

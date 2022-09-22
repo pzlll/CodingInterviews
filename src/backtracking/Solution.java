@@ -901,5 +901,55 @@ public class Solution {
         return count;
     }
 
+    public boolean canPartitionKSubsets(int[] nums, int k) {
+        int n = nums.length;
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+        }
+
+        if(sum % k != 0) {
+            return false;
+        }
+
+        int per = sum / k;
+
+        int S = (1 << n) - 1;
+        boolean dp[] = new boolean[1<<n];
+        Arrays.fill(dp, true);
+
+        return backtrackPartitionKSubsets(S, dp, n, 0, nums, per);
+    }
+
+    private boolean backtrackPartitionKSubsets(int S, boolean[] dp, int n, int s, int[] nums, int per) {
+        if(S == 0 && dp[S]) {
+           return true;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if((S & (1 << i)) != 0 && dp[S & ~(1 << i)]) {
+
+                s += nums[i];
+                if(s <= per) {
+                    s = (s == per ? 0 : s);
+                    S = (S & ~(1 << i));
+                    boolean flag = backtrackPartitionKSubsets(S, dp, n, s, nums, per);
+                    S = (S | (1 << i));
+                    s = s == 0 ? per : s;
+
+                    if(flag) {
+                        return true;
+                    }
+                }else {
+                    dp[S & ~(1 << i)] = false;
+                }
+                s -= nums[i];
+            }
+        }
+
+        return false;
+    }
+
+
 
 }
